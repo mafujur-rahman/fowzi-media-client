@@ -39,7 +39,7 @@ export default function AboutThree() {
           <div className="col-xl-6 col-lg-6 col-md-8">
             <div className="tp-about-3-content">
               <p className="mb-30 tp_fade_bottom">
-              Welcome to Fowzi Media, where Creativity Meets Digital Excellence. We're more than just a service provider; we're dedicated to crafting experiences that make a lasting impact. With a foundation built on a passion for storytelling and a drive for innovation, our team is committed to elevating your digital presence.
+              Welcome to Fowzi Media, where Creativity Meets Digital Excellence. We&aposre more than just a service provider; we&aposre dedicated to crafting experiences that make a lasting impact. With a foundation built on a passion for storytelling and a drive for innovation, our team is committed to elevating your digital presence.
               </p>
               <p className="mb-45 tp_fade_bottom">
               Specializing in branding, web design, videography, marketing, and communications, we excel in creating compelling narratives, captivating audiences, and driving success for your business.
