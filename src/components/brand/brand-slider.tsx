@@ -24,26 +24,34 @@ export default function BrandSlider() {
       key={i} 
       className="tp-brand-item"
       style={{ 
-        height: "60px", 
-        width: "auto", 
+        height: "80px", // Fixed height for all images
+        width: "200px", 
         margin: "0 20px", // Add spacing between images
         display: "flex",
-        alignItems: "center",
-        justifyContent: "center"
+        alignItems: "flex-end", // Forces all images to align at the bottom
+        justifyContent: "center",
+        overflow: "hidden"
       }}
     >
       <Image 
         src={b} 
         alt="" 
-        width={100} 
-        height={60} 
+        width={180} 
+        height={80} 
         style={{ 
-          filter: "invert(1) brightness(0) grayscale(1)", // Convert white to black-gray
+          display: "block", 
+          objectFit: "contain", // Maintains aspect ratio
+          filter: "grayscale(1) brightness(0.5)", // Keeps images gray instead of full black
         }} 
       />
     </div>
   ))}
 </Marquee>
+
+
+
+
+
 
 
 

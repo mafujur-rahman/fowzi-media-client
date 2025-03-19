@@ -103,9 +103,22 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                         See Project
                       </Link>
                     </div>
-                    <div className="tp-project-3-border color-1 text-center">
-                      <span></span>
+
+                    {/* gradiant line */}
+                    <div className="text-center" style={{
+                      width: '100%',  
+                      display: 'flex',
+                      justifyContent: 'center' 
+                    }}>
+                      <div style={{
+                        width: '320px',  
+                        height: '15px',   
+                        background: 'linear-gradient(to right, #111111, #FF0101)',  
+                        borderRadius: '30px',
+                      }}></div>
                     </div>
+
+
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-6 order-0 order-lg-0">
                     <div className="tp-project-3-thumb pro-img-2">

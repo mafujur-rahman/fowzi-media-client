@@ -29,7 +29,7 @@ function ctaAnimation() {
 	
 		let mySplitText = new SplitText(".cta-text", { type: "words,chars" });
 		let chars = mySplitText.chars;
-    let endGradient: any = (chroma as any).scale(['#FFB55E', '#F25164', '#7F00D7', '#EC38BC', '#F25164']);
+		let endGradient: any = (chroma as any).scale(['#111111', '#FF0101']);
 		cta.to(chars, {
 			duration: 0.5,
 			scaleY: 0.6,
