@@ -21,7 +21,7 @@ export default function HeroBannerFour() {
                 ux/ui design / motion design / branding / development
               </span>
               <Link className="tp-btn-black-2" href="/contact">
-              Let &aposs Work Together{" "}
+              Let Work Together{" "}
                 <span className="p-relative">
                   <RightArrowTwo />
                   <ArrowBg />
