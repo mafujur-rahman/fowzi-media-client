@@ -1,23 +1,33 @@
-'use client';
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import useSticky from "@/hooks/use-sticky";
 import logo_1 from "@/assets/img/fowzi-logo/icon 2.png";
 
 export default function HeaderFour() {
-  const { sticky, headerRef, headerFullWidth, adjustMenuBackground } = useSticky();
-  const [openOffCanvas, setOpenOffCanvas] = React.useState(false);
+  const [openOffCanvas, setOpenOffCanvas] = useState(false);
+  const [isMobile, setIsMobile] = useState(false); // State to track screen size
 
   useEffect(() => {
-    headerFullWidth();
-    adjustMenuBackground();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // Function to check the screen size
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 768); // Set isMobile based on screen width
+    };
+
+    // Call the function on initial render
+    checkScreenSize();
+
+    // Add resize event listener to update screen size on resize
+    window.addEventListener('resize', checkScreenSize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', checkScreenSize);
+    };
   }, []);
 
   // Inline styles for the off-canvas menu
   const offCanvasMenuStyle = {
-    position: `('absolute' | 'relative' | 'fixed' | 'sticky' | 'static')`,
+    position: isMobile ? 'fixed' :'fixed' , // Use 'absolute' for mobile, 'fixed' for larger screens
     top: 0,
     right: openOffCanvas ? '0' : '-250px', // Slide in when open
     width: '250px',
@@ -56,7 +66,7 @@ export default function HeaderFour() {
   return (
     <>
       <header>
-        <div id="header-sticky" className={`tp-header-3-area mt-20 z-index-5 ${sticky ? 'header-sticky' : ''}`}>
+        <div id="header-sticky" className="tp-header-3-area mt-20 z-index-5">
           <div className="container container-1740">
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-6 col-md-6 col-6">
@@ -87,19 +97,11 @@ export default function HeaderFour() {
               <div className="col-xl-3 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-3-right d-flex align-items-center justify-content-end">
                   <div className="tp-header-3-social d-none d-sm-block">
-                    <a href="#">
-                      <i className="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fa-brands fa-instagram"></i>
-                    </a>
+                    <a href="#"><i className="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i className="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i className="fa-brands fa-instagram"></i></a>
                   </div>
-                  <button 
-                    onClick={() => setOpenOffCanvas(!openOffCanvas)} 
-                    className="tp-header-3-bar tp-offcanvas-open-btn d-xl-none">
+                  <button onClick={() => setOpenOffCanvas(!openOffCanvas)} className="tp-header-3-bar tp-offcanvas-open-btn d-xl-none">
                     <i className="fa-solid fa-bars"></i>
                   </button>
                 </div>
@@ -119,9 +121,7 @@ export default function HeaderFour() {
               <li style={offCanvasListItemStyle}><Link href="/case-studies">CASE STUDIES</Link></li>
               <li style={offCanvasListItemStyle}><Link href="/contact">CONTACT</Link></li>
             </ul>
-            <button 
-              onClick={() => setOpenOffCanvas(false)} 
-              style={closeButtonStyle}>
+            <button onClick={() => setOpenOffCanvas(false)} style={closeButtonStyle}>
               <i className="fa-solid fa-times"></i> Close
             </button>
           </div>
