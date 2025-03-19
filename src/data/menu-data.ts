@@ -20,7 +20,7 @@ const menu_data:IMenuDT[] = [
   {
     id: 4,
     title: 'Portfolio',
-    link: '/portfolio-standard',
+    link: '/',
     // portfolio_mega_menus: {
     //   first: {
     //     title: 'PORTFOLIO LIST',
@@ -165,7 +165,7 @@ export const mobile_menu_data:{
   {
     id: 3,
     title: 'Portfolio',
-    link: '/portfolio-standard',
+    link: '/',
     dropdown_menus:[
       { title: 'Standard', link: '/portfolio-standard' },
       { title: 'Interactive', link: '/home-10' },
