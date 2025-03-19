@@ -5,32 +5,31 @@
 
 /* globals.scss */
 
+
+// globals.scss
+
 @font-face {
-    font-family: 'GlacialIndifference';
-    src: url('/GlacialIndifference-Regular.woff2') format('woff2'),
-         url('/GlacialIndifference-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'GlacialIndifference';
-    src: url('/GlacialIndifference-Bold.woff2') format('woff2'),
-         url('/GlacialIndifference-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  /* Default font family for the body */
-  body {
-    font-family: var(--tp-ff-gallery), sans-serif;
-  }
-  /* You can also define specific elements like headings */
-  h1, h2, h3 {
-    font-family: 'GlacialIndifference', serif;
-  }
-  
-  p {
-    font-family: 'GlacialIndifference', sans-serif;
-  }
-  
+  font-family: 'Glacial Indifference';
+  src: url('/fonts/GlacialIndifference-Regular.woff2') format('woff2'),
+       url('/fonts/GlacialIndifference-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('/fonts/GlacialIndifference-Bold.woff2') format('woff2'),
+       url('/fonts/GlacialIndifference-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-glacial: 'Glacial Indifference', sans-serif;
+}
+
+body {
+  font-family: var(--font-glacial);
+}

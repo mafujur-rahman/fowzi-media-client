@@ -4,8 +4,10 @@ import { ScrollTrigger } from '@/plugins';
 
 function projectThreeAnimation() {
   if (document.querySelectorAll(".tp-project-3-area").length > 0) {
-    let pw = gsap.matchMedia();
-    pw.add("(min-width: 1200px)", () => {
+    let mm = gsap.matchMedia();
+
+    // Animation for large devices (min-width: 1200px)
+    mm.add("(min-width: 1200px)", () => {
       gsap.set(".tp-project-3-wrap .pro-img-1 img", {
         x: "500",
       });
@@ -26,8 +28,8 @@ function projectThreeAnimation() {
             end: "bottom 10%",
             scrub: 1,
             pin: true,
-            transformOrigin: "50% 50%" as any,
-          } as any,
+            transformOrigin: "50% 50%",
+          },
         });
 
         gsap.to($this.find(".pro-img-2 img"), {
@@ -38,18 +40,59 @@ function projectThreeAnimation() {
             end: "bottom 10%",
             scrub: 1,
             pin: false,
-            transformOrigin: "50% 50%" as any,
-          } as any,
+            transformOrigin: "50% 50%",
+          },
+        });
+      });
+    });
+
+    // Animation for medium devices (min-width: 768px)
+    mm.add("(min-width: 768px) and (max-width: 1199px)", () => {
+      gsap.set(".tp-project-3-wrap .pro-img-1 img", {
+        x: "300",
+      });
+      gsap.set(".tp-project-3-wrap .pro-img-2 img", {
+        x: "-300",
+      });
+
+      let projects: any = gsap.utils.toArray(".tp-project-3-wrap");
+
+      projects.forEach((item: any) => {
+        let $this: any = $(item);
+
+        gsap.to($this.find(".pro-img-1 img"), {
+          x: "0",
+          scrollTrigger: {
+            trigger: $this,
+            start: "top 18%",
+            end: "bottom 10%",
+            scrub: 1,
+            pin: true,
+            transformOrigin: "50% 50%",
+          },
+        });
+
+        gsap.to($this.find(".pro-img-2 img"), {
+          x: "0",
+          scrollTrigger: {
+            trigger: $this,
+            start: "top 18%",
+            end: "bottom 10%",
+            scrub: 1,
+            pin: false,
+            transformOrigin: "50% 50%",
+          },
         });
       });
     });
   }
-};
+}
 
 function projectDetailsPin() {
-  let pd = gsap.matchMedia();
-  pd.add("(min-width: 1400px)", () => {
+  let mm = gsap.matchMedia();
 
+  // Pin animation for large devices (min-width: 1400px)
+  mm.add("(min-width: 1400px)", () => {
     if ($('.project-details-1-area').length > 0) {
       ScrollTrigger.create({
         trigger: ".project-details-1-area",
@@ -59,62 +102,91 @@ function projectDetailsPin() {
         pinSpacing: false,
       });
     }
-
   });
-};
+
+  // Pin animation for medium devices (min-width: 768px)
+  mm.add("(min-width: 768px) and (max-width: 1399px)", () => {
+    if ($('.project-details-1-area').length > 0) {
+      ScrollTrigger.create({
+        trigger: ".project-details-1-area",
+        start: "top top",
+        end: "bottom 100%",
+        pin: ".project-details-1-right-wrap",
+        pinSpacing: false,
+      });
+    }
+  });
+}
 
 function projectDetailsVideoPin() {
-  const vd = gsap.matchMedia();
-vd.add("(min-width: 1200px)", () => {
-  const projectDetails2Area = document.querySelector('.project-details-2-area');
-  const projectDetailsVideo = document.querySelector('.project-details-video');
+  let mm = gsap.matchMedia();
 
-  if (projectDetails2Area && projectDetailsVideo) {
-    ScrollTrigger.create({
-      trigger: projectDetails2Area,
-      start: "top top",
-      end: "bottom -100%",
-      pin: projectDetailsVideo,
-      pinSpacing: false,
-    });
-  }
-});
+  // Video pin animation for large devices (min-width: 1200px)
+  mm.add("(min-width: 1200px)", () => {
+    const projectDetails2Area = document.querySelector('.project-details-2-area');
+    const projectDetailsVideo = document.querySelector('.project-details-video');
 
-// Get references to elements and ensure they are not null
-const progress = document.getElementById("progress") as HTMLProgressElement | null;
-const timer = document.getElementById("timer") as HTMLElement | null;
-const videoProgressBtn = document.getElementById("play") as HTMLElement | null;
-const video = document.querySelector("video") as HTMLVideoElement | null;
+    if (projectDetails2Area && projectDetailsVideo) {
+      ScrollTrigger.create({
+        trigger: projectDetails2Area,
+        start: "top top",
+        end: "bottom -100%",
+        pin: projectDetailsVideo,
+        pinSpacing: false,
+      });
+    }
+  });
 
-function progressLoop() {
-  if (video && progress && timer) {
-    setInterval(function () {
-      progress.value = Math.round((video.currentTime / video.duration) * 100);
-      timer.innerHTML = `${Math.round(video.currentTime)} seconds`;
-    }, 1000);
-  }
-}
+  // Video pin animation for medium devices (min-width: 768px)
+  mm.add("(min-width: 768px) and (max-width: 1199px)", () => {
+    const projectDetails2Area = document.querySelector('.project-details-2-area');
+    const projectDetailsVideo = document.querySelector('.project-details-video');
 
-function playPause() {
-  if (video && videoProgressBtn) {
-    if (video.paused) {
-      video.play();
-      videoProgressBtn.innerHTML = "&#10073;&#10073;"; // Pause symbol
-    } else {
-      video.pause();
-      videoProgressBtn.innerHTML = "►"; // Play symbol
+    if (projectDetails2Area && projectDetailsVideo) {
+      ScrollTrigger.create({
+        trigger: projectDetails2Area,
+        start: "top top",
+        end: "bottom -100%",
+        pin: projectDetailsVideo,
+        pinSpacing: false,
+      });
+    }
+  });
+
+  // Video progress and play/pause functionality
+  const progress = document.getElementById("progress") as HTMLProgressElement | null;
+  const timer = document.getElementById("timer") as HTMLElement | null;
+  const videoProgressBtn = document.getElementById("play") as HTMLElement | null;
+  const video = document.querySelector("video") as HTMLVideoElement | null;
+
+  function progressLoop() {
+    if (video && progress && timer) {
+      setInterval(function () {
+        progress.value = Math.round((video.currentTime / video.duration) * 100);
+        timer.innerHTML = `${Math.round(video.currentTime)} seconds`;
+      }, 1000);
     }
   }
+
+  function playPause() {
+    if (video && videoProgressBtn) {
+      if (video.paused) {
+        video.play();
+        videoProgressBtn.innerHTML = "&#10073;&#10073;"; // Pause symbol
+      } else {
+        video.pause();
+        videoProgressBtn.innerHTML = "►"; // Play symbol
+      }
+    }
+  }
+
+  if (videoProgressBtn) {
+    videoProgressBtn.addEventListener("click", playPause);
+  }
+
+  if (video) {
+    video.addEventListener("play", progressLoop);
+  }
 }
 
-if (videoProgressBtn) {
-  videoProgressBtn.addEventListener("click", playPause);
-}
-
-if (video) {
-  video.addEventListener("play", progressLoop);
-}
-  
-}
-
-export { projectThreeAnimation, projectDetailsPin,projectDetailsVideoPin };
+export { projectThreeAnimation, projectDetailsPin, projectDetailsVideoPin };

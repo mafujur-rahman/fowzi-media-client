@@ -9,19 +9,19 @@ const service_data = [
     id: 1,
     title: "Branding",
     desc: "We specialize in crafting captivating brand identities that resonate with your audience and leave a lasting impression.",
-    category: ["Brand Strategy", "Social Media Branding", "Brand Guidelines"],
+    category: ["Branding", "Brand Strategy", "Brand Guidelines"],
   },
   {
     id: 2,
     title: "Development",
     desc: "We specialize in creating stunning websites that captivate your audience and drive results.",
-    category: ["SEO", "Creative Development", "Custom Proactive Solutions"],
+    category: ["SEO", "Development", "Custom Proactive Solutions"],
   },
   {
     id: 3,
     title: "Videography",
     desc: "We specializes in professional videography services that bring your vision to life and leavea lasting impression.",
-    category: ["Creative", "Brand Storytelling", "Promotional Videos"],
+    category: ["Creative", "Storytelling", "Promotional Videos"],
   },
 ];
 export default function ServiceFour() {
@@ -39,14 +39,14 @@ export default function ServiceFour() {
                 <span>
                   <FirstBracket />
                 </span>
-                <span className="tp-subtitle-text tp_text_invert">
+                <span className="tp-subtitle-text tp_text_invert" style={{ fontFamily: 'Glacial Indifference' }}>
                   Our Services
                 </span>
                 <span>
                   <FirstBracketTwo />
                 </span>
               </span>
-              <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
+              <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                 Thoughtful <br /> Process We think a lot
               </h4>
             </div>
@@ -58,17 +58,17 @@ export default function ServiceFour() {
             <div className="row align-items-start">
               <div className="col-xl-3 col-lg-3">
                 <div className="tp-service-3-title-box">
-                  <h4 className="tp-service-3-title">
+                  <h4 className="tp-service-3-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                     <Link href="/service">{item.title}</Link>
                   </h4>
                 </div>
               </div>
               <div className="col-xl-7 col-lg-7">
                 <div className="tp-service-3-content">
-                  <p dangerouslySetInnerHTML={{ __html: item.desc }}></p>
-                  <div className="tp-service-3-category">
+                  <p dangerouslySetInnerHTML={{ __html: item.desc }} style={{ fontFamily: 'Glacial Indifference' }}></p>
+                  <div className="tp-service-3-category d-flex flex-wrap gap-2">
                     {item.category.map((c, i) => (
-                      <span key={i}>{c}</span>
+                      <span key={i} style={{ fontFamily: 'Glacial Indifference' }}>{c}</span>
                     ))}
                   </div>
                 </div>
@@ -79,7 +79,7 @@ export default function ServiceFour() {
                     className="tp-btn-zikzak-sm p-relative"
                     href="/service"
                   >
-                    <span className="zikzak-content">
+                    <span className="zikzak-content" style={{ fontFamily: 'Glacial Indifference' }}>
                       See <br /> Details
                       <RightArrow clr="currentColor" />
                     </span>

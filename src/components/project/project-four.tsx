@@ -57,7 +57,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
           <div className="row justify-content-center">
             <div className="col-xl-7">
               <div className="tp-project-3-title-box p-relative mb-150">
-                <h4 className="tp-section-title-200 tp_reveal_anim">
+                <h4 className="tp-section-title-200 tp_reveal_anim" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                   Latest <span>Projects</span>
                 </h4>
                 <div className="tp-project-3-btn-box">
@@ -65,7 +65,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                     className="tp-btn-zikzak p-relative"
                     href="/portfolio-wrapper"
                   >
-                    <span className="zikzak-content">
+                    <span className="zikzak-content" style={{ fontFamily: 'Glacial Indifference' }}>
                       See <br /> All Project
                       <RightArrow clr="#19191A" />
                     </span>
@@ -92,13 +92,14 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-12 order-1 order-lg-0">
                     <div className="tp-project-3-content text-center">
-                      <span className="tp-project-3-meta">{item.meta} </span>
+                      <span className="tp-project-3-meta" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>{item.meta} </span>
                       <h4 className="tp-project-3-title-sm">
-                        <Link href="/portfolio-details-1">{item.title}</Link>
+                        <Link href="/portfolio-details-1" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>{item.title}</Link>
                       </h4>
                       <Link
                         className="tp-btn-project-sm"
                         href="/portfolio-details-1"
+                        style={{ fontFamily: 'Glacial Indifference' }}
                       >
                         See Project
                       </Link>

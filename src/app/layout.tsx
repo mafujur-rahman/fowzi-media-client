@@ -1,9 +1,8 @@
-// app/layout.tsx or app/RootLayout.tsx (if using Next.js 13)
+// app/layout.tsx or app/RootLayout.tsx
 
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-import "./globals.scss";
-import gellery from "@/components/font/font";
+import "./globals.scss"; // Import the global styles
 
 export const metadata: Metadata = {
   title: "Fowzi Media",
@@ -13,7 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${gellery.variable}`}>  {/* Apply font class */}
+      <body>
         <ThemeProvider defaultTheme="light">{children}</ThemeProvider>
       </body>
     </html>

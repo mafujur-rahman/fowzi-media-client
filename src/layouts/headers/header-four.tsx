@@ -71,7 +71,7 @@ export default function HeaderFour() {
                   <div className="tp-header-3-menu-box d-inline-flex align-items-center justify-content-between">
                     <div className="tp-header-3-menu header-main-menu">
                       <nav className="tp-main-menu-content">
-                        <ul className="col text-white" style={{ backgroundColor: "#424242", paddingTop: "6px", paddingBottom: "6px", paddingInline: "8px", borderRadius: "30px" }}>
+                        <ul className="col text-white" style={{ backgroundColor: "#424242", paddingTop: "6px", paddingBottom: "6px", paddingInline: "8px", borderRadius: "30px", fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                           <li><Link href="/">HOME</Link></li>
                           <li><Link href="/services">SERVICES</Link></li>
                           <li><Link href="/about">ABOUT</Link></li>
