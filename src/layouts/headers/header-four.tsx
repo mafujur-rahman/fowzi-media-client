@@ -17,7 +17,7 @@ export default function HeaderFour() {
 
   // Inline styles for the off-canvas menu
   const offCanvasMenuStyle = {
-    position: 'fixed',
+    position: `('absolute' | 'relative' | 'fixed' | 'sticky' | 'static')`,
     top: 0,
     right: openOffCanvas ? '0' : '-250px', // Slide in when open
     width: '250px',
