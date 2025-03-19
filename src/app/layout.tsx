@@ -7,9 +7,8 @@ import {
 } from "next/font/google";
 import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
-import "./globals.scss"; // Ensure your global styles are properly linked
+import "./globals.scss";
 
-// Fix: Corrected font paths (Next.js serves files directly from /public)
 const gellery = localFont({
   src: [
     {
@@ -18,7 +17,7 @@ const gellery = localFont({
       style: "normal",
     },
     {
-      path: "../../public/assets/font/GlacialIndifference-Bold.woff2",
+      path: "../../public/assets/font/GlacialIndifference-Regular.woff2",
       weight: "700",
       style: "normal",
     },
@@ -31,31 +30,37 @@ const aladin = Aladin({
   subsets: ["latin"],
   variable: "--tp-ff-aladin",
 });
+
 const syne_body = Syne({
   weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
   variable: "--tp-ff-body",
 });
+
 const syne_heading = Syne({
   weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
   variable: "--tp-ff-heading",
 });
+
 const syne_p = Syne({
   weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
   variable: "--tp-ff-p",
 });
+
 const syne = Syne({
   weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
   variable: "--tp-ff-syne",
 });
+
 const big_shoulders = Big_Shoulders_Display({
   weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
   variable: "--tp-ff-shoulders",
 });
+
 const marcellus = Marcellus({
   weight: ["400"],
   subsets: ["latin"],

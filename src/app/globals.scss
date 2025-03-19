@@ -2,3 +2,36 @@
 @import 'node_modules/react-modal-video/scss/modal-video.scss';
 @import "swiper/css/bundle"; 
 @import '../../public/assets/scss/main.scss';
+
+/* globals.scss */
+
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url('/assets//font/GlacialIndifference-Regular.woff2') format('woff2'),
+         url('/assets/font/GlacialIndifference-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'GlacialIndifference';
+    src: url('/assets/font/GlacialIndifference-Bold.woff2') format('woff2'),
+         url('/assets/font/GlacialIndifference-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* Default font family for the body */
+  body {
+    font-family: 'GlacialIndifference', sans-serif;
+  }
+  
+  /* You can also define specific elements like headings */
+  h1, h2, h3 {
+    font-family: 'GlacialIndifference', serif;
+  }
+  
+  p {
+    font-family: 'GlacialIndifference', sans-serif;
+  }
+  

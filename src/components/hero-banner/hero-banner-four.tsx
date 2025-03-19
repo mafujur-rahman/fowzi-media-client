@@ -1,6 +1,6 @@
 'use client';
 import React from "react";
-import { ArrowBg, RightArrowTwo } from "../svg";
+import { ArrowBg, RightArrowTwo } from "../../../src/components/svg";
 import Link from "next/link";
 
 export default function HeroBannerFour() {
@@ -21,7 +21,7 @@ export default function HeroBannerFour() {
                 ux/ui design / motion design / branding / development
               </span>
               <Link className="tp-btn-black-2" href="/contact">
-              Let Work Together{" "}
+              Let's Work Together{" "}
                 <span className="p-relative">
                   <RightArrowTwo />
                   <ArrowBg />

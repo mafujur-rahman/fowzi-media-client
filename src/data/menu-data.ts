@@ -4,22 +4,22 @@ import { IMenuDT } from "@/types/menu-d-t";
 const menu_data:IMenuDT[] = [
   {
     id: 1,
-    title: 'Home',
+    title: 'HOME',
     link: '/',
   },
   {
     id: 2,
-    title: 'Services',
+    title: 'SERVICES',
     link: '#',
   },
   {
     id: 3,
-    title: 'About',
+    title: 'ABOUT',
     link: '#',
   },
   {
     id: 4,
-    title: 'Portfolio',
+    title: 'PORTFOLIO',
     link: '/',
     // portfolio_mega_menus: {
     //   first: {
@@ -82,7 +82,7 @@ const menu_data:IMenuDT[] = [
   },
   {
     id: 5,
-    title: 'Case Studies',
+    title: 'CASE STUDIES',
     link: '/blog-modern',
     // dropdown_menus: [
     //   { title: 'Modern', link: '/blog-modern' },
@@ -94,7 +94,7 @@ const menu_data:IMenuDT[] = [
   },
   {
     id: 5,
-    title: 'Contact',
+    title: 'CONTACT',
     link: '/contact',
     dropdown_menus:[
       { title: 'Contact', link: '/contact' },
