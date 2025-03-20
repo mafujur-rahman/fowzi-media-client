@@ -26,8 +26,8 @@ export default function HeaderFour() {
   }, []);
 
   // Inline styles for the off-canvas menu
-  const offCanvasMenuStyle = {
-    position: 'absolute',
+  const offCanvasMenuStyle: React.CSSProperties = {
+    position: 'fixed',
     top: 0,
     right: openOffCanvas ? '0' : '-250px', // Slide in when open
     width: '250px',
@@ -37,23 +37,23 @@ export default function HeaderFour() {
     zIndex: 1000,
   };
 
-  const offCanvasContentStyle = {
+  const offCanvasContentStyle: React.CSSProperties = {
     display: 'flex',
     flexDirection: 'column',
     padding: '20px',
     color: 'white',
   };
 
-  const offCanvasListStyle = {
+  const offCanvasListStyle: React.CSSProperties = {
     listStyleType: 'none',
     padding: '0',
   };
 
-  const offCanvasListItemStyle = {
+  const offCanvasListItemStyle: React.CSSProperties = {
     margin: '15px 0',
   };
 
-  const closeButtonStyle = {
+  const closeButtonStyle: React.CSSProperties = {
     marginTop: '20px',
     backgroundColor: '#f44336',
     color: 'white',
