@@ -42,7 +42,7 @@ const AboutUsMain = () => {
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
-          <main>
+          <main >
             {/* about hero */}
             <AboutUsHero />
             {/* about hero */}

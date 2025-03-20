@@ -12,18 +12,21 @@ const service_data = [
     title: "Branding",
     desc: "We specialize in crafting captivating brand identities that resonate with your audience and leave a lasting impression.",
     icon: s_2,
+    link: "/branding-details",
   },
   {
     id: 2,
     title: "Website development",
     desc: "We specialize in creating stunning websites that captivate your audience and drive results.",
     icon: s_1,
+    link: "/development-details",
   },
   {
     id: 3,
     title: "Videography",
     desc: "Elevate your brand with captivating video content that tells your story and engages your audience.",
     icon: s_3,
+    link: "/videography-details",
   },
 ];
 
@@ -39,10 +42,10 @@ export function ServiceItems() {
               <Image style={{height: "30px", width: "auto"}} src={item.icon} alt="icon" />
             </div>
             <div className="tp-service-4-content">
-              <h4 className="tp-service-4-title-sm tp-text-black">
-                <Link href="/service">{item.title}</Link>
+              <h4 className="tp-service-4-title-sm tp-text-black" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
+                <Link href={item.link}>{item.title}</Link>
               </h4>
-              <p>{item.desc}</p>
+              <p style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>{item.desc}</p>
             </div>
           </div>
         </div>

@@ -58,8 +58,8 @@ export default function HeaderFour() {
                       <nav className="tp-main-menu-content w-100">
                         <ul className="d-flex justify-content-between list-unstyled mb-0 w-100 text-white" style={{ backgroundColor: "#424242", padding: "6px 8px", borderRadius: "30px", fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                           <li><Link href="/" style={{ fontSize: `${fontSize}px` }}>HOME</Link></li>
-                          <li><Link href="/services" style={{ fontSize: `${fontSize}px` }}>SERVICES</Link></li>
-                          <li><Link href="/about" style={{ fontSize: `${fontSize}px` }}>ABOUT</Link></li>
+                          <li><Link href="/service" style={{ fontSize: `${fontSize}px` }}>SERVICES</Link></li>
+                          <li><Link href="/about-us" style={{ fontSize: `${fontSize}px` }}>ABOUT</Link></li>
                           <li><Link href="/portfolio" style={{ fontSize: `${fontSize}px` }}>PORTFOLIO</Link></li>
                           <li><Link href="/case-studies" style={{ fontSize: `${fontSize}px` }}>CASE STUDIES</Link></li>
                           <li><Link href="/contact" style={{ fontSize: `${fontSize}px` }}>CONTACT</Link></li>

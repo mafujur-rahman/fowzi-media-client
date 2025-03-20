@@ -46,11 +46,11 @@ export default function AboutUsArea() {
         <div id="about-info" className="row">
           <div className="col-xxl-9">
             <div className="ab-about-content p-relative">
-              <span>
+              <span style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
                 <Hand />
                 Hi!
               </span>
-              <p className="tp-dropcap tp_fade_bottom">
+              <p className="tp-dropcap tp_fade_bottom" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
               Fowzi Media is a leading branding and marketing agency specializing in video production, photography, and strategic communications. As a minority-immigrant-owned firm, we craft compelling digital stories that engage audiences and drive social impact. Our expertise bridges communication gaps between public, nonprofit, and private sectors and diverse communities. With a dedicated team and trusted collaborators, we deliver innovative marketing solutions—from impactful video ads to full-scale branding strategies.
               </p>
             </div>
@@ -61,7 +61,7 @@ export default function AboutUsArea() {
             <div className="row">
               <div className="col-xl-5 col-lg-5 col-md-4 mb-40">
                 <div className="ab-about-category-title-box p-relative">
-                  <h4 className="ab-about-category-title">
+                  <h4 className="ab-about-category-title" style={{fontFamily: 'Glacial Indifference'}}>
                     Something <br />
                     <span>WHAT WE DO</span>
                   </h4>
@@ -76,7 +76,7 @@ export default function AboutUsArea() {
                 <div className="row">
                   <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
                     <div className="ab-about-category-list category-space-1 tp_fade_bottom">
-                      <ul>
+                      <ul style={{fontFamily: 'Glacial Indifference'}}>
                         <li>Video & music Production</li>
                         <li>Photography</li>
                         <li>Strategic Communications</li>
@@ -87,7 +87,7 @@ export default function AboutUsArea() {
                   </div>
                   <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
                     <div className="ab-about-category-list category-space-2 tp_fade_bottom">
-                      <ul>
+                      <ul style={{fontFamily: 'Glacial Indifference'}}>
                         <li>Branding & Marketing</li>
                         <li>Visual Storytelling</li>
                         <li>Building Communities</li>

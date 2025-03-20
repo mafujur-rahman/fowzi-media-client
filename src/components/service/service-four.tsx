@@ -10,18 +10,21 @@ const service_data = [
     title: "Branding",
     desc: "We specialize in crafting captivating brand identities that resonate with your audience and leave a lasting impression.",
     category: ["Branding", "Brand Strategy", "Brand Guidelines"],
+    link: "/branding-details",
   },
   {
     id: 2,
     title: "Development",
     desc: "We specialize in creating stunning websites that captivate your audience and drive results.",
     category: ["SEO", "Development", "Custom Proactive Solutions"],
+    link: "/development-details",
   },
   {
     id: 3,
     title: "Videography",
     desc: "We specializes in professional videography services that bring your vision to life and leavea lasting impression.",
     category: ["Creative", "Storytelling", "Promotional Videos"],
+    link: "/videography-details",
   },
 ];
 export default function ServiceFour() {
@@ -59,7 +62,7 @@ export default function ServiceFour() {
               <div className="col-xl-3 col-lg-3">
                 <div className="tp-service-3-title-box">
                   <h4 className="tp-service-3-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
-                    <Link href="/service">{item.title}</Link>
+                    <Link href={item.link}>{item.title}</Link>
                   </h4>
                 </div>
               </div>
@@ -77,7 +80,7 @@ export default function ServiceFour() {
                 <div className="tp-service-3-btn-box text-start text-md-end">
                   <Link
                     className="tp-btn-zikzak-sm p-relative"
-                    href="/service"
+                    href={item.link}
                   >
                     <span className="zikzak-content" style={{ fontFamily: 'Glacial Indifference' }}>
                       See <br /> Details

@@ -20,7 +20,7 @@ const  ThemeSetting = () => {
     >
       <div className="tp-theme-wrapper">
         <div className="tp-theme-header text-center">
-          <h4 className="tp-theme-header-title">Liko Mode Settings</h4>
+          <h4 className="tp-theme-header-title" style={{fontFamily: 'Glacial Indifference'}}>Fowzi Media Mode Settings</h4>
         </div>
 
         <div className="tp-theme-dir mb-20">
@@ -28,6 +28,7 @@ const  ThemeSetting = () => {
             <span
               onClick={() => setTheme("dark")}
               className={`tp-theme-dir-rtl ${theme === "dark" ? "active" : ""}`}
+              style={{fontFamily: 'Glacial Indifference'}}
             >
               Dark
             </span>
@@ -38,6 +39,7 @@ const  ThemeSetting = () => {
               className={`tp-theme-dir-ltr ${
                 theme === "light" ? "active" : ""
               }`}
+              style={{fontFamily: 'Glacial Indifference'}}
             >
               Light
             </span>

@@ -13,7 +13,7 @@ const service_data = [
   {
     id: 1,
     img: ser_img_1,
-    link: "/service/branding-details",
+    link: "/branding-details",
     subtitle: "Design Studio",
     title: "branding",
     text: "At Fowzi Media, we specialize in crafting captivating brand identities that resonate with your audience and leave a lasting impression. From logo design to website development, our comprehensive branding services are designed to propel your business forward and help you stand out in a crowded marketplace.",
@@ -30,7 +30,7 @@ const service_data = [
   {
     id: 2,
     img: ser_img_2,
-    link: "/service/development-details",
+    link: "/development-details",
     subtitle: "Development Studio",
     title: "Development",
     text: "Transform your online presence with Fowzi Media expert website development services. We specialize in creating stunning websites that captivate your audience and drive results. With our streamlined process and personalized approach, achieving your online goals has never been easier.",
@@ -49,7 +49,7 @@ const service_data = [
   {
     id: 3,
     img: ser_img_3,
-    link: "/service/videography-details",
+    link: "/videography-details",
     subtitle: "Video Studio",
     title: "Videography",
     text: "Elevate your brand with captivating video content that tells your story and engages your audience. Fowzi Media specializes in professional videography services that bring your vision to life and leave a lasting impression. From corporate videos to promotional content, we're here to help you stand out in a crowded digital landscape.",
@@ -85,17 +85,17 @@ export default function ServiceSix() {
                   <div className="sv-service-content">
                     <div className="sv-service-title-box">
                       <span className="sv-service-subtitle">
-                        <i>{item.id < 9 ? "0" + item.id : item.id}</i>
+                        <i style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>{item.id < 9 ? "0" + item.id : item.id}</i>
                         {item.subtitle}
                       </span>
-                      <h4 className="sv-service-title">{item.title}</h4>
+                      <h4 className="sv-service-title" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>{item.title}</h4>
                     </div>
                     <div className="sv-service-space-wrap">
                       <div className="sv-service-text">
-                        <p>{item.text}</p>
+                        <p style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>{item.text}</p>
                       </div>
                       <div className="sv-service-list">
-                        <ul>
+                        <ul style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
                           {item.lists.map((list, i) => (
                             <li key={i}>{list}</li>
                           ))}
@@ -106,7 +106,7 @@ export default function ServiceSix() {
                           className="tp-btn-zikzak zikzak-inner p-relative"
                           href={item.link}
                         >
-                          <span className="zikzak-content">
+                          <span className="zikzak-content" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
                             See <br /> Details
                             <RightArrow clr="currentColor" />
                           </span>

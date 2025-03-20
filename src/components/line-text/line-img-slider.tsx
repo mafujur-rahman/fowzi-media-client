@@ -13,7 +13,7 @@ const works = [
 export default function LineImgSlider() {
   return (
     <div className="container py-5">
-      <h3>Our Works:</h3>
+      <h3  style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>Our Works:</h3>
       <div className="swiper tp-img-slide">
         <Marquee speed={30} className="overflow-hidden">
           {/* Duplicate images to remove gap */}

@@ -15,12 +15,12 @@ export default function TeamItem({ item,handleTeamModal }:IProps) {
         <Image src={item.image} alt="team-img" width={375} height={464} />
       </div>
       <div className="tp-team-content">
-        <span>{item.designation}</span>
+        <span style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>{item.designation}</span>
         <h4
           className="tp-team-title-sm"
           onClick={()=> handleTeamModal(item)}
         >
-          <a href="#">{item.name}</a>
+          <a href="#" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>{item.name}</a>
         </h4>
       </div>
     </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 // image
 import ser_hero from "@/assets/img/services/services-banner.jpg";
-import ser_hero_shape from "@/assets/img/inner-service/hero/hero-shape-1.jpg";
+
 
 export default function ServiceHero() {
   return (
@@ -12,10 +12,10 @@ export default function ServiceHero() {
         <div className="row">
           <div className="col-xl-10">
             <div className="sv-hero-title-box">
-              <h4 className="sv-hero-title tp-char-animation">
+              <h4 className="sv-hero-title tp-char-animation" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
                 Experience <br /> the best services.
               </h4>
-              <p className="tp_fade_bottom">
+              <p className="tp_fade_bottom" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
               Discover top-notch solutions that meet your needs and exceed expectations.
               </p>
             </div>

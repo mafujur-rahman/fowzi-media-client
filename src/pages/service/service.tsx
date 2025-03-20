@@ -51,11 +51,11 @@ const ServiceMain = () => {
                 <div className="row">
                   <div className="col-xl-12">
                     <div className="tp-service-5-title-box mb-90">
-                      <span className="ab-inner-subtitle mb-20">
+                      <span className="ab-inner-subtitle mb-20" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
                         <Leaf />
                         Services
                       </span>
-                      <h4 className="tp-service-5-title">
+                      <h4 className="tp-service-5-title" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
                       From web development to branding, videography, and photography-unlock{" "}
                         <br />
                         the power of seamless creativity with our integrated solutions.

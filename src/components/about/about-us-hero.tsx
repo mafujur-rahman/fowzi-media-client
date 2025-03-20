@@ -16,11 +16,11 @@ export default function AboutUsHero() {
       style={{ backgroundImage: "url(/assets/img/about-us/hero/hero-1.jpg)" }}
     >
       <div className="breadcurmb-site d-none">
-        <h6>About Us</h6>
+        <h6 style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>About Us</h6>
       </div>
       <div className="ab-inner-hero-scroll smooth">
         <a className="pointer" onClick={scrollTo}>
-          <span>
+          <span style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
             Scroll to explore
             <ScrollDown />
           </span>
@@ -34,13 +34,13 @@ export default function AboutUsHero() {
               data-lag="0.2"
               data-stagger="0.08"
             >
-              <span className="ab-inner-hero-subtitle">
+              <span className="ab-inner-hero-subtitle" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
                 Visionary <br /> digital studio
               </span>
-              <h1 className="ab-inner-hero-title tp-char-animation">
+              <h1 className="ab-inner-hero-title tp-char-animation" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
                 Crafting Iconic Digital Identities
               </h1>
-              <p>Digital experiences with maximum emotional impact</p>
+              <p style={{fontFamily: 'Glacial Indifference'}}>Digital experiences with maximum emotional impact</p>
             </div>
           </div>
         </div>
@@ -51,13 +51,13 @@ export default function AboutUsHero() {
               data-lag="0.2"
               data-stagger="0.08"
             >
-              <p>
+              <p style={{fontFamily: 'Glacial Indifference'}}>
                 Fowzi Media seamlessly merges creativity
                 with cutting-edge technology, crafting
                 digital experiences that engage, inspire,
                 and deliver results.
               </p>
-              <a className="tp-btn-white-sm border-style" href="#">Explore Our Story</a>
+              <a className="tp-btn-white-sm border-style" href="#" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>Explore Our Story</a>
             </div>
           </div>
         </div>

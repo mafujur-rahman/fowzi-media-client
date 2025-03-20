@@ -1,15 +1,12 @@
-import React from "react";
-import { Metadata } from "next";
-import BrandingDetailsMain from "@/pages/service/branding-details";
-
-export const metadata: Metadata = {
-  title: "Liko - Service Details page",
-};
+import BrandingDetailsMain from '@/pages/service/branding-details';
+import React from 'react';
 
 const BrandingDetailsPage = () => {
-  return (
-    <BrandingDetailsMain />
-  );
+    return (
+        <div>
+            <BrandingDetailsMain />
+        </div>
+    );
 };
 
 export default BrandingDetailsPage;

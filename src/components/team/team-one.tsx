@@ -57,6 +57,7 @@ const TeamOne = ({ spacing = "pt-20" }: IProps) => {
                   {...slider_setting}
                   modules={[Autoplay, FreeMode]}
                   className="swiper-container tp-team-slider-active"
+                  
                 >
                   {team_data.map((t) => (
                     <SwiperSlide key={t.id}>
