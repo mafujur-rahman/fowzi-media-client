@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo_1 from "@/assets/img/fowzi-logo/icon 2.png";
@@ -6,6 +6,8 @@ import logo_1 from "@/assets/img/fowzi-logo/icon 2.png";
 export default function HeaderFour() {
   const [openOffCanvas, setOpenOffCanvas] = useState(false);
   const [isMobile, setIsMobile] = useState(false); // State to track screen size
+  const [fontSize, setFontSize] = useState(16); // Initial font size for menu items
+  const headerRef = useRef(null); // Ref for the header element
 
   useEffect(() => {
     // Function to check the screen size
@@ -13,59 +15,32 @@ export default function HeaderFour() {
       setIsMobile(window.innerWidth <= 768); // Set isMobile based on screen width
     };
 
+    // Function to handle scroll and adjust font size
+    const handleScroll = () => {
+      if (headerRef.current && !isMobile) {
+        const scrollY = window.scrollY;
+        const newFontSize = Math.max(12, 16 - scrollY * 0.1); // Adjust font size based on scroll
+        setFontSize(newFontSize);
+      }
+    };
+
     // Call the function on initial render
     checkScreenSize();
 
-    // Add resize event listener to update screen size on resize
+    // Add resize and scroll event listeners
     window.addEventListener('resize', checkScreenSize);
+    window.addEventListener('scroll', handleScroll);
 
-    // Cleanup event listener on component unmount
+    // Cleanup event listeners on component unmount
     return () => {
       window.removeEventListener('resize', checkScreenSize);
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
-
-  // Inline styles for the off-canvas menu
-  const offCanvasMenuStyle: React.CSSProperties = {
-    position: 'fixed',
-    top: 0,
-    right: openOffCanvas ? '0' : '-250px', // Slide in when open
-    width: '250px',
-    height: '100%',
-    backgroundColor: '#333',
-    transition: 'right 0.3s ease-in-out',
-    zIndex: 1000,
-  };
-
-  const offCanvasContentStyle: React.CSSProperties = {
-    display: 'flex',
-    flexDirection: 'column',
-    padding: '20px',
-    color: 'white',
-  };
-
-  const offCanvasListStyle: React.CSSProperties = {
-    listStyleType: 'none',
-    padding: '0',
-  };
-
-  const offCanvasListItemStyle: React.CSSProperties = {
-    margin: '15px 0',
-  };
-
-  const closeButtonStyle: React.CSSProperties = {
-    marginTop: '20px',
-    backgroundColor: '#f44336',
-    color: 'white',
-    border: 'none',
-    padding: '10px 20px',
-    cursor: 'pointer',
-    fontSize: '16px',
-  };
+  }, [isMobile]);
 
   return (
     <>
-      <header>
+      <header ref={headerRef}>
         <div id="header-sticky" className="tp-header-3-area mt-20 z-index-5">
           <div className="container container-1740">
             <div className="row align-items-center">
@@ -78,16 +53,16 @@ export default function HeaderFour() {
               </div>
               <div className="col-xl-6 col-lg-6 d-none d-xl-block">
                 <div className="tp-header-3-menu-wrap text-center">
-                  <div className="tp-header-3-menu-box d-inline-flex align-items-center justify-content-between">
-                    <div className="tp-header-3-menu header-main-menu">
-                      <nav className="tp-main-menu-content">
-                        <ul className="col text-white" style={{ backgroundColor: "#424242", paddingTop: "6px", paddingBottom: "6px", paddingInline: "8px", borderRadius: "30px", fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
-                          <li><Link href="/">HOME</Link></li>
-                          <li><Link href="/services">SERVICES</Link></li>
-                          <li><Link href="/about">ABOUT</Link></li>
-                          <li><Link href="/portfolio">PORTFOLIO</Link></li>
-                          <li><Link href="/case-studies">CASE STUDIES</Link></li>
-                          <li><Link href="/contact">CONTACT</Link></li>
+                  <div className="tp-header-3-menu-box d-inline-flex align-items-center justify-content-between w-100">
+                    <div className="tp-header-3-menu header-main-menu w-100">
+                      <nav className="tp-main-menu-content w-100">
+                        <ul className="d-flex justify-content-between list-unstyled mb-0 w-100 text-white" style={{ backgroundColor: "#424242", padding: "6px 8px", borderRadius: "30px", fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+                          <li><Link href="/" style={{ fontSize: `${fontSize}px` }}>HOME</Link></li>
+                          <li><Link href="/services" style={{ fontSize: `${fontSize}px` }}>SERVICES</Link></li>
+                          <li><Link href="/about" style={{ fontSize: `${fontSize}px` }}>ABOUT</Link></li>
+                          <li><Link href="/portfolio" style={{ fontSize: `${fontSize}px` }}>PORTFOLIO</Link></li>
+                          <li><Link href="/case-studies" style={{ fontSize: `${fontSize}px` }}>CASE STUDIES</Link></li>
+                          <li><Link href="/contact" style={{ fontSize: `${fontSize}px` }}>CONTACT</Link></li>
                         </ul>
                       </nav>
                     </div>
@@ -110,20 +85,21 @@ export default function HeaderFour() {
           </div>
         </div>
 
-        {/* Off-Canvas Menu */}
-        <div style={offCanvasMenuStyle}>
-          <div style={offCanvasContentStyle}>
-            <ul style={offCanvasListStyle}>
-              <li style={offCanvasListItemStyle}><Link href="/">HOME</Link></li>
-              <li style={offCanvasListItemStyle}><Link href="/services">SERVICES</Link></li>
-              <li style={offCanvasListItemStyle}><Link href="/about">ABOUT</Link></li>
-              <li style={offCanvasListItemStyle}><Link href="/portfolio">PORTFOLIO</Link></li>
-              <li style={offCanvasListItemStyle}><Link href="/case-studies">CASE STUDIES</Link></li>
-              <li style={offCanvasListItemStyle}><Link href="/contact">CONTACT</Link></li>
+        {/* Off-Canvas Menu using Bootstrap */}
+        <div className={`offcanvas offcanvas-end ${openOffCanvas ? 'show' : ''}`} tabIndex={-1} style={{ visibility: openOffCanvas ? 'visible' : 'hidden' }}>
+          <div className="offcanvas-header">
+            <h5 className="offcanvas-title">Menu</h5>
+            <button type="button" className="btn-close" onClick={() => setOpenOffCanvas(false)}></button>
+          </div>
+          <div className="offcanvas-body">
+            <ul className="list-unstyled">
+              <li><Link href="/">HOME</Link></li>
+              <li><Link href="/services">SERVICES</Link></li>
+              <li><Link href="/about">ABOUT</Link></li>
+              <li><Link href="/portfolio">PORTFOLIO</Link></li>
+              <li><Link href="/case-studies">CASE STUDIES</Link></li>
+              <li><Link href="/contact">CONTACT</Link></li>
             </ul>
-            <button onClick={() => setOpenOffCanvas(false)} style={closeButtonStyle}>
-              <i className="fa-solid fa-times"></i> Close
-            </button>
           </div>
         </div>
       </header>
