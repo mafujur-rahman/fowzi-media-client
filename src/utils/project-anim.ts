@@ -28,7 +28,6 @@ function projectThreeAnimation() {
             end: "bottom 10%",
             scrub: 1,
             pin: true,
-            transformOrigin: "50% 50%",
           },
         });
 
@@ -40,8 +39,16 @@ function projectThreeAnimation() {
             end: "bottom 10%",
             scrub: 1,
             pin: false,
-            transformOrigin: "50% 50%",
           },
+        });
+
+        // Apply transformOrigin directly to the images
+        gsap.set($this.find(".pro-img-1 img"), {
+          transformOrigin: "50% 50%",
+        });
+
+        gsap.set($this.find(".pro-img-2 img"), {
+          transformOrigin: "50% 50%",
         });
       });
     });
@@ -68,7 +75,6 @@ function projectThreeAnimation() {
             end: "bottom 10%",
             scrub: 1,
             pin: true,
-            transformOrigin: "50% 50%",
           },
         });
 
@@ -80,8 +86,16 @@ function projectThreeAnimation() {
             end: "bottom 10%",
             scrub: 1,
             pin: false,
-            transformOrigin: "50% 50%",
           },
+        });
+
+        // Apply transformOrigin directly to the images
+        gsap.set($this.find(".pro-img-1 img"), {
+          transformOrigin: "50% 50%",
+        });
+
+        gsap.set($this.find(".pro-img-2 img"), {
+          transformOrigin: "50% 50%",
         });
       });
     });
