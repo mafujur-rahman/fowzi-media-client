@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 
 // images
-import ser_img_1 from "@/assets/img/services/brandingLeft.png";
+import ser_img_1 from "@/assets/img/services/friday.jpg";
 import ser_img_2 from "@/assets/img/services/web-left.jpg";
-import ser_img_3 from "@/assets/img/services/videoR1.png";
+import ser_img_3 from "@/assets/img/services/up.jpg";
 import { RightArrow, ShapeTwo } from "../svg";
 import Link from "next/link";
 
@@ -66,7 +66,7 @@ const service_data = [
 
 export default function ServiceSix() {
   return (
-    <div className="sv-service-area project-panel-area-2">
+    <div className="sv-service-area project-panel-area-2 ">
       <div className="container-fluid p-0">
         {service_data.map((item) => (
           <div key={item.id} className="sv-service-item project-panel-2">

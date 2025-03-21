@@ -21,20 +21,23 @@ const project_data = [
     img_2: port_2,
     meta: "DEC 2024 . Branding",
     title: "Friday fashion",
+    link: "/branding/friday-fashion",
   },
   {
     id: 2,
     img_1: port_3,
     img_2: port_4,
     meta: "NOV 2024 . Ui/Ux",
-    title: "Wahington Toe",
+    title: "Washington Toe",
+    link: "/https://washingtontoefoundation.com/",
   },
   {
     id: 3,
     img_1: port_5,
     img_2: port_6,
     meta: "OCT 2024 . Branding",
-    title: "Dheeiliga Hoggaamineed",
+    title: "Dheelliga Hoggaamineed",
+    link: "/branding/dheelliga",
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ const project_data = [
     img_2: port_8,
     meta: "SEP 2024 . Videography",
     title: "Shamil Mirja",
+    link: "https://vimeo.com/946386055",
   },
 ];
 
@@ -94,11 +98,11 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                     <div className="tp-project-3-content text-center">
                       <span className="tp-project-3-meta" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>{item.meta} </span>
                       <h4 className="tp-project-3-title-sm">
-                        <Link href="/portfolio-details-1" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>{item.title}</Link>
+                        <Link href={item.link} style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>{item.title}</Link>
                       </h4>
                       <Link
                         className="tp-btn-project-sm"
-                        href="/portfolio-details-1"
+                        href={item.link}
                         style={{ fontFamily: 'Glacial Indifference' }}
                       >
                         See Project

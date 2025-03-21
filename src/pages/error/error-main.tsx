@@ -9,9 +9,9 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
 import Wrapper from "@/layouts/wrapper";
-import HeaderEleven from "@/layouts/headers/header-eleven";
-import FooterTwo from "@/layouts/footers/footer-two";
 import error from '@/assets/img/error/error.png';
+import HeaderFour from "@/layouts/headers/header-four";
+import FooterFour from "@/layouts/footers/footer-four";
 
 const ErrorMain = () => {
   useScrollSmooth();
@@ -19,7 +19,7 @@ const ErrorMain = () => {
   return (
     <Wrapper>
       {/* header area start */}
-      <HeaderEleven />
+      <HeaderFour />
       {/* header area end */}
 
       <div id="smooth-wrapper">
@@ -31,14 +31,14 @@ const ErrorMain = () => {
                 <div className="row">
                   <div className="col-xl-12">
                     <div className="tp-error-wrapper text-center">
-                      <h4 className="tp-error-title">Oops!</h4>
+                      <h4 className="tp-error-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>Oops!</h4>
                       <Image src={error} alt="error-img" style={{ height: 'auto' }} />
                       <div className="tp-error-content">
-                        <h4 className="tp-error-title-sm">
+                        <h4 className="tp-error-title-sm" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                           Something went Wrong...
                         </h4>
-                        <p>Sorry, we {"couldn't"} find your page.</p>
-                        <Link className="tp-btn-black-2" href="/">
+                        <p style={{ fontFamily: 'Glacial Indifference' }}>Sorry, we {"couldn't"} find your page.</p>
+                        <Link className="tp-btn-black-2" href="/" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                           Back to Home
                         </Link>
                       </div>
@@ -51,7 +51,7 @@ const ErrorMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" />
+          <FooterFour />
           {/* footer area */}
         </div>
       </div>
