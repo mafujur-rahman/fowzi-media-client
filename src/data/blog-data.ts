@@ -57,3 +57,8 @@ export const blog_data: IBlogDT[] = [
 
 ]
 
+export const blog_classic = [ /* your data */ ];
+export const blog_lists = [ /* your data */ ];
+export const blog_home_five = [ /* your data */ ];
+
+
