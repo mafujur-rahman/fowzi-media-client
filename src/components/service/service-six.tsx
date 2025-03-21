@@ -76,7 +76,7 @@ export default function ServiceSix() {
                   <Image
                     src={item.img}
                     alt="service-img"
-                    style={{ height: "auto" }}
+                    style={{ height: "fit" }}
                   />
                 </div>
               </div>
