@@ -95,7 +95,7 @@ export default function HeaderFour() {
             <ul className="list-unstyled">
               <li><Link href="/">HOME</Link></li>
               <li><Link href="/services">SERVICES</Link></li>
-              <li><Link href="/about">ABOUT</Link></li>
+              <li><Link href="/about-us">ABOUT</Link></li>
               <li><Link href="/portfolio">PORTFOLIO</Link></li>
               <li><Link href="/case-studies">CASE STUDIES</Link></li>
               <li><Link href="/contact">CONTACT</Link></li>
