@@ -94,7 +94,7 @@ export default function HeaderFour() {
           <div className="offcanvas-body">
             <ul className="list-unstyled">
               <li><Link href="/">HOME</Link></li>
-              <li><Link href="/services">SERVICES</Link></li>
+              <li><Link href="/service">SERVICES</Link></li>
               <li><Link href="/about-us">ABOUT</Link></li>
               <li><Link href="/portfolio">PORTFOLIO</Link></li>
               <li><Link href="/case-studies">CASE STUDIES</Link></li>
