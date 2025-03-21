@@ -8,13 +8,10 @@ import blog_2 from "@/assets/img/home-05/blog/blog-2.jpg";
 import blog_3 from "@/assets/img/home-05/blog/blog-3.jpg";
 import blog_4 from "@/assets/img/home-05/blog/blog-4.jpg";
 // blog modern 
-import b_m_1 from "@/assets/img/inner-blog/blog-standard/blog-1.jpg";
-import b_m_2 from "@/assets/img/inner-blog/blog-standard/blog-2.jpg";
-import b_m_3 from "@/assets/img/inner-blog/blog-standard/blog-3.jpg";
-import b_m_4 from "@/assets/img/inner-blog/blog-standard/blog-4.jpg";
-import b_m_5 from "@/assets/img/inner-blog/blog-standard/blog-5.jpg";
-import b_m_6 from "@/assets/img/inner-blog/blog-standard/blog-6.jpg";
-import b_m_7 from "@/assets/img/inner-blog/blog-standard/blog-7.jpg";
+import b_m_1 from "@/assets/img/case-studies/blogOne.png";
+import b_m_2 from "@/assets/img/case-studies/blogTwo.jpg";
+import b_m_3 from "@/assets/img/case-studies/importanceOfUsing.jpg";
+
 
 // avatar
 import avatar from "@/assets/img/inner-blog/blog-sidebar/avatar/avata-1.jpg";
