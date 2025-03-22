@@ -4,56 +4,37 @@ import LineTextFour from "../line-text/line-text-4";
 import { UpArrow } from "../svg";
 import Link from "next/link";
 // images
-import p_img_1 from "@/assets/img/home-05/project/project-4.jpg";
-import p_img_2 from "@/assets/img/home-05/project/project-5.jpg";
-import p_img_3 from "@/assets/img/home-05/project/project-6.jpg";
-import p_img_4 from "@/assets/img/home-05/project/project-7.jpg";
-import p_img_5 from "@/assets/img/home-05/project/project-8.jpg";
-import p_img_6 from "@/assets/img/home-05/project/project-9.jpg";
+import p_img_1 from "@/assets/img/portfolio/branding.png";
+import p_img_2 from "@/assets/img/portfolio/web-design.jpg";
+import p_img_3 from "@/assets/img/portfolio/videography.png";
+import p_img_4 from "@/assets/img/portfolio/photography.png";
 
 const project_data = [
   {
     id: 1,
-    title: "Art Direction",
-    category: "Branding",
+    title: "Branding",
     img: p_img_1,
-    year: 2024,
+    link: "/all-brandings"
   },
   {
     id: 2,
-    title: "Petit Navire",
-    category: "Branding",
+    title: "Web Design",
     img: p_img_2,
-    year: 2024,
+    link: "/all-web-designs"
   },
   {
     id: 3,
-    title: "Big dream",
-    category: "Branding",
+    title: "Videography",
     img: p_img_3,
-    year: 2024,
+    link: "/all-videography"
   },
   {
     id: 4,
-    title: "The Stage",
-    category: "Branding",
+    title: "Photography",
     img: p_img_4,
-    year: 2024,
+    link: "/all-photography"
   },
-  {
-    id: 5,
-    title: "Big dream",
-    category: "Branding",
-    img: p_img_5,
-    year: 2024,
-  },
-  {
-    id: 6,
-    title: "Sed Lectus",
-    category: "Concept",
-    img: p_img_6,
-    year: 2024,
-  },
+  
 ];
 
 // prop type
@@ -80,24 +61,20 @@ export default function ProjectFive({ style_2 = false }: IProps) {
             <div key={item.id} className="col-xl-6 col-lg-6 col-md-6">
               <div
                 className="tp-project-5-2-thumb fix mb-140 p-relative not-hide-cursor"
-                data-cursor="View<br>Demo"
+                data-cursor="View<br>All"
               >
-                <Link className="cursor-hide" href="/portfolio-details-1">
+                <Link className="cursor-hide" href={item.link}>
                   <span className="tp_img_reveal">
                     <div className="tp_img_reveal">
                       <Image
                         src={item.img}
                         alt="project-img"
-                        style={{ height: "auto" }}
+                        style={{ height: "600px", width: "4800px" }}
                       />
                     </div>
                   </span>
-                  <div className="tp-project-5-2-category tp_fade_anim">
-                    <span>{item.category}</span>
-                  </div>
                   <div className="tp-project-5-2-content tp_fade_anim">
-                    <span className="tp-project-5-2-meta">{item.year}</span>
-                    <h4 className="tp-project-5-2-title-sm">{item.title}</h4>
+                    <h4 className="tp-project-5-2-title-sm" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>{item.title}</h4>
                   </div>
                 </Link>
               </div>
@@ -112,9 +89,9 @@ export default function ProjectFive({ style_2 = false }: IProps) {
                   className={`tp-btn-circle ${
                     style_2 ? "style-2" : ""
                   } tp-hover-btn-item tp-hover-btn`}
-                  href="/portfolio-details-1"
+                  href="/portfolio"
                 >
-                  <span className="tp-btn-circle-text">
+                  <span className="tp-btn-circle-text" style={{ fontFamily: 'Glacial Indifference' }}>
                     More <br /> Projects
                   </span>
                   <span className="tp-btn-circle-icon">

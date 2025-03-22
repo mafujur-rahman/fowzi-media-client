@@ -8,14 +8,14 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
 import Wrapper from "@/layouts/wrapper";
-import HeaderEleven from "@/layouts/headers/header-eleven";
-import FooterTwo from "@/layouts/footers/footer-two";
 import ProjectFive from "@/components/project/project-five";
 import BigText from "@/components/big-text";
 // animation
 import { charAnimation, titleAnimation } from "@/utils/title-animation";
 import { imageRevealAnimation } from "@/utils/image-reveal-anim";
 import { hoverBtn } from "@/utils/hover-btn";
+import HeaderFour from "@/layouts/headers/header-four";
+import FooterFour from "@/layouts/footers/footer-four";
 
 const PortfolioStandardMain = () => {
   useScrollSmooth();
@@ -53,7 +53,7 @@ const PortfolioStandardMain = () => {
       {/* magic cursor end */}
       
       {/* header area start */}
-      <HeaderEleven />
+      <HeaderFour />
       {/* header area end */}
 
       <div id="smooth-wrapper">
@@ -68,16 +68,14 @@ const PortfolioStandardMain = () => {
                 <div className="row">
                   <div className="col-xl-12">
                     <div className="tm-hero-content">
-                      <span className="tm-hero-subtitle">Liko Studio</span>
-                      <h4 className="tm-hero-title tp-char-animation">
+                      <span className="tm-hero-subtitle" style={{ fontFamily: 'Glacial Indifference' }}>Fowzi Media Studio</span>
+                      <h4 className="tm-hero-title tp-char-animation" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                         Our latest & great projects
                       </h4>
                     </div>
                     <div className="tm-hero-text">
-                      <p className="tp_title_anim">
-                        We’re a diverse team that works as fancies attention to
-                        details, enjoys beers on Friday nights and aspires to
-                        design the dent in the universe.
+                      <p className="tp_title_anim" style={{ fontFamily: 'Glacial Indifference' }}>
+                      We are a dynamic team passionate about crafting compelling brand identities, stunning websites, and captivating visuals. With a keen eye for detail, a love for creativity, and a drive to make an impact, we bring brands to life—one design, video, and strategy at a time.
                       </p>
                     </div>
                   </div>
@@ -96,7 +94,7 @@ const PortfolioStandardMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" />
+          <FooterFour />
           {/* footer area */}
         </div>
       </div>

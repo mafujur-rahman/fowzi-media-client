@@ -6,7 +6,7 @@ export function SlickNextArrow(props: any) {
       className={`${className} slick-next`}
       onClick={onClick}
     >
-      <i className="fa-light fa-angle-right"></i>
+      <i style={{color: "#111111"}} className="fa-light fa-angle-right"></i>
     </button>
   );
 }
@@ -19,7 +19,7 @@ export function SlickPrevArrow(props: any) {
       className={`${className} slick-prev`}
       onClick={onClick}
     >
-      <i className="fa-light fa-angle-left"></i>
+      <i style={{color: "#111111"}} className="fa-light fa-angle-left"></i>
     </button>
   );
 }
