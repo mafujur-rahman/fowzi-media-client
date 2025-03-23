@@ -4,7 +4,7 @@ import Link from "next/link";
 
 // images
 import sv_1 from "@/assets/img/services/website-service.jpg";
-import sv_2 from "@/assets/img/development/web-b.jpeg";
+import sv_2 from "@/assets/img/development/web-b.avif";
 import sv_3 from "@/assets/img/development/web-c.jpg";
 
 export default function DevelopmentDetailsArea() {
