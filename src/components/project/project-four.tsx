@@ -3,14 +3,12 @@ import Image from "next/image";
 
 import { ProjectShape, RightArrow } from "../svg";
 // images
-import port_1 from "@/assets/img/projects-mockup/t1.jpg";
-import port_2 from "@/assets/img/projects-mockup/t2g.jpg";
-import port_3 from "@/assets/img/projects-mockup/web-2.jpg";
-import port_4 from "@/assets/img/projects-mockup/web-4.jpg";
-import port_5 from "@/assets/img/projects-mockup/BRANDING-1.jpg";
-import port_6 from "@/assets/img/projects-mockup/BRANDING-2.jpg";
-import port_7 from "@/assets/img/projects-mockup/VIDEO-1.jpg";
-import port_8 from "@/assets/img/projects-mockup/VIDEO-1.jpg";
+import port_1 from "@/assets/img/latest-projects/hudda-branding.jpg";
+import port_2 from "@/assets/img/latest-projects/hodda-web.jpg";
+import port_3 from "@/assets/img/latest-projects/jannah-branding.jpg";
+import port_4 from "@/assets/img/latest-projects/jannah-photography.jpg";
+import port_5 from "@/assets/img/latest-projects/awad-branding.jpg";
+import port_6 from "@/assets/img/latest-projects/awad-web.jpg";
 import Link from "next/link";
 
 // portfolio data
@@ -19,34 +17,20 @@ const project_data = [
     id: 1,
     img_1: port_1,
     img_2: port_2,
-    meta: "DEC 2024 . Branding",
-    title: "Friday fashion",
-    link: "/branding/friday-fashion",
+    title: "Hudda For St. Cloud"
   },
   {
     id: 2,
     img_1: port_3,
     img_2: port_4,
-    meta: "NOV 2024 . Ui/Ux",
-    title: "Washington Toe",
-    link: "/https://washingtontoefoundation.com/",
+    title: "Jannah Fitwear",
   },
   {
     id: 3,
     img_1: port_5,
     img_2: port_6,
-    meta: "OCT 2024 . Branding",
-    title: "Dheelliga Hoggaamineed",
-    link: "/branding/dheelliga",
-  },
-  {
-    id: 4,
-    img_1: port_7,
-    img_2: port_8,
-    meta: "SEP 2024 . Videography",
-    title: "Shamil Mirja",
-    link: "https://vimeo.com/946386055",
-  },
+    title: "Awad for Puntland"
+  }
 ];
 
 // prop type
@@ -67,7 +51,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                 <div className="tp-project-3-btn-box">
                   <Link
                     className="tp-btn-zikzak p-relative"
-                    href="/portfolio-wrapper"
+                    href="/portfolio"
                   >
                     <span className="zikzak-content" style={{ fontFamily: 'Glacial Indifference' }}>
                       See <br /> All Project
@@ -96,13 +80,22 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-12 order-1 order-lg-0">
                     <div className="tp-project-3-content text-center">
-                      <span className="tp-project-3-meta" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>{item.meta} </span>
                       <h4 className="tp-project-3-title-sm">
-                        <Link href={item.link} style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>{item.title}</Link>
+                        <Link href="/portfolio" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+                          {item.title.includes("For") ? (
+                            item.title.split("For").map((part, index) => (
+                              <React.Fragment key={index}>
+                                {index > 0 && "For"} <br /> {part}
+                              </React.Fragment>
+                            ))
+                          ) : (
+                            item.title
+                          )}
+                        </Link>
                       </h4>
                       <Link
                         className="tp-btn-project-sm"
-                        href={item.link}
+                        href="/portfolio"
                         style={{ fontFamily: 'Glacial Indifference' }}
                       >
                         See Project
@@ -111,14 +104,14 @@ export default function ProjectFour({ style_2 = false }: IProps) {
 
                     {/* gradiant line */}
                     <div className="text-center" style={{
-                      width: '100%',  
+                      width: '100%',
                       display: 'flex',
-                      justifyContent: 'center' 
+                      justifyContent: 'center'
                     }}>
                       <div style={{
-                        width: '320px',  
-                        height: '15px',   
-                        background: 'linear-gradient(to right, #111111, #FF0101)',  
+                        width: '320px',
+                        height: '15px',
+                        background: 'linear-gradient(to right, #111111, #FF0101)',
                         borderRadius: '30px',
                       }}></div>
                     </div>

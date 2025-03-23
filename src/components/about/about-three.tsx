@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // internal imports
 import shape from '@/assets/img/fowzi-logo/icon 2.png';
-import { ArrowBg, RightArrowTwo,FirstBracket, FirstBracketTwo } from "../svg";
+import { ArrowBg, RightArrowTwo, FirstBracket, FirstBracketTwo } from "../svg";
 
 export default function AboutThree() {
 
@@ -25,7 +25,7 @@ export default function AboutThree() {
                 </span>
               </span>
               <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
-              We are Fowzi Media{" "}
+                About Fowzi Media{" "}
               </h4>
             </div>
           </div>
@@ -39,10 +39,15 @@ export default function AboutThree() {
           <div className="col-xl-6 col-lg-6 col-md-8">
             <div className="tp-about-3-content">
               <p className="mb-30 tp_fade_bottom" style={{ fontFamily: 'Glacial Indifference' }}>
-              Welcome to Fowzi Media, where Creativity Meets Digital Excellence. We&aposre more than just a service provider; we&aposre dedicated to crafting experiences that make a lasting impact. With a foundation built on a passion for storytelling and a drive for innovation, our team is committed to elevating your digital presence.
+                Welcome to Fowzi Media – a full-service creative agency based in Minnesota, making waves both locally and beyond. We specialize in transforming ideas into powerful digital experiences, helping brands connect, engage, and grow.
+                From innovative branding that tells your story to stunning video production that captures attention, we craft memorable experiences that resonate with your audience. Our creative storytelling brings your message to life, while our expertise in website design, UI/UX, and website development ensures your digital presence is both functional and visually captivating.
               </p>
               <p className="mb-45 tp_fade_bottom" style={{ fontFamily: 'Glacial Indifference' }}>
-              Specializing in branding, web design, videography, marketing, and communications, we excel in creating compelling narratives, captivating audiences, and driving success for your business.
+              At Fowzi Media, we’re more than just a creative agency; we’re your strategic partner, committed to driving results that matter. Whether you’re looking to reimagine your brand, launch a new website, or create an unforgettable campaign, we have the skills and vision to make it happen.
+              Let’s bring your vision to life. 
+              </p>
+              <p className="mb-45 tp_fade_bottom" style={{ fontFamily: 'Glacial Indifference' }}>
+              Fowzi Media – where creativity meets innovation.
               </p>
               <Link className="tp-btn-black-2 tp_fade_bottom" href="/about-us" style={{ fontFamily: 'Glacial Indifference' }}>
                 About Us
