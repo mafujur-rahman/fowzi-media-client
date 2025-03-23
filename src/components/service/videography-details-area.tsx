@@ -9,7 +9,7 @@ import sv_3 from "@/assets/img/services/video-1 (2).jpg";
 
 export default function VideographyDetailsArea() {
   return (
-    <div className="service-details__area service-details__space pt-200 pb-120">
+    <div className="service-details__area service-details__space pt-200 pb-20">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">

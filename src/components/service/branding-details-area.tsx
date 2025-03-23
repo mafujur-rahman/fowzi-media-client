@@ -4,12 +4,12 @@ import Link from "next/link";
 
 // images
 import sv_1 from "@/assets/img/services/brandingOurService.jpg";
-import sv_2 from "@/assets/img/inner-service/sercive-details/sv-details-2.jpg";
-import sv_3 from "@/assets/img/inner-service/sercive-details/sv-details-3.jpg";
+import sv_2 from "@/assets/img/branding/brand-b.jpeg";
+import sv_3 from "@/assets/img/branding/brand-c.avif";
 
 export default function BrandingDetailsArea() {
   return (
-    <div className="service-details__area service-details__space pt-200 pb-120">
+    <div className="service-details__area service-details__space pt-200 pb-20">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
@@ -85,7 +85,7 @@ export default function BrandingDetailsArea() {
                       <Image
                         src={sv_2}
                         alt="service-img"
-                        style={{ height: "auto" }}
+                        style={{ height: "400px" }}
                       />
                     </div>
                   </div>
@@ -94,7 +94,7 @@ export default function BrandingDetailsArea() {
                       <Image
                         src={sv_3}
                         alt="service-img"
-                        style={{ height: "auto" }}
+                        style={{ height: "400px" }}
                       />
                     </div>
                   </div>

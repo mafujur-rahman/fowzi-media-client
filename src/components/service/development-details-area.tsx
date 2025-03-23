@@ -4,12 +4,12 @@ import Link from "next/link";
 
 // images
 import sv_1 from "@/assets/img/services/website-service.jpg";
-import sv_2 from "@/assets/img/services/web-development-company-1-2022.jpg";
-import sv_3 from "@/assets/img/services/website-development-process.jpg";
+import sv_2 from "@/assets/img/development/web-b.jpeg";
+import sv_3 from "@/assets/img/development/web-c.jpg";
 
 export default function DevelopmentDetailsArea() {
   return (
-    <div className="service-details__area service-details__space pt-200 pb-120">
+    <div className="service-details__area service-details__space pt-200 pb-20">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
@@ -93,7 +93,7 @@ export default function DevelopmentDetailsArea() {
                       <Image
                         src={sv_3}
                         alt="service-img"
-                        style={{ height: "400px" }}
+                        style={{ height: "2400px80px" }}
                       />
                     </div>
                   </div>
