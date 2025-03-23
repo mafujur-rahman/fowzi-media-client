@@ -4,8 +4,8 @@ import Link from "next/link";
 
 // images
 import sv_1 from "@/assets/img/services/brandingOurService.jpg";
-import sv_2 from "@/assets/img/branding/brand-b.jpeg";
-import sv_3 from "@/assets/img/branding/brand-c.avif";
+import sv_2 from "@/assets/img/branding/betterhand community/branding mockup/logo mockup/logo.png";
+import sv_3 from "@/assets/img/branding/friday fashion/branding/logo mokcup/logo mockup.png";
 
 export default function BrandingDetailsArea() {
   return (
