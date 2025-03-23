@@ -49,7 +49,7 @@ const FridayFashionArea = () => {
           Project <span className="">Description</span>
         </h2>
         <p className="lead" style={{ fontFamily: 'Glacial Indifference' }}>
-        Your website is often the first impression that potential customers have of your business. We can help you create a modern, user-friendly website that showcases your brand and effectively communicates your message.Your website is often the first impression that potential customers have of your business. We can help you create a modern, user-friendly website that showcases your brand and effectively communicates your message.Your website is often the first impression that potential customers have of your business. We can help you create a modern, user-friendly website that showcases your brand and effectively communicates your message.
+          Your website is often the first impression that potential customers have of your business. We can help you create a modern, user-friendly website that showcases your brand and effectively communicates your message.Your website is often the first impression that potential customers have of your business. We can help you create a modern, user-friendly website that showcases your brand and effectively communicates your message.Your website is often the first impression that potential customers have of your business. We can help you create a modern, user-friendly website that showcases your brand and effectively communicates your message.
         </p>
 
         <p>our website is often the first impression that potential customers have of your business. We can help you create a modern, user-friendly website that showcases your brand and effectively communicates your message.Your website is often the first impression that potential customers have of your business. We can help you create a modern, user-friendly website that showcases your brand and effectively communicates your message.</p>
@@ -66,12 +66,13 @@ const FridayFashionArea = () => {
           <p className="fw-bold" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>Bold</p>
         </div>
 
-        <div className="d-flex justify-content-center gap-3">
-          <div className="p-5 text-white rounded bg-dark">#3b271e</div>
-          <div className="p-5 text-white rounded bg-black">#0C0C0C</div>
-          <div className="p-5 text-dark rounded bg-light">#d8d8d8</div>
-          <div className="p-5 text-dark rounded border bg-white">#FFFFFF</div>
+        <div className="row justify-content-center gap-3">
+          <div className="col-6 col-md-auto p-5 text-white rounded " style={{ backgroundColor: "#3b271e" }}>#3b271e</div>
+          <div className="col-6 col-md-auto p-5 text-white rounded " style={{ backgroundColor: "#0C0C0C" }}>#0C0C0C</div>
+          <div className="col-6 col-md-auto p-5 text-dark rounded " style={{ backgroundColor: "#d8d8d8" }}>#d8d8d8</div>
+          <div className="col-6 col-md-auto p-5 text-dark rounded border " style={{ backgroundColor: "#FFFFFF" }}>#FFFFFF</div>
         </div>
+
       </div>
 
       {/* Project Mockup */}
@@ -80,56 +81,56 @@ const FridayFashionArea = () => {
           Project <span className="">Mockup</span>
         </h2>
         <div className="container">
-      <div className="row g-3">
-        {/* Shopping Bag - Normal Size */}
-        <div className="col-md-6 d-flex align-items-stretch">
-          <Image
-            src="/assets/img/branding/friday fashion/branding/shoping bag mockup/shopping-bag mockup.png"
-            width={600}
-            height={450}
-            className="img-fluid rounded-4 w-100 object-fit-cover"
-            alt="Shopping Bag Mockup"
-          />
-        </div>
+          <div className="row g-3">
+            {/* Shopping Bag - Normal Size */}
+            <div className="col-md-6 d-flex align-items-stretch">
+              <Image
+                src="/assets/img/branding/friday fashion/branding/shoping bag mockup/shopping-bag mockup.png"
+                width={600}
+                height={450}
+                className="img-fluid rounded-4 w-100 object-fit-cover"
+                alt="Shopping Bag Mockup"
+              />
+            </div>
 
-        {/* Black T-Shirt - Spans 2 Rows */}
-        <div className="col-md-6 d-flex flex-column">
-          <div className="flex-grow-1">
-            <Image
-              src="/assets/img/branding/friday fashion/branding/tshirt mokcup/T--SHIRT-BACK-FILE-BLACK.png"
-              width={600}
-              height={720}
-              className="img-fluid rounded-4 w-100 h-100 object-fit-cover"
-              alt="T-Shirt Mockup Black"
-            />
+            {/* Black T-Shirt - Spans 2 Rows */}
+            <div className="col-md-6 d-flex flex-column">
+              <div className="flex-grow-1">
+                <Image
+                  src="/assets/img/branding/friday fashion/branding/tshirt mokcup/T--SHIRT-BACK-FILE-BLACK.png"
+                  width={600}
+                  height={720}
+                  className="img-fluid rounded-4 w-100 h-100 object-fit-cover"
+                  alt="T-Shirt Mockup Black"
+                />
+              </div>
+            </div>
+
+            {/* White T-Shirt - Spans 2 Rows */}
+            <div className="col-md-6 d-flex flex-column">
+              <div className="flex-grow-1">
+                <Image
+                  src="/assets/img/branding/friday fashion/branding/tshirt mokcup/T--SHIRT-BACK-FILE.png"
+                  width={600}
+                  height={720}
+                  className="img-fluid rounded-4 w-100 h-100 object-fit-cover"
+                  alt="T-Shirt Mockup White"
+                />
+              </div>
+            </div>
+
+            {/* T-Shirt Tag - Normal Size */}
+            <div className="col-md-6 d-flex align-items-stretch">
+              <Image
+                src="/assets/img/branding/friday fashion/branding/t-shirt tag mockup/tshirt tag.png"
+                width={600}
+                height={450}
+                className="img-fluid rounded-4 w-100 object-fit-cover"
+                alt="T-Shirt Tag Mockup"
+              />
+            </div>
           </div>
         </div>
-
-        {/* White T-Shirt - Spans 2 Rows */}
-        <div className="col-md-6 d-flex flex-column">
-          <div className="flex-grow-1">
-            <Image
-              src="/assets/img/branding/friday fashion/branding/tshirt mokcup/T--SHIRT-BACK-FILE.png"
-              width={600}
-              height={720}
-              className="img-fluid rounded-4 w-100 h-100 object-fit-cover"
-              alt="T-Shirt Mockup White"
-            />
-          </div>
-        </div>
-
-        {/* T-Shirt Tag - Normal Size */}
-        <div className="col-md-6 d-flex align-items-stretch">
-          <Image
-            src="/assets/img/branding/friday fashion/branding/t-shirt tag mockup/tshirt tag.png"
-            width={600}
-            height={450}
-            className="img-fluid rounded-4 w-100 object-fit-cover"
-            alt="T-Shirt Tag Mockup"
-          />
-        </div>
-      </div>
-    </div>
       </div>
 
       {/* Process Step */}

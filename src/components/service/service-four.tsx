@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FirstBracket, FirstBracketTwo, RightArrow, SvgBg } from "../svg";
@@ -29,6 +29,25 @@ const service_data = [
 ];
 export default function ServiceFour() {
 
+  const [marginLeft, setMarginLeft] = useState("20px");
+
+  useEffect(() => {
+    const updateMargin = () => {
+      if (window.innerWidth >= 992) {
+        setMarginLeft("100px"); // Large screens
+      } else if (window.innerWidth >= 768) {
+        setMarginLeft("50px"); // Medium screens
+      } else {
+        setMarginLeft("2px"); // Small screens
+      }
+    };
+
+    updateMargin(); // Set margin initially
+    window.addEventListener("resize", updateMargin);
+
+    return () => window.removeEventListener("resize", updateMargin);
+  }, []);
+
   return (
     <div className="tp-service-3-area pt-130 pb-130">
       <div className="container">
@@ -36,7 +55,7 @@ export default function ServiceFour() {
           <div className="col-xl-9">
             <div className="tp-service-3-title-box mb-60 p-relative">
               <div className="tp-service-3-icon">
-                <Image style={{ width: "40px", height: "40px", marginLeft: "100px" }} src={icon} alt="icon" />
+                <Image style={{ width: "40px", height: "40px", marginLeft }} src={icon} alt="icon" />
               </div>
               <span className="tp-section-subtitle-2 tp_fade_bottom">
                 <span>

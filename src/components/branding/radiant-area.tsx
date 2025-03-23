@@ -66,11 +66,11 @@ const RadiantArea = () => {
           <p className="fw-bold" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>Bold</p>
         </div>
 
-        <div className="d-flex justify-content-center gap-3">
-          <div className="p-5 text-white rounded " style={{ backgroundColor: "#ebb898" }}>#ebb898</div>
-          <div className="p-5 text-white rounded " style={{ backgroundColor: "#3b271e" }}>#3b271e</div>
-          <div className="p-5 text-dark rounded " style={{ backgroundColor: "#0C0C0C" }}>#0C0C0C</div>
-          <div className="p-5 text-dark rounded border " style={{ backgroundColor: "#FFFFFF" }}>#FFFFFF</div>
+        <div className="row justify-content-center gap-3">
+          <div className="col-6 col-md-auto p-5 text-white rounded " style={{ backgroundColor: "#ebb898" }}>#ebb898</div>
+          <div className="col-6 col-md-auto p-5 text-white rounded " style={{ backgroundColor: "#3b271e" }}>#3b271e</div>
+          <div className="col-6 col-md-auto p-5 text-dark rounded " style={{ backgroundColor: "#0C0C0C" }}>#0C0C0C</div>
+          <div className="col-6 col-md-auto p-5 text-dark rounded border " style={{ backgroundColor: "#FFFFFF" }}>#FFFFFF</div>
         </div>
       </div>
 

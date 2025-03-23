@@ -21,8 +21,6 @@ const service_data = [
       "Brand Strategy",
       "Logo and Visual Identity",
       "Brand Collateral",
-      "Website Design",
-      "Content Creation",
       "Social Media Branding",
       "Brand Guidelines",
     ],
@@ -38,12 +36,9 @@ const service_data = [
       "Responsive Website",
       "Real Estate",
       "Health Care",
-      "Transport",
       "Travel",
-      "Media & Entertainment",
       "Restaurant",
       "E - Learning",
-      "Custom Proactive Solutions",
     ],
   },
   {
@@ -56,7 +51,6 @@ const service_data = [
     lists: [
       "Corporate Videos",
       "Promotional Videos",
-      "Brand Storytelling",
       "Event Coverage",
       "Product Demonstrations",
       "Testimonials & Interviews",
@@ -66,7 +60,7 @@ const service_data = [
 
 export default function ServiceSix() {
   return (
-    <div className="sv-service-area project-panel-area-2 ">
+    <div className="sv-service-area project-panel-area-2 pb-100">
       <div className="container-fluid p-0">
         {service_data.map((item) => (
           <div key={item.id} className="sv-service-item project-panel-2">
