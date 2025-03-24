@@ -12,10 +12,10 @@ export default function ServiceHero() {
         <div className="row">
           <div className="col-xl-10">
             <div className="sv-hero-title-box">
-              <h4 className="sv-hero-title tp-char-animation" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
+              <h4 className="sv-hero-title tp-char-animation">
                 Experience <br /> the best services.
               </h4>
-              <p className="tp_fade_bottom" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
+              <p className="tp_fade_bottom">
               Discover top-notch solutions that meet your needs and exceed expectations.
               </p>
             </div>

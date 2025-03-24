@@ -50,7 +50,7 @@ export default function AboutUsArea() {
                 <Hand />
                 Hi!
               </span>
-              <p className="tp-dropcap tp_fade_bottom" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
+              <p className="tp-dropcap tp_fade_bottom" >
               Fowzi Media is a leading branding and marketing agency specializing in video production, photography, and strategic communications. As a minority-immigrant-owned firm, we craft compelling digital stories that engage audiences and drive social impact. Our expertise bridges communication gaps between public, nonprofit, and private sectors and diverse communities. With a dedicated team and trusted collaborators, we deliver innovative marketing solutions—from impactful video ads to full-scale branding strategies.
               </p>
             </div>

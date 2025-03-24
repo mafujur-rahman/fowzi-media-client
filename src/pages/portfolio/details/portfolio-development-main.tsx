@@ -26,10 +26,10 @@ import HeaderFour from "@/layouts/headers/header-four";
 import FooterFour from "@/layouts/footers/footer-four";
 
 const port_images = [
-    { src: port_d_1, link: "/branding/friday-fashion" },
-    { src: port_d_2, link: "/branding/better-hand" },
-    { src: port_d_3, link: "/branding/dheelliga" },
-    { src: port_d_4, link: "/branding/optimal" },
+    { src: port_d_1, link: "https://daisaneformn.com/" },
+    { src: port_d_2, link: "https://infinitycaresolutionsllc.com/" },
+    { src: port_d_3, link: "https://somaliyouthmind.com/" },
+    { src: port_d_4, link: "https://washingtontoefoundation.com/" },
   ];
   
   const PortfolioDevelopmentMain = () => {

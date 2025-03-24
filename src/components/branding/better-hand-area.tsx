@@ -29,7 +29,7 @@ const BetterHandArea = () => {
   return (
     <div className="container pt-150">
       <div className="">
-        <h2 ref={textRef} className="fw-bold display-1" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>Better Hand</h2>
+        <h2 ref={textRef} className="fw-bold display-1" >Better Hand</h2>
       </div>
 
       {/* Banner */}

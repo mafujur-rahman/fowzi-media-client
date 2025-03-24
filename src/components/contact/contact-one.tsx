@@ -10,7 +10,7 @@ export default function ContactOne() {
       <div className="container">
         <div className="col-xl-12">
           <div className="tp-cta-title-box p-relative">
-            <h4 className="tp-cta-title cta-text" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+            <h4 className="tp-cta-title cta-text">
               Let’s talk
               <span>about it</span>
             </h4>

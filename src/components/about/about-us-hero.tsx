@@ -34,13 +34,13 @@ export default function AboutUsHero() {
               data-lag="0.2"
               data-stagger="0.08"
             >
-              <span className="ab-inner-hero-subtitle" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
+              <span className="ab-inner-hero-subtitle" >
                 Visionary <br /> digital studio
               </span>
-              <h1 className="ab-inner-hero-title tp-char-animation" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
+              <h1 className="ab-inner-hero-title tp-char-animation">
                 Crafting Iconic Digital Identities
               </h1>
-              <p style={{fontFamily: 'Glacial Indifference'}}>Digital experiences with maximum emotional impact</p>
+              <p >Digital experiences with maximum emotional impact</p>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@ export default function AboutUsHero() {
               data-lag="0.2"
               data-stagger="0.08"
             >
-              <p style={{fontFamily: 'Glacial Indifference'}}>
+              <p >
                 Fowzi Media seamlessly merges creativity
                 with cutting-edge technology, crafting
                 digital experiences that engage, inspire,

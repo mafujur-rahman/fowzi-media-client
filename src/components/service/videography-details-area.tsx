@@ -14,10 +14,10 @@ export default function VideographyDetailsArea() {
         <div className="row">
           <div className="col-xl-12">
             <div className="service-details__title-box mb-40">
-              <span className="service-details__subtitle tp-char-animation"  style={{ fontFamily: 'Glacial Indifference' }}>
+              <span className="service-details__subtitle tp-char-animation"  >
                 Video Studio
               </span>
-              <h4 className="sv-hero-title tp-char-animation"  style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+              <h4 className="sv-hero-title tp-char-animation" >
                 Videography
               </h4>
             </div>
@@ -116,7 +116,7 @@ export default function VideographyDetailsArea() {
                 <a className="active" href="/videography-details"  style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>Videography</a>
               </div>
               <div className="service-details__right-text-box">
-                <h4  style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+                <h4 >
                   Videography
                 </h4>
                 <p className="mb-20"  style={{ fontFamily: 'Glacial Indifference' }}>

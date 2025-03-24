@@ -29,7 +29,7 @@ const OptimalArea = () => {
   return (
     <div className="container pt-150">
       <div className="">
-        <h2 ref={textRef} className="fw-bold display-1" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>Optimal Home HealthCare</h2>
+        <h2 ref={textRef} className="fw-bold display-1" >Optimal Home HealthCare</h2>
       </div>
 
       {/* Banner */}

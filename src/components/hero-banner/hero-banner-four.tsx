@@ -13,7 +13,7 @@ export default function HeroBannerFour() {
               <div className="tp-hero-3-circle-shape">
                 <span></span>
               </div>
-              <h4 className="tp-hero-3-title tp_reveal_anim" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+              <h4 className="tp-hero-3-title tp_reveal_anim">
                 <span className="tp-reveal-line">{"Elevating"} brands </span>
                 <span className="tp-reveal-line">with digital solutions</span>
               </h4>

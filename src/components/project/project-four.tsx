@@ -45,7 +45,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
           <div className="row justify-content-center">
             <div className="col-xl-7">
               <div className="tp-project-3-title-box p-relative mb-150">
-                <h4 className="tp-section-title-200 tp_reveal_anim" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+                <h4 className="tp-section-title-200 tp_reveal_anim">
                   Latest <span>Projects</span>
                 </h4>
                 <div className="tp-project-3-btn-box">
@@ -81,7 +81,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                   <div className="col-xl-4 col-lg-4 col-md-12 order-1 order-lg-0">
                     <div className="tp-project-3-content text-center">
                       <h4 className="tp-project-3-title-sm">
-                        <Link href="/portfolio" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+                        <Link href="/portfolio" >
                           {item.title.includes("For") ? (
                             item.title.split("For").map((part, index) => (
                               <React.Fragment key={index}>

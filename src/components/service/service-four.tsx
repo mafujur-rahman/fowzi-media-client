@@ -68,7 +68,7 @@ export default function ServiceFour() {
                   <FirstBracketTwo />
                 </span>
               </span>
-              <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+              <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
                 Thoughtful <br /> Process We think a lot
               </h4>
             </div>
