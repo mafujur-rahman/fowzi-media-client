@@ -80,7 +80,7 @@ export default function ServiceFour() {
             <div className="row align-items-start">
               <div className="col-xl-3 col-lg-3">
                 <div className="tp-service-3-title-box">
-                  <h4 className="tp-service-3-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+                  <h4 className="tp-service-3-title">
                     <Link href={item.link}>{item.title}</Link>
                   </h4>
                 </div>

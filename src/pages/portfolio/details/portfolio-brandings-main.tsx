@@ -46,6 +46,8 @@ const port_images = [
       }, 100);
       return () => clearTimeout(timer);
     });
+
+    
   
     return (
       <Wrapper>
@@ -63,7 +65,7 @@ const port_images = [
                     <div className="col-xl-7">
                       <div className="project-details-1-left">
                         {port_images.map((item, i) => (
-                          <div key={i} className="project-details-1-thumb mb-10">
+                          <div key={i} className="project-details-1-thumb mb-10 ">
                             <a href={item.link} target="_blank" rel="noopener noreferrer">
                               <Image src={item.src} alt={`Portfolio ${i + 1}`} style={{ height: "auto", cursor: "pointer" }} />
                             </a>

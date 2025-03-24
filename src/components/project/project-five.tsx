@@ -44,7 +44,7 @@ type IProps = {
 export default function ProjectFive({ style_2 = false }: IProps) {
   return (
     <div
-      className={`tp-project-5-2-area pb-130 ${
+      className={`tp-project-5-2-area pb-30 ${
         style_2 ? "" : "tp-project-5-2-pt black-bg"
       }`}
     >
@@ -69,7 +69,7 @@ export default function ProjectFive({ style_2 = false }: IProps) {
                       <Image
                         src={item.img}
                         alt="project-img"
-                        style={{ height: "600px", width: "4800px" }}
+                        style={{ height: "600px", width: "500px" }}
                       />
                     </div>
                   </span>
@@ -80,28 +80,6 @@ export default function ProjectFive({ style_2 = false }: IProps) {
               </div>
             </div>
           ))}
-        </div>
-        <div className="row">
-          <div className="col-xl-12">
-            <div className="tp-projct-5-2-btn-box d-flex justify-content-center">
-              <div className="tp-hover-btn-wrapper">
-                <Link
-                  className={`tp-btn-circle ${
-                    style_2 ? "style-2" : ""
-                  } tp-hover-btn-item tp-hover-btn`}
-                  href="/portfolio"
-                >
-                  <span className="tp-btn-circle-text" style={{ fontFamily: 'Glacial Indifference' }}>
-                    More <br /> Projects
-                  </span>
-                  <span className="tp-btn-circle-icon">
-                    <UpArrow />
-                  </span>
-                  <i className="tp-btn-circle-dot"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

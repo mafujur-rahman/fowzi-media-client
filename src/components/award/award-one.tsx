@@ -2,110 +2,54 @@
 import React from "react";
 import Image from "next/image";
 
-// award images
+// Award images
 import a_1 from "@/assets/img/about-us/team/noor.jpg";
-import { Leaf } from "../svg";
 
-const award_data = [
-  {
-    id: 1,
-
-    title: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, veritatis.",
-
-  },
-  {
-    id: 2,
-
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, veritatis.",
-
-  },
-  {
-    id: 3,
-
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, veritatis.",
-
-  },
-  {
-    id: 4,
-
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, veritatis.",
-
-  },
-  {
-    id: 5,
-
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, veritatis.",
-
-  },
-  {
-    id: 6,
-
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, veritatis.",
-
-  },
-];
-
-// prop type
+// Prop types
 type IProps = {
   cls?: string;
   abStyle?: boolean;
 };
+
 const AwardOne = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
-  const [activeThumb, setActiveThumb] = React.useState(1);
   return (
     <div className={`tp-award-area ${cls}`}>
       <div className="container container-1630">
-        <div className="row">
+        {/* Section Title */}
+        <div className="row justify-content-center text-center mb-4">
           <div className="col-xxl-6 col-xl-7">
-            {!abStyle && (
-              <div className="tp-award-title-box">
-                <h4 className="tp-section-title tp-char-animation">
-                  Awards <br /> <span>& Recognitions</span>
-                </h4>
-              </div>
-            )}
-            {abStyle && (
-              <div className="ab-award-title-sm">
-                <span>
-                  <Leaf />
-                  Message From Founder
-                </span>
-              </div>
-            )}
+            <h2 className="fw-bold text-lg-2xl text-md-xl text-sm-lg">Message From Founder</h2>
           </div>
         </div>
-        <div className="row">
-          <div className="col-xl-4 col-lg-4 col-md-12">
-            <div className="tp-award-list-thumb-wrap p-relative">
-              <div
-                id="tp-award-thumb"
-              >
-                <Image
-                  src={a_1}
-                  alt="list-thumb"
-                  style={{ height: "500px", width: "auto" }}
-                />
-                <div className="d-flex flex-column justify-content-center align-items-center center-container mt-10">
-                  <h3 className="mb-3" style={{height: "10px", width: "auto", fontFamily: 'Glacial Indifference', font: "bold"}}>Hussein Noor</h3>
-                  <p className="mb-0 pt-5" style={{fontFamily: 'Glacial Indifference'}}>Senior Strategist</p>
-                </div>
+        
+        <div className="row align-items-center">
+          {/* Image Section */}
+          <div className="col-xl-4 col-lg-4 col-md-12 d-flex justify-content-center">
+            <div className="tp-award-list-thumb-wrap position-relative text-center">
+              <Image
+                src={a_1}
+                alt="Hussein Noor"
+                className="img-fluid rounded"
+                width={350}
+                height={500}
+                style={{ objectFit: "cover" }}
+              />
+              <div className="text-center mt-3">
+                <h3 className="fw-bold" style={{ fontFamily: "Glacial Indifference" }}>Hussein Noor</h3>
+                <p className="mb-0" style={{ fontFamily: "Glacial Indifference" }}>Senior Strategist</p>
               </div>
             </div>
           </div>
-          <div className="col-xl-8 col-lg-8 col-md-12 pt-100">
+          
+          {/* Text Section */}
+          <div className="col-xl-8 col-lg-8 col-md-12">
             <div className="tp-award-list-wrap">
-              {award_data.map((item) => (
-                <div
-                  key={item.id}
-                  onMouseEnter={() => setActiveThumb(item.id)}
-                  className="tp-award-list-item d-flex align-items-center justify-content-between tp_fade_bottom"
-                  rel={`tp-award-list-thumb-${item.id}`}
-                >
-                  <div className="tp-award-list-content-left d-flex align-items-center">
-                    <p>{item.title}</p>
-                  </div>
-                </div>
-              ))}
+              <p className="text-justify">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, iusto. Sed cum asperiores dolore, doloremque maxime aliquam labore excepturi officia saepe facilis ad quibusdam dolorem sunt placeat accusantium officiis amet! 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fugiat earum odit odio suscipit, ea cumque veritatis consectetur rem sunt delectus quaerat voluptate voluptates, in amet repellendus facere quibusdam natus! 
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam aperiam in impedit sequi magnam voluptatibus quam ipsam temporibus neque officiis, amet voluptate nisi nulla iusto incidunt veniam odit? Exercitationem, sapiente! 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis consectetur veritatis itaque fugit recusandae libero unde ipsam tenetur facere aliquam sed iste illum impedit officia error exercitationem, voluptatibus cumque.
+              </p>
             </div>
           </div>
         </div>
