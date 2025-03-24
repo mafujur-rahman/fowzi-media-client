@@ -19,6 +19,8 @@ import { hoverBtn } from "@/utils/hover-btn";
 import { teamMarqueAnim } from "@/utils/scroll-marque";
 import FooterFour from "@/layouts/footers/footer-four";
 import HeaderFour from "@/layouts/headers/header-four";
+import BrandFive from "@/components/brand/brand-five";
+import AwardOne from "@/components/award/award-one";
 
 const AboutUsMain = () => {
   useScrollSmooth();
@@ -58,6 +60,14 @@ const AboutUsMain = () => {
             {/* fun fact area */}
             <FunFactOne />
             {/* fun fact area */}
+
+            {/* brand area */}
+            <BrandFive />
+            {/* brand area */}
+
+            {/* award area */}
+            <AwardOne cls="ab-award-style pt-120 pb-120" abStyle={true} />
+            {/* award area */}
 
           </main>
 

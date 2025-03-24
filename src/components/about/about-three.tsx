@@ -24,7 +24,7 @@ export default function AboutThree() {
                   <FirstBracketTwo />
                 </span>
               </span>
-              <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+              <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
                 About Fowzi Media{" "}
               </h4>
             </div>
@@ -38,16 +38,9 @@ export default function AboutThree() {
           </div>
           <div className="col-xl-6 col-lg-6 col-md-8">
             <div className="tp-about-3-content">
-              <p className="mb-30 tp_fade_bottom" style={{ fontFamily: 'Glacial Indifference' }}>
-                Welcome to Fowzi Media – a full-service creative agency based in Minnesota, making waves both locally and beyond. We specialize in transforming ideas into powerful digital experiences, helping brands connect, engage, and grow.
-                From innovative branding that tells your story to stunning video production that captures attention, we craft memorable experiences that resonate with your audience. Our creative storytelling brings your message to life, while our expertise in website design, UI/UX, and website development ensures your digital presence is both functional and visually captivating.
-              </p>
               <p className="mb-45 tp_fade_bottom" style={{ fontFamily: 'Glacial Indifference' }}>
               At Fowzi Media, we’re more than just a creative agency; we’re your strategic partner, committed to driving results that matter. Whether you’re looking to reimagine your brand, launch a new website, or create an unforgettable campaign, we have the skills and vision to make it happen.
               Let’s bring your vision to life. 
-              </p>
-              <p className="mb-45 tp_fade_bottom" style={{ fontFamily: 'Glacial Indifference' }}>
-              Fowzi Media – where creativity meets innovation.
               </p>
               <Link className="tp-btn-black-2 tp_fade_bottom" href="/about-us" style={{ fontFamily: 'Glacial Indifference' }}>
                 About Us

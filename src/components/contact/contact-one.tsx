@@ -19,7 +19,7 @@ export default function ContactOne() {
               your business and to the world.
             </p>
             <div className="tp-cta-icon">
-              <Image src={cta} style={{width: "80px", height: "80px"}} alt="cta-img" />
+              <Image src={cta} style={{width: "80px", height: "auto"}} alt="cta-img" />
             </div>
             <div className="tp-cta-btn-box">
               <Link className="tp-btn-zikzak p-relative" href="/contact">

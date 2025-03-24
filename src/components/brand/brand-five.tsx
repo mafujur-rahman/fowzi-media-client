@@ -3,12 +3,12 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 // images
-import b_1 from "@/assets/img/inner-about/brand/brand-1.png";
-import b_2 from "@/assets/img/inner-about/brand/brand-2.png";
-import b_3 from "@/assets/img/inner-about/brand/brand-3.png";
-import b_4 from "@/assets/img/inner-about/brand/brand-4.png";
-import b_5 from "@/assets/img/inner-about/brand/brand-5.png";
-import b_6 from "@/assets/img/inner-about/brand/brand-2.png";
+import b_1 from "@/assets/img/service-brand-logo/gray/1.png";
+import b_2 from "@/assets/img/service-brand-logo/gray/2.png";
+import b_3 from "@/assets/img/service-brand-logo/gray/3.png";
+import b_4 from "@/assets/img/service-brand-logo/gray/4.png";
+import b_5 from "@/assets/img/service-brand-logo/gray/5.png";
+import b_6 from "@/assets/img/service-brand-logo/gray/6.png";
 
 // brand images
 const brand_images = [b_1, b_2, b_3, b_4, b_5, b_6];
@@ -40,7 +40,7 @@ export default function BrandFive() {
                       key={i}
                       className="ab-brand-item"
                     >
-                      <Image src={b} alt="brand" />
+                      <Image src={b} alt="brand" style={{height: "80px", width: "auto"}}/>
                     </div>
                   ))}
                 </Marquee>
@@ -51,12 +51,12 @@ export default function BrandFive() {
         <div className="row">
           <div className="col-xl-7 col-lg-9">
             <div className="ab-brand-content tp_title_anim">
-              <p>
+              <p style={{ fontFamily: 'Glacial Indifference' }}>
                 We belive in creating partnerships based on honesty and true
                 connection. That is why some of the biggest companies stayed with
                 us for years.
               </p>
-              <span>More about us</span>
+              <span style={{ fontFamily: 'Glacial Indifference' }}>More about us</span>
             </div>
           </div>
         </div>

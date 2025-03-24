@@ -7,7 +7,7 @@ import { IBlogDT } from "@/types/blog-d-t";
 import BlogItem from "../blog/blog-item/blog-item";
 
 
-export default function CaseStudiesArea() {
+export default function BlogsArea() {
   const blog_items = [...blog_modern];
   const first_blog = blog_items[0];
   const other_blogs = blog_items.filter((b) => b !== first_blog);

@@ -12,11 +12,11 @@ import Wrapper from "@/layouts/wrapper";
 // animation
 import { charAnimation } from "@/utils/title-animation";
 import BigText from "@/components/big-text";
-import CaseStudiesArea from "@/components/case-studies/case-studies-area";
 import HeaderFour from "@/layouts/headers/header-four";
 import FooterFour from "@/layouts/footers/footer-four";
+import BlogsArea from "@/components/blogs/blogs-area";
 
-const CaseStudiesMain = () => {
+const BlogsMain = () => {
   useScrollSmooth();
 
   useGSAP(() => {
@@ -36,7 +36,7 @@ const CaseStudiesMain = () => {
         <div id="smooth-content">
           <main>
             {/* blog modern area start */}
-            <CaseStudiesArea/>
+            <BlogsArea />
             {/* blog modern area end */}
 
             {/* big text area */}
@@ -53,4 +53,4 @@ const CaseStudiesMain = () => {
   );
 };
 
-export default CaseStudiesMain;
+export default BlogsMain;
