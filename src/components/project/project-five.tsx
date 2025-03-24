@@ -14,25 +14,25 @@ const project_data = [
     id: 1,
     title: "Branding",
     img: p_img_1,
-    link: "/all-brandings"
+    link: "/portfolio-brandings"
   },
   {
     id: 2,
     title: "Web Design",
     img: p_img_2,
-    link: "/all-web-designs"
+    link: "/portfolio-development"
   },
   {
     id: 3,
     title: "Videography",
     img: p_img_3,
-    link: "/all-videography"
+    link: "/portfolio-videography"
   },
   {
     id: 4,
     title: "Photography",
     img: p_img_4,
-    link: "/all-photography"
+    link: "/portfolio-photography"
   },
   
 ];
