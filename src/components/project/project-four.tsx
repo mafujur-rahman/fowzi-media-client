@@ -3,12 +3,12 @@ import Image from "next/image";
 
 import { ProjectShape, RightArrow } from "../svg";
 // images
-import port_1 from "@/assets/img/latest-projects/hudda-branding.jpg";
+import port_1 from "@/assets/img/latest-projects/hudda/branding/door hanger mockup/door-hanger.jpg";
 import port_2 from "@/assets/img/latest-projects/hodda-web.jpg";
 import port_3 from "@/assets/img/latest-projects/jannah-branding.jpg";
 import port_4 from "@/assets/img/latest-projects/jannah-photography.jpg";
-import port_5 from "@/assets/img/latest-projects/awad-branding.jpg";
-import port_6 from "@/assets/img/latest-projects/awad-web.jpg";
+import port_5 from "@/assets/img/latest-projects/awad/p-1.jpg";
+import port_6 from "@/assets/img/latest-projects/awad/p-2.jpg";
 import Link from "next/link";
 
 // portfolio data
@@ -17,19 +17,22 @@ const project_data = [
     id: 1,
     img_1: port_1,
     img_2: port_2,
-    title: "Hudda For St. Cloud"
+    title: "Hudda For St. Cloud",
+    link: "/hudda-details"
   },
   {
     id: 2,
     img_1: port_3,
     img_2: port_4,
     title: "Jannah Fitwear",
+    link: "jannah-fitwear-details"
   },
   {
     id: 3,
     img_1: port_5,
     img_2: port_6,
-    title: "Awad for Puntland"
+    title: "Awad for Puntland",
+    link: "awad-details"
   }
 ];
 
@@ -51,7 +54,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                 <div className="tp-project-3-btn-box">
                   <Link
                     className="tp-btn-zikzak p-relative"
-                    href="/portfolio"
+                    href="/portfolio-wrapper"
                   >
                     <span className="zikzak-content" style={{ fontFamily: 'Glacial Indifference' }}>
                       See <br /> All Project
@@ -81,7 +84,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                   <div className="col-xl-4 col-lg-4 col-md-12 order-1 order-lg-0">
                     <div className="tp-project-3-content text-center">
                       <h4 className="tp-project-3-title-sm">
-                        <Link href="/portfolio" >
+                        <Link href={item.link} >
                           {item.title.includes("For") ? (
                             item.title.split("For").map((part, index) => (
                               <React.Fragment key={index}>
@@ -95,7 +98,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                       </h4>
                       <Link
                         className="tp-btn-project-sm"
-                        href="/portfolio"
+                        href={item.link}
                         style={{ fontFamily: 'Glacial Indifference' }}
                       >
                         See Project

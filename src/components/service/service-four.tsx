@@ -55,7 +55,7 @@ export default function ServiceFour() {
           <div className="col-xl-9">
             <div className="tp-service-3-title-box mb-60 p-relative">
               <div className="tp-service-3-icon">
-                <Image style={{ width: "40px", height: "40px", marginLeft }} src={icon} alt="icon" />
+                <Image style={{ width: "50px", height: "auto", marginLeft }} src={icon} alt="icon" />
               </div>
               <span className="tp-section-subtitle-2 tp_fade_bottom">
                 <span>

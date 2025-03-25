@@ -8,13 +8,14 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
 import Wrapper from "@/layouts/wrapper";
-import HeaderEleven from "@/layouts/headers/header-eleven";
 import ProjectFour from "@/components/project/project-four";
 import BigText from "@/components/big-text";
-import FooterTwo from "@/layouts/footers/footer-two";
+
 // animation
 import { charAnimation,titleAnimation } from "@/utils/title-animation";
 import { projectThreeAnimation } from "@/utils/project-anim";
+import HeaderFour from "@/layouts/headers/header-four";
+import FooterFour from "@/layouts/footers/footer-four";
 
 const PortfolioWrapperMain = () => {
   useScrollSmooth();
@@ -31,7 +32,7 @@ const PortfolioWrapperMain = () => {
   return (
     <Wrapper>
       {/* header area start */}
-      <HeaderEleven />
+      <HeaderFour />
       {/* header area end */}
 
       <div id="smooth-wrapper">
@@ -43,16 +44,14 @@ const PortfolioWrapperMain = () => {
                 <div className="row">
                   <div className="col-xl-12">
                     <div className="tm-hero-content">
-                      <span className="tm-hero-subtitle">Liko Studio</span>
+                      <span className="tm-hero-subtitle">Fowzi Media Studio</span>
                       <h4 className="tm-hero-title tp-char-animation">
                         Our latest & great projects
                       </h4>
                     </div>
                     <div className="tm-hero-text">
                       <p className="tp_title_anim">
-                        We’re a diverse team that works as fancies attention to
-                        details, enjoys beers on Friday nights and aspires to
-                        design the dent in the universe.
+                      We’re a dynamic team passionate about crafting impactful brand identities, stunning websites, and compelling visual stories. With a keen eye for detail, a love for creativity, and a drive to make a lasting impression, we bring brands to life—one design, strategy, and story at a time. Oh, and we never say no to a good Friday night unwind!
                       </p>
                     </div>
                   </div>
@@ -71,7 +70,7 @@ const PortfolioWrapperMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" />
+          <FooterFour />
           {/* footer area */}
         </div>
       </div>

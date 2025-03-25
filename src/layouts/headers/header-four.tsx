@@ -60,7 +60,7 @@ export default function HeaderFour() {
                           <li><Link href="/" style={{ fontSize: `${fontSize}px` }}>HOME</Link></li>
                           <li><Link href="/service" style={{ fontSize: `${fontSize}px` }}>SERVICES</Link></li>
                           <li><Link href="/about-us" style={{ fontSize: `${fontSize}px` }}>ABOUT</Link></li>
-                          <li><Link href="/portfolio" style={{ fontSize: `${fontSize}px` }}>PORTFOLIO</Link></li>
+                          <li><Link href="/portfolio-wrapper" style={{ fontSize: `${fontSize}px` }}>PORTFOLIO</Link></li>
                           <li><Link href="/blogs" style={{ fontSize: `${fontSize}px` }}>BLOGS</Link></li>
                           <li><Link href="/contact" style={{ fontSize: `${fontSize}px` }}>CONTACT</Link></li>
                         </ul>
@@ -96,7 +96,7 @@ export default function HeaderFour() {
               <li><Link href="/">HOME</Link></li>
               <li><Link href="/service">SERVICES</Link></li>
               <li><Link href="/about-us">ABOUT</Link></li>
-              <li><Link href="/portfolio">PORTFOLIO</Link></li>
+              <li><Link href="/portfolio-wrapper">PORTFOLIO</Link></li>
               <li><Link href="/blogs">BLOGS</Link></li>
               <li><Link href="/contact">CONTACT</Link></li>
             </ul>

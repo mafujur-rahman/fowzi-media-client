@@ -6,7 +6,7 @@ import shape_1 from '@/assets/img/home-03/gallery/gal-shape-1.png';
 import shape_d_1 from '@/assets/img/home-03/gallery/gal-shape-dark-1.png';
 import shape_2 from '@/assets/img/home-03/gallery/gal-shape-2.png';
 import shape_d_2 from '@/assets/img/home-03/gallery/gal-shape-dark-2.png';
-import g_1 from '@/assets/img/gallery/Untitled-3.jpg';
+import g_1 from '@/assets/img/latest-projects/gallery/jannah-photography.jpg';
 import g_2 from '@/assets/img/gallery/Untitled-4.jpg';
 import g_3 from '@/assets/img/gallery/Untitled-2 (2).jpg';
 import g_4 from '@/assets/img/gallery/Untitled-5.jpg';
