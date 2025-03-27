@@ -3,15 +3,16 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 // images
-import b_1 from "@/assets/img/service-brand-logo/gray/1.png";
-import b_2 from "@/assets/img/service-brand-logo/gray/2.png";
-import b_3 from "@/assets/img/service-brand-logo/gray/3.png";
-import b_4 from "@/assets/img/service-brand-logo/gray/4.png";
-import b_5 from "@/assets/img/service-brand-logo/gray/5.png";
-import b_6 from "@/assets/img/service-brand-logo/gray/6.png";
+import b_1 from "@/assets/img/service-brand-logo/new/City_of_Minneapolis_logo,_2023.svg";
+import b_2 from "@/assets/img/service-brand-logo/new/Town_of_St._Paul_logo.svg";
+import b_3 from "@/assets/img/service-brand-logo/new/citizensleague-logo.svg";
+import b_4 from "@/assets/img/service-brand-logo/new/logo-mdh-mn-v-blu_cmyk.svg";
+import b_5 from "@/assets/img/service-brand-logo/new/tChair.png";
+import b_6 from "@/assets/img/service-brand-logo/new/university-of-minnesota.svg";
+import b_7 from "@/assets/img/service-brand-logo/new/wellshare.svg";
 
 // brand images
-const brand_images = [b_1, b_2, b_3, b_4, b_5, b_6];
+const brand_images = [b_1, b_2, b_3, b_4, b_5, b_6, b_7];
 
 export default function BrandFive() {
   return (

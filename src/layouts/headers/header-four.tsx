@@ -55,15 +55,30 @@ export default function HeaderFour() {
                 <div className="tp-header-3-menu-wrap text-center">
                   <div className="tp-header-3-menu-box d-inline-flex align-items-center justify-content-between w-100">
                     <div className="tp-header-3-menu header-main-menu w-100">
-                      <nav className="tp-main-menu-content w-100">
-                        <ul className="d-flex justify-content-between list-unstyled mb-0 w-100 text-white" style={{ backgroundColor: "#424242", padding: "6px 8px", borderRadius: "30px", fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
-                          <li><Link href="/" style={{ fontSize: `${fontSize}px` }}>HOME</Link></li>
-                          <li><Link href="/packages" style={{ fontSize: `${fontSize}px` }}>PACKAGES</Link></li>
-                          <li><Link href="/about-us" style={{ fontSize: `${fontSize}px` }}>ABOUT</Link></li>
-                          <li><Link href="/portfolio-wrapper" style={{ fontSize: `${fontSize}px` }}>PORTFOLIO</Link></li>
-                          <li><Link href="/blogs" style={{ fontSize: `${fontSize}px` }}>BLOGS</Link></li>
-                          <li><Link href="/contact" style={{ fontSize: `${fontSize}px` }}>CONTACT</Link></li>
+                      <nav className="tp-main-menu-content w-80">
+                        <ul
+                          className="d-flex list-unstyled mb-0 text-white"
+                          style={{
+                            backgroundColor: "#424242",
+                            padding: "6px 12px",
+                            borderRadius: "30px",
+                            fontFamily: 'Glacial Indifference',
+                            fontWeight: 'bold',
+                            display: "inline-flex",  // Keeps the background fitted to content
+                            gap: "10px",  // Reduces spacing between items
+                            width: "fit-content",  // Prevents unnecessary stretching
+                            margin: "0 auto",  // Centers the UL horizontally
+                            justifyContent: "center", // Ensures the items are aligned in the center
+                          }}>
+                          <li><Link href="/" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Home</Link></li>
+                          <li><Link href="/packages" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Packages</Link></li>
+                          <li><Link href="/about-us" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>About</Link></li>
+                          <li><Link href="/portfolio-wrapper" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Portfolio</Link></li>
+                          <li><Link href="/blogs" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Blogs</Link></li>
+                          <li><Link href="/contact" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Contact</Link></li>
                         </ul>
+
+
                       </nav>
                     </div>
                   </div>
@@ -93,12 +108,12 @@ export default function HeaderFour() {
           </div>
           <div className="offcanvas-body">
             <ul className="list-unstyled">
-              <li><Link href="/">HOME</Link></li>
-              <li><Link href="/packages">PACKAGES</Link></li>
-              <li><Link href="/about-us">ABOUT</Link></li>
-              <li><Link href="/portfolio-wrapper">PORTFOLIO</Link></li>
-              <li><Link href="/blogs">BLOGS</Link></li>
-              <li><Link href="/contact">CONTACT</Link></li>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/packages">Packages</Link></li>
+              <li><Link href="/about-us">About</Link></li>
+              <li><Link href="/portfolio-wrapper">Portfolio</Link></li>
+              <li><Link href="/blogs">Blogs</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
         </div>

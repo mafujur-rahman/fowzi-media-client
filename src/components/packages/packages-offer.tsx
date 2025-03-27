@@ -153,14 +153,13 @@ export default function PackagesOffer() {
                 </div>
               </div>
               <div className="col-xl-6 col-lg-6">
-                <div className="sv-service-content-wrap d-flex align-items-center">
-                  <div className="sv-service-content">
-                    <div className="sv-service-title-box">
-                      <span className="sv-service-subtitle">
+                <div className="sv-service-content-wrap ">
+                  <div className="">
+                    <div className="">
+                      <span className="sv-service-title">
                         <i style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>{item.id < 9 ? "0" + item.id : item.id}</i>
-                        {item.subtitle}
+                        &mdash; {item.title}
                       </span>
-                      <h4 className="sv-service-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>{item.title}</h4>
                     </div>
                     <div className="sv-service-space-wrap">
                       <div className="sv-service-text">
@@ -172,7 +171,7 @@ export default function PackagesOffer() {
                           fontWeight: 'bold',
                           display: 'grid',
                           gridTemplateColumns: 'repeat(2, 1fr)',
-                          gap: '2rem'
+                          gap: '5px'
                         }}>
                           {item.lists.map((list, i) => (
                             <div key={i} className="list-group">
@@ -189,7 +188,7 @@ export default function PackagesOffer() {
                                 listStyleType: 'disc'
                               }}>
                                 {list.subtitles.map((subtitle, j) => (
-                                  <li key={j} style={{ marginBottom: '0.5rem' }}>
+                                  <li className="sv-service-subtitle" key={j} style={{ marginBottom: '0.5rem' }}>
                                     {subtitle}
                                   </li>
                                 ))}

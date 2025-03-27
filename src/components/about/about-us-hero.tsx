@@ -13,7 +13,7 @@ export default function AboutUsHero() {
   return (
     <div
       className="ab-inner-hero-area ab-inner-hero-bg p-relative"
-      style={{ backgroundImage: "url(/assets/img/about-us/hero/hero-1.jpg)" }}
+      style={{ backgroundImage: "url(/assets/img/about-us/hero/hero.jpg)" }}
     >
       <div className="breadcurmb-site d-none">
         <h6 style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>About Us</h6>
