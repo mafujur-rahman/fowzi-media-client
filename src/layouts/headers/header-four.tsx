@@ -47,7 +47,7 @@ export default function HeaderFour() {
               <div className="col-xl-3 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-logo tp-header-3-logo">
                   <Link className="logo-1" href="/">
-                    <Image style={{ width: "60px", height: "60px" }} src={logo_1} alt="logo" />
+                    <Image style={{ width: "auto", height: "60px" }} src={logo_1} alt="logo" />
                   </Link>
                 </div>
               </div>
