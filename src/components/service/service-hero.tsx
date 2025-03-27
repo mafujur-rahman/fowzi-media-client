@@ -13,10 +13,10 @@ export default function ServiceHero() {
           <div className="col-xl-10">
             <div className="sv-hero-title-box">
               <h4 className="sv-hero-title tp-char-animation">
-                Experience <br /> the best services.
+              Elevate Your Brand with Our Creative Solutions
               </h4>
               <p className="tp_fade_bottom">
-              Discover top-notch solutions that meet your needs and exceed expectations.
+              Your brand deserves more than just visuals—it needs impact. At Fowzi Media, we don’t just create; we craft experiences that tell your story, captivate your audience, and drive results.
               </p>
             </div>
           </div>

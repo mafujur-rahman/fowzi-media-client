@@ -13,14 +13,24 @@ export default function AboutUsHero() {
   return (
     <div
       className="ab-inner-hero-area ab-inner-hero-bg p-relative"
-      style={{ backgroundImage: "url(/assets/img/about-us/hero/hero.jpg)" }}
+      style={{
+        backgroundImage: "url(/assets/img/about-us/hero/1.jpg)",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "100% 100%",
+        width: "100%",
+        height: "180vh",
+      }}
     >
+
+
+
       <div className="breadcurmb-site d-none">
-        <h6 style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>About Us</h6>
+        <h6 style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>About Us</h6>
       </div>
       <div className="ab-inner-hero-scroll smooth">
         <a className="pointer" onClick={scrollTo}>
-          <span style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
+          <span style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
             Scroll to explore
             <ScrollDown />
           </span>
@@ -57,7 +67,7 @@ export default function AboutUsHero() {
                 digital experiences that engage, inspire,
                 and deliver results.
               </p>
-              <a className="tp-btn-white-sm border-style" href="#" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>Explore Our Story</a>
+              <a className="tp-btn-white-sm border-style" href="#" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>Explore Our Story</a>
             </div>
           </div>
         </div>

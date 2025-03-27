@@ -13,48 +13,126 @@ const service_data = [
   {
     id: 1,
     img: ser_img_1,
-    link: "/branding-details",
-    subtitle: "Design Studio",
-    title: "branding",
-    text: "At Fowzi Media, we specialize in crafting captivating brand identities that resonate with your audience and leave a lasting impression. From logo design to website development, our comprehensive branding services are designed to propel your business forward and help you stand out in a crowded marketplace.",
+    link: "/contact",
+    subtitle: "Branding Studio",
+    title: "Essential Brand Starter",
+    text: "💡 For startups & small businesses looking to establish their brand identity",
     lists: [
-      "Brand Strategy",
-      "Logo and Visual Identity",
-      "Brand Collateral",
-      "Social Media Branding",
-      "Brand Guidelines",
+      {
+        title: "Logo & Brand Identity",
+        subtitles: [
+          "Custom logo design (3 initial concepts, 2 rounds of revisions)",
+          "Brand color palette selection",
+          "Typography (font pairings for digital & print use)",
+          "Basic brand guidelines (how to use your brand consistently)",
+        ],
+      },
+      {
+        title: "Website (3 Pages)",
+        subtitles: [
+          "Home Page – Showcases your brand’s key message & services",
+          "About Page – Highlights your story, mission, and values",
+          "Contact Page – Includes a contact form, map, and business details",
+          "Mobile-responsive design",
+          "Basic SEO optimization for visibility",
+        ],
+      },
+      {
+        title: "Photography (5 Professional Photos)",
+        subtitles: [
+          "Product or team photography (on-site or studio)",
+          "High-resolution, edited images for website & social media",
+        ],
+      },
     ],
+    timeline: "🕒 Timeline: 3-4 Weeks",
   },
   {
     id: 2,
     img: ser_img_2,
-    link: "/development-details",
-    subtitle: "Development Studio",
-    title: "Development",
-    text: "Transform your online presence with Fowzi Media expert website development services. We specialize in creating stunning websites that captivate your audience and drive results. With our streamlined process and personalized approach, achieving your online goals has never been easier.",
+    link: "/contact",
+    subtitle: "Growth Media",
+    title: "Growth Media Package",
+    text: "📈 For businesses ready to expand their digital presence with engaging visuals",
     lists: [
-      "Responsive Website",
-      "Real Estate",
-      "Health Care",
-      "Travel",
-      "Restaurant",
-      "E - Learning",
+      {
+        title: "Full Brand Identity & Guidelines",
+        subtitles: [
+          "Everything from the Essential Package",
+          "Additional branding elements (business card design, social media templates)",
+        ],
+      },
+      {
+        title: "Website (5 Pages)",
+        subtitles: [
+          "Home, About, Contact + 2 Additional Pages (e.g., Services, Portfolio, Blog)",
+          "SEO optimization (meta descriptions, keyword setup, speed optimization)",
+          "Integration with social media & Google Analytics",
+          "Mobile & tablet-friendly design",
+        ],
+      },
+      {
+        title: "Photography (15 Professional Photos)",
+        subtitles: [
+          "High-quality product, lifestyle, and team shots",
+          "Includes post-editing for commercial use",
+          "Suitable for website, social media, and marketing materials",
+        ],
+      },
+      {
+        title: "Video Production (1-Minute Promo Video)",
+        subtitles: [
+          "Professionally shot & edited promotional video",
+          "Can be a company introduction, product showcase, or social media ad",
+          "Includes script assistance, voiceover, and background music",
+        ],
+      },
     ],
+    timeline: "🕒 Timeline: 5-6 Weeks",
   },
   {
     id: 3,
     img: ser_img_3,
-    link: "/videography-details",
-    subtitle: "Video Studio",
-    title: "Videography",
-    text: "Elevate your brand with captivating video content that tells your story and engages your audience. Fowzi Media specializes in professional videography services that bring your vision to life and leave a lasting impression. From corporate videos to promotional content, we're here to help you stand out in a crowded digital landscape.",
+    link: "/contact",
+    subtitle: "Premium Branding",
+    title: "Premium Visual Experience",
+    text: "🚀 For established brands seeking high-end branding & media solutions",
     lists: [
-      "Corporate Videos",
-      "Promotional Videos",
-      "Event Coverage",
-      "Product Demonstrations",
-      "Testimonials & Interviews",
+      {
+        title: "Advanced Brand Strategy & Positioning",
+        subtitles: [
+          "In-depth brand discovery session",
+          "Market & competitor analysis",
+          "Brand voice & messaging guide",
+          "Comprehensive brand guidelines",
+        ],
+      },
+      {
+        title: "Website (8 Pages, Fully Custom Design)",
+        subtitles: [
+          "Includes everything from the Growth Media Package",
+          "Additional features like eCommerce integration, booking system, blog, portfolio",
+          "Advanced SEO setup (keyword research, Google My Business setup)",
+          "Custom animations & interactive elements for a high-end look",
+        ],
+      },
+      {
+        title: "Photography (30+ Professional Photos)",
+        subtitles: [
+          "Full brand photoshoot (products, team, workspace, lifestyle shots)",
+          "Edited high-resolution images for digital & print use",
+        ],
+      },
+      {
+        title: "Video Production (3 High-Quality Videos)",
+        subtitles: [
+          "Brand Story Video (2-3 minutes) – Tells your company’s journey & mission",
+          "Testimonial or Case Study Video – Client/customer reviews in video format",
+          "Social Media Ad (30 sec-1 min) – Designed for Instagram, Facebook, or YouTube",
+        ],
+      },
     ],
+    timeline: "🕒 Timeline: 8-10 Weeks",
   },
 ];
 
@@ -78,27 +156,31 @@ export default function ServiceSix() {
                 <div className="sv-service-content-wrap d-flex align-items-center">
                   <div className="sv-service-content">
                     <div className="sv-service-title-box">
-                      <span className="sv-service-subtitle">
+                      <span className="sv-service-title">
                         <i style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>{item.id < 9 ? "0" + item.id : item.id}</i>
-                        {item.subtitle}
+                        {item.title}
                       </span>
-                      <h4 className="sv-service-title" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>{item.title}</h4>
                     </div>
                     <div className="sv-service-space-wrap">
                       <div className="sv-service-text">
                         <p style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>{item.text}</p>
                       </div>
                       <div className="sv-service-list">
-                        <ul style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
+                        <h3 style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
                           {item.lists.map((list, i) => (
-                            <li key={i}>{list}</li>
+                            <li key={i}>{list.title}</li>
+                          ))}
+                        </h3>
+                        <ul>
+                          {item.lists.map((list, j) =>(
+                            <li key={j}>{list.subtitles}</li>
                           ))}
                         </ul>
                       </div>
                       <div className="sv-service-btn">
                         <Link
                           className="tp-btn-zikzak zikzak-inner p-relative"
-                          href={item.link}
+                          href="/contact"
                         >
                           <span className="zikzak-content" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
                             See <br /> Details

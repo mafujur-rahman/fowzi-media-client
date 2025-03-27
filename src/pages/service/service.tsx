@@ -56,10 +56,9 @@ const ServiceMain = () => {
                         Services
                       </span>
                       <h4 className="tp-service-5-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
-                        From web development to branding, videography, and photography-unlock{" "}
-                        <br />
-                        the power of seamless creativity with our integrated solutions.
+                        Reverse-Engineered Packages for a Complete Solution{" "}
                       </h4>
+                      <p className="pt-10">We know brands need more than just scattered services—they need cohesive, high-impact solutions. That’s why we’ve carefully designed packages that bring together branding, web, photography, and video into one powerful experience.</p>
                     </div>
                   </div>
                 </div>

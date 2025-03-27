@@ -21,10 +21,13 @@ import {charAnimation,titleAnimation} from "@/utils/title-animation";
 import port_d_1 from '@/assets/img/latest-projects/jannah-fitwear-details-mockup/1.jpg';
 import port_d_2 from '@/assets/img/latest-projects/jannah-fitwear-details-mockup/2.jpg';
 import port_d_3 from '@/assets/img/latest-projects/jannah-fitwear-details-mockup/3.jpg';
+import port_d_4 from '@/assets/img/latest-projects/jannah-fitwear-details-mockup/4.jpg';
+import port_d_5 from '@/assets/img/latest-projects/jannah-fitwear-details-mockup/5.jpg';
+import port_d_6 from '@/assets/img/latest-projects/jannah-fitwear-details-mockup/6.jpg';
 import FooterFour from "@/layouts/footers/footer-four";
 import HeaderFour from "@/layouts/headers/header-four";
 
-const port_images = [port_d_1, port_d_2, port_d_3];
+const port_images = [port_d_1, port_d_2, port_d_3, port_d_4,port_d_5,port_d_6];
 
 const JannahFitwearDetailsMain = () => {
   const [showSocial, setShowSocial] = React.useState(false);

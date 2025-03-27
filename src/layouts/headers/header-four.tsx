@@ -64,14 +64,14 @@ export default function HeaderFour() {
                             borderRadius: "30px",
                             fontFamily: 'Glacial Indifference',
                             fontWeight: 'bold',
-                            display: "inline-flex",  // Keeps the background fitted to content
-                            gap: "10px",  // Reduces spacing between items
-                            width: "fit-content",  // Prevents unnecessary stretching
-                            margin: "0 auto",  // Centers the UL horizontally
-                            justifyContent: "center", // Ensures the items are aligned in the center
+                            display: "inline-flex",
+                            gap: "10px",  
+                            width: "fit-content",  
+                            margin: "0 auto",  
+                            justifyContent: "center",
                           }}>
                           <li><Link href="/" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Home</Link></li>
-                          <li><Link href="/packages" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Packages</Link></li>
+                          <li><Link href="/service" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Services</Link></li>
                           <li><Link href="/about-us" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>About</Link></li>
                           <li><Link href="/portfolio-wrapper" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Portfolio</Link></li>
                           <li><Link href="/blogs" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Blogs</Link></li>
@@ -109,7 +109,7 @@ export default function HeaderFour() {
           <div className="offcanvas-body">
             <ul className="list-unstyled">
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/packages">Packages</Link></li>
+              <li><Link href="/service">Services</Link></li>
               <li><Link href="/about-us">About</Link></li>
               <li><Link href="/portfolio-wrapper">Portfolio</Link></li>
               <li><Link href="/blogs">Blogs</Link></li>

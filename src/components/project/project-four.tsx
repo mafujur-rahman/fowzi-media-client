@@ -18,6 +18,7 @@ const project_data = [
     img_1: port_1,
     img_2: port_2,
     title: "Hudda For St. Cloud",
+    subtitle: "Branding + Website",
     link: "/hudda-details"
   },
   {
@@ -25,6 +26,7 @@ const project_data = [
     img_1: port_3,
     img_2: port_4,
     title: "Jannah Fitwear",
+    subtitle: "Branding + Website + Videography + Photography",
     link: "jannah-fitwear-details"
   },
   {
@@ -32,6 +34,7 @@ const project_data = [
     img_1: port_5,
     img_2: port_6,
     title: "Awad for Puntland",
+    subtitle: "Branding + Website",
     link: "awad-details"
   }
 ];
@@ -96,6 +99,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                           )}
                         </Link>
                       </h4>
+                      <p className="pb-10" style={{font: "bold", color: "#111111"}}>{item.subtitle}</p>
                       <Link
                         className="tp-btn-project-sm"
                         href={item.link}
