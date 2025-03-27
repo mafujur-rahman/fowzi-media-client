@@ -58,7 +58,7 @@ export default function HeaderFour() {
                       <nav className="tp-main-menu-content w-100">
                         <ul className="d-flex justify-content-between list-unstyled mb-0 w-100 text-white" style={{ backgroundColor: "#424242", padding: "6px 8px", borderRadius: "30px", fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                           <li><Link href="/" style={{ fontSize: `${fontSize}px` }}>HOME</Link></li>
-                          <li><Link href="/service" style={{ fontSize: `${fontSize}px` }}>SERVICES</Link></li>
+                          <li><Link href="/packages" style={{ fontSize: `${fontSize}px` }}>PACKAGES</Link></li>
                           <li><Link href="/about-us" style={{ fontSize: `${fontSize}px` }}>ABOUT</Link></li>
                           <li><Link href="/portfolio-wrapper" style={{ fontSize: `${fontSize}px` }}>PORTFOLIO</Link></li>
                           <li><Link href="/blogs" style={{ fontSize: `${fontSize}px` }}>BLOGS</Link></li>
@@ -94,7 +94,7 @@ export default function HeaderFour() {
           <div className="offcanvas-body">
             <ul className="list-unstyled">
               <li><Link href="/">HOME</Link></li>
-              <li><Link href="/service">SERVICES</Link></li>
+              <li><Link href="/packages">PACKAGES</Link></li>
               <li><Link href="/about-us">ABOUT</Link></li>
               <li><Link href="/portfolio-wrapper">PORTFOLIO</Link></li>
               <li><Link href="/blogs">BLOGS</Link></li>
