@@ -57,3 +57,10 @@ export function ServiceItems() {
         </div>
   );
 }
+
+
+const ServiceFive = () => {
+  return <div>Service Five Component</div>;
+};
+
+export default ServiceFive; // Ensure this line exists

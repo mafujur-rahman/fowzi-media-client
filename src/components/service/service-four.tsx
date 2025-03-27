@@ -10,21 +10,21 @@ const service_data = [
     title: "Branding",
     desc: "We specialize in crafting captivating brand identities that resonate with your audience and leave a lasting impression.",
     category: ["Branding", "Brand Strategy", "Brand Guidelines"],
-    link: "/branding-details",
+    link: "/portfolio-wrapper",
   },
   {
     id: 2,
     title: "Development",
     desc: "We specialize in creating stunning websites that captivate your audience and drive results.",
     category: ["SEO", "Development", "Custom Proactive Solutions"],
-    link: "/development-details",
+    link: "/portfolio-wrapper",
   },
   {
     id: 3,
     title: "Videography",
     desc: "We specializes in professional videography services that bring your vision to life and leavea lasting impression.",
     category: ["Creative", "Storytelling", "Promotional Videos"],
-    link: "/videography-details",
+    link: "/portfolio-wrapper",
   },
 ];
 export default function ServiceFour() {

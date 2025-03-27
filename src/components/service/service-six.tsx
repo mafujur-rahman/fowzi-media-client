@@ -144,45 +144,90 @@ export default function ServiceSix() {
           <div key={item.id} className="sv-service-item project-panel-2">
             <div className="row g-0">
               <div className="col-xl-6 col-lg-6">
-                <div className="sv-service-thumb">
+                <div className="sv-service-thumb h-100">
                   <Image
                     src={item.img}
                     alt="service-img"
-                    style={{ height: "fit" }}
+                    style={{
+                      height: "100%",
+                      width: "100%",
+                      objectFit: "cover"
+                    }}
                   />
                 </div>
               </div>
               <div className="col-xl-6 col-lg-6">
-                <div className="sv-service-content-wrap d-flex align-items-center">
-                  <div className="sv-service-content">
-                    <div className="sv-service-title-box">
+                <div className=" d-flex align-items-center h-100" style={{backgroundColor: "#1E1E1E"}}>
+                  <div className=" p-5 ">
+                    <div className="sv-service-title-box mb-4">
                       <span className="sv-service-title">
-                        <i style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>{item.id < 9 ? "0" + item.id : item.id}</i>
-                        {item.title}
+                        <i style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+                          {item.id < 9 ? "0" + item.id : item.id}
+                        </i>
+                        &mdash; {item.title}
                       </span>
                     </div>
                     <div className="sv-service-space-wrap">
-                      <div className="sv-service-text">
-                        <p style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>{item.text}</p>
+                      <div className="sv-service-text mb-5">
+                        <p style={{
+                          fontFamily: 'Glacial Indifference',
+                          fontWeight: 'bold',
+                          fontSize: '1.2rem'
+                        }}>
+                          {item.text}
+                        </p>
                       </div>
                       <div className="sv-service-list">
-                        <h3 style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
+                        <div className="row">
                           {item.lists.map((list, i) => (
-                            <li key={i}>{list.title}</li>
+                            <div key={i} className="col-md-6 mb-4">
+                              <h3 style={{
+                                fontFamily: 'Glacial Indifference',
+                                fontWeight: 'bold',
+                                color: 'white',
+                                fontSize: '1.5rem',
+                                marginBottom: '1rem'
+                              }}>
+                                {list.title}
+                              </h3>
+                              <ul style={{ listStyleType: 'none', paddingLeft: '0' }}>
+                                {list.subtitles.map((subtitle, j) => (
+                                  <li key={j} style={{
+                                    fontFamily: 'Glacial Indifference',
+                                    marginBottom: '0.5rem',
+                                    position: 'relative',
+                                    paddingLeft: '1.5rem'
+                                  }}>
+                                    <span style={{
+                                      position: 'absolute',
+                                      left: 0,
+                                      color: 'gray'
+                                    }}>•</span>
+                                    {subtitle}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
                           ))}
-                        </h3>
-                        <ul>
-                          {item.lists.map((list, j) =>(
-                            <li key={j}>{list.subtitles}</li>
-                          ))}
-                        </ul>
+                        </div>
+                        <div className="mt-4 " style={{
+                          fontFamily: 'Glacial Indifference',
+                          fontWeight: 'bold',
+                          fontSize: '1.1rem',
+                          color: 'white'
+                        }}>
+                          {item.timeline}
+                        </div>
                       </div>
-                      <div className="sv-service-btn">
+                      <div className="sv-service-btn mt-5">
                         <Link
                           className="tp-btn-zikzak zikzak-inner p-relative"
                           href="/contact"
                         >
-                          <span className="zikzak-content" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
+                          <span className="zikzak-content" style={{
+                            fontFamily: 'Glacial Indifference',
+                            fontWeight: 'bold'
+                          }}>
                             See <br /> Details
                             <RightArrow clr="currentColor" />
                           </span>
