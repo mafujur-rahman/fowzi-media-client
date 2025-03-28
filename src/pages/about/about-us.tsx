@@ -21,6 +21,7 @@ import FooterFour from "@/layouts/footers/footer-four";
 import HeaderFour from "@/layouts/headers/header-four";
 import BrandFive from "@/components/brand/brand-five";
 import Testimonial from "@/components/testimonial/testimonial";
+import AboutCall2Action from "@/components/call-to-action/call-to-action";
 
 const AboutUsMain = () => {
   useScrollSmooth();
@@ -68,6 +69,10 @@ const AboutUsMain = () => {
             {/* award area */}
             <Testimonial />
             {/* award area */}
+
+            {/* call to action */}
+            <AboutCall2Action />
+            {/* call to action */}
 
           </main>
 

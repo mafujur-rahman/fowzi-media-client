@@ -2,12 +2,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { NextIcon, PrevIcon } from "../svg";
-import { ArrowBg, RightArrowTwo } from "../../../src/components/svg";
 
 // Images
 import defaultAvatar from "@/assets/img/about-us/default-img.webp";
-import Link from "next/link";
-
 
 type IProps = {
     cls?: string;
@@ -28,7 +25,7 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
             id: 1,
             name: "Mohamud Isse",
             text: "Fowzi Media's team has been excellent to work with. Their communication was on point, and the design exceeded our expectations.",
-            image: "/assets/img/about-us/default-img.webp", // Replace with actual image path
+            image: "/assets/img/about-us/default-img.webp",
         },
         {
             id: 2,
@@ -90,25 +87,9 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
                     </div>
                 </div>
 
-                <div className="row align-items-center position-relative">
-                    {/* Left Arrow - More prominent styling */}
-                    <button
-                        onClick={goToPrevious}
-                        className="position-absolute start-0 top-50 translate-middle-y bg-white border-0 shadow-sm rounded-circle p-3 d-flex align-items-center justify-content-center"
-                        style={{
-                            zIndex: 1,
-                            left: "-25px",
-                            width: "50px",
-                            height: "50px",
-                            transform: "translateY(-50%)"
-                        }}
-                        aria-label="Previous testimonial"
-                    >
-                        <PrevIcon />
-                    </button>
-
+                <div className="row align-items-center">
                     {/* Image Section */}
-                    <div className="col-xl-4 col-lg-4 col-md-12 d-flex justify-content-center">
+                    <div className="col-xl-4 col-lg-4 col-md-12 d-flex justify-content-center mb-4 mb-lg-0">
                         <div className="tp-award-list-thumb-wrap position-relative text-center">
                             <div className="rounded-circle overflow-hidden mx-auto" style={{ width: "250px", height: "250px" }}>
                                 <Image
@@ -137,74 +118,50 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
                     </div>
 
                     {/* Text Section */}
-                    <div className="col-xl-8 col-lg-8 col-md-12 position-relative">
+                    <div className="col-xl-8 col-lg-8 col-md-12">
                         <div className="tp-award-list-wrap ps-lg-4">
-                            <blockquote className="text-justify fs-5 fst-italic" style={{ lineHeight: 1.6 }}>
+                            <blockquote className="text-justify fs-5 fst-italic mb-4" style={{ lineHeight: 1.6 }}>
                                 {currentTestimonial.text}
                             </blockquote>
-                        </div>
 
-                        {/* Mobile Arrows - Bottom centered */}
-                        <div className="d-flex justify-content-center gap-3 mt-4 d-lg-none">
-                            <button
-                                onClick={goToPrevious}
-                                className="btn btn-outline-primary rounded-circle p-2"
-                                aria-label="Previous testimonial"
-                            >
-                                <PrevIcon />
-                            </button>
-                            <div className="d-flex align-items-center gap-2">
-                                {testimonials.map((_, index) => (
-                                    <button
-                                        key={index}
-                                        onClick={() => setCurrentIndex(index)}
-                                        className={`rounded-circle p-0 ${currentIndex === index ? 'bg-primary' : 'bg-secondary'}`}
-                                        style={{
-                                            width: "10px",
-                                            height: "10px",
-                                            border: "none",
-                                            opacity: currentIndex === index ? 1 : 0.5
-                                        }}
-                                        aria-label={`Go to testimonial ${index + 1}`}
-                                    />
-                                ))}
+                            {/* Navigation Controls */}
+                            <div className="d-flex align-items-center ps-lg-4 pt-100" style={{ gap: "1.5rem" }}>
+                                <button
+                                    onClick={goToPrevious}
+                                    className="bg-transparent border-0 p-0 d-flex align-items-center"
+                                    aria-label="Previous testimonial"
+                                >
+                                    <PrevIcon />
+                                </button>
+
+                                <div className="d-flex align-items-center" style={{ gap: "0.5rem" }}>
+                                    {testimonials.map((_, index) => (
+                                        <button
+                                            key={index}
+                                            onClick={() => setCurrentIndex(index)}
+                                            className={`rounded-circle p-0 ${currentIndex === index ? 'bg-black' : 'bg-secondary'}`}
+                                            style={{
+                                                width: "8px",
+                                                height: "8px",
+                                                border: "none",
+                                                opacity: currentIndex === index ? 1 : 0.5
+                                            }}
+                                            aria-label={`Go to testimonial ${index + 1}`}
+                                        />
+                                    ))}
+                                </div>
+
+                                <button
+                                    onClick={goToNext}
+                                    className="bg-transparent border-0 p-0 d-flex align-items-center"
+                                    aria-label="Next testimonial"
+                                >
+                                    <NextIcon />
+                                </button>
                             </div>
-                            <button
-                                onClick={goToNext}
-                                className="btn btn-outline-primary rounded-circle p-2"
-                                aria-label="Next testimonial"
-                            >
-                                <NextIcon />
-                            </button>
                         </div>
                     </div>
-
-                    {/* Right Arrow - More prominent styling */}
-                    <button
-                        onClick={goToNext}
-                        className="position-absolute end-0 top-50 translate-middle-y bg-white border-0 shadow-sm rounded-circle p-3 d-none d-lg-flex align-items-center justify-content-center"
-                        style={{
-                            zIndex: 1,
-                            right: "-25px",
-                            width: "50px",
-                            height: "50px",
-                            transform: "translateY(-50%)"
-                        }}
-                        aria-label="Next testimonial"
-                    >
-                        <NextIcon />
-                    </button>
                 </div>
-                <div className="d-flex justify-content-center align-items-center text-center">
-                    <Link className="tp-btn-black-2" target="_blank" href="https://calendly.com/fowzimedia/free-consultation?month=2025-03" style={{ fontFamily: 'Glacial Indifference' }}>
-                        Book free consultation today{" "}
-                        <span className="p-relative">
-                            <RightArrowTwo />
-                            <ArrowBg />
-                        </span>
-                    </Link>
-                </div>
-
             </div>
         </div>
     );
