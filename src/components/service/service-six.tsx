@@ -139,109 +139,110 @@ const service_data = [
 export default function ServiceSix() {
   return (
     <div className="sv-service-area project-panel-area-2 pb-100">
-      <div className="container-fluid p-0">
-        {service_data.map((item) => (
-          <div key={item.id} className="sv-service-item project-panel-2">
-            <div className="row g-0">
-              <div className="col-xl-6 col-lg-6">
-                <div className="sv-service-thumb h-100">
-                  <Image
-                    src={item.img}
-                    alt="service-img"
-                    style={{
-                      height: "100%",
-                      width: "100%",
-                      objectFit: "cover"
-                    }}
-                  />
-                </div>
+    <div className="container-fluid p-0">
+      {service_data.map((item) => (
+        <div key={item.id} className="sv-service-item project-panel-2">
+          <div className="row g-0">
+            <div className="col-xl-6 col-lg-6">
+              <div className="sv-service-thumb h-100">
+                <Image
+                  src={item.img}
+                  alt="service-img"
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                    objectFit: "cover"
+                  }}
+                />
               </div>
-              <div className="col-xl-6 col-lg-6">
-                <div className=" d-flex align-items-center h-100" style={{backgroundColor: "#1E1E1E"}}>
-                  <div className=" p-5 ">
-                    <div className="sv-service-title-box mb-4">
-                      <span className="sv-service-title">
-                        <i style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
-                          {item.id < 9 ? "0" + item.id : item.id}
-                        </i>
-                        &mdash; {item.title}
-                      </span>
+            </div>
+            <div className="col-xl-6 col-lg-6">
+              <div className=" d-flex align-items-center h-100" style={{backgroundColor: "#1E1E1E"}}>
+                <div className=" p-4 ">
+                  <div className="sv-service-title-box mb-3">
+                    <span className="sv-service-title" style={{ fontSize: "1rem" }}>
+                      <i style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+                        {item.id < 9 ? "0" + item.id : item.id}
+                      </i>
+                      &mdash; {item.title}
+                    </span>
+                  </div>
+                  <div className="sv-service-space-wrap">
+                    <div className="sv-service-text mb-4">
+                      <p style={{
+                        fontFamily: 'Glacial Indifference',
+                        fontWeight: 'bold',
+                        fontSize: '1rem'
+                      }}>
+                        {item.text}
+                      </p>
                     </div>
-                    <div className="sv-service-space-wrap">
-                      <div className="sv-service-text mb-5">
-                        <p style={{
+                    <div className="sv-service-list">
+                      <div className="row">
+                        {item.lists.map((list, i) => (
+                          <div key={i} className="col-md-6 mb-3">
+                            <h3 style={{
+                              fontFamily: 'Glacial Indifference',
+                              fontWeight: 'bold',
+                              color: 'white',
+                              fontSize: '1.2rem',
+                              marginBottom: '0.8rem'
+                            }}>
+                              {list.title}
+                            </h3>
+                            <ul style={{ listStyleType: 'none', paddingLeft: '0' }}>
+                              {list.subtitles.map((subtitle, j) => (
+                                <li key={j} style={{
+                                  fontFamily: 'Glacial Indifference',
+                                  marginBottom: '0.4rem',
+                                  position: 'relative',
+                                  paddingLeft: '1.2rem',
+                                  fontSize: '0.9rem'
+                                }}>
+                                  <span style={{
+                                    position: 'absolute',
+                                    left: 0,
+                                    color: 'gray'
+                                  }}>•</span>
+                                  {subtitle}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="mt-3 " style={{
+                        fontFamily: 'Glacial Indifference',
+                        fontWeight: 'bold',
+                        fontSize: '1rem',
+                        color: 'white'
+                      }}>
+                        {item.timeline}
+                      </div>
+                    </div>
+                    <div className="sv-service-btn mt-4">
+                      <Link
+                        className="tp-btn-zikzak zikzak-inner p-relative"
+                        href="/contact"
+                      >
+                        <span className="zikzak-content" style={{
                           fontFamily: 'Glacial Indifference',
-                          fontWeight: 'bold',
-                          fontSize: '1.2rem'
+                          fontWeight: 'bold'
                         }}>
-                          {item.text}
-                        </p>
-                      </div>
-                      <div className="sv-service-list">
-                        <div className="row">
-                          {item.lists.map((list, i) => (
-                            <div key={i} className="col-md-6 mb-4">
-                              <h3 style={{
-                                fontFamily: 'Glacial Indifference',
-                                fontWeight: 'bold',
-                                color: 'white',
-                                fontSize: '1.5rem',
-                                marginBottom: '1rem'
-                              }}>
-                                {list.title}
-                              </h3>
-                              <ul style={{ listStyleType: 'none', paddingLeft: '0' }}>
-                                {list.subtitles.map((subtitle, j) => (
-                                  <li key={j} style={{
-                                    fontFamily: 'Glacial Indifference',
-                                    marginBottom: '0.5rem',
-                                    position: 'relative',
-                                    paddingLeft: '1.5rem'
-                                  }}>
-                                    <span style={{
-                                      position: 'absolute',
-                                      left: 0,
-                                      color: 'gray'
-                                    }}>•</span>
-                                    {subtitle}
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          ))}
-                        </div>
-                        <div className="mt-4 " style={{
-                          fontFamily: 'Glacial Indifference',
-                          fontWeight: 'bold',
-                          fontSize: '1.1rem',
-                          color: 'white'
-                        }}>
-                          {item.timeline}
-                        </div>
-                      </div>
-                      <div className="sv-service-btn mt-5">
-                        <Link
-                          className="tp-btn-zikzak zikzak-inner p-relative"
-                          href="/contact"
-                        >
-                          <span className="zikzak-content" style={{
-                            fontFamily: 'Glacial Indifference',
-                            fontWeight: 'bold'
-                          }}>
-                            See <br /> Details
-                            <RightArrow clr="currentColor" />
-                          </span>
-                          <ShapeTwo />
-                        </Link>
-                      </div>
+                          See <br /> Details
+                          <RightArrow clr="currentColor" />
+                        </span>
+                        <ShapeTwo />
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
+  </div>
   );
 }

@@ -18,9 +18,9 @@ export default function HeroBannerFour() {
                 <span className="tp-reveal-line">with digital solutions</span>
               </h4>
               <span className="tp-hero-3-category tp_reveal_anim" style={{ fontFamily: 'Glacial Indifference' }}>
-                ux/ui design / motion design / branding / development
+                BRANDING / DEVELOPMENT / VIDEOGRAPHY / PHOTOGRAPHY
               </span>
-              <Link className="tp-btn-black-2" href="/contact" style={{ fontFamily: 'Glacial Indifference' }}>
+              <Link className="tp-btn-black-2" target="_blank" href="https://calendly.com/fowzimedia/free-consultation?month=2025-03" style={{ fontFamily: 'Glacial Indifference' }}>
               Book free consultation today{" "}
                 <span className="p-relative">
                   <RightArrowTwo />

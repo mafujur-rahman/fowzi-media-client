@@ -6,7 +6,7 @@ import { ProjectShape, RightArrow } from "../svg";
 import port_1 from "@/assets/img/latest-projects/hudda/branding/door hanger mockup/door-hanger.jpg";
 import port_2 from "@/assets/img/latest-projects/hodda-web.jpg";
 import port_3 from "@/assets/img/latest-projects/jannah-branding.jpg";
-import port_4 from "@/assets/img/latest-projects/jannah-photography.jpg";
+import port_4 from "@/assets/img/latest-projects/JannahFitwear52-(2).jpg";
 import port_5 from "@/assets/img/latest-projects/awad/p-1.jpg";
 import port_6 from "@/assets/img/latest-projects/awad/p-2.jpg";
 import Link from "next/link";
@@ -18,7 +18,7 @@ const project_data = [
     img_1: port_1,
     img_2: port_2,
     title: "Hudda For St. Cloud",
-    subtitle: "Branding + Website",
+    subtitle: "Branding + Website + Photography",
     link: "/hudda-details"
   },
   {
@@ -34,7 +34,7 @@ const project_data = [
     img_1: port_5,
     img_2: port_6,
     title: "Awad for Puntland",
-    subtitle: "Branding + Website",
+    subtitle: "Branding + Website + Videography + Photography",
     link: "awad-details"
   }
 ];
@@ -99,7 +99,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                           )}
                         </Link>
                       </h4>
-                      <p className="pb-10" style={{font: "bold", color: "#111111"}}>{item.subtitle}</p>
+                      <p className="pb-10 " style={{font: "bold"}}>{item.subtitle}</p>
                       <Link
                         className="tp-btn-project-sm"
                         href={item.link}

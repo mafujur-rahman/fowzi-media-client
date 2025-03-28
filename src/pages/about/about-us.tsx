@@ -20,7 +20,7 @@ import { teamMarqueAnim } from "@/utils/scroll-marque";
 import FooterFour from "@/layouts/footers/footer-four";
 import HeaderFour from "@/layouts/headers/header-four";
 import BrandFive from "@/components/brand/brand-five";
-import AwardOne from "@/components/award/award-one";
+import Testimonial from "@/components/testimonial/testimonial";
 
 const AboutUsMain = () => {
   useScrollSmooth();
@@ -66,7 +66,7 @@ const AboutUsMain = () => {
             {/* brand area */}
 
             {/* award area */}
-            <AwardOne cls="ab-award-style pt-120 pb-120" abStyle={true} />
+            <Testimonial />
             {/* award area */}
 
           </main>

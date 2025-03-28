@@ -4,9 +4,9 @@ import { Hand } from "../svg";
 
 // images
 import shape from "@/assets/img/inner-about/about/shape-1.png";
-import ab_1 from "@/assets/img/about-us/hero/img-left.jpg";
-import ab_2 from "@/assets/img/about-us/hero/r-b.jpg";
-import ab_3 from "@/assets/img/about-us/hero/r-t.jpg";
+import ab_1 from "@/assets/img/about-us/about-a-r-1.jpg";
+import ab_2 from "@/assets/img/about-us/about-a-2.png";
+import ab_3 from "@/assets/img/about-us/about-a-3.jpg";
 
 export default function AboutUsArea() {
   return (
@@ -51,7 +51,7 @@ export default function AboutUsArea() {
                 Hi!
               </span>
               <p className="tp-dropcap tp_fade_bottom" >
-              Fowzi Media is a leading branding and marketing agency specializing in video production, photography, and strategic communications. As a minority-immigrant-owned firm, we craft compelling digital stories that engage audiences and drive social impact. Our expertise bridges communication gaps between public, nonprofit, and private sectors and diverse communities. With a dedicated team and trusted collaborators, we deliver innovative marketing solutions—from impactful video ads to full-scale branding strategies.
+              A Minnesota-based creative agency turning ideas into powerful digital experiences. We specialize in branding, video production, web design, and development—helping brands connect, engage, and grow. More than just creators, we’re your strategic partner in innovation. Let’s bring your vision to life.
               </p>
             </div>
           </div>
