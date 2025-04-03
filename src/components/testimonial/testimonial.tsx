@@ -8,12 +8,11 @@ type IProps = {
 };
 
 const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
-  useEffect(() => {
-    // This will ensure the widget reloads if the component remounts
-    if (window.Elsight) {
-      window.Elsight.init();
-    }
-  }, []);
+    useEffect(() => {
+        if (typeof window !== "undefined" && "Elsight" in window) {
+            (window as any).Elsight.init();
+        }
+    }, []);
 
   return (
     <div className={`tp-award-area ${cls}`}>
