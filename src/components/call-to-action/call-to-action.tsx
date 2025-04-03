@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const AboutCall2Action = () => {
@@ -19,7 +20,9 @@ const AboutCall2Action = () => {
                                 </p>
                             </div>
 
-                            <button
+                            <Link
+                                target="_blank" 
+                                href="https://calendly.com/fowzimedia/free-consultation?month=2025-03"
                                 className="btn btn-light btn-lg px-5 py-3 fw-bold"
                                 style={{
                                     borderRadius: "50px",
@@ -30,7 +33,7 @@ const AboutCall2Action = () => {
                                 }}
                             >
                                 Book Free Consultation Today
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

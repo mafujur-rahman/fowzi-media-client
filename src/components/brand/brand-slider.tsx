@@ -1,73 +1,48 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
+// images
+import b_1 from "@/assets/img/service-brand-logo/new/City_of_Minneapolis_logo,_2023.svg";
+import b_2 from "@/assets/img/service-brand-logo/new/Town_of_St._Paul_logo.svg";
+import b_3 from "@/assets/img/service-brand-logo/new/citizensleague-logo.svg";
+import b_4 from "@/assets/img/service-brand-logo/new/logo-mdh-mn-v-blu_cmyk.svg";
+import b_5 from "@/assets/img/service-brand-logo/new/tChair.png";
+import b_6 from "@/assets/img/service-brand-logo/new/university-of-minnesota.svg";
+import b_7 from "@/assets/img/service-brand-logo/new/wellshare.svg";
+
 // brand images
-import b_1 from "@/assets/img/branding-spon-img/tChair.png";
-import b_2 from "@/assets/img/branding-spon-img/tONe.png";
-import b_3 from "@/assets/img/branding-spon-img/tRisingImpact.png";
-import b_4 from "@/assets/img/branding-spon-img/trustedLogoFour.png";
-import b_5 from "@/assets/img/branding-spon-img/trustedLogoSeven.png";
-import b_6 from "@/assets/img/branding-spon-img/trustedLogoThree.png";
-
-
-
-const brand_images = [b_1, b_2, b_3, b_4, b_5, b_6, b_1, b_2, b_3, b_4, b_5, b_6, ];
+const brand_images = [b_1, b_2, b_3, b_4, b_5, b_6, b_7];
 
 export default function BrandSlider() {
   return (
-    <div className="tp-brand-slider-active fix">
-      <Marquee speed={100} loop={0} className="brand-wrapper">
-  {brand_images.map((b, i) => (
-    <div 
-      key={i} 
-      className="tp-brand-item"
-      style={{ 
-        height: "80px", // Fixed height for all images
-        width: "200px", 
-        margin: "0 20px", // Add spacing between images
-        display: "flex",
-        alignItems: "flex-end", // Forces all images to align at the bottom
-        justifyContent: "center",
-        overflow: "hidden"
-      }}
-    >
-      <Image 
-        src={b} 
-        alt="" 
-        width={180} 
-        height={80} 
-        style={{ 
-          display: "block", 
-          objectFit: "contain", // Maintains aspect ratio
-          filter: "grayscale(1) brightness(0.5)", // Keeps images gray instead of full black
-        }} 
-      />
-    </div>
-  ))}
-</Marquee>
-
-
-
-
-
-
-
-
-      {/* <Swiper
-        {...slider_setting}
-        modules={[Autoplay, FreeMode]}
-        className="brand-wrapper"
-      >
-        {brand_images.map((b, i) => (
-          <SwiperSlide key={i}>
-            <div className="tp-brand-item">
-              <Image src={b} alt="" />
+    <div>
+      <div className="container">
+        <div className="row"></div>
+        <div className="row">
+          <div className="col-xl-12">
+            <div className="ab-brand-wrapper mb-20">
+              <div className="swiper-container ab-brand-slide-active">
+                <Marquee speed={100} loop={0} className="ab-brand-slide-wrap">
+                  {brand_images.map((b, i) => (
+                    <div key={i} className="ab-brand-item">
+                      <Image
+                        src={b}
+                        alt="brand"
+                        style={{
+                          height: "80px",
+                          width: "auto",
+                          filter: "grayscale(100%) invert(80%)",
+                        }}
+                      />
+                    </div>
+                  ))}
+                </Marquee>
+              </div>
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper> */}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
