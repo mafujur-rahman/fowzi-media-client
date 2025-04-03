@@ -10,6 +10,7 @@ export default function AboutUsHero() {
       smooth: 'easeInOutQuart',
     });
   };
+
   return (
     <div
       className="ab-inner-hero-area ab-inner-hero-bg p-relative"
@@ -17,29 +18,19 @@ export default function AboutUsHero() {
         backgroundImage: "url(/assets/img/about-us/hero/1.jpg)",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "100% 100%",
+        backgroundSize: "cover", // Maintain aspect ratio
         width: "100%",
-        height: "180vh",
+        minHeight: "80vh", // Make it responsive
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "5% 2%",
       }}
     >
-
-
-
-      <div className="breadcurmb-site d-none">
-        <h6 style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>About Us</h6>
-      </div>
-      <div className="ab-inner-hero-scroll smooth">
-        <a className="pointer" onClick={scrollTo}>
-          <span style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
-            Scroll to explore
-            <ScrollDown />
-          </span>
-        </a>
-      </div>
-      <div className="container container-1480">
+      <div className="container">
         <div className="row">
-          <div className="col-xl-8">
-            <div
+          <div className="col-xl-8 col-lg-10 col-md-12">
+          <div
               className="ab-inner-hero-title-box"
               data-lag="0.2"
               data-stagger="0.08"
@@ -54,22 +45,29 @@ export default function AboutUsHero() {
             </div>
           </div>
         </div>
+
         <div className="row justify-content-end">
-          <div className="col-xl-5 col-lg-8">
-            <div
-              className="ab-inner-hero-content"
+          <div className="col-xl-5 col-lg-8 col-md-10">
+            <div className="ab-inner-hero-content"
               data-lag="0.2"
-              data-stagger="0.08"
-            >
-              <p >
-                Fowzi Media seamlessly merges creativity
-                with cutting-edge technology, crafting
-                digital experiences that engage, inspire,
-                and deliver results.
+              data-stagger="0.08">
+              <p style={{ fontSize: "clamp(1rem, 2vw, 1.2rem)", lineHeight: "1.5" }}>
+                Fowzi Media seamlessly merges creativity with cutting-edge technology, crafting
+                digital experiences that engage, inspire, and deliver results.
               </p>
               <a className="tp-btn-white-sm border-style" href="#" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>Explore Our Story</a>
             </div>
           </div>
+        </div>
+
+        {/* Scroll Down */}
+        <div className="ab-inner-hero-scroll smooth">
+          <a className="pointer" onClick={scrollTo}>
+            <span style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+              Scroll to explore
+              <ScrollDown />
+            </span>
+          </a>
         </div>
       </div>
     </div>
