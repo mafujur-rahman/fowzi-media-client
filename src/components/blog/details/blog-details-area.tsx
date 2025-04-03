@@ -1,11 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import BlogSidebar from "../blog-sidebar";
-import { QuoteThree, Share, Tag } from "@/components/svg";
-import BlogDetailsAuthor from "./blog-details-author";
-import BlogDetailsNavigation from "./blog-details-navigation";
-import BlogDetailsComments from "./blog-details-comments";
-import BlogReplyForm from "@/components/form/blog-reply-form";
+import { QuoteThree } from "@/components/svg";
 import details_thumb_1 from "@/assets/img/inner-blog/blog-details/blog-details-2.jpg";
 import details_thumb_2 from "@/assets/img/inner-blog/blog-details/blog-details-3.jpg";
 import details_thumb_3 from "@/assets/img/inner-blog/blog-details/blog-details-4.jpg";
@@ -127,54 +123,6 @@ export default function BlogDetailsArea() {
                   It has survived not only five centuries, but also the leap
                   into electronic typesetting, remaining essentially unchanged
                 </p>
-              </div>
-              <div className="blog-details-share-wrap mb-40">
-                <div className="row">
-                  <div className="col-xl-8 col-lg-8">
-                    <div className="blog-details-tag">
-                      <span>
-                        <Tag />
-                      </span>
-                      <a href="#">Creative</a>
-                      <a href="#">Photography</a>
-                      <a href="#">Lifestyle</a>
-                    </div>
-                  </div>
-                  <div className="col-xl-4 col-lg-4">
-                    <div className="blog-details-share text-start text-md-end">
-                      <span>
-                        <Share />
-                      </span>
-                      <a href="#">Share Post</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* blog details author */}
-              <BlogDetailsAuthor />
-              {/* blog details author */}
-
-              {/* blog details navigation */}
-              <BlogDetailsNavigation />
-              {/* blog details navigation */}
-
-              <div className="postbox__comment mb-100">
-                <h3 className="postbox__comment-title">3 Comments</h3>
-                {/* blog details comments */}
-                <BlogDetailsComments />
-                {/* blog details comments */}
-              </div>
-
-              <div className="tp-postbox-details-form">
-                <h3 className="tp-postbox-details-form-title">Leave a Reply</h3>
-                <p>
-                  Your email address will not be published. Required fields are
-                  marked *
-                </p>
-
-                {/* blog reply form */}
-                <BlogReplyForm />
-                {/* blog reply form */}
               </div>
             </div>
           </div>

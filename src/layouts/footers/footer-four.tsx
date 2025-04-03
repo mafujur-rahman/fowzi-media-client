@@ -45,8 +45,7 @@ export default function FooterFour() {
               <div className="tp-footer-3-widget text-md-center footer-col-3-2">
                 <div className="tp-footer-3-logo-box">
                   <p className="mb-100" style={{ fontFamily: 'Glacial Indifference' }}>
-                    Drop us a line sed id semper <br />
-                    risus in hend rerit.
+                  We bring together branding, web, photography, and video into one powerful experience.
                   </p>
                   <Link className="tp-footer-3-logo p-relative" href="/">
                     <Image src={logo} alt="logo" />
@@ -64,7 +63,7 @@ export default function FooterFour() {
                   <div className="tp-footer-2-contact-item">
                     <span style={{ fontFamily: 'Glacial Indifference' }}>
                       <a href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
-                        target="_blank">1729 N 2nd St Studio 204A,Minneapolis, MN 55411</a>
+                        target="_blank">1729 N 2nd St Studio 204A, Minneapolis, MN 55411</a>
                     </span>
                   </div>
                   <div className="tp-footer-2-contact-item" >

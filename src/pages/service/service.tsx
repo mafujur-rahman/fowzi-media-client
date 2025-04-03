@@ -50,7 +50,10 @@ const ServiceMain = () => {
               <div className="container container-1530">
                 <div className="row">
                   <div className="col-xl-12">
-                    <div className="tp-service-5-title-box mb-90">
+                    <div className="tp-service-5-wrap">
+                      <ServiceItems />
+                    </div>
+                    <div className="tp-service-5-title-box pt-90 mb-40">
                       <span className="ab-inner-subtitle mb-20" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                         <Leaf />
                         Services
@@ -61,9 +64,6 @@ const ServiceMain = () => {
                       <p className="pt-10">We know brands need more than just scattered services—they need cohesive, high-impact solutions. That’s why we’ve carefully designed packages that bring together branding, web, photography, and video into one powerful experience.</p>
                     </div>
                   </div>
-                </div>
-                <div className="tp-service-5-wrap">
-                  <ServiceItems />
                 </div>
               </div>
             </div>

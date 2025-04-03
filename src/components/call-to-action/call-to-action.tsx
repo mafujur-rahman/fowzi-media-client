@@ -1,39 +1,31 @@
-import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const AboutCall2Action = () => {
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = "https://assets.calendly.com/assets/external/widget.js";
+        script.async = true;
+        document.body.appendChild(script);
+    }, []);
+
     return (
-        <section className="py-5" style={{ backgroundColor: "#141414" }}>
-            <div className="">
-                <div className="row justify-content-center">
-                    <div className="col-lg-8">
-                        <div className="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-                            <div>
-                                <h2 className="display-5 fw-bold text-white mb-3">
-                                    Need Help?
-                                </h2>
-
-                                <p className="lead text-white">
-                                    Join the Digital Growth Revolution – No Limits! <br />
-                                    Launch Your Brand with Impact – No Ordinary Strategies! <br />
-                                    Stand Out. Elevate Your Business – No Boring Marketing Allowed!
-                                </p>
-                            </div>
-
-                            <Link
-                                target="_blank" 
-                                href="https://calendly.com/fowzimedia/free-consultation?month=2025-03"
-                                className="btn btn-light btn-lg px-5 py-3 fw-bold"
-                                style={{
-                                    borderRadius: "50px",
-                                    whiteSpace: "nowrap",
-                                    backgroundColor: "#FFD700",
-                                    color: "#000",
-                                    border: "none"
-                                }}
-                            >
-                                Book Free Consultation Today
-                            </Link>
+        <section className="py-5 d-flex justify-content-center align-items-center" style={{ backgroundColor: "#141414" }}>
+            <div className="container text-center text-md-start">
+                <div className="row justify-content-center align-items-center">
+                    <div className="col-lg-6">
+                        <h2 className="display-5 fw-bold text-white mb-3">
+                            Need Help?
+                        </h2>
+                        <p className="lead text-white">
+                            Join the Digital Growth Revolution – No Limits! <br />
+                            Launch Your Brand with Impact – No Ordinary Strategies! <br />
+                            Stand Out. Elevate Your Business – No Boring Marketing Allowed!
+                        </p>
+                    </div>
+                    <div className="col-lg-6 d-flex justify-content-center">
+                        <div className="calendly-inline-widget" 
+                            data-url="https://calendly.com/fowzimedia/free-consultation" 
+                            style={{ minWidth: "320px", maxWidth: "400px", height: "550px", borderRadius: "10px", overflow: "hidden", backgroundColor: "#fff" }}>
                         </div>
                     </div>
                 </div>

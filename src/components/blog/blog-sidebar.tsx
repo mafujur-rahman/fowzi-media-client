@@ -22,20 +22,6 @@ export default function BlogSidebar() {
         </div>
       </div>
       <div className="sidebar__widget mb-65">
-        <div className="sidebar__widget-content">
-          <div className="sidebar__search">
-            <form action="#">
-              <div className="sidebar__search-input-2">
-                <input type="text" placeholder="Search product" />
-                <button type="submit">
-                  <Search />
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div className="sidebar__widget mb-65">
         <h3 className="sidebar__widget-title">Category</h3>
         <div className="sidebar__widget-content">
           <ul>

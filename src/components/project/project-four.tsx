@@ -99,7 +99,8 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                           )}
                         </Link>
                       </h4>
-                      <p className="pb-10 " style={{font: "bold"}}>{item.subtitle}</p>
+                      <p className="tp-project-3-meta " >{item.subtitle}</p>
+                      <br />
                       <Link
                         className="tp-btn-project-sm"
                         href={item.link}
