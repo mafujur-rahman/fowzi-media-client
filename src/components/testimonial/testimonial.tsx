@@ -1,5 +1,4 @@
 "use client";
-import React, { useEffect } from "react";
 import Script from "next/script";
 
 type IProps = {
@@ -8,11 +7,7 @@ type IProps = {
 };
 
 const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
-    useEffect(() => {
-        if (typeof window !== "undefined" && "Elsight" in window) {
-            (window as any).Elsight.init();
-        }
-    }, []);
+
 
   return (
     <div className={`tp-award-area ${cls}`}>
