@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import BlogSidebar from "../blog-sidebar";
 import { QuoteThree } from "@/components/svg";
-import details_thumb_1 from "@/assets/img/blogs/development/2.jpg";
+import details_thumb_1 from "@/assets/img/blogs/development/5.jpg";
 import details_thumb_2 from "@/assets/img/blogs/development/3.jpg";
 import details_thumb_3 from "@/assets/img/blogs/development/4.jpg";
 
