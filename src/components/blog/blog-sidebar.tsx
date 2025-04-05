@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import avatar from "@/assets/img/about-us/team/noor.jpg";
-import banner from "@/assets/img/inner-blog/blog-sidebar/banner/banner.jpg";
-import { blog_classic } from "@/data/blog-data";
+import banner from "@/assets/img/blogs/sidebar.png";
+import { blog_modern } from "@/data/blog-data";
 import Link from "next/link";
 
 export default function BlogSidebar() {
-  const rc_posts = [...blog_classic.filter((b) => b.img)].slice(0, 3);
+  const rc_posts = [...blog_modern.filter((b) => b.img)].slice(0, 3);
   return (
     <div className="sidebar__wrapper">
       <div className="sidebar__widget mb-45">
@@ -49,7 +49,7 @@ export default function BlogSidebar() {
                 className="rc__post mb-30 d-flex align-items-center"
               >
                 <div className="rc__post-thumb mr-20">
-                  <Link href={`/blog-details/${item.id}`}>
+                  <Link href={item.author}>
                     <Image
                       src={item.img!}
                       alt="blog-img"
@@ -64,7 +64,7 @@ export default function BlogSidebar() {
                     <span>{item.date}</span>
                   </div>
                   <h3 className="rc__post-title">
-                    <Link href={`/blog-details/${item.id}`}>{item.title}</Link>
+                    <Link href={item.author}>{item.title}</Link>
                   </h3>
                 </div>
               </div>
@@ -76,11 +76,11 @@ export default function BlogSidebar() {
         <h3 className="sidebar__widget-title">Tags</h3>
         <div className="sidebar__widget-content">
           <div className="tagcloud">
-            <a href="#">Creative</a>
-            <a href="#">Vision</a>
-            <a href="#">Popular</a>
+            <a href="#">Branding</a>
+            <a href="#">Development</a>
+            <a href="#">Videography</a>
             <a href="#">Photography</a>
-            <a href="#">Lifestyle</a>
+            <a href="#">UI/UX Design</a>
           </div>
         </div>
       </div>
