@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import overlay from "@/assets/img/blogs/branding/hero.jpg";
+import overlay from "@/assets/img/blogs/development/hero.jpg";
 
 export default function DevelopmentBlogDetailsBreadcrumb() {
   return (
@@ -19,10 +19,10 @@ export default function DevelopmentBlogDetailsBreadcrumb() {
             <div className="col-xl-11">
               <div className="blog-details-content z-index-5">
                 <span className="blog-details-meta">
-                  Branding <i>. 22 Jan, 2024</i>
+                  Development <i>. 14 Feb, 2024</i>
                 </span>
                 <h4 className="blog-details-title tp-char-animation">
-                Logo Design Principles for Modern Brands
+                10 Web Development Trends in 2024
                 </h4>
                 <div className="blog-details-top-author d-flex align-items-center">
                   <span>
