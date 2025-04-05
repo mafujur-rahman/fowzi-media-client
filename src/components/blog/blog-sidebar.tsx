@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import avatar from "@/assets/img/inner-blog/blog-sidebar/avatar/avata-2.jpg";
+import avatar from "@/assets/img/about-us/team/noor.jpg";
 import banner from "@/assets/img/inner-blog/blog-sidebar/banner/banner.jpg";
-import { Search } from "../svg";
 import { blog_classic } from "@/data/blog-data";
 import Link from "next/link";
 
@@ -16,8 +15,8 @@ export default function BlogSidebar() {
             <Image src={avatar} alt="avatar" style={{ height: "auto" }} />
           </div>
           <div className="sidebar__author-content">
-            <h4 className="sidebar__author-title">Mark Hopkins</h4>
-            <p>Lorem ipsum dolor consectetur adipiscing elit.</p>
+            <h4 className="sidebar__author-title">Hussein Noor</h4>
+            <p>At Fowzi Media, we believe that digital marketing is about creating authentic connections, not just selling products. We help brands engage with their audience and grow through tailored strategies.</p>
           </div>
         </div>
       </div>
@@ -29,13 +28,13 @@ export default function BlogSidebar() {
               <Link href="/blog-modern">Branding</Link>
             </li>
             <li>
-              <Link href="/blog-modern">Lifestyle</Link>
+              <Link href="/blog-modern">Web Development</Link>
             </li>
             <li>
-              <Link href="/blog-modern">UI/UX Design</Link>
+              <Link href="/blog-modern">Videography</Link>
             </li>
             <li>
-              <Link href="/blog-modern">Production</Link>
+              <Link href="/blog-modern">Photography</Link>
             </li>
           </ul>
         </div>

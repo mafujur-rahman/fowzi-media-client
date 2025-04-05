@@ -8,9 +8,11 @@ import blog_2 from "@/assets/img/home-05/blog/blog-2.jpg";
 import blog_3 from "@/assets/img/home-05/blog/blog-3.jpg";
 import blog_4 from "@/assets/img/home-05/blog/blog-4.jpg";
 // blog modern 
-import b_m_1 from "@/assets/img/case-studies/blogOne.png";
-import b_m_2 from "@/assets/img/case-studies/blogTwo.jpg";
-import b_m_3 from "@/assets/img/case-studies/importanceOfUsing.jpg";
+import b_m_1 from "@/assets/img/blogs/blog-branding.jpg";
+import b_m_2 from "@/assets/img/blogs/blog-branding-1.jpg";
+import b_m_3 from "@/assets/img/blogs/blog-dev.jpg";
+import b_m_4 from "@/assets/img/blogs/blog-video.jpg";
+import b_m_5 from "@/assets/img/blogs/blog-photography.jpg";
 
 
 // avatar
@@ -69,39 +71,38 @@ export const blog_home_five: IBlogDT[] = [
 
 export const blog_modern: IBlogDT[] = [
   {
-    id: 5,
-    img: b_m_1,
-    title: 'Awad For Puntland',
-    date: '21. OCT. 2024',
-    category: 'Case study for Amb. Ahmed Isse Awad, Puntland Presidential Candidate, 2024.',
-    author: 'https://fowzimedia.com/awad.pdf',
-  },
-  {
-    id: 6,
-    img: b_m_1,
-    title: 'Awad For Puntland',
-    date: '21. OCT. 2024',
-    category: 'Case study for Amb. Ahmed Isse Awad, Puntland Presidential Candidate, 2024.',
-    author: 'https://fowzimedia.com/awad.pdf',
-  },
-  {
-    id: 7,
+    id: 1,
     img: b_m_2,
-    title: 'Jannah Fitwear',
-    date: '01. FEB. 2022',
-    category: 'Jannah Fitwear, a modern fitness and lifestyle brand for Muslim women.',
-    author: '',
-  
+    title: 'Logo Design Principles for Modern Brands',
+    date: '22. JAN. 2024',
+    category: 'Branding',
+    author: '/blog-details/branding-blog',
   },
   {
-    id: 8,
+    id: 2,
     img: b_m_3,
-    title: '2020 Census',
-    date: '09. MAY. 2020',
-    category: 'Official case study for the City of Minneapolis 2020 Census.',
-    author: '',
-  
+    title: '10 Web Development Trends in 2024',
+    date: '14. FEB. 2024',
+    category: 'Web Development',
+    author: '/blog-details/development-blog',
   },
+  {
+    id: 3,
+    img: b_m_4,
+    title: 'Mastering Cinematic B-Roll for Storytelling',
+    date: '01. MAR. 2024',
+    category: 'Videography',
+    author: '/blog-details/videography-blog',
+  },
+  {
+    id: 4,
+    img: b_m_5,
+    title: 'Photography Composition Techniques You Need to Know',
+    date: '05. MAR. 2024',
+    category: 'Photography',
+    author: '/blog-details/photography-blog',
+  },
+  
 ];
 
 
