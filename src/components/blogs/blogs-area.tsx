@@ -58,17 +58,6 @@ export default function BlogsArea() {
                 </Link>
               </div>
             ))}
-
-            <div className="col-12">
-              <div className="basic-pagination mt-40 d-flex align-items-center justify-content-center">
-                <nav>
-                  <Pagination
-                    handlePageClick={handlePageClick}
-                    pageCount={pageCount}
-                  />
-                </nav>
-              </div>
-            </div>
           </div>
         </div>
       </div>

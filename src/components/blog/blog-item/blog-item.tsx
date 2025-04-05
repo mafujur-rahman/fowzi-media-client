@@ -15,7 +15,7 @@ export default function BlogItem({ item }: { item: IBlogDT }) {
       <div className="tp-blog-content">
         <span style={{ fontFamily: 'Glacial Indifference' }}>{item.category}</span>
         <h4 className="tp-blog-title-sm" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
-        <Link href={`/blog-details/${item.id}`}>{item.title}</Link>
+        <Link href={item.author}>{item.title}</Link>
         </h4>
       </div>
     </div>
