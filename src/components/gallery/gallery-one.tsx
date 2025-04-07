@@ -17,7 +17,7 @@ import g_7 from '@/assets/img/gallery/7.jpg';
 
 
 const gallery_images = [
-  g_1, g_2, g_3, g_4, g_5,g_6, g_7,  g_3, g_1, g_2, g_3, g_4,  g_3
+  g_1, g_2, g_3, g_4, g_5,g_6, g_7, g_1, g_2, g_3, g_4,  g_5, g_6, g_7
 ]
 
 const imgStyle:CSSProperties = {height: "auto"};

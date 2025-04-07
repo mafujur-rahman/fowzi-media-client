@@ -96,7 +96,7 @@ export default function ServiceFour() {
                 </div>
               </div>
               <div className="col-xl-2 col-lg-2">
-                <div className="tp-service-3-btn-box text-start text-md-end">
+              <div className="tp-service-3-btn-box text-start text-lg-end mt-3 mt-lg-0">
                   <Link
                     className="tp-btn-zikzak-sm p-relative"
                     href={item.link}
@@ -111,6 +111,7 @@ export default function ServiceFour() {
                   </Link>
                 </div>
               </div>
+
             </div>
           </div>
         ))}
