@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { blog_modern } from "@/data/blog-data";
 import usePagination from "@/hooks/use-pagination";
-import Pagination from "../ui/pagination";
 import { IBlogDT } from "@/types/blog-d-t";
 import BlogItem from "../blog/blog-item/blog-item";
 

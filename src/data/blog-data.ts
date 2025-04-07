@@ -73,7 +73,7 @@ export const blog_modern: IBlogDT[] = [
   {
     id: 1,
     img: b_m_2,
-    title: 'Logo Design Principles for Modern Brands',
+    title: 'Logo Design Principles',
     date: '22. JAN. 2024',
     category: 'Branding',
     author: '/blog-details/branding-blog',
