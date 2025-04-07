@@ -8,8 +8,7 @@ import blog_2 from "@/assets/img/home-05/blog/blog-2.jpg";
 import blog_3 from "@/assets/img/home-05/blog/blog-3.jpg";
 import blog_4 from "@/assets/img/home-05/blog/blog-4.jpg";
 // blog modern 
-import b_m_1 from "@/assets/img/blogs/blog-branding.jpg";
-import b_m_2 from "@/assets/img/blogs/blog-branding-1.jpg";
+import b_m_2 from "@/assets/img/blogs/blog-2.jpg";
 import b_m_3 from "@/assets/img/blogs/blog-dev.jpg";
 import b_m_4 from "@/assets/img/blogs/blog-video.jpg";
 import b_m_5 from "@/assets/img/blogs/blog-photography.jpg";
@@ -73,7 +72,7 @@ export const blog_modern: IBlogDT[] = [
   {
     id: 1,
     img: b_m_2,
-    title: 'Logo Design Principles',
+    title: 'Logo Design Principles<br />for Modern Brands',
     date: '22. JAN. 2024',
     category: 'Branding',
     author: '/blog-details/branding-blog',
