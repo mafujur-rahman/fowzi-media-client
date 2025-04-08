@@ -13,17 +13,17 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
   const videoReviews = [
     {
       id: 1,
-      url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      url: "https://html.hixstudio.net/videos/liko/liko-3.mp4",
       title: "Client Review 1",
     },
     {
       id: 2,
-      url: "https://www.youtube.com/embed/anothervideoid",
+      url: "https://html.hixstudio.net/videos/liko/liko-3.mp4",
       title: "Client Review 2",
     },
     {
       id: 3,
-      url: "https://www.youtube.com/embed/yetanothervideoid",
+      url: "https://html.hixstudio.net/videos/liko/liko-3.mp4",
       title: "Client Review 3",
     },
   ];
@@ -36,11 +36,12 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
     setActiveIndex((prev) => (prev === videoReviews.length - 1 ? 0 : prev + 1));
   };
 
-  // Add a white overlay box on the Elfsight footer after widget loads
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const elfsightFooters = document.querySelectorAll('[class*="eapps-widget"] [class*="footer"], [class*="eapps-widget"] a[href*="elfsight"]');
-      elfsightFooters.forEach((el) => {
+ // Add a white overlay box on the Elfsight footer after widget loads
+useEffect(() => {
+  const interval = setInterval(() => {
+    const elfsightFooters = document.querySelectorAll('[class*="eapps-widget"] [class*="footer"], [class*="eapps-widget"] a[href*="elfsight"]');
+    elfsightFooters.forEach((el) => {
+      if (el instanceof HTMLElement) {
         const overlay = document.createElement("div");
         overlay.style.position = "absolute";
         overlay.style.top = "-10px"; // move it up
@@ -50,17 +51,16 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
         overlay.style.backgroundColor = "#ffffff";
         overlay.style.zIndex = "9999";
         overlay.style.borderRadius = "6px"; // optional
-        if (el instanceof HTMLElement) {
-          el.style.position = "relative";
-          el.appendChild(overlay);
-        }
-        
-        el.appendChild(overlay);
-      });
-    }, 2000);
 
-    return () => clearInterval(interval);
-  }, []);
+        el.style.position = "relative";
+        el.appendChild(overlay);
+      }
+    });
+  }, 2000);
+
+  // Clear interval on unmount
+  return () => clearInterval(interval);
+}, []);
 
 
   return (
