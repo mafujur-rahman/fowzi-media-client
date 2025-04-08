@@ -36,31 +36,31 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
     setActiveIndex((prev) => (prev === videoReviews.length - 1 ? 0 : prev + 1));
   };
 
- // Add a white overlay box on the Elfsight footer after widget loads
-useEffect(() => {
-  const interval = setInterval(() => {
-    const elfsightFooters = document.querySelectorAll('[class*="eapps-widget"] [class*="footer"], [class*="eapps-widget"] a[href*="elfsight"]');
-    elfsightFooters.forEach((el) => {
-      if (el instanceof HTMLElement) {
-        const overlay = document.createElement("div");
-        overlay.style.position = "absolute";
-        overlay.style.top = "-10px"; // move it up
-        overlay.style.left = "-5px"; // expand left
-        overlay.style.width = "calc(100% + 20px)";
-        overlay.style.height = "calc(100% + 20px)";
-        overlay.style.backgroundColor = "#ffffff";
-        overlay.style.zIndex = "9999";
-        overlay.style.borderRadius = "6px"; // optional
+  // Add a white overlay box on the Elfsight footer after widget loads
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const elfsightFooters = document.querySelectorAll('[class*="eapps-widget"] [class*="footer"], [class*="eapps-widget"] a[href*="elfsight"]');
+      elfsightFooters.forEach((el) => {
+        if (el instanceof HTMLElement) {
+          const overlay = document.createElement("div");
+          overlay.style.position = "absolute";
+          overlay.style.top = "-10px"; // move it up
+          overlay.style.left = "-5px"; // expand left
+          overlay.style.width = "calc(100% + 20px)";
+          overlay.style.height = "calc(100% + 20px)";
+          overlay.style.backgroundColor = "#ffffff";
+          overlay.style.zIndex = "9999";
+          overlay.style.borderRadius = "6px"; // optional
 
-        el.style.position = "relative";
-        el.appendChild(overlay);
-      }
-    });
-  }, 2000);
+          el.style.position = "relative";
+          el.appendChild(overlay);
+        }
+      });
+    }, 2000);
 
-  // Clear interval on unmount
-  return () => clearInterval(interval);
-}, []);
+    // Clear interval on unmount
+    return () => clearInterval(interval);
+  }, []);
 
 
   return (
@@ -97,8 +97,8 @@ useEffect(() => {
             <div className="video-reviews h-100 p-4 bg-white rounded shadow-sm d-flex flex-column">
               <h3 className="mb-4 text-center">Client Video Reviews</h3>
 
-              <div className="position-relative flex-grow-1">
-                <div className="ratio ratio-16x9 mb-3 rounded overflow-hidden">
+              <div className="position-relative flex-grow-1 d-flex flex-column align-items-center">
+                <div className="ratio ratio-16x9 rounded overflow-hidden w-100 mb-3">
                   <iframe
                     src={videoReviews[activeIndex].url}
                     title={videoReviews[activeIndex].title}
@@ -109,6 +109,20 @@ useEffect(() => {
                   ></iframe>
                 </div>
 
+                {/* Active Status Buttons (dots) below video */}
+                <div className="d-flex justify-content-center mt-2 mb-2">
+                  {videoReviews.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setActiveIndex(index)}
+                      className={`btn btn-sm mx-1 rounded-circle ${activeIndex === index ? "bg-black" : "bg-secondary"}`}
+                      style={{ width: "8px", height: "8px", padding: 0 }}
+                      aria-label={`Go to review ${index + 1}`}
+                    ></button>
+                  ))}
+                </div>
+
+                {/* Navigation Buttons */}
                 <button
                   onClick={handlePrev}
                   className="position-absolute top-50 start-0 translate-middle-y btn btn-light rounded-circle shadow-sm"
@@ -126,20 +140,9 @@ useEffect(() => {
                   <i className="fas fa-chevron-right"></i>
                 </button>
               </div>
-
-              <div className="d-flex justify-content-center mt-3">
-                {videoReviews.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setActiveIndex(index)}
-                    className={`btn btn-sm mx-1 rounded-circle ${activeIndex === index ? "bg-black" : "bg-secondary"}`}
-                    style={{ width: "10px", height: "10px", padding: 0 }}
-                    aria-label={`Go to review ${index + 1}`}
-                  ></button>
-                ))}
-              </div>
             </div>
           </div>
+
         </div>
       </div>
 
