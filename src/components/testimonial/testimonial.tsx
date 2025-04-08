@@ -1,6 +1,6 @@
 "use client";
 import Script from "next/script";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 type IProps = {
   cls?: string;
@@ -11,22 +11,21 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [widgetLoaded, setWidgetLoaded] = useState(false);
 
-  // Sample video data
   const videoReviews = [
     {
       id: 1,
       url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      title: "Client Review 1"
+      title: "Client Review 1",
     },
     {
       id: 2,
       url: "https://www.youtube.com/embed/anothervideoid",
-      title: "Client Review 2"
+      title: "Client Review 2",
     },
     {
       id: 3,
       url: "https://www.youtube.com/embed/yetanothervideoid",
-      title: "Client Review 3"
+      title: "Client Review 3",
     },
   ];
 
@@ -37,27 +36,6 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
   const handleNext = () => {
     setActiveIndex((prev) => (prev === videoReviews.length - 1 ? 0 : prev + 1));
   };
-
-  useEffect(() => {
-    if (widgetLoaded) {
-      // Hide the widget footer after it loads
-      const hideWidgetFooter = () => {
-        const widgetContainer = document.querySelector('.elfsight-app-60fd693e-86e9-4480-a066-373c31f7d4db');
-        if (widgetContainer) {
-          const footer = widgetContainer.querySelector('[data-testid="footer"], .eapps-widget-footer');
-          if (footer) {
-            (footer as HTMLElement).style.display = 'none';
-          }
-        }
-      };
-
-      // Try immediately and set interval in case widget loads progressively
-      hideWidgetFooter();
-      const interval = setInterval(hideWidgetFooter, 500);
-      
-      return () => clearInterval(interval);
-    }
-  }, [widgetLoaded]);
 
   return (
     <section className={`tp-award-area ${cls}`}>
@@ -72,11 +50,11 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
           {/* Left Column - Elfsight Widget */}
           <div className="col-lg-6 mb-4 mb-lg-0">
             <div className="elfsight-container h-100 p-3 rounded shadow-sm bg-white">
-              <div 
-                className="elfsight-app-60fd693e-86e9-4480-a066-373c31f7d4db" 
+              <div
+                className="elfsight-app-60fd693e-86e9-4480-a066-373c31f7d4db"
                 data-elfsight-app-lazy
               ></div>
-              
+
               <div id="reviews-loading" className="text-center py-5">
                 <div className="spinner-border text-primary" role="status">
                   <span className="visually-hidden">Loading...</span>
@@ -86,14 +64,14 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
             </div>
           </div>
 
-          {/* Right Column - Client Video Reviews Carousel */}
+          {/* Right Column - Video Reviews */}
           <div className="col-lg-6">
             <div className="video-reviews h-100 p-4 bg-white rounded shadow-sm d-flex flex-column">
               <h3 className="mb-4 text-center">Client Video Reviews</h3>
-              
+
               <div className="position-relative flex-grow-1">
                 <div className="ratio ratio-16x9 mb-3 rounded overflow-hidden">
-                  <iframe 
+                  <iframe
                     src={videoReviews[activeIndex].url}
                     title={videoReviews[activeIndex].title}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -102,32 +80,32 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
                     loading="lazy"
                   ></iframe>
                 </div>
-                
-                <button 
+
+                <button
                   onClick={handlePrev}
                   className="position-absolute top-50 start-0 translate-middle-y btn btn-light rounded-circle shadow-sm"
-                  style={{ width: '40px', height: '40px', zIndex: 1 }}
+                  style={{ width: "40px", height: "40px", zIndex: 1 }}
                   aria-label="Previous video"
                 >
                   <i className="fas fa-chevron-left"></i>
                 </button>
-                <button 
+                <button
                   onClick={handleNext}
                   className="position-absolute top-50 end-0 translate-middle-y btn btn-light rounded-circle shadow-sm"
-                  style={{ width: '40px', height: '40px', zIndex: 1 }}
+                  style={{ width: "40px", height: "40px", zIndex: 1 }}
                   aria-label="Next video"
                 >
                   <i className="fas fa-chevron-right"></i>
                 </button>
               </div>
-              
+
               <div className="d-flex justify-content-center mt-3">
                 {videoReviews.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => setActiveIndex(index)}
-                    className={`btn btn-sm mx-1 rounded-circle ${activeIndex === index ? 'bg-black' : 'bg-secondary'}`}
-                    style={{ width: '10px', height: '10px', padding: 0 }}
+                    className={`btn btn-sm mx-1 rounded-circle ${activeIndex === index ? "bg-black" : "bg-secondary"}`}
+                    style={{ width: "10px", height: "10px", padding: 0 }}
                     aria-label={`Go to review ${index + 1}`}
                   ></button>
                 ))}
@@ -143,9 +121,9 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
         src="https://static.elfsight.com/platform/platform.js"
         data-use-service-core
         onLoad={() => {
-          const loadingElement = document.getElementById('reviews-loading');
+          const loadingElement = document.getElementById("reviews-loading");
           if (loadingElement) {
-            loadingElement.style.display = 'none';
+            loadingElement.style.display = "none";
           }
           setWidgetLoaded(true);
         }}
