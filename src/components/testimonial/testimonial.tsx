@@ -1,6 +1,6 @@
 "use client";
 import Script from "next/script";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type IProps = {
   cls?: string;
@@ -9,7 +9,6 @@ type IProps = {
 
 const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [widgetLoaded, setWidgetLoaded] = useState(false);
 
   const videoReviews = [
     {
@@ -37,19 +36,44 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
     setActiveIndex((prev) => (prev === videoReviews.length - 1 ? 0 : prev + 1));
   };
 
+  // Add a white overlay box on the Elfsight footer after widget loads
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const elfsightFooters = document.querySelectorAll('[class*="eapps-widget"] [class*="footer"], [class*="eapps-widget"] a[href*="elfsight"]');
+      elfsightFooters.forEach((el) => {
+        const overlay = document.createElement("div");
+        overlay.style.position = "absolute";
+        overlay.style.top = "-10px"; // move it up
+        overlay.style.left = "-5px"; // expand left
+        overlay.style.width = "calc(100% + 20px)";
+        overlay.style.height = "calc(100% + 20px)";
+        overlay.style.backgroundColor = "#ffffff";
+        overlay.style.zIndex = "9999";
+        overlay.style.borderRadius = "6px"; // optional
+        el.style.position = "relative";
+        el.appendChild(overlay);
+      });
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+
   return (
     <section className={`tp-award-area ${cls}`}>
       <div className="container">
         <div className="row justify-content-center text-center mb-4">
           <div className="col-xxl-6 col-xl-7">
-            <h2 className="section-title">What Our Clients Say</h2>
+            <h2 className="section-title text-xl sm:text-lg md:text-base">
+              What Our Clients Say
+            </h2>
           </div>
         </div>
 
         <div className="row align-items-stretch">
           {/* Left Column - Elfsight Widget */}
           <div className="col-lg-6 mb-4 mb-lg-0">
-            <div className="elfsight-container h-100 p-3 rounded shadow-sm bg-white">
+            <div className="elfsight-container h-100 p-3 rounded shadow-sm bg-white position-relative">
               <div
                 className="elfsight-app-60fd693e-86e9-4480-a066-373c31f7d4db"
                 data-elfsight-app-lazy
@@ -125,7 +149,6 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
           if (loadingElement) {
             loadingElement.style.display = "none";
           }
-          setWidgetLoaded(true);
         }}
       />
     </section>
