@@ -50,7 +50,11 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
         overlay.style.backgroundColor = "#ffffff";
         overlay.style.zIndex = "9999";
         overlay.style.borderRadius = "6px"; // optional
-        el.style.position = "relative";
+        if (el instanceof HTMLElement) {
+          el.style.position = "relative";
+          el.appendChild(overlay);
+        }
+        
         el.appendChild(overlay);
       });
     }, 2000);
