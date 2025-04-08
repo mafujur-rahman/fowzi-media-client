@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import BlogSidebar from "../blog-sidebar";
-import { QuoteThree } from "@/components/svg";
+import { QuoteThree, Share, Tag } from "@/components/svg";
 import details_thumb_1 from "@/assets/img/blogs/development/5.jpg";
 import details_thumb_2 from "@/assets/img/blogs/development/3.jpg";
 import details_thumb_3 from "@/assets/img/blogs/development/4.jpg";
+import BlogDetailsAuthor from "./blog-details-author";
+import BlogDetailsNavigation from "./blog-details-navigation";
 
 export default function DevelopmentBlogArea() {
     return (
@@ -75,7 +77,7 @@ export default function DevelopmentBlogArea() {
                             </div>
                             <div className="blog-details-left-content">
                                 <p>
-                                At Fowzi Media, we understand that time is crucial in web development. A successful digital product respects the creative process while adhering to deadlines. Our development team blends innovation with structure—ensuring that your website not only looks great but also functions flawlessly and delivers results on time.
+                                    At Fowzi Media, we understand that time is crucial in web development. A successful digital product respects the creative process while adhering to deadlines. Our development team blends innovation with structure—ensuring that your website not only looks great but also functions flawlessly and delivers results on time.
                                 </p>
                             </div>
                             <div className="blog-details-thumb-box">
@@ -93,17 +95,46 @@ export default function DevelopmentBlogArea() {
                             </div>
                             <div className="blog-details-left-content">
                                 <h4 className="blog-details-left-title">
-                                Why a Strategic Web Presence Can Transform Your Brand?
+                                    Why a Strategic Web Presence Can Transform Your Brand?
                                 </h4>
                                 <p>
-                                A website isn’t just a digital brochure—it’s the first point of interaction, the online storefront, and a visual representation of your brand’s values. In today’s competitive digital world, a strategically built website can help your brand stand out, build trust, and leave a lasting impression. Whether you’re a startup establishing your presence or an established business evolving for the future, your website should reflect your growth and ambitions.
+                                    A website isn’t just a digital brochure—it’s the first point of interaction, the online storefront, and a visual representation of your brand’s values. In today’s competitive digital world, a strategically built website can help your brand stand out, build trust, and leave a lasting impression. Whether you’re a startup establishing your presence or an established business evolving for the future, your website should reflect your growth and ambitions.
 
                                 </p>
                                 <p>
-                                At Fowzi Media, we believe web design isn’t just about looks—it’s about functionality, user experience, and purpose. A great website is where your brand’s digital journey begins.
+                                    At Fowzi Media, we believe web design isn’t just about looks—it’s about functionality, user experience, and purpose. A great website is where your brand’s digital journey begins.
 
                                 </p>
                             </div>
+                            <div className="blog-details-share-wrap mb-40">
+                                <div className="row">
+                                    <div className="col-xl-8 col-lg-8">
+                                        <div className="blog-details-tag">
+                                            <span>
+                                                <Tag />
+                                            </span>
+                                            <a href="#">Creative</a>
+                                            <a href="#">Photography</a>
+                                            <a href="#">Lifestyle</a>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-4 col-lg-4">
+                                        <div className="blog-details-share text-start text-md-end">
+                                            <span>
+                                                <Share />
+                                            </span>
+                                            <a href="#">Share Post</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* blog details author */}
+                            <BlogDetailsAuthor />
+                            {/* blog details author */}
+
+                            {/* blog details navigation */}
+                            <BlogDetailsNavigation />
+                            {/* blog details navigation */}
                         </div>
                     </div>
                     <div className="col-xxl-4 col-xl-4 col-lg-4">

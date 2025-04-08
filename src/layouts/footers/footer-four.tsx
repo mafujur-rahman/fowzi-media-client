@@ -63,7 +63,7 @@ export default function FooterFour() {
                   <div className="tp-footer-2-contact-item">
                     <span style={{ fontFamily: 'Glacial Indifference' }}>
                       <a href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
-                        target="_blank">1729 N 2nd St Studio 204A, Minneapolis, MN 55411</a>
+                        target="_blank">1729 N 2nd St Ste 204B, Minneapolis, MN 55411</a>
                     </span>
                   </div>
                   <div className="tp-footer-2-contact-item" >

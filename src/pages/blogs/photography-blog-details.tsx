@@ -17,6 +17,7 @@ import PhotographyBlogArea from "@/components/blog/details/photography-blog-area
 
 // animation
 import { charAnimation } from "@/utils/title-animation";
+import BlogDetailsRelatedPosts from "@/components/blog/details/blog-details-related-posts";
 
 
 
@@ -53,6 +54,10 @@ const PhotographyBlogDetailsMain = () => {
             {/* blog details area */}
             <PhotographyBlogArea />
             {/* blog details area */}
+
+            {/* related posts */}
+            <BlogDetailsRelatedPosts/>
+            {/* related posts */}
 
           </main>
 

@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import BlogSidebar from "../blog-sidebar";
-import { QuoteThree } from "@/components/svg";
+import { QuoteThree, Share, Tag } from "@/components/svg";
 import details_thumb_1 from "@/assets/img/blogs/branding/3.jpg";
 import details_thumb_2 from "@/assets/img/blogs/branding/4.jpg";
 import details_thumb_3 from "@/assets/img/blogs/branding/5.jpg";
+import BlogDetailsAuthor from "./blog-details-author";
+import BlogDetailsNavigation from "./blog-details-navigation";
 
 export default function BrandingBlogArea() {
     return (
@@ -104,7 +106,37 @@ export default function BrandingBlogArea() {
 
                                 </p>
                             </div>
+                            <div className="blog-details-share-wrap mb-40">
+                                <div className="row">
+                                    <div className="col-xl-8 col-lg-8">
+                                        <div className="blog-details-tag">
+                                            <span>
+                                                <Tag />
+                                            </span>
+                                            <a href="#">Creative</a>
+                                            <a href="#">Photography</a>
+                                            <a href="#">Lifestyle</a>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-4 col-lg-4">
+                                        <div className="blog-details-share text-start text-md-end">
+                                            <span>
+                                                <Share />
+                                            </span>
+                                            <a href="#">Share Post</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* blog details author */}
+                            <BlogDetailsAuthor />
+                            {/* blog details author */}
+
+                            {/* blog details navigation */}
+                            <BlogDetailsNavigation />
+                            {/* blog details navigation */}
                         </div>
+                        
                     </div>
                     <div className="col-xxl-4 col-xl-4 col-lg-4">
                         <BlogSidebar />

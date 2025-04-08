@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import BlogSidebar from "../blog-sidebar";
-import { QuoteThree } from "@/components/svg";
+import { QuoteThree, Share, Tag } from "@/components/svg";
 import details_thumb_1 from "@/assets/img/blogs/photography/2.jpg";
 import details_thumb_2 from "@/assets/img/blogs/photography/3.jpg";
 import details_thumb_3 from "@/assets/img/blogs/photography/4.jpg";
+import BlogDetailsAuthor from "./blog-details-author";
+import BlogDetailsNavigation from "./blog-details-navigation";
 
 export default function PhotographyBlogArea() {
     return (
@@ -15,15 +17,15 @@ export default function PhotographyBlogArea() {
                         <div className="postbox__wrapper">
                             <div className="blog-details-top-text">
                                 <p>
-                                Photography composition is an essential skill for any photographer looking to tell compelling stories through images. It’s not just about taking random shots—it’s about capturing meaningful moments that convey emotion and narrative. The key to great photography lies in thoughtful composition, lighting, and perspective, which work together to enhance the subject and mood of each shot.{" "}
+                                    Photography composition is an essential skill for any photographer looking to tell compelling stories through images. It’s not just about taking random shots—it’s about capturing meaningful moments that convey emotion and narrative. The key to great photography lies in thoughtful composition, lighting, and perspective, which work together to enhance the subject and mood of each shot.{" "}
                                 </p>
                             </div>
                             <div className="blog-details-left-content">
                                 <h4 className="blog-details-left-title">
-                                Understanding the Power of Photography Composition
+                                    Understanding the Power of Photography Composition
                                 </h4>
                                 <p className="mb-20">
-                                In 2024, photography composition has evolved beyond just framing a shot—it’s an essential tool for telling compelling visual stories. Every element of composition, from perspective to balance, helps to shape the emotional tone of a photograph, adding depth and meaning. Whether you’re capturing vast landscapes or intimate portraits, each shot should enhance the story, engage the viewer, and create a visual flow that supports the intended message.
+                                    In 2024, photography composition has evolved beyond just framing a shot—it’s an essential tool for telling compelling visual stories. Every element of composition, from perspective to balance, helps to shape the emotional tone of a photograph, adding depth and meaning. Whether you’re capturing vast landscapes or intimate portraits, each shot should enhance the story, engage the viewer, and create a visual flow that supports the intended message.
                                 </p>
                             </div>
                             <div className="blog-details-thumb-box">
@@ -52,10 +54,10 @@ export default function PhotographyBlogArea() {
                             </div>
                             <div className="blog-details-left-content">
                                 <h4 className="blog-details-left-title">
-                                Collaboration & Creative Vision in Photography Composition
+                                    Collaboration & Creative Vision in Photography Composition
                                 </h4>
                                 <p>
-                                In 2024, successful photography goes beyond just capturing images—it’s about collaboration and creative vision. Photographers, directors, and editors must communicate effectively, understand the subjects essence, and translate that vision into every shot. Unlike random snapshots, modern photography requires a blend of creativity, feedback, and multiple adjustments to capture the perfect composition that enhances the overall story.
+                                    In 2024, successful photography goes beyond just capturing images—it’s about collaboration and creative vision. Photographers, directors, and editors must communicate effectively, understand the subjects essence, and translate that vision into every shot. Unlike random snapshots, modern photography requires a blend of creativity, feedback, and multiple adjustments to capture the perfect composition that enhances the overall story.
                                 </p>
                             </div>
                             <div className="blog-details-blockquote">
@@ -69,7 +71,7 @@ export default function PhotographyBlogArea() {
                             </div>
                             <div className="blog-details-left-content">
                                 <p>
-                                At Fowzi Media, we know that time is vital in photography production. A successful shoot respects both creativity and deadlines. Our team of experts combines artistry with precision, ensuring each photograph not only captures the perfect moment but also aligns seamlessly with the overall visual narrative.
+                                    At Fowzi Media, we know that time is vital in photography production. A successful shoot respects both creativity and deadlines. Our team of experts combines artistry with precision, ensuring each photograph not only captures the perfect moment but also aligns seamlessly with the overall visual narrative.
                                 </p>
                             </div>
                             <div className="blog-details-thumb-box">
@@ -87,18 +89,47 @@ export default function PhotographyBlogArea() {
                             </div>
                             <div className="blog-details-left-content">
                                 <h4 className="blog-details-left-title">
-                                Why Photography Composition Can Elevate Your Storytelling?
+                                    Why Photography Composition Can Elevate Your Storytelling?
                                 </h4>
                                 <p>
-                                Photography composition isn’t just about framing a beautiful shot—it’s a powerful tool for visual storytelling. Proper composition can enhance your narrative, evoke emotion, and add depth to your images. In today’s world of visual content, carefully crafted compositions can make your work stand out, connect emotionally with your audience, and leave a lasting impression. Whether you’re capturing a portrait, a landscape, or a moment in time, your composition should reflect the essence of the story youre telling.
+                                    Photography composition isn’t just about framing a beautiful shot—it’s a powerful tool for visual storytelling. Proper composition can enhance your narrative, evoke emotion, and add depth to your images. In today’s world of visual content, carefully crafted compositions can make your work stand out, connect emotionally with your audience, and leave a lasting impression. Whether you’re capturing a portrait, a landscape, or a moment in time, your composition should reflect the essence of the story youre telling.
 
                                 </p>
                                 <p>
-                                At Fowzi Media, we believe great photography isn’t just about perfect lighting or subject placement—it’s about capturing the heart of the story, engaging the viewer, and elevating the overall experience. Thoughtfully composed photographs are where your visual storytelling truly thrives.
+                                    At Fowzi Media, we believe great photography isn’t just about perfect lighting or subject placement—it’s about capturing the heart of the story, engaging the viewer, and elevating the overall experience. Thoughtfully composed photographs are where your visual storytelling truly thrives.
 
 
                                 </p>
                             </div>
+                            <div className="blog-details-share-wrap mb-40">
+                                <div className="row">
+                                    <div className="col-xl-8 col-lg-8">
+                                        <div className="blog-details-tag">
+                                            <span>
+                                                <Tag />
+                                            </span>
+                                            <a href="#">Creative</a>
+                                            <a href="#">Photography</a>
+                                            <a href="#">Lifestyle</a>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-4 col-lg-4">
+                                        <div className="blog-details-share text-start text-md-end">
+                                            <span>
+                                                <Share />
+                                            </span>
+                                            <a href="#">Share Post</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* blog details author */}
+                            <BlogDetailsAuthor />
+                            {/* blog details author */}
+
+                            {/* blog details navigation */}
+                            <BlogDetailsNavigation />
+                            {/* blog details navigation */}
                         </div>
                     </div>
                     <div className="col-xxl-4 col-xl-4 col-lg-4">
