@@ -38,13 +38,15 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
 
   // Add a white overlay box on the Elfsight footer after widget loads
   useEffect(() => {
-    const observer = new MutationObserver(() => {
+    let observer: MutationObserver;
+    let intervalId: NodeJS.Timeout;
+  
+    const applyOverlay = () => {
       const elfsightFooters = document.querySelectorAll(
         '[class*="eapps-widget"] [class*="footer"], [class*="eapps-widget"] a[href*="elfsight"]'
       );
   
       elfsightFooters.forEach((el) => {
-        // Check if overlay already exists
         if (el instanceof HTMLElement && !el.querySelector(".custom-overlay")) {
           const overlay = document.createElement("div");
           overlay.className = "custom-overlay";
@@ -56,21 +58,39 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
           overlay.style.backgroundColor = "#ffffff";
           overlay.style.zIndex = "9999";
           overlay.style.borderRadius = "6px";
+          overlay.style.pointerEvents = "none"; // Optional: ensures click-through
   
           el.style.position = "relative";
           el.appendChild(overlay);
         }
       });
+    };
+  
+    // Initial call
+    applyOverlay();
+  
+    // Observer: Watch for DOM changes in the body
+    observer = new MutationObserver(() => {
+      applyOverlay();
     });
   
-    // Observe the whole document body because Elfsight appends to it
     observer.observe(document.body, {
       childList: true,
       subtree: true,
     });
   
-    return () => observer.disconnect();
+    // Interval fallback: Every 2 seconds, re-check just in case
+    intervalId = setInterval(() => {
+      applyOverlay();
+    }, 2000);
+  
+    // Cleanup
+    return () => {
+      if (observer) observer.disconnect();
+      clearInterval(intervalId);
+    };
   }, []);
+  
   
   
 
