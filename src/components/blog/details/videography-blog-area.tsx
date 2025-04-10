@@ -5,8 +5,7 @@ import { QuoteThree, Share, Tag } from "@/components/svg";
 import details_thumb_1 from "@/assets/img/blogs/videography/2.jpg";
 import details_thumb_2 from "@/assets/img/blogs/videography/3.jpg";
 import details_thumb_3 from "@/assets/img/blogs/videography/4.jpg";
-import BlogDetailsAuthor from "./blog-details-author";
-import BlogDetailsNavigation from "./blog-details-navigation";
+
 
 export default function VideographyBlogArea() {
     return (
@@ -99,7 +98,7 @@ export default function VideographyBlogArea() {
                                     At Fowzi Media, we believe great B-roll isn’t just about aesthetics—it’s about capturing the story, engaging the viewer, and enhancing the overall experience. A thoughtfully shot B-roll sequence is where your visual storytelling truly comes to life.
                                 </p>
                             </div>
-                            <div className="blog-details-share-wrap mb-40">
+                            <div className="blog-details-share-wrap">
                                 <div className="row">
                                     <div className="col-xl-8 col-lg-8">
                                         <div className="blog-details-tag">
@@ -121,13 +120,6 @@ export default function VideographyBlogArea() {
                                     </div>
                                 </div>
                             </div>
-                            {/* blog details author */}
-                            <BlogDetailsAuthor />
-                            {/* blog details author */}
-
-                            {/* blog details navigation */}
-                            <BlogDetailsNavigation />
-                            {/* blog details navigation */}
                         </div>
                     </div>
                     <div className="col-xxl-4 col-xl-4 col-lg-4">

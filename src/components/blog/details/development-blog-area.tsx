@@ -5,8 +5,7 @@ import { QuoteThree, Share, Tag } from "@/components/svg";
 import details_thumb_1 from "@/assets/img/blogs/development/5.jpg";
 import details_thumb_2 from "@/assets/img/blogs/development/3.jpg";
 import details_thumb_3 from "@/assets/img/blogs/development/4.jpg";
-import BlogDetailsAuthor from "./blog-details-author";
-import BlogDetailsNavigation from "./blog-details-navigation";
+
 
 export default function DevelopmentBlogArea() {
     return (
@@ -128,13 +127,6 @@ export default function DevelopmentBlogArea() {
                                     </div>
                                 </div>
                             </div>
-                            {/* blog details author */}
-                            <BlogDetailsAuthor />
-                            {/* blog details author */}
-
-                            {/* blog details navigation */}
-                            <BlogDetailsNavigation />
-                            {/* blog details navigation */}
                         </div>
                     </div>
                     <div className="col-xxl-4 col-xl-4 col-lg-4">

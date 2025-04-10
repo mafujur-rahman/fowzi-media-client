@@ -5,8 +5,7 @@ import { QuoteThree, Share, Tag } from "@/components/svg";
 import details_thumb_1 from "@/assets/img/blogs/photography/2.jpg";
 import details_thumb_2 from "@/assets/img/blogs/photography/3.jpg";
 import details_thumb_3 from "@/assets/img/blogs/photography/4.jpg";
-import BlogDetailsAuthor from "./blog-details-author";
-import BlogDetailsNavigation from "./blog-details-navigation";
+
 
 export default function PhotographyBlogArea() {
     return (
@@ -101,7 +100,7 @@ export default function PhotographyBlogArea() {
 
                                 </p>
                             </div>
-                            <div className="blog-details-share-wrap mb-40">
+                            <div className="blog-details-share-wrap mb-10">
                                 <div className="row">
                                     <div className="col-xl-8 col-lg-8">
                                         <div className="blog-details-tag">
@@ -123,13 +122,6 @@ export default function PhotographyBlogArea() {
                                     </div>
                                 </div>
                             </div>
-                            {/* blog details author */}
-                            <BlogDetailsAuthor />
-                            {/* blog details author */}
-
-                            {/* blog details navigation */}
-                            <BlogDetailsNavigation />
-                            {/* blog details navigation */}
                         </div>
                     </div>
                     <div className="col-xxl-4 col-xl-4 col-lg-4">

@@ -51,11 +51,11 @@ export default function HeaderFour() {
                   </Link>
                 </div>
               </div>
-              <div className="col-xl-6 col-lg-6 d-none d-xl-block">
+              <div className="col-xl-6 d-none d-xl-flex justify-content-center">
                 <div className="tp-header-3-menu-wrap text-center">
                   <div className="tp-header-3-menu-box d-inline-flex align-items-center justify-content-between w-100">
                     <div className="tp-header-3-menu header-main-menu w-100">
-                      <nav className="tp-main-menu-content w-80">
+                      <nav className="tp-main-menu-content w-auto">
                         <ul
                           className="d-flex list-unstyled mb-0 text-white"
                           style={{
