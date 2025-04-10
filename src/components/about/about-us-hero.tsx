@@ -34,6 +34,7 @@ export default function AboutUsHero() {
               className="ab-inner-hero-title-box"
               data-lag="0.2"
               data-stagger="0.08"
+              style={{ paddingTop: "75px" }}
             >
               <span className="ab-inner-hero-subtitle" >
                 Visionary <br /> digital studio
