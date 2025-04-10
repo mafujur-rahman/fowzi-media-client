@@ -39,8 +39,12 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
   // Add a white overlay box on the Elfsight footer after widget loads
   useEffect(() => {
     const observer = new MutationObserver(() => {
-      const elfsightFooters = document.querySelectorAll('[class*="eapps-widget"] [class*="footer"], [class*="eapps-widget"] a[href*="elfsight"]');
+      const elfsightFooters = document.querySelectorAll(
+        '[class*="eapps-widget"] [class*="footer"], [class*="eapps-widget"] a[href*="elfsight"]'
+      );
+  
       elfsightFooters.forEach((el) => {
+        // Check if overlay already exists
         if (el instanceof HTMLElement && !el.querySelector(".custom-overlay")) {
           const overlay = document.createElement("div");
           overlay.className = "custom-overlay";
@@ -59,16 +63,15 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
       });
     });
   
-    const target = document.querySelector(".elfsight-app-60fd693e-86e9-4480-a066-373c31f7d4db");
-    if (target) {
-      observer.observe(target, {
-        childList: true,
-        subtree: true,
-      });
-    }
+    // Observe the whole document body because Elfsight appends to it
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
   
     return () => observer.disconnect();
   }, []);
+  
   
 
 
