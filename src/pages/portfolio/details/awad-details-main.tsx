@@ -31,15 +31,18 @@ const AwadDetailsMain = () => {
   const [showSocial, setShowSocial] = React.useState(false);
   useScrollSmooth();
 
-  useGSAP(() => {
-    const timer = setTimeout(() => {
-      charAnimation();
-      titleAnimation();
-      projectDetailsPin();
-    }, 100);
-    return () => clearTimeout(timer);
-  });
-
+   useGSAP(() => {
+      const mm = gsap.matchMedia();
+  
+      mm.add("(min-width: 1200px)", () => {
+        charAnimation();
+        titleAnimation();
+        projectDetailsPin();
+      });
+  
+      return () => mm.revert();
+    });
+    
   return (
     <Wrapper>
       {/* header area start */}

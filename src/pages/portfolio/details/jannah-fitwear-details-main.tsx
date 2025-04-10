@@ -34,14 +34,17 @@ const JannahFitwearDetailsMain = () => {
   useScrollSmooth();
 
   useGSAP(() => {
-    const timer = setTimeout(() => {
-      charAnimation();
-      titleAnimation();
-      projectDetailsPin();
-    }, 100);
-    return () => clearTimeout(timer);
-  });
-
+     const mm = gsap.matchMedia();
+ 
+     mm.add("(min-width: 1200px)", () => {
+       charAnimation();
+       titleAnimation();
+       projectDetailsPin();
+     });
+ 
+     return () => mm.revert();
+   });
+   
   return (
     <Wrapper>
       {/* header area start */}
