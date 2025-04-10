@@ -77,8 +77,8 @@ export default function FooterFour() {
                   <h4 className="tp-footer-3-title">Follow</h4>
                   <div className="tp-footer-3-social">
                     <a href="#"><i className="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/fowzimedia/"><i className="fa-brands fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/fowzimedia/"><i className="fa-brands fa-instagram"></i></a>
                     <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
                   </div>
                 </div>
