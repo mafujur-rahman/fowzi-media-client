@@ -100,7 +100,7 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
       <div className="container">
         <div className="row justify-content-center text-center mb-4">
           <div className="col-xxl-6 col-xl-7">
-            <h2 className="section-title text-xl sm:text-lg md:text-base">
+            <h2 className="ab-inner-funfact-title tp_title_anim">
               What Our Clients Say
             </h2>
           </div>
@@ -127,7 +127,7 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
           {/* Right Column - Video Reviews */}
           <div className="col-lg-6">
             <div className="video-reviews h-100 p-4 bg-white rounded shadow-sm d-flex flex-column">
-              <h3 className="mb-4 text-center">Client Video Reviews</h3>
+              <h3 className="mb-4 text-center ab-inner-funfact-title" style={{ fontSize: "30px" }}>Client Video Reviews</h3>
 
               <div className="position-relative flex-grow-1 d-flex flex-column align-items-center">
                 <div className="ratio ratio-16x9 rounded overflow-hidden w-100 mb-3">

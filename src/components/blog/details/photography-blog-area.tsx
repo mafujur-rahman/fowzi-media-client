@@ -100,7 +100,7 @@ export default function PhotographyBlogArea() {
 
                                 </p>
                             </div>
-                            <div className="blog-details-share-wrap mb-10">
+                            <div className="blog-details-share-wrap">
                                 <div className="row">
                                     <div className="col-xl-8 col-lg-8">
                                         <div className="blog-details-tag">

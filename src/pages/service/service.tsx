@@ -74,10 +74,31 @@ const ServiceMain = () => {
             {/* service area */}
 
             {/* big text */}
-            <div className="pt-150">
+            <div className="custom-pt-lg">
               <BigText />
             </div>
             {/* big text */}
+
+            {/* style for big text padding responsivness */}
+            <style>
+              {`
+          .custom-pt-lg {
+            padding-top: 0;
+          }
+
+          @media (min-width: 992px) {
+            .custom-pt-lg {
+              padding-top: 150px;
+            }
+          @media (min-width: 2400px) {
+            .custom-pt-lg {
+              padding-top: 220px;
+            }
+          }
+        `}
+            </style>
+
+            
           </main>
 
           {/* footer area */}

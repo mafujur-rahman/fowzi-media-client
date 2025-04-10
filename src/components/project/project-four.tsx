@@ -88,15 +88,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                     <div className="tp-project-3-content text-center">
                       <h4 className="tp-project-3-title-sm">
                         <Link href={item.link} >
-                          {item.title.includes("For") ? (
-                            item.title.split("For").map((part, index) => (
-                              <React.Fragment key={index}>
-                                {index > 0 && "For"} <br /> {part}
-                              </React.Fragment>
-                            ))
-                          ) : (
-                            item.title
-                          )}
+                          {item.title}
                         </Link>
                       </h4>
                       <p className="tp-project-3-meta " >{item.subtitle}</p>

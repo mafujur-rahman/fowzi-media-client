@@ -27,7 +27,10 @@ export default function BrandFive() {
         <div className="row">
           <div className="col-xl-12">
             <div className="ab-brand-title-box mb-100">
-              <h4 className="ab-brand-title">Our clients</h4>
+              <h4 className="tp-footer-3-title tp_title_anim" style={{ fontSize: "48px" }}>
+                Our clients
+              </h4>
+
             </div>
           </div>
         </div>
@@ -41,7 +44,7 @@ export default function BrandFive() {
                       key={i}
                       className="ab-brand-item"
                     >
-                      <Image src={b} alt="brand" style={{height: "80px", width: "auto"}}/>
+                      <Image src={b} alt="brand" style={{ height: "80px", width: "auto" }} />
                     </div>
                   ))}
                 </Marquee>
@@ -52,12 +55,12 @@ export default function BrandFive() {
         <div className="row">
           <div className="col-xl-7 col-lg-9">
             <div className="ab-brand-content tp_title_anim">
-              <p style={{ fontFamily: 'Glacial Indifference' }}>
+              <p className="tp-footer-3-title" style={{ fontFamily: 'Glacial Indifference' }}>
                 We belive in creating partnerships based on honesty and true
                 connection. That is why some of the biggest companies stayed with
                 us for years.
               </p>
-              <span style={{ fontFamily: 'Glacial Indifference' }}>More about us</span>
+              <span className="tp-footer-3-menu" style={{ fontFamily: 'Glacial Indifference' }}>More about us</span>
             </div>
           </div>
         </div>
