@@ -96,7 +96,7 @@ export const blog_modern: IBlogDT[] = [
   {
     id: 4,
     img: b_m_5,
-    title: 'Photography Composition Techniques You Need to Know',
+    title: 'Photography Composition Tips',
     date: '05. MAR. 2024',
     category: 'Photography',
     author: '/blog-details/photography-blog',

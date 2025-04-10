@@ -45,7 +45,7 @@ export default function PhotographyBlogDetailsBreadcrumb() {
                   Photography <i>. 5 March, 2024</i>
                 </span>
                 <h4 className="blog-details-title tp-char-animation">
-                  Photography Composition Techniques You Need to Know
+                Photography Composition Tips
                 </h4>
                 <div className="blog-details-top-author d-flex align-items-center">
                   <span>
