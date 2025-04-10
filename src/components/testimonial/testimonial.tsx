@@ -38,29 +38,38 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
 
   // Add a white overlay box on the Elfsight footer after widget loads
   useEffect(() => {
-    const interval = setInterval(() => {
+    const observer = new MutationObserver(() => {
       const elfsightFooters = document.querySelectorAll('[class*="eapps-widget"] [class*="footer"], [class*="eapps-widget"] a[href*="elfsight"]');
       elfsightFooters.forEach((el) => {
-        if (el instanceof HTMLElement) {
+        if (el instanceof HTMLElement && !el.querySelector(".custom-overlay")) {
           const overlay = document.createElement("div");
+          overlay.className = "custom-overlay";
           overlay.style.position = "absolute";
-          overlay.style.top = "-10px"; // move it up
-          overlay.style.left = "-5px"; // expand left
+          overlay.style.top = "-10px";
+          overlay.style.left = "-5px";
           overlay.style.width = "calc(100% + 20px)";
           overlay.style.height = "calc(100% + 20px)";
           overlay.style.backgroundColor = "#ffffff";
           overlay.style.zIndex = "9999";
-          overlay.style.borderRadius = "6px"; // optional
-
+          overlay.style.borderRadius = "6px";
+  
           el.style.position = "relative";
           el.appendChild(overlay);
         }
       });
-    }, 2000);
-
-    // Clear interval on unmount
-    return () => clearInterval(interval);
+    });
+  
+    const target = document.querySelector(".elfsight-app-60fd693e-86e9-4480-a066-373c31f7d4db");
+    if (target) {
+      observer.observe(target, {
+        childList: true,
+        subtree: true,
+      });
+    }
+  
+    return () => observer.disconnect();
   }, []);
+  
 
 
   return (
