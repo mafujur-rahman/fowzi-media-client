@@ -153,9 +153,6 @@ export default function HeaderFour() {
 
                           <li><Link href="/contact" className="nav-link" style={{ fontSize: `${fontSize}px` }}>Contact</Link></li>
                         </ul>
-
-
-
                       </nav>
                     </div>
                   </div>
