@@ -5,21 +5,21 @@ import logo_1 from "@/assets/img/fowzi-logo/icon 2.png";
 
 export default function HeaderFour() {
   const [openOffCanvas, setOpenOffCanvas] = useState(false);
-  const [isMobile, setIsMobile] = useState(false); // State to track screen size
-  const [fontSize, setFontSize] = useState(16); // Initial font size for menu items
-  const headerRef = useRef(null); // Ref for the header element
+  const [isMobile, setIsMobile] = useState(false); 
+  const [fontSize, setFontSize] = useState(16); 
+  const headerRef = useRef(null); 
 
   useEffect(() => {
     // Function to check the screen size
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768); // Set isMobile based on screen width
+      setIsMobile(window.innerWidth <= 768);
     };
 
     // Function to handle scroll and adjust font size
     const handleScroll = () => {
       if (headerRef.current && !isMobile) {
         const scrollY = window.scrollY;
-        const newFontSize = Math.max(12, 16 - scrollY * 0.1); // Adjust font size based on scroll
+        const newFontSize = Math.max(12, 16 - scrollY * 0.1); 
         setFontSize(newFontSize);
       }
     };
@@ -65,18 +65,95 @@ export default function HeaderFour() {
                             fontFamily: 'Glacial Indifference',
                             fontWeight: 'bold',
                             display: "inline-flex",
-                            gap: "10px",  
-                            width: "fit-content",  
-                            margin: "0 auto",  
+                            gap: "10px",
+                            width: "fit-content",
+                            margin: "0 auto",
                             justifyContent: "center",
-                          }}>
-                          <li><Link href="/" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Home</Link></li>
-                          <li><Link href="/service" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Services</Link></li>
-                          <li><Link href="/about-us" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>About</Link></li>
-                          <li><Link href="/portfolio-wrapper" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Portfolio</Link></li>
-                          <li><Link href="/blogs" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Blogs</Link></li>
-                          <li><Link href="/contact" style={{ fontSize: `${fontSize}px`, padding: "5px 12px", display: "inline-block" }}>Contact</Link></li>
+                          }}
+                        >
+                          <li><Link href="/" className="nav-link" style={{ fontSize: `${fontSize}px` }}>Home</Link></li>
+
+                          <li className="nav-item dropdown" style={{ position: "relative" }}>
+                            <a
+                              className="nav-link"
+                              href="service"
+                              style={{ fontSize: `${fontSize}px` }}
+                            >
+                              Services
+                            </a>
+                            <ul
+                              className="dropdown-menu show-on-hover"
+                              style={{
+                                top: "100%",
+                                left: 0,
+                                display: "none",
+                                position: "absolute",
+                                zIndex: 1000,
+                              }}
+                            >
+                              <li><Link className="dropdown-item" href="/video-production">Video Production</Link></li>
+                              <li><Link className="dropdown-item" href="/branding">Branding</Link></li>
+                              <li><Link className="dropdown-item" href="/website-development">Website Development</Link></li>
+                              <li><Link className="dropdown-item" href="/photography">Photography</Link></li>
+                            </ul>
+                          </li>
+
+
+                          <li><Link href="/about-us" className="nav-link" style={{ fontSize: `${fontSize}px` }}>About</Link></li>
+
+                          <li className="nav-item dropdown" style={{ position: "relative" }}>
+                            <a
+                              className="nav-link"
+                              href="/portfolio"
+                              style={{ fontSize: `${fontSize}px` }}
+                            >
+                              Portfolio
+                            </a>
+                            <ul
+                              className="dropdown-menu show-on-hover"
+                              style={{
+                                top: "100%",
+                                left: 0,
+                                display: "none",
+                                position: "absolute",
+                                zIndex: 1000,
+                              }}
+                            >
+                              <li><Link className="dropdown-item" href="/video-production">Video Production</Link></li>
+                              <li><Link className="dropdown-item" href="/branding">Branding</Link></li>
+                              <li><Link className="dropdown-item" href="/website-development">Website Development</Link></li>
+                              <li><Link className="dropdown-item" href="/photography">Photography</Link></li>
+                            </ul>
+                          </li>
+
+
+                          <li className="nav-item dropdown" style={{ position: "relative" }}>
+                            <a
+                              className="nav-link"
+                              href="#"
+                              style={{ fontSize: `${fontSize}px` }}
+                            >
+                              Pricing
+                            </a>
+                            <ul
+                              className="dropdown-menu show-on-hover"
+                              style={{
+                                top: "100%",
+                                left: 0,
+                                display: "none",
+                                position: "absolute",
+                                zIndex: 1000,
+                              }}
+                            >
+                              <li><Link className="dropdown-item" href="/web-care-plans">Web care Plans</Link></li>
+                              <li><Link className="dropdown-item" href="/request-a-quote">Request a quote</Link></li>
+                            </ul>
+                          </li>
+
+
+                          <li><Link href="/contact" className="nav-link" style={{ fontSize: `${fontSize}px` }}>Contact</Link></li>
                         </ul>
+
 
 
                       </nav>
@@ -101,23 +178,92 @@ export default function HeaderFour() {
         </div>
 
         {/* Off-Canvas Menu using Bootstrap */}
-        <div className={`offcanvas offcanvas-end ${openOffCanvas ? 'show' : ''}`} tabIndex={-1} style={{ visibility: openOffCanvas ? 'visible' : 'hidden' }}>
+        <div className={`offcanvas offcanvas-end ${openOffCanvas ? 'show' : ''}`} tabIndex={-1} style={{ visibility: openOffCanvas ? 'visible' : 'hidden' }} >
           <div className="offcanvas-header">
             <h5 className="offcanvas-title">Menu</h5>
             <button type="button" className="btn-close" onClick={() => setOpenOffCanvas(false)}></button>
           </div>
-          <div className="offcanvas-body">
+          <div className="offcanvas-body" style={{ fontFamily: 'Glacial Indifference' }}>
             <ul className="list-unstyled">
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/service">Services</Link></li>
-              <li><Link href="/about-us">About</Link></li>
-              <li><Link href="/portfolio-wrapper">Portfolio</Link></li>
-              <li><Link href="/blogs">Blogs</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
+              <li className="py-2">
+                <Link className="nav-link text-dark fw-semibold ps-2" href="/">Home</Link>
+              </li>
+
+              {/* Services Dropdown */}
+              <li className="nav-item dropdown py-2">
+                <a
+                  className="nav-link dropdown-toggle text-dark fw-semibold ps-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul className="dropdown-menu">
+                  <li><Link className="dropdown-item" href="/video-production">Video Production</Link></li>
+                  <li><Link className="dropdown-item" href="/branding">Branding</Link></li>
+                  <li><Link className="dropdown-item" href="/website-development">Website Development</Link></li>
+                  <li><Link className="dropdown-item" href="/photography">Photography</Link></li>
+                </ul>
+              </li>
+
+              <li className="py-2">
+                <Link className="nav-link text-dark fw-semibold ps-2" href="/about-us">About</Link>
+              </li>
+
+              {/* Portfolio Dropdown */}
+              <li className="nav-item dropdown py-2">
+                <a
+                  className="nav-link dropdown-toggle text-dark fw-semibold ps-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul className="dropdown-menu">
+                  <li><Link className="dropdown-item" href="/video-production">Video Production</Link></li>
+                  <li><Link className="dropdown-item" href="/branding">Branding</Link></li>
+                  <li><Link className="dropdown-item" href="/website-development">Website Development</Link></li>
+                  <li><Link className="dropdown-item" href="/photography">Photography</Link></li>
+                </ul>
+              </li>
+
+              {/* Pricing Dropdown */}
+              <li className="nav-item dropdown py-2">
+                <a
+                  className="nav-link dropdown-toggle text-dark fw-semibold ps-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pricing
+                </a>
+                <ul className="dropdown-menu">
+                  <li><Link className="dropdown-item" href="/web-care-plans">Web Care Plans</Link></li>
+                  <li><Link className="dropdown-item" href="/request-a-quote">Request a Quote</Link></li>
+                </ul>
+              </li>
+
+
+
+              <li className="py-2">
+                <Link className="nav-link text-dark fw-semibold ps-2" href="/contact">Contact</Link>
+              </li>
             </ul>
+
           </div>
         </div>
       </header>
+      <style jsx>{`
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block !important;
+  }
+`}</style>
+
     </>
   );
 }
