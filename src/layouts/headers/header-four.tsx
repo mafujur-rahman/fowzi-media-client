@@ -104,7 +104,7 @@ export default function HeaderFour() {
                           <li className="nav-item dropdown" style={{ position: "relative" }}>
                             <a
                               className="nav-link"
-                              href="/portfolio"
+                              href="/portfolio-wrapper"
                               style={{ fontSize: `${fontSize}px` }}
                             >
                               Portfolio
@@ -119,10 +119,10 @@ export default function HeaderFour() {
                                 zIndex: 1000,
                               }}
                             >
-                              <li><Link className="dropdown-item" href="/video-production">Video Production</Link></li>
-                              <li><Link className="dropdown-item" href="/branding">Branding</Link></li>
-                              <li><Link className="dropdown-item" href="/website-development">Website Development</Link></li>
-                              <li><Link className="dropdown-item" href="/photography">Photography</Link></li>
+                              <li><Link className="dropdown-item" href="/portfolio-videography">Video Production</Link></li>
+                              <li><Link className="dropdown-item" href="/portfolio-brandings">Branding</Link></li>
+                              <li><Link className="dropdown-item" href="/portfolio-development">Website Development</Link></li>
+                              <li><Link className="dropdown-item" href="/portfolio-photography">Photography</Link></li>
                             </ul>
                           </li>
 
@@ -190,7 +190,7 @@ export default function HeaderFour() {
               <li className="nav-item dropdown py-2">
                 <a
                   className="nav-link dropdown-toggle text-dark fw-semibold ps-2"
-                  href="#"
+                  href="/service"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -213,7 +213,7 @@ export default function HeaderFour() {
               <li className="nav-item dropdown py-2">
                 <a
                   className="nav-link dropdown-toggle text-dark fw-semibold ps-2"
-                  href="#"
+                  href="/portfolio-wrapper"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"

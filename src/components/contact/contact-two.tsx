@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ContactForm from "../form/contact-form";
+import ContactForm from "../form/contact-form1";
 import shape from "@/assets/img/inner-about/about/shape-1.png";
 
 export default function ContactTwo() {
