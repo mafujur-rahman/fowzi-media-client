@@ -91,10 +91,10 @@ export default function HeaderFour() {
                                 zIndex: 1000,
                               }}
                             >
-                              <li><Link className="dropdown-item" href="/video-production">Video Production</Link></li>
-                              <li><Link className="dropdown-item" href="/branding">Branding</Link></li>
-                              <li><Link className="dropdown-item" href="/website-development">Website Development</Link></li>
-                              <li><Link className="dropdown-item" href="/photography">Photography</Link></li>
+                              <li><Link className="dropdown-item" href="/videography-details">Video Production</Link></li>
+                              <li><Link className="dropdown-item" href="/branding-details">Branding</Link></li>
+                              <li><Link className="dropdown-item" href="/development-details">Website Development</Link></li>
+                              <li><Link className="dropdown-item" href="/photography-details">Photography</Link></li>
                             </ul>
                           </li>
 
