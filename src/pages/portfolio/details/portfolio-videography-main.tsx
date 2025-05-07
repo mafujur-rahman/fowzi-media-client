@@ -21,7 +21,6 @@ import { charAnimation, titleAnimation } from "@/utils/title-animation";
 import port_d_1 from '@/assets/img/inner-project/portfolio-details/videography/vid-d-1.png';
 import port_d_2 from '@/assets/img/inner-project/portfolio-details/videography/vid-d-2.png';
 import port_d_3 from '@/assets/img/inner-project/portfolio-details/videography/vid-d-3.png';
-import port_d_4 from '@/assets/img/inner-project/portfolio-details/videography/vid-d-4.png';
 import HeaderFour from "@/layouts/headers/header-four";
 import FooterFour from "@/layouts/footers/footer-four";
 

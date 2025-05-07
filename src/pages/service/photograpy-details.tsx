@@ -7,15 +7,18 @@ import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
-import Wrapper from "@/layouts/wrapper";
+import Wrapper from "@/layouts/wrapper";;
+import ServiceSix from "@/components/service/service-six";
 import BigText from "@/components/big-text";
+import { Leaf } from "@/components/svg";
 
 // animation
-import { charAnimation, titleAnimation } from "@/utils/title-animation";
+import { charAnimation, fadeAnimation } from "@/utils/title-animation";
+import { servicePanel } from "@/utils/panel-animation";
 import HeaderFour from "@/layouts/headers/header-four";
 import FooterFour from "@/layouts/footers/footer-four";
-import PhotographyDetailsArea from "@/components/service/photography-details-area";
-
+import PhotographyDetailsHero from "@/components/service/photography-details-hero";
+import { PhotographyDetailsItems } from "@/components/service/photography-details-item";
 
 const PhotographyDetailsMain = () => {
   useScrollSmooth();
@@ -23,7 +26,8 @@ const PhotographyDetailsMain = () => {
   useGSAP(() => {
     const timer = setTimeout(() => {
       charAnimation();
-      titleAnimation();
+      fadeAnimation();
+      servicePanel();
     }, 100);
     return () => clearTimeout(timer);
   });
@@ -37,13 +41,64 @@ const PhotographyDetailsMain = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            {/* service details area */}
-            <PhotographyDetailsArea />
-            {/* service details area */}
+            {/* service hero */}
+            <PhotographyDetailsHero />
+            {/* service hero */}
+
+            {/* service area */}
+            <div className="tp-service-5-area sv-service-style pb-70">
+              <div className="container container-1530">
+                <div className="row">
+                  <div className="col-xl-12">
+                    <div className="tp-service-5-wrap">
+                      <PhotographyDetailsItems />
+                    </div>
+                    <div className="tp-service-5-title-box pt-90 mb-40">
+                      <span className="ab-inner-subtitle mb-20" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+                        <Leaf />
+                        Photography Service
+                      </span>
+                      <h4 className="tp-service-5-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+                      Custom Photography Packages for Stunning Visual Storytelling{" "}
+                      </h4>
+                      <p className="pt-10">We understand that businesses need more than just standalone images—they need captivating visual storytelling. That’s why we’ve created packages that combine creative photography, engaging compositions, and high-quality production into one seamless, impactful experience.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* service area */}
+
+            {/* service area */}
+            <ServiceSix />
+            {/* service area */}
 
             {/* big text */}
-            <BigText />
+            <div className="custom-pt-lg">
+              <BigText />
+            </div>
             {/* big text */}
+
+            {/* style for big text padding responsivness */}
+            <style>
+              {`
+          .custom-pt-lg {
+            padding-top: 0;
+          }
+
+          @media (min-width: 992px) {
+            .custom-pt-lg {
+              padding-top: 150px;
+            }
+          @media (min-width: 2400px) {
+            .custom-pt-lg {
+              padding-top: 220px;
+            }
+          }
+        `}
+            </style>
+
+            
           </main>
 
           {/* footer area */}

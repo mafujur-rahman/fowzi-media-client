@@ -7,16 +7,18 @@ import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
-import Wrapper from "@/layouts/wrapper";
-import LineImgSlider from "@/components/line-text/line-img-slider";
+import Wrapper from "@/layouts/wrapper";;
+import ServiceSix from "@/components/service/service-six";
 import BigText from "@/components/big-text";
-import BrandingDetailsArea from "@/components/service/branding-details-area";
+import { Leaf } from "@/components/svg";
 
 // animation
-import { charAnimation, titleAnimation } from "@/utils/title-animation";
-import FooterFour from "@/layouts/footers/footer-four";
+import { charAnimation, fadeAnimation } from "@/utils/title-animation";
+import { servicePanel } from "@/utils/panel-animation";
 import HeaderFour from "@/layouts/headers/header-four";
-
+import FooterFour from "@/layouts/footers/footer-four";
+import BrandingDetailsHero from "@/components/service/branding-details-hero";
+import { BrandingDetailsItems } from "@/components/service/branding-details-item";
 
 const BrandingDetailsMain = () => {
   useScrollSmooth();
@@ -24,7 +26,8 @@ const BrandingDetailsMain = () => {
   useGSAP(() => {
     const timer = setTimeout(() => {
       charAnimation();
-      titleAnimation();
+      fadeAnimation();
+      servicePanel();
     }, 100);
     return () => clearTimeout(timer);
   });
@@ -38,17 +41,64 @@ const BrandingDetailsMain = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            {/* service details area */}
-            <BrandingDetailsArea />
-            {/* service details area */}
+            {/* service hero */}
+            <BrandingDetailsHero />
+            {/* service hero */}
 
-            {/* line image slider  */}
-            <LineImgSlider />
-            {/* line image slider  */}
+            {/* service area */}
+            <div className="tp-service-5-area sv-service-style pb-70">
+              <div className="container container-1530">
+                <div className="row">
+                  <div className="col-xl-12">
+                    <div className="tp-service-5-wrap">
+                      <BrandingDetailsItems />
+                    </div>
+                    <div className="tp-service-5-title-box pt-90 mb-40">
+                      <span className="ab-inner-subtitle mb-20" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+                        <Leaf />
+                        Branding Service
+                      </span>
+                      <h4 className="tp-service-5-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+                      Strategically Crafted Branding Solutions from the Ground Up{" "}
+                      </h4>
+                      <p className="pt-10">We know brands need more than just scattered services—they need cohesive, high-impact solutions. That’s why we’ve carefully designed packages that bring together branding, web, photography, and video into one powerful experience.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* service area */}
+
+            {/* service area */}
+            <ServiceSix />
+            {/* service area */}
 
             {/* big text */}
-            <BigText />
+            <div className="custom-pt-lg">
+              <BigText />
+            </div>
             {/* big text */}
+
+            {/* style for big text padding responsivness */}
+            <style>
+              {`
+          .custom-pt-lg {
+            padding-top: 0;
+          }
+
+          @media (min-width: 992px) {
+            .custom-pt-lg {
+              padding-top: 150px;
+            }
+          @media (min-width: 2400px) {
+            .custom-pt-lg {
+              padding-top: 220px;
+            }
+          }
+        `}
+            </style>
+
+            
           </main>
 
           {/* footer area */}

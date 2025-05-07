@@ -40,12 +40,12 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
   useEffect(() => {
     let observer: MutationObserver;
     let intervalId: NodeJS.Timeout;
-  
+
     const applyOverlay = () => {
       const elfsightFooters = document.querySelectorAll(
         '[class*="eapps-widget"] [class*="footer"], [class*="eapps-widget"] a[href*="elfsight"]'
       );
-  
+
       elfsightFooters.forEach((el) => {
         if (el instanceof HTMLElement && !el.querySelector(".custom-overlay")) {
           const overlay = document.createElement("div");
@@ -59,40 +59,40 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
           overlay.style.zIndex = "9999";
           overlay.style.borderRadius = "6px";
           overlay.style.pointerEvents = "none"; // Optional: ensures click-through
-  
+
           el.style.position = "relative";
           el.appendChild(overlay);
         }
       });
     };
-  
+
     // Initial call
     applyOverlay();
-  
+
     // Observer: Watch for DOM changes in the body
     observer = new MutationObserver(() => {
       applyOverlay();
     });
-  
+
     observer.observe(document.body, {
       childList: true,
       subtree: true,
     });
-  
+
     // Interval fallback: Every 2 seconds, re-check just in case
     intervalId = setInterval(() => {
       applyOverlay();
     }, 2000);
-  
+
     // Cleanup
     return () => {
       if (observer) observer.disconnect();
       clearInterval(intervalId);
     };
   }, []);
-  
-  
-  
+
+
+
 
 
   return (
@@ -106,10 +106,11 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
           </div>
         </div>
 
-        <div className="row align-items-stretch">
+        <div className="row align-items-stretch justify-content-center text-center">
           {/* Left Column - Elfsight Widget */}
-          <div className="col-lg-6 mb-4 mb-lg-0">
-            <div className="elfsight-container h-100 p-3 rounded shadow-sm bg-white position-relative">
+          <div className="col-lg-6 mb-4 mb-lg-0 mx-auto">
+            <div className="elfsight-container h-100 p-3  position-relative d-flex justify-content-center align-items-center">
+
               <div
                 className="elfsight-app-60fd693e-86e9-4480-a066-373c31f7d4db"
                 data-elfsight-app-lazy
@@ -125,23 +126,26 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
           </div>
 
           {/* Right Column - Video Reviews */}
-          <div className="col-lg-6">
-            <div className="video-reviews h-100 p-4 bg-white rounded shadow-sm d-flex flex-column">
-              <h3 className="mb-4 text-center ab-inner-funfact-title" style={{ fontSize: "30px" }}>Client Video Reviews</h3>
-
+          <div className="col-lg-6 mx-auto">
+            <div className="video-reviews h-100 p-4  d-flex flex-column">
               <div className="position-relative flex-grow-1 d-flex flex-column align-items-center">
-                <div className="ratio ratio-16x9 rounded overflow-hidden w-100 mb-3">
+                <div className="rounded overflow-hidden d-flex justify-content-center mb-3" style={{ height: "640px" }}>
                   <iframe
                     src={videoReviews[activeIndex].url}
                     title={videoReviews[activeIndex].title}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    className="border-0"
+                    style={{
+                      border: "none",
+                      width: "360px",
+                      height: "640px",
+                      display: "block",
+                      maxWidth: "100%",
+                    }}
                     loading="lazy"
                   ></iframe>
                 </div>
 
-                {/* Active Status Buttons (dots) below video */}
                 <div className="d-flex justify-content-center mt-2 mb-2">
                   {videoReviews.map((_, index) => (
                     <button
@@ -154,7 +158,6 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
                   ))}
                 </div>
 
-                {/* Navigation Buttons */}
                 <button
                   onClick={handlePrev}
                   className="position-absolute top-50 start-0 translate-middle-y btn btn-light rounded-circle shadow-sm"
@@ -174,8 +177,8 @@ const Testimonial = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
               </div>
             </div>
           </div>
-
         </div>
+
       </div>
 
       <Script

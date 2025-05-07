@@ -35,10 +35,10 @@ const AboutCall2Action = () => {
               className="calendly-inline-widget"
               data-url="https://calendly.com/fowzimedia/free-consultation"
               style={{
-                minWidth: "100%",
-                maxWidth: "100%",
-                height: "600px",
-                backgroundColor: "#fff",
+                minWidth: "auto",
+                maxWidth: "auto",
+                height: "400px",
+                backgroundColor: "",
               }}
             ></div>
           </div>
