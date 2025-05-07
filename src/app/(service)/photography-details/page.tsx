@@ -1,15 +1,15 @@
 import React from "react";
 import { Metadata } from "next";
-import DevelopmentDetailsMain from "@/pages/service/development-details";
+import PhotographyDetailsMain from "@/pages/service/photograpy-details";
 
 
 export const metadata: Metadata = {
-  title: "Fowzi Media - Development Service Details page",
+  title: "Fowzi Media - Photography Service Details page",
 };
 
 const DevelopmentDetailsPage = () => {
   return (
-    <DevelopmentDetailsMain/>
+    <PhotographyDetailsMain />
   );
 };
 

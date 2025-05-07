@@ -118,6 +118,7 @@ export default function BrandingDetailsArea() {
                 </a>
                 <a href="/development-details"  style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>Development</a>
                 <a href="/videography-details"  style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>Videography</a>
+                <a href="/photography-details"  style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>Photography</a>
               </div>
               <div className="service-details__right-text-box">
                 <h4 >
