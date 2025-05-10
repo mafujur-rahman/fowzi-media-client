@@ -250,7 +250,7 @@ export default function ServiceSix() {
                             fontFamily: 'Glacial Indifference',
                             fontWeight: 'bold'
                           }}>
-                            See <br /> Details
+                            Quote <br /> Request
                             <RightArrow clr="currentColor" />
                           </span>
                           <ShapeTwo />
