@@ -8,12 +8,13 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
 import Wrapper from "@/layouts/wrapper";
-import HeaderEleven from "@/layouts/headers/header-eleven";
 import PricingArea from "@/components/pricing/pricing-area";
 import FaqAreaTwo from "@/components/faq/faq-area-2";
-import FooterTwo from "@/layouts/footers/footer-two";
+
 // animation
 import { charAnimation, titleAnimation } from "@/utils/title-animation";
+import HeaderFour from "@/layouts/headers/header-four";
+import FooterFour from "@/layouts/footers/footer-four";
 
 const PricingMain = () => {
   useScrollSmooth();
@@ -29,7 +30,7 @@ const PricingMain = () => {
   return (
     <Wrapper>
       {/* header area start */}
-      <HeaderEleven />
+      <HeaderFour />
       {/* header area end */}
 
       <div id="smooth-wrapper">
@@ -48,16 +49,14 @@ const PricingMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Liko Studio</span>
+                        <span className="tm-hero-subtitle">Fowzi Media Studio</span>
                         <h4 className="tm-hero-title tp-char-animation">
-                          Pricing Plans
+                        Website Care Plans
                         </h4>
                       </div>
                       <div className="tm-hero-text">
                         <p className="tp_title_anim">
-                          Choose the right pricing for you and get started{" "}
-                          <br />
-                          with your project.
+                        We offer Reliable, Secure & Hassle-Free flexible website care plans to keep your site running smoothly, securely, and efficiently. Choose the plan that best fits your needs{" "}
                         </p>
                       </div>
                     </div>
@@ -76,7 +75,7 @@ const PricingMain = () => {
             </main>
 
             {/* footer area */}
-            <FooterTwo topCls="" />
+            <FooterFour />
             {/* footer area */}
           </div>
         </div>

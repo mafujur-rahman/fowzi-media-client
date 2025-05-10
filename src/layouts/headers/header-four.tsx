@@ -76,7 +76,7 @@ export default function HeaderFour() {
                           <li className="nav-item dropdown" style={{ position: "relative" }}>
                             <a
                               className="nav-link"
-                              href="service"
+                              href="#"
                               style={{ fontSize: `${fontSize}px` }}
                             >
                               Services
@@ -104,7 +104,7 @@ export default function HeaderFour() {
                           <li className="nav-item dropdown" style={{ position: "relative" }}>
                             <a
                               className="nav-link"
-                              href="/portfolio-wrapper"
+                              href="#"
                               style={{ fontSize: `${fontSize}px` }}
                             >
                               Portfolio
@@ -145,7 +145,7 @@ export default function HeaderFour() {
                                 zIndex: 1000,
                               }}
                             >
-                              <li><Link className="dropdown-item" href="/web-care-plans">Web care Plans</Link></li>
+                              <li><Link className="dropdown-item" href="/pricing">Web care Plans</Link></li>
                               <li><Link className="dropdown-item" href="/request-a-quote">Request a quote</Link></li>
                             </ul>
                           </li>
@@ -190,7 +190,7 @@ export default function HeaderFour() {
               <li className="nav-item dropdown py-2">
                 <a
                   className="nav-link dropdown-toggle text-dark fw-semibold ps-2"
-                  href="/service"
+                  href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -213,7 +213,7 @@ export default function HeaderFour() {
               <li className="nav-item dropdown py-2">
                 <a
                   className="nav-link dropdown-toggle text-dark fw-semibold ps-2"
-                  href="/portfolio-wrapper"
+                  href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -240,7 +240,7 @@ export default function HeaderFour() {
                   Pricing
                 </a>
                 <ul className="dropdown-menu">
-                  <li><Link className="dropdown-item" href="/web-care-plans">Web Care Plans</Link></li>
+                  <li><Link className="dropdown-item" href="/pricing">Web Care Plans</Link></li>
                   <li><Link className="dropdown-item" href="/request-a-quote">Request a Quote</Link></li>
                 </ul>
               </li>

@@ -6,37 +6,48 @@ const pricing_data = [
   {
     id: 1,
     bg: "/assets/img/price/price-bg-1.jpg",
-    title: "Entry",
-    price: 26,
+    title: "Basic",
+    price: 300,
     features: [
-      "Dolor sit amet",
-      "Tempor incididunt",
-      "Sed do eiusmod",
-      "Adipiscing elit",
+      "Basic Hosting – Reliable Web hosting for smooth performance.",
+      "Basic Maintenance – CMS, plugin, and theme updates 2 times a year.",
+      "Monthly Backups – Automated backups stored securely",
+      "Email Support – Response time within 1 week.",
     ],
   },
   {
     id: 2,
     bg: "/assets/img/price/price-bg-2.jpg",
-    title: "Project",
-    price: 46,
+    title: "Pro",
+    price: 600,
     features: [
-      "Dolor sit amet",
-      "Tempor incididunt",
-      "Sed do eiusmod",
-      "Adipiscing elit",
+      "Pro Hosting - Secure and Reliable Web hosting for smooth and high performance",
+      "Enhanced Maintenance – Regular updates for CMS, plugins, themes, & security patches.",
+      "Monthly Backups – Securely stored on our dedicated servers",
+      "Advanced Security Monitoring – Regular scans, firewall protection & proactive vulnerability fixes",
+      "Priority Email Support – Responses within business hours (9 AM - 5 PM, Mon-Fri).",
+      "Uptime Monitoring – 99.9% uptime guarantee with real-time downtime alerts.",
+      "Performance Optimization – Speed improvements & database optimization. SEO & Analytics Reports – Monthly performance & visibility insights.",
+      "SSL Certificate Management – Ensuring a secure, encrypted connection.",
     ],
   },
   {
     id: 3,
     bg: "/assets/img/price/price-bg-3.jpg",
-    title: "Enterprise",
-    price: 96,
+    title: "Premium",
+    price: 900,
     features: [
-      "Dolor sit amet",
-      "Tempor incididunt",
-      "Sed do eiusmod",
-      "Adipiscing elit",
+      "HIPAA-Compliant Hosting: Secure, encrypted data storage (at rest & in transit).",
+      "Comprehensive Maintenance: CMS, plugins, themes, security patches & performance optimization.",
+      "Weekly Backups: Automated, HIPAA-compliant storage for seamless recovery.",
+      "Advanced Security Monitoring: 24/7 scans, malware removal & proactive patching.",
+      "24/7 Priority Support: Dedicated email & phone support for critical issues.",
+      "Uptime Assurance: 99.9% uptime guarantee with real-time downtime alerts.",
+      "Custom Monthly Reports: Tailored insights on security, performance & compliance.",
+      "Disaster Recovery Plan: Structured data restoration strategy for business continuity.",
+      "SSL Certification Management: Full oversight of SSL installation, renewal & security updates.",
+      "Compliance Auditing & Reporting: Routine HIPAA compliance audits & detailed reports.",
+      "FREE Domain Registration: Annual domain renewal included ($15-$20/year value).",
     ],
   },
 ];
@@ -65,7 +76,7 @@ export default function PricingArea() {
                 </div>
                 <div className="tp-price-body">
                   <span className="tp-price-monthly">
-                    $<i>{item.price}</i>/ per mo
+                    $<i>{item.price}</i>/ per year
                   </span>
                   <div className="tp-price-list">
                     <ul>
