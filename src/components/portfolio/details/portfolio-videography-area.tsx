@@ -7,19 +7,19 @@ const service_data = [
         id: 1,
         videoId: "1059190345",
         title: "Child Safety",
-        link: "/child-safety"
+        link: "/child-safety-main"
     },
     {
         id: 2,
         videoId: "1058793031",
         title: "PSA Film",
-        link: "/psa"
+        link: "/psa-main"
     },
     {
         id: 3,
         videoId: "1056626277",
         title: "SBD Commercial",
-        link: "/sbd"
+        link: "/sbd-main"
     },
 ];
 

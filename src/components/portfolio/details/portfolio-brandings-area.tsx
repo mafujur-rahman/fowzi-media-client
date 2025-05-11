@@ -7,6 +7,7 @@ import port_d_2 from '@/assets/img/inner-project/portfolio-details/brandings/por
 import port_d_3 from '@/assets/img/inner-project/portfolio-details/brandings/port-d-3.png';
 import port_d_4 from '@/assets/img/inner-project/portfolio-details/brandings/port-d-5.png';
 import Link from "next/link";
+import { RightArrow, ShapeTwo } from "@/components/svg";
 
 const service_data = [
     {
@@ -118,7 +119,21 @@ export default function PortfolioBrandingsArea() {
                                                 <h4 style={{ fontFamily: 'Glacial Indifference' }}>Branding</h4>
                                             </div>
                                         </div>
-                                        <div className="project-details-1-social"></div>
+                                        {/* <div className="sv-service-btn mt-4">
+                                            <Link
+                                                className="tp-btn-zikzak zikzak-inner p-relative"
+                                                href={item.link}
+                                            >
+                                                <span className="zikzak-content" style={{
+                                                    fontFamily: 'Glacial Indifference',
+                                                    fontWeight: 'bold'
+                                                }}>
+                                                    See <br /> Details
+                                                    <RightArrow clr="currentColor" />
+                                                </span>
+                                                <ShapeTwo />
+                                            </Link>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>

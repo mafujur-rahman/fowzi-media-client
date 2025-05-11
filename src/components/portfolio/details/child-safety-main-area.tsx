@@ -18,21 +18,19 @@ import {charAnimation,titleAnimation} from "@/utils/title-animation";
 
 
 // images
-import port_d_1 from '@/assets/img/portfolio/fowzi image/web development/washington toe/web-1.jpg';
-import port_d_2 from '@/assets/img/portfolio/fowzi image/web development/washington toe/web-2.jpg';
-import port_d_3 from '@/assets/img/portfolio/fowzi image/web development/washington toe/web-3.jpg';
-import port_d_4 from '@/assets/img/portfolio/fowzi image/web development/washington toe/web-4.jpg';
+import port_d_1 from '@/assets/img/portfolio/fowzi image/child-safety-1.jpg';
+import port_d_2 from '@/assets/img/portfolio/fowzi image/child-safety-2.jpg';
+import port_d_3 from '@/assets/img/portfolio/fowzi image/child-safety-3.jpg';
 import HeaderFour from "@/layouts/headers/header-four";
 import FooterFour from "@/layouts/footers/footer-four";
 
 const port_images = [
     { src: port_d_1 },
     { src: port_d_2 },
-    { src: port_d_3},
-    { src: port_d_4 },
+    { src: port_d_3 },
   ];
   
-  const WashingtonToeMain = () => {
+  const ChildSafetyMainArea = () => {
     const [showSocial, setShowSocial] = React.useState(false);
     useScrollSmooth();
   
@@ -71,18 +69,18 @@ const port_images = [
                       <div className="project-details-1-right-wrap">
                         <div className="project-details-1-right p-relative">
                           <div className="project-details-1-title-box">
-                            <span className="project-details-1-subtitle" style={{fontFamily: 'Glacial Indifference'}}><i>04</i></span>
-                            <h4 className="project-details-1-title">Washington Toe Foundation</h4>
+                            <span className="project-details-1-subtitle" style={{fontFamily: 'Glacial Indifference'}}><i>01</i></span>
+                            <h4 className="project-details-1-title">Child Safety Film</h4>
                             <p style={{fontFamily: 'Glacial Indifference'}}>We offer digital experience solutions tailored for startups and small businesses, helping them thrive through innovative brand identities and seamless digital experiences.</p>
                           </div>
                           <div className="project-details-1-info-wrap">
                             <div className="project-details-1-info">
                               <span style={{fontFamily: 'Glacial Indifference'}}>Services</span>
-                              <h4 style={{fontFamily: 'Glacial Indifference'}}>Design & Development</h4>
+                              <h4 style={{fontFamily: 'Glacial Indifference'}}>Videography</h4>
                             </div>
                             <div className="project-details-1-info">
                               <span style={{fontFamily: 'Glacial Indifference'}}>Deliverables</span>
-                              <h4 style={{fontFamily: 'Glacial Indifference'}}>UI / UX Design</h4>
+                              <h4 style={{fontFamily: 'Glacial Indifference'}}>Video</h4>
                             </div>
                           </div>
                           <div className="project-details-1-social">
@@ -99,7 +97,7 @@ const port_images = [
                           </div>
                         </div>
                         <div className="project-details-1-navigation d-flex justify-content-between align-items-center">
-                          <a className="project-details-1-prev" href="/somali-youth">
+                          <a className="project-details-1-prev" href="/better-hand">
                             <i className="fa-sharp fa-regular fa-arrow-left"></i>
                             <span style={{fontFamily: 'Glacial Indifference'}}>Prev</span>
                           </a>
@@ -108,7 +106,7 @@ const port_images = [
                               <Dots />
                             </span>
                           </a>
-                          <a className="project-details-1-next" href="/daisane">
+                          <a className="project-details-1-next" href="/radiant">
                             <span style={{fontFamily: 'Glacial Indifference'}}>Next</span>
                             <i className="fa-sharp fa-regular fa-arrow-right"></i>
                           </a>
@@ -130,4 +128,4 @@ const port_images = [
     );
   };
   
-  export default WashingtonToeMain;
+  export default ChildSafetyMainArea;
