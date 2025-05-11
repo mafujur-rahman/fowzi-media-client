@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 // image
-import ser_hero from "@/assets/img/all-services/photography.jpg";
+import ser_hero from "@/assets/img/all-services/banner-photography.webp";
 
 
 export default function PhotographyDetailsHero() {
