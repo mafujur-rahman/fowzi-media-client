@@ -40,7 +40,7 @@ export default function AboutUsHero() {
                 Visionary <br /> digital studio
               </span>
               <h1 className="ab-inner-hero-title tp-char-animation">
-                Crafting Iconic Digital Identities
+                Creative Storytelling Rooted in Community
               </h1>
               <p >Digital experiences with maximum emotional impact</p>
             </div>
@@ -53,10 +53,9 @@ export default function AboutUsHero() {
               data-lag="0.2"
               data-stagger="0.08">
               <p style={{ fontSize: "clamp(1rem, 2vw, 1.2rem)", lineHeight: "1.5" }}>
-                Fowzi Media seamlessly merges creativity with cutting-edge technology, crafting
-                digital experiences that engage, inspire, and deliver results.
+                We are Fowzi Media, a Minneapolis-based creative agency using design, video, branding, and digital strategy to help businesses and organizations connect with real people. Our work is driven by culture, shaped by purpose, and built on trust.
               </p>
-              <a className="tp-btn-white-sm border-style" href="#" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>Explore Our Story</a>
+              <a className="tp-btn-white-sm border-style " href="#" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }} onClick={scrollTo}>Explore Our Story</a>
             </div>
           </div>
         </div>

@@ -24,7 +24,7 @@ export default function AboutThree() {
                   <FirstBracketTwo />
                 </span>
               </span>
-              <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
+              <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom pb-15">
                 About Fowzi Media{" "}
               </h4>
             </div>
@@ -39,8 +39,7 @@ export default function AboutThree() {
           <div className="col-xl-6 col-lg-6 col-md-8">
             <div className="tp-about-3-content">
               <p className="mb-45 tp_fade_bottom" style={{ fontFamily: 'Glacial Indifference' }}>
-              At Fowzi Media, we’re more than just a creative agency; we’re your strategic partner, committed to driving results that matter. Whether you’re looking to reimagine your brand, launch a new website, or create an unforgettable campaign, we have the skills and vision to make it happen.
-              Let’s bring your vision to life. 
+              Fowzi Media is a full-service creative agency based in Minneapolis, Minnesota. We specialize in branding, web design, video production, photography, and strategic marketing that connects with real people. As a proud minority and immigrant-owned business, our work is shaped by culture, experience, and a deep understanding of the communities we serve. 
               </p>
               <Link className="tp-btn-black-2 tp_fade_bottom" href="/about-us" style={{ fontFamily: 'Glacial Indifference' }}>
                 About Us

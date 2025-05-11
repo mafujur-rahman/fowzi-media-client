@@ -8,23 +8,37 @@ const service_data = [
   {
     id: 1,
     title: "Branding",
-    desc: "We specialize in crafting captivating brand identities that resonate with your audience and leave a lasting impression.",
+    desc: "We help businesses and campaigns in Minneapolis and the Twin Cities region build strong brand identities from the ground up. From logo design and visual systems to brand messaging and tone, we create consistent, professional branding that leaves a lasting impression.",
     category: ["Branding", "Brand Strategy", "Brand Guidelines"],
-    link: "/portfolio-wrapper",
+    link: "/branding-details",
   },
   {
     id: 2,
     title: "Development",
-    desc: "We specialize in creating stunning websites that captivate your audience and drive results.",
+    desc: "Your website is often the first place people learn about you. We design and build responsive, user-friendly websites that reflect your mission and make it easy for your audience to engage. Whether you’re a startup, nonprofit, or political campaign, we build websites that perform.",
     category: ["SEO", "Development", "Custom Proactive Solutions"],
-    link: "/portfolio-wrapper",
+    link: "/development-details",
   },
   {
     id: 3,
     title: "Videography",
-    desc: "We specializes in professional videography services that bring your vision to life and leavea lasting impression.",
+    desc: "Our Minneapolis-based video production team creates compelling content for businesses, public service campaigns, and lifestyle brands. From pre-production to final edit, we produce videos that are impactful, professional, and emotionally engaging.",
     category: ["Creative", "Storytelling", "Promotional Videos"],
-    link: "/portfolio-wrapper",
+    link: "/videography-details",
+  },
+  {
+    id: 4,
+    title: "Photography",
+    desc: "We provide high-quality photography that aligns with your brand and message. Whether you're looking to promote products, document events, or update your professional image, our local photography team captures visuals that help you stand out.",
+    category: ["Lifestyle", "Events", "Brands Short"],
+    link: "/photography-details",
+  },
+  {
+    id: 5,
+    title: "Marketing",
+    desc: "We specialize in developing communication strategies that reflect the values of our clients and resonate with diverse audiences. From social media campaigns to community outreach, we help leaders across Minneapolis reach their goals with clarity and integrity.",
+    category: ["Digital Campaign", "Promotion", "SEO"],
+    link: "/videography-details",
   },
 ];
 export default function ServiceFour() {
@@ -55,7 +69,7 @@ export default function ServiceFour() {
           <div className="col-xl-9">
             <div className="tp-service-3-title-box mb-60 p-relative">
               <div className="tp-service-3-icon">
-                <Image style={{ width: "auto", height: "56px", marginLeft }} src={icon} alt="icon" />
+                <Image style={{ width: "auto", height: "60px", marginLeft }} src={icon} alt="icon" />
               </div>
               <span className="tp-section-subtitle-2 tp_fade_bottom">
                 <span>
@@ -69,7 +83,7 @@ export default function ServiceFour() {
                 </span>
               </span>
               <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
-                Thoughtful <br /> Process We think a lot
+                Creative <br /> Solutions That Drive Real Results
               </h4>
             </div>
           </div>
