@@ -18,9 +18,9 @@ import {charAnimation,titleAnimation} from "@/utils/title-animation";
 
 
 // images
-import port_d_1 from '@/assets/img/portfolio/fowzi image/branding/friday fashion/bag.png';
-import port_d_2 from '@/assets/img/portfolio/fowzi image/branding/friday fashion/tag.png';
-import port_d_3 from '@/assets/img/portfolio/fowzi image/branding/friday fashion/tshirt.png';
+import port_d_1 from '@/assets/img/portfolio/fowzi image/branding/optimal/business-card.png';
+import port_d_2 from '@/assets/img/portfolio/fowzi image/branding/optimal/stationary.png';
+import port_d_3 from '@/assets/img/portfolio/fowzi image/branding/optimal/letterhead-and-business-card.png';
 import HeaderFour from "@/layouts/headers/header-four";
 import FooterFour from "@/layouts/footers/footer-four";
 
@@ -30,7 +30,7 @@ const port_images = [
     { src: port_d_3 },
   ];
   
-  const FridayFashionMain = () => {
+  const OptimalMain = () => {
     const [showSocial, setShowSocial] = React.useState(false);
     useScrollSmooth();
   
@@ -69,8 +69,8 @@ const port_images = [
                       <div className="project-details-1-right-wrap">
                         <div className="project-details-1-right p-relative">
                           <div className="project-details-1-title-box">
-                            <span className="project-details-1-subtitle" style={{fontFamily: 'Glacial Indifference'}}><i>01</i></span>
-                            <h4 className="project-details-1-title">Friday Fashion</h4>
+                            <span className="project-details-1-subtitle" style={{fontFamily: 'Glacial Indifference'}}><i>03</i></span>
+                            <h4 className="project-details-1-title">Optimal</h4>
                             <p style={{fontFamily: 'Glacial Indifference'}}>We offer digital experience solutions tailored for startups and small businesses, helping them thrive through innovative brand identities and seamless digital experiences.</p>
                           </div>
                           <div className="project-details-1-info-wrap">
@@ -97,7 +97,7 @@ const port_images = [
                           </div>
                         </div>
                         <div className="project-details-1-navigation d-flex justify-content-between align-items-center">
-                          <a className="project-details-1-prev" href="/radiant">
+                          <a className="project-details-1-prev" href="/better-hand">
                             <i className="fa-sharp fa-regular fa-arrow-left"></i>
                             <span style={{fontFamily: 'Glacial Indifference'}}>Prev</span>
                           </a>
@@ -106,7 +106,7 @@ const port_images = [
                               <Dots />
                             </span>
                           </a>
-                          <a className="project-details-1-next" href="/better-hand">
+                          <a className="project-details-1-next" href="/radiant">
                             <span style={{fontFamily: 'Glacial Indifference'}}>Next</span>
                             <i className="fa-sharp fa-regular fa-arrow-right"></i>
                           </a>
@@ -128,4 +128,4 @@ const port_images = [
     );
   };
   
-  export default FridayFashionMain;
+  export default OptimalMain;

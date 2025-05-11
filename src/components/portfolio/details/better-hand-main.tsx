@@ -18,10 +18,9 @@ import {charAnimation,titleAnimation} from "@/utils/title-animation";
 
 
 // images
-import port_d_1 from '@/assets/img/inner-project/portfolio-details/development/dev-d-1.jpg';
-import port_d_2 from '@/assets/img/inner-project/portfolio-details/development/dev-d-2.webp';
-import port_d_3 from '@/assets/img/inner-project/portfolio-details/development/dev-d-3.png';
-import port_d_4 from '@/assets/img/inner-project/portfolio-details/development/dev-d-4.png';
+import port_d_1 from '@/assets/img/portfolio/fowzi image/branding/better hand/t-shirt.png';
+import port_d_2 from '@/assets/img/portfolio/fowzi image/branding/better hand/stationary.png';
+import port_d_3 from '@/assets/img/portfolio/fowzi image/branding/better hand/brochure.png';
 import HeaderFour from "@/layouts/headers/header-four";
 import FooterFour from "@/layouts/footers/footer-four";
 
@@ -29,7 +28,6 @@ const port_images = [
     { src: port_d_1 },
     { src: port_d_2 },
     { src: port_d_3 },
-    { src: port_d_4 },
   ];
   
   const BetterHandMain = () => {
@@ -108,7 +106,7 @@ const port_images = [
                               <Dots />
                             </span>
                           </a>
-                          <a className="project-details-1-next" href="/dheelliga">
+                          <a className="project-details-1-next" href="/optimal">
                             <span style={{fontFamily: 'Glacial Indifference'}}>Next</span>
                             <i className="fa-sharp fa-regular fa-arrow-right"></i>
                           </a>

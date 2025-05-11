@@ -18,18 +18,18 @@ import {charAnimation,titleAnimation} from "@/utils/title-animation";
 
 
 // images
-import port_d_1 from '@/assets/img/inner-project/portfolio-details/development/dev-d-1.jpg';
-import port_d_2 from '@/assets/img/inner-project/portfolio-details/development/dev-d-2.webp';
-import port_d_3 from '@/assets/img/inner-project/portfolio-details/development/dev-d-3.png';
-import port_d_4 from '@/assets/img/inner-project/portfolio-details/development/dev-d-4.png';
+import port_d_1 from '@/assets/img/portfolio/fowzi image/web development/daisane/laptop.jpg';
+import port_d_2 from '@/assets/img/portfolio/fowzi image/web development/daisane/image-i.png';
+import port_d_3 from '@/assets/img/portfolio/fowzi image/web development/daisane/image-2.png';
+import port_d_4 from '@/assets/img/portfolio/fowzi image/web development/daisane/image-3.png';
 import HeaderFour from "@/layouts/headers/header-four";
 import FooterFour from "@/layouts/footers/footer-four";
 
 const port_images = [
-    { src: port_d_1, link: "https://daisaneformn.com/" },
-    { src: port_d_2, link: "https://infinitycaresolutionsllc.com/" },
-    { src: port_d_3, link: "https://somaliyouthmind.com/" },
-    { src: port_d_4, link: "https://washingtontoefoundation.com/" },
+    { src: port_d_1 },
+    { src: port_d_2 },
+    { src: port_d_3 },
+    { src: port_d_4 },
   ];
   
   const DaisaneMain = () => {
@@ -61,10 +61,8 @@ const port_images = [
                     <div className="col-xl-7">
                       <div className="project-details-1-left">
                         {port_images.map((item, i) => (
-                          <div key={i} className="project-details-1-thumb mb-10">
-                            <a href={item.link} target="_blank" rel="noopener noreferrer">
+                          <div key={i} className="project-details-1-thumb mb-10">                           
                               <Image src={item.src} alt={`Portfolio ${i + 1}`} style={{ height: "auto", cursor: "pointer" }} />
-                            </a>
                           </div>
                         ))}
                       </div>

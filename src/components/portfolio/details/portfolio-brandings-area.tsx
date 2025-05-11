@@ -4,7 +4,7 @@ import Image from "next/image";
 // images
 import port_d_1 from '@/assets/img/inner-project/portfolio-details/brandings/port-d-1.png';
 import port_d_2 from '@/assets/img/inner-project/portfolio-details/brandings/port-d-2.png';
-import port_d_3 from '@/assets/img/inner-project/portfolio-details/brandings/port-d-3.jpg';
+import port_d_3 from '@/assets/img/inner-project/portfolio-details/brandings/port-d-3.png';
 import port_d_4 from '@/assets/img/inner-project/portfolio-details/brandings/port-d-5.png';
 import Link from "next/link";
 
@@ -26,9 +26,9 @@ const service_data = [
     {
         id: 3,
         img: port_d_3,
-        title: "Dheelliga Hoggamineed",
+        title: "Optimal Home Healthcare",
         text: "💡 For startups & small businesses looking to establish their brand identity",
-        link: "/dheelliga"
+        link: "/optimal"
     },
     {
         id: 4,

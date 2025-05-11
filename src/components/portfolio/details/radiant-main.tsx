@@ -18,10 +18,10 @@ import {charAnimation,titleAnimation} from "@/utils/title-animation";
 
 
 // images
-import port_d_1 from '@/assets/img/inner-project/portfolio-details/development/dev-d-1.jpg';
-import port_d_2 from '@/assets/img/inner-project/portfolio-details/development/dev-d-2.webp';
-import port_d_3 from '@/assets/img/inner-project/portfolio-details/development/dev-d-3.png';
-import port_d_4 from '@/assets/img/inner-project/portfolio-details/development/dev-d-4.png';
+import port_d_1 from '@/assets/img/portfolio/fowzi image/branding/radiant future/flyer.png';
+import port_d_2 from '@/assets/img/portfolio/fowzi image/branding/radiant future/flyer2.png';
+import port_d_3 from '@/assets/img/portfolio/fowzi image/branding/radiant future/business-card.png';
+import port_d_4 from '@/assets/img/portfolio/fowzi image/branding/radiant future/stationary.png';
 import HeaderFour from "@/layouts/headers/header-four";
 import FooterFour from "@/layouts/footers/footer-four";
 
@@ -99,7 +99,7 @@ const port_images = [
                           </div>
                         </div>
                         <div className="project-details-1-navigation d-flex justify-content-between align-items-center">
-                          <a className="project-details-1-prev" href="/dheelliga">
+                          <a className="project-details-1-prev" href="/optimal">
                             <i className="fa-sharp fa-regular fa-arrow-left"></i>
                             <span style={{fontFamily: 'Glacial Indifference'}}>Prev</span>
                           </a>
