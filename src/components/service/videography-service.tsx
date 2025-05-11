@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 // images
-import ser_img_1 from "@/assets/img/services/vid-s-1.jpg";
-import ser_img_2 from "@/assets/img/services/vid-s-2.jpg";
+import ser_img_1 from "@/assets/img/services/Asset1.webp";
+import ser_img_2 from "@/assets/img/services/Asset2.webp";
 import ser_img_3 from "@/assets/img/services/vid-s-3.jpg";
 import ser_img_4 from "@/assets/img/services/vid-s-4.jpg";
 import ser_img_5 from "@/assets/img/services/vid-s-5.jpg";
-import ser_img_6 from "@/assets/img/services/vid-s-6.jpg";
+import ser_img_6 from "@/assets/img/services/Asset4.webp";
 import { RightArrow, ShapeTwo } from "../svg";
 import Link from "next/link";
 
