@@ -22,6 +22,7 @@ import HeaderFour from "@/layouts/headers/header-four";
 import BrandFive from "@/components/brand/brand-five";
 import Testimonial from "@/components/testimonial/testimonial";
 import AboutCall2Action from "@/components/call-to-action/call-to-action";
+import FullWidthImage from "@/components/full-width-img";
 
 const AboutUsMain = () => {
   useScrollSmooth();
@@ -55,7 +56,7 @@ const AboutUsMain = () => {
             {/* about area */}
 
             {/* team area */}
-            <TeamOne spacing="" />
+            <FullWidthImage />
             {/* team area */}
 
             {/* fun fact area */}
