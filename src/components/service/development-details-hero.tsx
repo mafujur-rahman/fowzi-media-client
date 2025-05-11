@@ -16,7 +16,7 @@ export default function DevelopmentDetailsHero() {
               Websites Built to Perform
               </h4>
               <p className="tp_fade_bottom">
-              At Fowzi Media, we build custom websites that are easy to use, visually clean, and made to support your goals. Whether you're a business owner, nonprofit leader, or campaign manager, your website should reflect who you are and speak clearly to the people you want to reach.
+              At Fowzi Media, we build custom websites that are easy to use, visually clean, and made to support your goals. Whether youre a business owner, nonprofit leader, or campaign manager, your website should reflect who you are and speak clearly to the people you want to reach.
               </p>
             </div>
           </div>
