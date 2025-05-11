@@ -2,12 +2,11 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 // images
-import ser_img_1 from "@/assets/img/services/vid-s-1.jpg";
-import ser_img_2 from "@/assets/img/services/vid-s-2.jpg";
-import ser_img_3 from "@/assets/img/services/vid-s-3.jpg";
-import ser_img_4 from "@/assets/img/services/vid-s-4.jpg";
-import ser_img_5 from "@/assets/img/services/vid-s-5.jpg";
-import ser_img_6 from "@/assets/img/services/vid-s-6.jpg";
+import ser_img_1 from "@/assets/img/services/Asset5.webp";
+import ser_img_2 from "@/assets/img/services/Asset6.webp";
+import ser_img_3 from "@/assets/img/services/Asset7.webp";
+import ser_img_4 from "@/assets/img/services/Asset9.webp";
+
 import { RightArrow, ShapeTwo } from "../svg";
 import Link from "next/link";
 
@@ -85,41 +84,7 @@ const service_data = [
       },
     ],
   },
-  {
-    id: 5,
-    img: ser_img_5,
-    link: "/request-a-quote",
-    subtitle: " Review & Revisions",
-    title: "Fine-Tuning Your Story",
-    text: "You’ll receive a draft version to review. We welcome your feedback and offer up to two rounds of revisions to make sure everything is just right.",
-    lists: [
-      {
-        subtitles: [
-          "Client feedback session",
-          "Revisions based on your input",
-          "Final approval process",
-        ],
-      },
-    ],
-  },
-  {
-    id: 6,
-    img: ser_img_6,
-    link: "/request-a-quote",
-    subtitle: "Delivery",
-    title: "Review and Delivery",
-    text: "You receive a curated, high-resolution gallery of your edited photos, delivered digitally with full usage rights. We can also provide resized versions for websites, social media, or print.",
-    lists: [
-      {
-        subtitles: [
-          "Secure download link",
-          "Final image set in web and print formats",
-          "Turnaround timeline discussed up front",
-          "Optional rush delivery available",
-        ],
-      },
-    ],
-  },
+  
 
 ];
 
