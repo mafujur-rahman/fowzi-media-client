@@ -13,10 +13,10 @@ export default function DevelopmentDetailsHero() {
           <div className="col-xl-10">
             <div className="sv-hero-title-box">
               <h4 className="sv-hero-title tp-char-animation">
-              Transform Your Online Presence with Our Expert Web Development
+              Websites Built to Perform
               </h4>
               <p className="tp_fade_bottom">
-              Your website deserves more than just functionality—it needs to engage. At Fowzi Media, we dont just build websites; we create immersive digital experiences that capture your brand’s essence, engage your audience, and deliver measurable results.
+              At Fowzi Media, we build custom websites that are easy to use, visually clean, and made to support your goals. Whether you're a business owner, nonprofit leader, or campaign manager, your website should reflect who you are and speak clearly to the people you want to reach.
               </p>
             </div>
           </div>

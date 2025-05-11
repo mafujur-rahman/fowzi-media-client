@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 
 // images
 import s_1 from "@/assets/img/packages/branding.svg";
@@ -10,26 +10,26 @@ import s_4 from "@/assets/img/packages/photography.svg";
 const service_data = [
     {
       id: 1,
-      title: "Project Planning",
-      desc: "We start by understanding your project goals, target audience, and business objectives to create a tailored development strategy.",
+      title: "Custom Website Design",
+      desc: "We design websites that fit your brand and feel consistent from top to bottom. Every page is crafted with layout, visuals, and usability in mind.",
       icon: s_1,
     },
     {
       id: 2,
-      title: "UI/UX Design",
-      desc: "We design intuitive and engaging user interfaces with a seamless user experience that aligns with your brand and engages visitors.",
+      title: "Development and CMS Integration",
+      desc: "We build websites using flexible, reliable platforms like WordPress and other content management systems. You get a site that’s easy to update and built to grow with you.",
       icon: s_2,
     },
     {
       id: 3,
-      title: "Development & Coding",
-      desc: "We build responsive, fast, and scalable websites using the latest technologies to bring your vision to life.",
+      title: "Website Redesign and Updates",
+      desc: "Already have a site but it feels outdated or hard to use? We redesign existing websites to match today’s standards and your brand’s evolution.",
       icon: s_3,
     },
     {
       id: 4,
-      title: "Testing & Quality Assurance",
-      desc: "We rigorously test your website across multiple devices and browsers to ensure flawless performance and usability.",
+      title: "Training and Ongoing Support",
+      desc: "We don't just hand off the site and disappear. We offer training so your team knows how to manage it, plus ongoing maintenance options if you need long-term support.",
       icon: s_4,
     },
   ];
