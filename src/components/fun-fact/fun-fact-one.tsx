@@ -6,13 +6,13 @@ const counter_data = [
   {
     id: 1,
     title: "PROJECTS COMPLETED",
-    count: 511,
+    count: 50,
     text: "+",
   },
   {
     id: 2,
     title: "YEARS OF EXPERIENCE",
-    count: 11.0,
+    count: 5,
     text: "+",
   },
   {
@@ -40,7 +40,7 @@ export default function FunFactOne() {
                 Fun Facts
               </span>
               <h4 className="ab-inner-funfact-title tp_title_anim" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
-                Agency <br /> Snapshots
+                By the <br /> Numbers
               </h4>
             </div>
           </div>
