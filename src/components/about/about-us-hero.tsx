@@ -40,7 +40,7 @@ export default function AboutUsHero() {
                 Visionary <br /> digital studio
               </span>
               <h1 className="ab-inner-hero-title tp-char-animation">
-                Creative Storytelling Rooted in Community
+                Design. Brands. Stories.
               </h1>
               <p >Digital experiences with maximum emotional impact</p>
             </div>

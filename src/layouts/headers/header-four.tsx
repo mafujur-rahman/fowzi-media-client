@@ -91,10 +91,12 @@ export default function HeaderFour() {
                                 zIndex: 1000,
                               }}
                             >
-                              <li><Link className="dropdown-item" href="/videography-details">Video Production</Link></li>
+                              
                               <li><Link className="dropdown-item" href="/branding-details">Branding</Link></li>
                               <li><Link className="dropdown-item" href="/development-details">Website Development</Link></li>
+                              <li><Link className="dropdown-item" href="/videography-details">Video Production</Link></li>
                               <li><Link className="dropdown-item" href="/photography-details">Photography</Link></li>
+                              <li><Link className="dropdown-item" href="/photography-details">Marketing</Link></li>
                             </ul>
                           </li>
 
@@ -119,10 +121,12 @@ export default function HeaderFour() {
                                 zIndex: 1000,
                               }}
                             >
-                              <li><Link className="dropdown-item" href="/portfolio-videography">Video Production</Link></li>
+                              
                               <li><Link className="dropdown-item" href="/portfolio-brandings">Branding</Link></li>
                               <li><Link className="dropdown-item" href="/portfolio-development">Website Development</Link></li>
+                              <li><Link className="dropdown-item" href="/portfolio-videography">Video Production</Link></li>
                               <li><Link className="dropdown-item" href="/portfolio-photography">Photography</Link></li>
+                              <li><Link className="dropdown-item" href="/portfolio-photography">Marketing</Link></li>
                             </ul>
                           </li>
 
@@ -198,10 +202,12 @@ export default function HeaderFour() {
                   Services
                 </a>
                 <ul className="dropdown-menu">
-                  <li><Link className="dropdown-item" href="/videography-details">Video Production</Link></li>
+                  
                   <li><Link className="dropdown-item" href="/branding-details">Branding</Link></li>
                   <li><Link className="dropdown-item" href="/development-details">Website Development</Link></li>
+                  <li><Link className="dropdown-item" href="/videography-details">Video Production</Link></li>
                   <li><Link className="dropdown-item" href="/photography-details">Photography</Link></li>
+                  <li><Link className="dropdown-item" href="/photography-details">Marketing</Link></li>
                 </ul>
               </li>
 
@@ -221,10 +227,12 @@ export default function HeaderFour() {
                   Portfolio
                 </a>
                 <ul className="dropdown-menu">
-                  <li><Link className="dropdown-item" href="/portfolio-videography">Video Production</Link></li>
+                  
                   <li><Link className="dropdown-item" href="/portfolio-brandings">Branding</Link></li>
                   <li><Link className="dropdown-item" href="/portfolio-development">Website Development</Link></li>
+                  <li><Link className="dropdown-item" href="/portfolio-videography">Video Production</Link></li>
                   <li><Link className="dropdown-item" href="/portfolio-photography">Photography</Link></li>
+                  <li><Link className="dropdown-item" href="/portfolio-photography">Marketing</Link></li>
                 </ul>
               </li>
 
