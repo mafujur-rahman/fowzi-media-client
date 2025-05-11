@@ -10,26 +10,26 @@ import s_4 from "@/assets/img/packages/photography.svg";
 const service_data = [
     {
       id: 1,
-      title: "Concept Development",
-      desc: "We begin by understanding your vision and goals to develop a creative concept that aligns with your brand and engages your audience.",
+      title: "Brand & Promotional Videos",
+      desc: "Showcase what makes your brand unique with high-quality promotional content. Perfect for websites, fundraising, product launches, and digital ads.",
       icon: s_1,
     },
     {
       id: 2,
-      title: "Storyboarding & Scripting",
-      desc: "We craft compelling scripts and storyboards that lay the foundation for a powerful visual narrative, tailored to your brand message.",
+      title: "Interview & Podcast Videos",
+      desc: "Capture the voices that matter. We film interviews and podcast in clean, professional settings that bring out genuine emotion and trust.",
       icon: s_2,
     },
     {
       id: 3,
-      title: "Filming & Production",
-      desc: "We capture high-quality footage using state-of-the-art equipment, ensuring your message is delivered with clarity and impact.",
+      title: " Event Videography",
+      desc: "Let the moments speak for themselves. We offer full event coverage for conferences, workshops, cultural events, and community gatherings in and around Minneapolis.",
       icon: s_3,
     },
     {
       id: 4,
-      title: "Post-Production & Editing",
-      desc: "We refine and edit your footage to create a polished, professional video that enhances your brand and resonates with your audience.",
+      title: "Social Media Video Content",
+      desc: "Short-form, scroll-stopping videos optimized for platforms like Instagram, TikTok, YouTube, and Facebook. Perfect for engagement, visibility, and reach.",
       icon: s_4,
     },
   ];
