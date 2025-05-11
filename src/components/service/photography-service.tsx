@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 // images
-import ser_img_1 from "@/assets/img/services/friday.jpg";
-import ser_img_2 from "@/assets/img/services/web-left.jpg";
-import ser_img_3 from "@/assets/img/services/up.jpg";
+import ser_img_1 from "@/assets/img/services/vid-s-1.jpg";
+import ser_img_2 from "@/assets/img/services/vid-s-2.jpg";
+import ser_img_3 from "@/assets/img/services/vid-s-3.jpg";
+import ser_img_4 from "@/assets/img/services/vid-s-4.jpg";
+import ser_img_5 from "@/assets/img/services/vid-s-5.jpg";
+import ser_img_6 from "@/assets/img/services/vid-s-6.jpg";
 import { RightArrow, ShapeTwo } from "../svg";
 import Link from "next/link";
 
@@ -13,130 +16,114 @@ const service_data = [
   {
     id: 1,
     img: ser_img_1,
-    link: "/contact",
-    subtitle: "Branding Studio",
-    title: "Essential Brand Starter",
-    text: "💡 For startups & small businesses looking to establish their brand identity",
+    link: "/request-a-quote",
+    subtitle: "Discovery & Planning",
+    title: "Consultation and Planning",
+    text: "We begin with a conversation to understand what you're looking for. We discuss your brand, goals, locations, timing, and the type of shots you need. Whether you're preparing for a product shoot, event, or portraits, we’ll create a custom plan that fits your needs.",
     lists: [
       {
-        title: "Logo & Brand Identity",
         subtitles: [
-          "Custom logo design (3 initial concepts, 2 rounds of revisions)",
-          "Brand color palette selection",
-          "Typography (font pairings for digital & print use)",
-          "Basic brand guidelines (how to use your brand consistently)",
-        ],
-      },
-      {
-        title: "Website (3 Pages)",
-        subtitles: [
-          "Home Page – Showcases your brand’s key message & services",
-          "About Page – Highlights your story, mission, and values",
-          "Contact Page – Includes a contact form, map, and business details",
-          "Mobile-responsive design",
-          "Basic SEO optimization for visibility",
-        ],
-      },
-      {
-        title: "Photography (5 Professional Photos)",
-        subtitles: [
-          "Product or team photography (on-site or studio)",
-          "High-resolution, edited images for website & social media",
+          "Goal and concept discussion",
+          "Shot list planning",
+          "Timeline and location setup",
+          "Visual reference review (optional)",
         ],
       },
     ],
-    timeline: "🕒 Timeline: 3-4 Weeks",
   },
   {
     id: 2,
     img: ser_img_2,
-    link: "/contact",
-    subtitle: "Growth Media",
-    title: "Growth Media Package",
-    text: "📈 For businesses ready to expand their digital presence with engaging visuals",
+    link: "/request-a-quote",
+    subtitle: "Scriptwriting & Storyboarding",
+    title: " Pre-Shoot Coordination",
+    text: "We handle all the details ahead of time so you feel prepared. This includes confirming locations, selecting backgrounds or props, and walking you through what to expect during the shoot.",
     lists: [
       {
-        title: "Full Brand Identity & Guidelines",
         subtitles: [
-          "Everything from the Essential Package",
-          "Additional branding elements (business card design, social media templates)",
-        ],
-      },
-      {
-        title: "Website (5 Pages)",
-        subtitles: [
-          "Home, About, Contact + 2 Additional Pages (e.g., Services, Portfolio, Blog)",
-          "SEO optimization (meta descriptions, keyword setup, speed optimization)",
-          "Integration with social media & Google Analytics",
-          "Mobile & tablet-friendly design",
-        ],
-      },
-      {
-        title: "Photography (15 Professional Photos)",
-        subtitles: [
-          "High-quality product, lifestyle, and team shots",
-          "Includes post-editing for commercial use",
-          "Suitable for website, social media, and marketing materials",
-        ],
-      },
-      {
-        title: "Video Production (1-Minute Promo Video)",
-        subtitles: [
-          "Professionally shot & edited promotional video",
-          "Can be a company introduction, product showcase, or social media ad",
-          "Includes script assistance, voiceover, and background music",
+          "Location scouting or coordination",
+          "Creative direction",
+          "Moodboard or sample style guidance",
+          "Wardrobe or brand styling tips (if needed)",
         ],
       },
     ],
-    timeline: "🕒 Timeline: 5-6 Weeks",
   },
   {
     id: 3,
     img: ser_img_3,
-    link: "/contact",
-    subtitle: "Premium Branding",
-    title: "Premium Visual Experience",
-    text: "🚀 For established brands seeking high-end branding & media solutions",
+    link: "/request-a-quote",
+    subtitle: "Filming",
+    title: "The Photo Shoot",
+    text: "On the day of the shoot, we create a comfortable and professional environment to capture your best moments. We adjust for lighting, angles, and context to make sure every shot serves your purpose.",
     lists: [
       {
-        title: "Advanced Brand Strategy & Positioning",
         subtitles: [
-          "In-depth brand discovery session",
-          "Market & competitor analysis",
-          "Brand voice & messaging guide",
-          "Comprehensive brand guidelines",
-        ],
-      },
-      {
-        title: "Website (8 Pages, Fully Custom Design)",
-        subtitles: [
-          "Includes everything from the Growth Media Package",
-          "Additional features like eCommerce integration, booking system, blog, portfolio",
-          "Advanced SEO setup (keyword research, Google My Business setup)",
-          "Custom animations & interactive elements for a high-end look",
-        ],
-      },
-      {
-        title: "Photography (30+ Professional Photos)",
-        subtitles: [
-          "Full brand photoshoot (products, team, workspace, lifestyle shots)",
-          "Edited high-resolution images for digital & print use",
-        ],
-      },
-      {
-        title: "Video Production (3 High-Quality Videos)",
-        subtitles: [
-          "Brand Story Video (2-3 minutes) – Tells your company’s journey & mission",
-          "Testimonial or Case Study Video – Client/customer reviews in video format",
-          "Social Media Ad (30 sec-1 min) – Designed for Instagram, Facebook, or YouTube",
+          "Professional equipment setup",
+          "Direction and posing support",
+          "Multiple framing and setting options",
+          "Option for candid, styled, or documentary-style shots",
         ],
       },
     ],
-    timeline: "🕒 Timeline: 8-10 Weeks",
   },
+  {
+    id: 4,
+    img: ser_img_4,
+    link: "/request-a-quote",
+    subtitle: "Editing & Post-Production",
+    title: "Editing and Post-Production",
+    text: "Once the shoot is complete, we carefully select and professionally edit your photos. Our editing process brings out the best in your images without losing authenticity.",
+    lists: [
+      {
+        subtitles: [
+          "Color correction and light retouching",
+          "Cropping and composition polishing",
+          "Branding consistency and styling",
+          "Format adjustments based on usage (web, print, social)",
+        ],
+      },
+    ],
+  },
+  {
+    id: 5,
+    img: ser_img_5,
+    link: "/request-a-quote",
+    subtitle: " Review & Revisions",
+    title: "Fine-Tuning Your Story",
+    text: "You’ll receive a draft version to review. We welcome your feedback and offer up to two rounds of revisions to make sure everything is just right.",
+    lists: [
+      {
+        subtitles: [
+          "Client feedback session",
+          "Revisions based on your input",
+          "Final approval process",
+        ],
+      },
+    ],
+  },
+  {
+    id: 6,
+    img: ser_img_6,
+    link: "/request-a-quote",
+    subtitle: "Delivery",
+    title: "Review and Delivery",
+    text: "You receive a curated, high-resolution gallery of your edited photos, delivered digitally with full usage rights. We can also provide resized versions for websites, social media, or print.",
+    lists: [
+      {
+        subtitles: [
+          "Secure download link",
+          "Final image set in web and print formats",
+          "Turnaround timeline discussed up front",
+          "Optional rush delivery available",
+        ],
+      },
+    ],
+  },
+
 ];
 
-export default function PhotographyService() {
+export default function VideographyService() {
 
   // padding bottom according to responsiveness
   const [isMounted, setIsMounted] = useState(false);
@@ -181,12 +168,8 @@ export default function PhotographyService() {
                 <div className=" d-flex align-items-center h-100" style={{ backgroundColor: "#1E1E1E" }}>
                   <div className=" p-4 ">
                     <div className="sv-service-title-box mb-3">
-                      <span className="sv-service-title" style={{ fontSize: "1rem" }}>
-                        <i style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
-                          {item.id < 9 ? "0" + item.id : item.id}
-                        </i>
-                        &mdash; {item.title}
-                      </span>
+                      
+                      <h2 className="sv-service-title">{item.title}</h2>
                     </div>
                     <div className="sv-service-space-wrap">
                       <div className="sv-service-text mb-4">
@@ -201,16 +184,7 @@ export default function PhotographyService() {
                       <div className="sv-service-list">
                         <div className="row">
                           {item.lists.map((list, i) => (
-                            <div key={i} className="col-md-6 mb-3">
-                              <h3 style={{
-                                fontFamily: 'Glacial Indifference',
-                                fontWeight: 'bold',
-                                color: 'white',
-                                fontSize: '1.2rem',
-                                marginBottom: '0.8rem'
-                              }}>
-                                {list.title}
-                              </h3>
+                            <div key={i} className="">
                               <ul style={{ listStyleType: 'none', paddingLeft: '0' }}>
                                 {list.subtitles.map((subtitle, j) => (
                                   <li key={j} style={{
@@ -232,19 +206,11 @@ export default function PhotographyService() {
                             </div>
                           ))}
                         </div>
-                        <div className="mt-3 " style={{
-                          fontFamily: 'Glacial Indifference',
-                          fontWeight: 'bold',
-                          fontSize: '1rem',
-                          color: 'white'
-                        }}>
-                          {item.timeline}
-                        </div>
                       </div>
                       <div className="sv-service-btn mt-4">
                         <Link
                           className="tp-btn-zikzak zikzak-inner p-relative"
-                          href="/request-a-quote"
+                          href={item.link}
                         >
                           <span className="zikzak-content" style={{
                             fontFamily: 'Glacial Indifference',

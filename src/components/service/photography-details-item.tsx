@@ -10,26 +10,26 @@ import s_4 from "@/assets/img/packages/photography.svg";
 const service_data = [
     {
       id: 1,
-      title: "Concept Development",
-      desc: "We begin by understanding your vision and goals to craft a creative concept that captures your brand's essence and engages your audience.",
+      title: "Brand and Lifestyle Photography",
+      desc: "Show your brand in action. From team culture to product use, we capture visuals that feel real and relatable.",
       icon: s_1,
     },
     {
       id: 2,
-      title: "Photography Planning",
-      desc: "We plan the perfect shoot by aligning the right angles, lighting, and composition to tell your brand story through compelling visuals.",
+      title: "Event Photography",
+      desc: "Preserve the energy and emotion of your event. We cover everything from community gatherings to press conferences and corporate events.",
       icon: s_2,
     },
     {
       id: 3,
-      title: "Shooting & Production",
-      desc: "We capture stunning, high-quality images using the latest photography equipment, ensuring every detail is meticulously shot.",
+      title: "Portrait and Headshot Photography",
+      desc: "Whether you're a professional, a public figure, or part of a team, we offer professional headshots that feel approachable and confident.",
       icon: s_3,
     },
     {
       id: 4,
-      title: "Editing & Retouching",
-      desc: "We polish and edit the images to perfection, enhancing colors, contrast, and details to create photos that resonate with your brand and audience.",
+      title: "Documentary and Community Projects",
+      desc: "Our roots in community storytelling allow us to document real experiences with honesty and respect. Perfect for nonprofits, public campaigns, and cultural programs.",
       icon: s_4,
     },
   ];
