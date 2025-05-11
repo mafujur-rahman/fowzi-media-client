@@ -244,13 +244,13 @@ export default function BrandingService() {
                       <div className="sv-service-btn mt-4">
                         <Link
                           className="tp-btn-zikzak zikzak-inner p-relative"
-                          href="/contact"
+                          href="/request-a-quote"
                         >
                           <span className="zikzak-content" style={{
                             fontFamily: 'Glacial Indifference',
                             fontWeight: 'bold'
                           }}>
-                            Quote <br /> Request
+                            Request <br /> a Quote
                             <RightArrow clr="currentColor" />
                           </span>
                           <ShapeTwo />

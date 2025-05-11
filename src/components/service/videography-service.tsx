@@ -218,7 +218,7 @@ export default function VideographyService() {
                             fontFamily: 'Glacial Indifference',
                             fontWeight: 'bold'
                           }}>
-                            Quote <br /> Request
+                            Request <br /> a Quote
                             <RightArrow clr="currentColor" />
                           </span>
                           <ShapeTwo />

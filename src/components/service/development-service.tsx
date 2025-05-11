@@ -13,7 +13,7 @@ const service_data = [
   {
     id: 1,
     img: ser_img_1,
-    link: "/contact",
+    link: "/request-a-quote",
     subtitle: "Branding Studio",
     title: "Essential Brand Starter",
     text: "💡 For startups & small businesses looking to establish their brand identity",
@@ -50,7 +50,7 @@ const service_data = [
   {
     id: 2,
     img: ser_img_2,
-    link: "/contact",
+    link: "/request-a-quote",
     subtitle: "Growth Media",
     title: "Growth Media Package",
     text: "📈 For businesses ready to expand their digital presence with engaging visuals",
@@ -93,7 +93,7 @@ const service_data = [
   {
     id: 3,
     img: ser_img_3,
-    link: "/contact",
+    link: "/request-a-quote",
     subtitle: "Premium Branding",
     title: "Premium Visual Experience",
     text: "🚀 For established brands seeking high-end branding & media solutions",
@@ -244,13 +244,13 @@ export default function DevelopmentService() {
                       <div className="sv-service-btn mt-4">
                         <Link
                           className="tp-btn-zikzak zikzak-inner p-relative"
-                          href="/contact"
+                          href={item.link}
                         >
                           <span className="zikzak-content" style={{
                             fontFamily: 'Glacial Indifference',
                             fontWeight: 'bold'
                           }}>
-                            Quote <br /> Request
+                            Request <br /> a Quote
                             <RightArrow clr="currentColor" />
                           </span>
                           <ShapeTwo />
