@@ -19,6 +19,7 @@ import HeaderFour from "@/layouts/headers/header-four";
 import FooterFour from "@/layouts/footers/footer-four";
 import VideographyDetailsHero from "@/components/service/videography-details-hero";
 import { VideographyDetailsItems } from "@/components/service/videography-details-item";
+import VideographyService from "@/components/service/videography-service";
 
 const VideographyDetailsMain = () => {
   useScrollSmooth();
@@ -70,7 +71,7 @@ const VideographyDetailsMain = () => {
             {/* service area */}
 
             {/* service area */}
-            <ServiceSix />
+            <VideographyService />
             {/* service area */}
 
             {/* big text */}

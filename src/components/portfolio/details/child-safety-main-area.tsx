@@ -60,7 +60,9 @@ const port_images = [
                       <div className="project-details-1-left">
                         {port_images.map((item, i) => (
                           <div key={i} className="project-details-1-thumb mb-10">
+                            <a href="child-safety">
                               <Image src={item.src} alt={`Portfolio ${i + 1}`} style={{ height: "auto", cursor: "pointer" }} />
+                              </a>
                           </div>
                         ))}
                       </div>

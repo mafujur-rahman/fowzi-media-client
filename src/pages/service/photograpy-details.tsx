@@ -19,6 +19,7 @@ import HeaderFour from "@/layouts/headers/header-four";
 import FooterFour from "@/layouts/footers/footer-four";
 import PhotographyDetailsHero from "@/components/service/photography-details-hero";
 import { PhotographyDetailsItems } from "@/components/service/photography-details-item";
+import PhotographyService from "@/components/service/photography-service";
 
 const PhotographyDetailsMain = () => {
   useScrollSmooth();
@@ -70,7 +71,7 @@ const PhotographyDetailsMain = () => {
             {/* service area */}
 
             {/* service area */}
-            <ServiceSix />
+            <PhotographyService />
             {/* service area */}
 
             {/* big text */}

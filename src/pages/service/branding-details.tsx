@@ -19,6 +19,7 @@ import HeaderFour from "@/layouts/headers/header-four";
 import FooterFour from "@/layouts/footers/footer-four";
 import BrandingDetailsHero from "@/components/service/branding-details-hero";
 import { BrandingDetailsItems } from "@/components/service/branding-details-item";
+import BrandingService from "@/components/service/branding-service";
 
 const BrandingDetailsMain = () => {
   useScrollSmooth();
@@ -70,7 +71,7 @@ const BrandingDetailsMain = () => {
             {/* service area */}
 
             {/* service area */}
-            <ServiceSix />
+            <BrandingService />
             {/* service area */}
 
             {/* big text */}
