@@ -7,19 +7,22 @@ const service_data = [
         id: 1,
         videoId: "1059190345",
         title: "Child Safety",
-        link: "/child-safety-main"
+        link: "/child-safety-main",
+        image: "/assets/img/portfolio/fowzi image/child-safety-1.jpg" 
     },
     {
         id: 2,
         videoId: "1058793031",
         title: "PSA Film",
-        link: "/psa-main"
+        link: "/psa-main",
+        image: "/assets/img/portfolio/fowzi image/dont-wait-until-1.jpg" 
     },
     {
         id: 3,
         videoId: "1056626277",
         title: "SBD Commercial",
-        link: "/sbd-main"
+        link: "/sbd-main",
+        image: "/assets/img/portfolio/fowzi image/the-final-SBD-1.jpg" 
     },
 ];
 
@@ -45,7 +48,7 @@ export default function PortfolioVideographyArea() {
                                 <div className="sv-service-thumb h-100" style={{ cursor: "pointer" }}>
                                     <Link href={item.link}>
                                         <Image
-                                            src={`https://vumbnail.com/${item.videoId}.jpg`}
+                                            src={item.image} // Use the custom image path here
                                             alt={`${item.title} thumbnail`}
                                             width={800}
                                             height={450}
@@ -91,6 +94,3 @@ export default function PortfolioVideographyArea() {
         </div>
     );
 }
-
-
-
