@@ -2,45 +2,45 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 // images
-import port_d_1 from '@/assets/img/inner-project/portfolio-details/development/dev-d-1.jpg';
-import port_d_2 from '@/assets/img/inner-project/portfolio-details/development/dev-d-2.webp';
-import port_d_3 from '@/assets/img/inner-project/portfolio-details/development/dev-d-3.png';
-import port_d_4 from '@/assets/img/inner-project/portfolio-details/development/dev-d-4.png';
+import port_d_1 from '@/assets/img/inner-project/portfolio-details/brandings/port-d-1.png';
+import port_d_2 from '@/assets/img/inner-project/portfolio-details/brandings/port-d-2.png';
+import port_d_3 from '@/assets/img/inner-project/portfolio-details/brandings/port-d-3.jpg';
+import port_d_4 from '@/assets/img/inner-project/portfolio-details/brandings/port-d-5.png';
 import Link from "next/link";
 
 const service_data = [
     {
         id: 1,
         img: port_d_1,
-        title: "Daisane",
+        title: "Friday Fashion",
         text: "💡 For startups & small businesses looking to establish their brand identity",
-        link: "/daisane"
+        link: "/friday-fashion"
     },
     {
         id: 2,
         img: port_d_2,
-        title: "Infinity Care",
+        title: "Better Hand",
         text: "💡 For startups & small businesses looking to establish their brand identity",
-        link: "/infinity-care"
+        link: "/better-hand"
     },
     {
         id: 3,
         img: port_d_3,
-        title: "Somali Youth",
+        title: "Dheelliga Hoggamineed",
         text: "💡 For startups & small businesses looking to establish their brand identity",
-        link: "/somali-youth"
+        link: "/dheelliga"
     },
     {
         id: 4,
         img: port_d_4,
-        title: "Washington Toe",
+        title: "Radiant Future",
         text: "💡 For startups & small businesses looking to establish their brand identity",
-        link: "/washington-toe"
+        link: "/radiant"
     },
 
 ]
 
-export default function PortfolioDevelopmentArea() {
+export default function PortfolioBrandingsArea() {
 
     // padding bottom according to responsiveness
     const [isMounted, setIsMounted] = useState(false);
@@ -111,11 +111,11 @@ export default function PortfolioDevelopmentArea() {
                                         <div className="project-details-1-info-wrap">
                                             <div className="project-details-1-info">
                                                 <span style={{ fontFamily: 'Glacial Indifference' }}>Services</span>
-                                                <h4 style={{ fontFamily: 'Glacial Indifference' }}>Design & Development</h4>
+                                                <h4 style={{ fontFamily: 'Glacial Indifference' }}>Branding</h4>
                                             </div>
                                             <div className="project-details-1-info">
                                                 <span style={{ fontFamily: 'Glacial Indifference' }}>Deliverables</span>
-                                                <h4 style={{ fontFamily: 'Glacial Indifference' }}>UI / UX Design</h4>
+                                                <h4 style={{ fontFamily: 'Glacial Indifference' }}>Branding</h4>
                                             </div>
                                         </div>
                                         <div className="project-details-1-social"></div>
