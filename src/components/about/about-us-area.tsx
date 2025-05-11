@@ -51,7 +51,7 @@ export default function AboutUsArea() {
                 Hi!
               </span>
               <p className="tp-dropcap tp_fade_bottom" >
-              A Minnesota-based creative agency turning ideas into powerful digital experiences. We specialize in branding, video production, web design, and development—helping brands connect, engage, and grow. More than just creators, we’re your strategic partner in innovation. Let’s bring your vision to life.
+              Fowzi Media is a Minneapolis-based creative agency specializing in branding, web design, video production, photography, and strategic communications. As a proudly minority- and immigrant-owned business, the agency brings a unique perspective to every project, blending cultural insight with creative precision.
               </p>
             </div>
           </div>
