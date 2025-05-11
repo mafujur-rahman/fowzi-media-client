@@ -57,12 +57,12 @@ const VideographyDetailsMain = () => {
                     <div className="tp-service-5-title-box pt-90 mb-40">
                       <span className="ab-inner-subtitle mb-20" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                         <Leaf />
-                        Videography Service
+                        Videography Process
                       </span>
                       <h4 className="tp-service-5-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
-                      Custom Videography Packages for Impactful Visual Storytelling{" "}
+                      How We Bring Your Story to Life{" "}
                       </h4>
-                      <p className="pt-10">We understand that businesses need more than just standalone videos—they need captivating visual storytelling. That’s why we’ve created packages that combine creative videography, engaging narratives, and high-quality production into one seamless, impactful experience.</p>
+                      <p className="pt-10">At Fowzi Media, our videography process is collaborative, transparent, and tailored to your goals. Whether it’s a campaign film, brand promo, or community event, we make sure the journey from concept to final cut is smooth and stress-free.</p>
                     </div>
                   </div>
                 </div>

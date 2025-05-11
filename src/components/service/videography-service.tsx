@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 // images
-import ser_img_1 from "@/assets/img/services/friday.jpg";
-import ser_img_2 from "@/assets/img/services/web-left.jpg";
-import ser_img_3 from "@/assets/img/services/up.jpg";
+import ser_img_1 from "@/assets/img/services/vid-s-1.jpg";
+import ser_img_2 from "@/assets/img/services/vid-s-2.jpg";
+import ser_img_3 from "@/assets/img/services/vid-s-3.jpg";
+import ser_img_4 from "@/assets/img/services/vid-s-4.jpg";
+import ser_img_5 from "@/assets/img/services/vid-s-5.jpg";
+import ser_img_6 from "@/assets/img/services/vid-s-6.jpg";
 import { RightArrow, ShapeTwo } from "../svg";
 import Link from "next/link";
 
@@ -13,127 +16,108 @@ const service_data = [
   {
     id: 1,
     img: ser_img_1,
-    link: "/contact",
-    subtitle: "Branding Studio",
-    title: "Essential Brand Starter",
-    text: "💡 For startups & small businesses looking to establish their brand identity",
+    link: "/request-a-quote",
+    subtitle: "Discovery & Planning",
+    title: "Understanding Your Vision",
+    text: "We start by learning about your goals, audience, and message. This step involves a planning meeting where we outline the type of video you need, key messaging points, and visual style. We also talk through timelines, budgets, and location logistics.",
     lists: [
       {
-        title: "Logo & Brand Identity",
         subtitles: [
-          "Custom logo design (3 initial concepts, 2 rounds of revisions)",
-          "Brand color palette selection",
-          "Typography (font pairings for digital & print use)",
-          "Basic brand guidelines (how to use your brand consistently)",
-        ],
-      },
-      {
-        title: "Website (3 Pages)",
-        subtitles: [
-          "Home Page – Showcases your brand’s key message & services",
-          "About Page – Highlights your story, mission, and values",
-          "Contact Page – Includes a contact form, map, and business details",
-          "Mobile-responsive design",
-          "Basic SEO optimization for visibility",
-        ],
-      },
-      {
-        title: "Photography (5 Professional Photos)",
-        subtitles: [
-          "Product or team photography (on-site or studio)",
-          "High-resolution, edited images for website & social media",
+          "Initial consultation",
+          "Goal alignment",
+          "Creative direction and moodboarding",
+          "Location planning and scheduling",
         ],
       },
     ],
-    timeline: "🕒 Timeline: 3-4 Weeks",
   },
   {
     id: 2,
     img: ser_img_2,
-    link: "/contact",
-    subtitle: "Growth Media",
-    title: "Growth Media Package",
-    text: "📈 For businesses ready to expand their digital presence with engaging visuals",
+    link: "/request-a-quote",
+    subtitle: "Scriptwriting & Storyboarding",
+    title: "Crafting the Narrative",
+    text: "If your video needs a script or structure, we help write and refine it. We also prepare a basic storyboard or shot list so you know what to expect before the cameras start rolling.",
     lists: [
       {
-        title: "Full Brand Identity & Guidelines",
         subtitles: [
-          "Everything from the Essential Package",
-          "Additional branding elements (business card design, social media templates)",
-        ],
-      },
-      {
-        title: "Website (5 Pages)",
-        subtitles: [
-          "Home, About, Contact + 2 Additional Pages (e.g., Services, Portfolio, Blog)",
-          "SEO optimization (meta descriptions, keyword setup, speed optimization)",
-          "Integration with social media & Google Analytics",
-          "Mobile & tablet-friendly design",
-        ],
-      },
-      {
-        title: "Photography (15 Professional Photos)",
-        subtitles: [
-          "High-quality product, lifestyle, and team shots",
-          "Includes post-editing for commercial use",
-          "Suitable for website, social media, and marketing materials",
-        ],
-      },
-      {
-        title: "Video Production (1-Minute Promo Video)",
-        subtitles: [
-          "Professionally shot & edited promotional video",
-          "Can be a company introduction, product showcase, or social media ad",
-          "Includes script assistance, voiceover, and background music",
+          "Script development",
+          "Visual planning",
+          "Approval before production begins",
         ],
       },
     ],
-    timeline: "🕒 Timeline: 5-6 Weeks",
   },
   {
     id: 3,
     img: ser_img_3,
-    link: "/contact",
-    subtitle: "Premium Branding",
-    title: "Premium Visual Experience",
-    text: "🚀 For established brands seeking high-end branding & media solutions",
+    link: "/request-a-quote",
+    subtitle: "Filming",
+    title: "Capturing the Right Moments",
+    text: "Our team handles all aspects of the shoot, including lighting, sound, and camera work. Whether on location in Minneapolis or in a studio setup, we create a relaxed environment to capture authentic content.",
     lists: [
       {
-        title: "Advanced Brand Strategy & Positioning",
         subtitles: [
-          "In-depth brand discovery session",
-          "Market & competitor analysis",
-          "Brand voice & messaging guide",
-          "Comprehensive brand guidelines",
-        ],
-      },
-      {
-        title: "Website (8 Pages, Fully Custom Design)",
-        subtitles: [
-          "Includes everything from the Growth Media Package",
-          "Additional features like eCommerce integration, booking system, blog, portfolio",
-          "Advanced SEO setup (keyword research, Google My Business setup)",
-          "Custom animations & interactive elements for a high-end look",
-        ],
-      },
-      {
-        title: "Photography (30+ Professional Photos)",
-        subtitles: [
-          "Full brand photoshoot (products, team, workspace, lifestyle shots)",
-          "Edited high-resolution images for digital & print use",
-        ],
-      },
-      {
-        title: "Video Production (3 High-Quality Videos)",
-        subtitles: [
-          "Brand Story Video (2-3 minutes) – Tells your company’s journey & mission",
-          "Testimonial or Case Study Video – Client/customer reviews in video format",
-          "Social Media Ad (30 sec-1 min) – Designed for Instagram, Facebook, or YouTube",
+          "Professional videographers on site",
+          "Multiple takes when needed",
+          "High-quality audio and video capture",
+          "B-roll and behind-the-scenes coverage as needed",
         ],
       },
     ],
-    timeline: "🕒 Timeline: 8-10 Weeks",
   },
+  {
+    id: 4,
+    img: ser_img_4,
+    link: "/request-a-quote",
+    subtitle: "Editing & Post-Production",
+    title: "Bringing It All Together",
+    text: "This is where the footage is shaped into your final video. We handle color correction, sound mixing, graphics, subtitles, and more—ensuring the final product looks polished and reflects your message.",
+    lists: [
+      {
+        subtitles: [
+          "Editing and visual cuts",
+          "Motion graphics and titles",
+          "Background music and sound design",
+          "Optional subtitling or voiceovers",
+        ],
+      },
+    ],
+  },
+  {
+    id: 5,
+    img: ser_img_5,
+    link: "/request-a-quote",
+    subtitle: " Review & Revisions",
+    title: "Fine-Tuning Your Story",
+    text: "You’ll receive a draft version to review. We welcome your feedback and offer up to two rounds of revisions to make sure everything is just right.",
+    lists: [
+      {
+        subtitles: [
+          "Client feedback session",
+          "Revisions based on your input",
+          "Final approval process",
+        ],
+      },
+    ],
+  },
+  {
+    id: 6,
+    img: ser_img_6,
+    link: "/request-a-quote",
+    subtitle: "Delivery",
+    title: "Your Video, Ready to Share",
+    text: "We deliver your video in the formats you need—whether for social media, your website, or a large-screen event. We also offer optimization tips if you’re uploading to platforms like YouTube or Instagram.",
+    lists: [
+      {
+        subtitles: [
+          "Final HD or 4K files",
+          "Platform-specific versions (vertical, horizontal, etc.)",
+        ],
+      },
+    ],
+  },
+
 ];
 
 export default function VideographyService() {
@@ -185,8 +169,9 @@ export default function VideographyService() {
                         <i style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                           {item.id < 9 ? "0" + item.id : item.id}
                         </i>
-                        &mdash; {item.title}
+                        &mdash; {item.subtitle}
                       </span>
+                      <h2 className="sv-service-title">{item.title}</h2>
                     </div>
                     <div className="sv-service-space-wrap">
                       <div className="sv-service-text mb-4">
@@ -201,16 +186,7 @@ export default function VideographyService() {
                       <div className="sv-service-list">
                         <div className="row">
                           {item.lists.map((list, i) => (
-                            <div key={i} className="col-md-6 mb-3">
-                              <h3 style={{
-                                fontFamily: 'Glacial Indifference',
-                                fontWeight: 'bold',
-                                color: 'white',
-                                fontSize: '1.2rem',
-                                marginBottom: '0.8rem'
-                              }}>
-                                {list.title}
-                              </h3>
+                            <div key={i} className="">
                               <ul style={{ listStyleType: 'none', paddingLeft: '0' }}>
                                 {list.subtitles.map((subtitle, j) => (
                                   <li key={j} style={{
@@ -232,19 +208,11 @@ export default function VideographyService() {
                             </div>
                           ))}
                         </div>
-                        <div className="mt-3 " style={{
-                          fontFamily: 'Glacial Indifference',
-                          fontWeight: 'bold',
-                          fontSize: '1rem',
-                          color: 'white'
-                        }}>
-                          {item.timeline}
-                        </div>
                       </div>
                       <div className="sv-service-btn mt-4">
                         <Link
                           className="tp-btn-zikzak zikzak-inner p-relative"
-                          href="/contact"
+                          href={item.link}
                         >
                           <span className="zikzak-content" style={{
                             fontFamily: 'Glacial Indifference',
