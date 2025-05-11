@@ -10,26 +10,26 @@ import s_4 from "@/assets/img/packages/photography.svg";
 const service_data = [
     {
       id: 1,
-      title: "Brand Discovery",
-      desc: "We begin by understanding your business goals, target audience, and market position to lay a strategic foundation.",
+      title: "Logo Design and Visual Identity",
+      desc: "We design logos that are clean, versatile, and memorable. But we don’t stop there. We develop full identity systems—fonts, colors, icons, and visuals—so your brand looks polished and consistent everywhere.",
       icon: s_1,
     },
     {
       id: 2,
-      title: "Brand Strategy",
-      desc: "We define your brand’s voice, values, and positioning to ensure consistency across all touchpoints.",
+      title: "Brand Strategy and Positioning",
+      desc: "We help you define what your brand stands for and how it should be perceived. Through guided workshops and research, we build a strategy that reflects your mission, values, and audience.",
       icon: s_2,
     },
     {
       id: 3,
-      title: "Visual Identity Design",
-      desc: "We create a cohesive visual identity—logo, color palette, typography, and design system—that reflects your brand essence.",
+      title: "Stationery and Brand Collateral",
+      desc: "Your brand doesn’t stop at a logo. We design clean, professional materials that reinforce your identity in everyday business and outreach.",
       icon: s_3,
     },
     {
       id: 4,
       title: "Brand Guidelines",
-      desc: "We deliver comprehensive brand guidelines to ensure your brand remains consistent across all platforms and media.",
+      desc: "To keep everything on track, we deliver a detailed brand guide. This ensures that your internal team, designers, and partners all represent your brand the right way.",
       icon: s_4,
     },
   ];

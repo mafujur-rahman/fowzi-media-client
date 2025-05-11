@@ -62,7 +62,7 @@ const BrandingDetailsMain = () => {
                       <h4 className="tp-service-5-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                       Strategically Crafted Branding Solutions from the Ground Up{" "}
                       </h4>
-                      <p className="pt-10">We know brands need more than just scattered services—they need cohesive, high-impact solutions. That’s why we’ve carefully designed packages that bring together branding, web, photography, and video into one powerful experience.</p>
+                      <p className="pt-10">Whether you’re starting fresh or rebranding to grow, we work with you to shape how your audience sees and remembers you. Every detail counts, and we’re here to get it right.</p>
                     </div>
                   </div>
                 </div>

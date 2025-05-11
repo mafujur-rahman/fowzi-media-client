@@ -13,10 +13,10 @@ export default function BrandingDetailsHero() {
           <div className="col-xl-10">
             <div className="sv-hero-title-box">
               <h4 className="sv-hero-title tp-char-animation">
-              Elevate Your Brand with Our Creative Solutions
+              Build a Brand That People Remember
               </h4>
               <p className="tp_fade_bottom">
-              Your brand deserves more than just visuals—it needs impact. At Fowzi Media, we don’t just create; we craft experiences that tell your story, captivate your audience, and drive results.
+              At Fowzi Media, branding is more than just logos and colors. It’s about creating a clear, consistent identity that reflects who you are, what you stand for, and why people should trust you. We help businesses, nonprofits, and campaigns across Minneapolis define their brand from the ground up—or refine what they already have.
               </p>
             </div>
           </div>
