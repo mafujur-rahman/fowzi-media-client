@@ -13,10 +13,10 @@ export default function VideographyDetailsHero() {
           <div className="col-xl-10">
             <div className="sv-hero-title-box">
               <h4 className="sv-hero-title tp-char-animation">
-              Elevate Your Brand with Our Expert Videography Services
+              Telling Stories That Move People
               </h4>
               <p className="tp_fade_bottom">
-              Your brand deserves more than just videos—it needs to captivate. At Fowzi Media, we don’t just create videos; we craft engaging visual stories that capture your brand’s essence, connect with your audience, and drive impactful results.
+              At Fowzi Media, video is more than just visuals. Its a powerful tool for storytelling, connection, and action. Our Minneapolis-based video production team creates high-quality, authentic content that helps brands, nonprofits, and public campaigns speak directly to their audience.
               </p>
             </div>
           </div>
