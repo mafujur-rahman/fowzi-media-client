@@ -54,14 +54,6 @@ export default function BrandFive() {
         </div>
         <div className="row">
           <div className="col-xl-7 col-lg-9">
-            <div className="ab-brand-content tp_title_anim">
-              <p className="tp-footer-3-title" style={{ fontFamily: 'Glacial Indifference' }}>
-                We belive in creating partnerships based on honesty and true
-                connection. That is why some of the biggest companies stayed with
-                us for years.
-              </p>
-              <span className="tp-footer-3-menu" style={{ fontFamily: 'Glacial Indifference' }}>More about us</span>
-            </div>
           </div>
         </div>
       </div>
