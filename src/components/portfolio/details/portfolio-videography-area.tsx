@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { RightArrow, ShapeTwo } from "@/components/svg";
 
 const service_data = [
     {
@@ -62,13 +63,13 @@ export default function PortfolioVideographyArea() {
                                 </div>
                             </div>
                             <div
-                                className="col-xl-6 col-lg-6 bg-white d-flex justify-content-center align-items-center"
-                                style={{ paddingTop: isLargeScreen ? "100px" : "0px" }}
+                                className="col-xl-6 col-lg-6  d-flex justify-content-center align-items-center"
+                                style={{ paddingTop: isLargeScreen ? "100px" : "0px", backgroundColor: "#1E1E1E" }}
                             >
                                 <div className="project-details-1-right-wrap">
                                     <div className="project-details-1-right p-relative">
                                         <div className="project-details-1-title-box">
-                                            <h4 className="project-details-1-title">{item.title}</h4>
+                                            <h4 className="sv-service-title">{item.title}</h4>
                                             <p style={{ fontFamily: 'Glacial Indifference' }}>
                                                 We offer digital experience solutions tailored for startups and small businesses, helping them thrive through innovative brand identities and seamless digital experiences.
                                             </p>
@@ -76,14 +77,28 @@ export default function PortfolioVideographyArea() {
                                         <div className="project-details-1-info-wrap">
                                             <div className="project-details-1-info">
                                                 <span style={{ fontFamily: 'Glacial Indifference' }}>Services</span>
-                                                <h4 style={{ fontFamily: 'Glacial Indifference' }}>Videography</h4>
+                                                <h4 style={{ fontFamily: 'Glacial Indifference', color:"white" }}>Videography</h4>
                                             </div>
                                             <div className="project-details-1-info">
                                                 <span style={{ fontFamily: 'Glacial Indifference' }}>Deliverables</span>
-                                                <h4 style={{ fontFamily: 'Glacial Indifference' }}>Video</h4>
+                                                <h4 style={{ fontFamily: 'Glacial Indifference', color:"white" }}>Video</h4>
                                             </div>
                                         </div>
-                                        <div className="project-details-1-social"></div>
+                                        <div className="sv-service-btn mt-4">
+                                            <Link
+                                                className="tp-btn-zikzak zikzak-inner p-relative"
+                                                href={item.link}
+                                            >
+                                                <span className="zikzak-content" style={{
+                                                    fontFamily: 'Glacial Indifference',
+                                                    fontWeight: 'bold'
+                                                }}>
+                                                    See <br /> Details
+                                                    <RightArrow clr="currentColor" />
+                                                </span>
+                                                <ShapeTwo />
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -14,11 +14,11 @@ export default function HeroBannerFour() {
                 <span></span>
               </div>
               <h4 className="tp-hero-3-title tp_reveal_anim">
-                <span className="tp-reveal-line">{"Elevating"} brands </span>
-                <span className="tp-reveal-line">with digital solutions</span>
+                <span className="tp-reveal-line">{"Creativity"} </span>
+                <span className="tp-reveal-line">With Purpose</span>
               </h4>
               <p className="tp_reveal_anim" style={{ color: "#1E1E1E", fontFamily: 'Glacial Indifference' }}>
-                BRANDING / DEVELOPMENT / VIDEOGRAPHY / PHOTOGRAPHY
+                BRANDING / WEB DEVELOPMENT / VIDEOGRAPHY / PHOTOGRAPHY
               </p>
               <Link className="tp-btn-black-2" target="_blank" href="https://calendly.com/fowzimedia/free-consultation?month=2025-03" style={{fontFamily: 'Glacial Indifference'}}>
               Book free consultation today{" "}

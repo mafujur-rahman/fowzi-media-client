@@ -97,29 +97,29 @@ export default function PortfolioBrandingsArea() {
 
                             </div>
                             <div
-                                className="col-xl-6 col-lg-6 bg-white d-flex justify-content-center align-items-center"
-                                style={{ paddingTop: isLargeScreen ? "100px" : "0px" }}
+                                className="col-xl-6 col-lg-6 bg-[#1E1E1E] d-flex justify-content-center align-items-center"
+                                style={{ paddingTop: isLargeScreen ? "100px" : "0px", backgroundColor: "#1E1E1E" }}
                             >
 
                                 <div className="project-details-1-right-wrap">
                                     <div className="project-details-1-right p-relative">
                                         <div className="project-details-1-title-box">
-                                            <h4 className="project-details-1-title">{item.title}</h4>
+                                            <h4 className="sv-service-title">{item.title}</h4>
                                             <p style={{ fontFamily: 'Glacial Indifference' }}>
                                                 We offer digital experience solutions tailored for startups and small businesses, helping them thrive through innovative brand identities and seamless digital experiences.
                                             </p>
                                         </div>
                                         <div className="project-details-1-info-wrap">
                                             <div className="project-details-1-info">
-                                                <span style={{ fontFamily: 'Glacial Indifference' }}>Services</span>
-                                                <h4 style={{ fontFamily: 'Glacial Indifference' }}>Branding</h4>
+                                                <span style={{ fontFamily: 'Glacial Indifference', color:"gray" }}>Services</span>
+                                                <h4 className="" style={{ fontFamily: 'Glacial Indifference', color:"white" }}>Branding</h4>
                                             </div>
                                             <div className="project-details-1-info">
                                                 <span style={{ fontFamily: 'Glacial Indifference' }}>Deliverables</span>
-                                                <h4 style={{ fontFamily: 'Glacial Indifference' }}>Branding</h4>
+                                                <h4 style={{ fontFamily: 'Glacial Indifference', color:"white"  }}>Branding</h4>
                                             </div>
                                         </div>
-                                        {/* <div className="sv-service-btn mt-4">
+                                        <div className="sv-service-btn mt-4">
                                             <Link
                                                 className="tp-btn-zikzak zikzak-inner p-relative"
                                                 href={item.link}
@@ -133,7 +133,7 @@ export default function PortfolioBrandingsArea() {
                                                 </span>
                                                 <ShapeTwo />
                                             </Link>
-                                        </div> */}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
