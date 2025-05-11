@@ -25,9 +25,10 @@ import HeaderFour from "@/layouts/headers/header-four";
 import FooterFour from "@/layouts/footers/footer-four";
 
 const port_images = [
-    { src: port_d_1 },
-    { src: port_d_2 },
-    { src: port_d_3 },
+    { type: 'video', src: 'https://vimeo.com/1059190345?share=copy' },
+    { type: 'image', src: port_d_1 },
+    { type: 'image', src: port_d_2 },
+    { type: 'image', src: port_d_3 },
   ];
   
   const ChildSafetyMainArea = () => {
@@ -60,9 +61,27 @@ const port_images = [
                       <div className="project-details-1-left">
                         {port_images.map((item, i) => (
                           <div key={i} className="project-details-1-thumb mb-10">
-                            <a href="child-safety">
-                              <Image src={item.src} alt={`Portfolio ${i + 1}`} style={{ height: "auto", cursor: "pointer" }} />
+                            {item.type === 'video' ? (
+                              <div className="video-container" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+                                <iframe 
+                                  src="https://player.vimeo.com/video/1059190345?autoplay=1&loop=1&title=0&byline=0&portrait=0" 
+                                  style={{
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    width: '100%',
+                                    height: '100%'
+                                  }}
+                                  frameBorder="0"
+                                  allow="autoplay; fullscreen"
+                                  allowFullScreen
+                                ></iframe>
+                              </div>
+                            ) : (
+                              <a href="child-safety">
+                                <Image src={item.src} alt={`Portfolio ${i}`} style={{ height: "auto", cursor: "pointer" }} />
                               </a>
+                            )}
                           </div>
                         ))}
                       </div>
@@ -99,7 +118,7 @@ const port_images = [
                           </div>
                         </div>
                         <div className="project-details-1-navigation d-flex justify-content-between align-items-center">
-                          <a className="project-details-1-prev" href="/better-hand">
+                          <a className="project-details-1-prev" href="/sbd-main">
                             <i className="fa-sharp fa-regular fa-arrow-left"></i>
                             <span style={{fontFamily: 'Glacial Indifference'}}>Prev</span>
                           </a>
@@ -108,7 +127,7 @@ const port_images = [
                               <Dots />
                             </span>
                           </a>
-                          <a className="project-details-1-next" href="/radiant">
+                          <a className="project-details-1-next" href="/psa-main">
                             <span style={{fontFamily: 'Glacial Indifference'}}>Next</span>
                             <i className="fa-sharp fa-regular fa-arrow-right"></i>
                           </a>

@@ -57,12 +57,12 @@ const PhotographyDetailsMain = () => {
                     <div className="tp-service-5-title-box pt-90 mb-40">
                       <span className="ab-inner-subtitle mb-20" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                         <Leaf />
-                        Photography Service
+                        Photography Process
                       </span>
                       <h4 className="tp-service-5-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
-                      Custom Photography Packages for Stunning Visual Storytelling{" "}
+                      From Planning to Delivery, Every Shot Has a Purpose{" "}
                       </h4>
-                      <p className="pt-10">We understand that businesses need more than just standalone images—they need captivating visual storytelling. That’s why we’ve created packages that combine creative photography, engaging compositions, and high-quality production into one seamless, impactful experience.</p>
+                      <p className="pt-10">At Fowzi Media, photography is a collaborative process. We take the time to understand your goals, your audience, and your story.</p>
                     </div>
                   </div>
                 </div>
