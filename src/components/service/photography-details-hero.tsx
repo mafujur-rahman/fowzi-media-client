@@ -13,10 +13,10 @@ export default function PhotographyDetailsHero() {
           <div className="col-xl-10">
             <div className="sv-hero-title-box">
               <h4 className="sv-hero-title tp-char-animation">
-              Capture Your Brand’s Essence with Our Expert Photography Services
+             Telling Stories Through Photos
               </h4>
               <p className="tp_fade_bottom">
-              Your brand deserves more than just photos—it needs to inspire. At Fowzi Media, we don’t just take pictures; we craft stunning visual stories that capture your brand’s essence, connect with your audience, and deliver lasting impressions.
+              At Fowzi Media, photography is more than capturing a moment. It's about creating images that reflect your story, brand, and message with clarity and purpose. Whether you're a business owner, campaign organizer, nonprofit leader, or creative professional, our Minneapolis-based photography team delivers images that feel natural, polished, and on-brand.
               </p>
             </div>
           </div>
