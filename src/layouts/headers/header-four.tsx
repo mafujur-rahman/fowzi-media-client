@@ -5,9 +5,9 @@ import logo_1 from "@/assets/img/fowzi-logo/icon 2.png";
 
 export default function HeaderFour() {
   const [openOffCanvas, setOpenOffCanvas] = useState(false);
-  const [isMobile, setIsMobile] = useState(false); 
-  const [fontSize, setFontSize] = useState(16); 
-  const headerRef = useRef(null); 
+  const [isMobile, setIsMobile] = useState(false);
+  const [fontSize, setFontSize] = useState(16);
+  const headerRef = useRef(null);
 
   useEffect(() => {
     // Function to check the screen size
@@ -19,7 +19,7 @@ export default function HeaderFour() {
     const handleScroll = () => {
       if (headerRef.current && !isMobile) {
         const scrollY = window.scrollY;
-        const newFontSize = Math.max(12, 16 - scrollY * 0.1); 
+        const newFontSize = Math.max(12, 16 - scrollY * 0.1);
         setFontSize(newFontSize);
       }
     };
@@ -91,10 +91,10 @@ export default function HeaderFour() {
                                 zIndex: 1000,
                               }}
                             >
-                              
+                              <li><Link className="dropdown-item" href="/videography-details">Video Production</Link></li>
                               <li><Link className="dropdown-item" href="/branding-details">Branding</Link></li>
                               <li><Link className="dropdown-item" href="/development-details">Website Development</Link></li>
-                              <li><Link className="dropdown-item" href="/videography-details">Video Production</Link></li>
+
                               <li><Link className="dropdown-item" href="/photography-details">Photography</Link></li>
                               <li><Link className="dropdown-item" href="/photography-details">Marketing</Link></li>
                             </ul>
@@ -121,10 +121,10 @@ export default function HeaderFour() {
                                 zIndex: 1000,
                               }}
                             >
-                              
+                              <li><Link className="dropdown-item" href="/portfolio-videography">Video Production</Link></li>
                               <li><Link className="dropdown-item" href="/portfolio-brandings">Branding</Link></li>
                               <li><Link className="dropdown-item" href="/portfolio-development">Website Development</Link></li>
-                              <li><Link className="dropdown-item" href="/portfolio-videography">Video Production</Link></li>
+
                               <li><Link className="dropdown-item" href="/portfolio-photography">Photography</Link></li>
                               <li><Link className="dropdown-item" href="/portfolio-photography">Marketing</Link></li>
                             </ul>
@@ -165,7 +165,7 @@ export default function HeaderFour() {
               <div className="col-xl-3 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-3-right d-flex align-items-center justify-content-end">
                   <div className="tp-header-3-social d-none d-sm-block">
-                    <a href="#"><i className="fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/fowzimedia/" ><i className="fa-brands fa-linkedin-in"></i></a>
                     <a target="_blank" href="https://www.facebook.com/fowzimedia/"><i className="fa-brands fa-facebook"></i></a>
                     <a target="_blank" href="https://www.instagram.com/fowzimedia/"><i className="fa-brands fa-instagram"></i></a>
                   </div>
@@ -202,10 +202,9 @@ export default function HeaderFour() {
                   Services
                 </a>
                 <ul className="dropdown-menu">
-                  
+                  <li><Link className="dropdown-item" href="/videography-details">Video Production</Link></li>
                   <li><Link className="dropdown-item" href="/branding-details">Branding</Link></li>
                   <li><Link className="dropdown-item" href="/development-details">Website Development</Link></li>
-                  <li><Link className="dropdown-item" href="/videography-details">Video Production</Link></li>
                   <li><Link className="dropdown-item" href="/photography-details">Photography</Link></li>
                   <li><Link className="dropdown-item" href="/photography-details">Marketing</Link></li>
                 </ul>
@@ -227,10 +226,9 @@ export default function HeaderFour() {
                   Portfolio
                 </a>
                 <ul className="dropdown-menu">
-                  
-                  <li><Link className="dropdown-item" href="/portfolio-brandings">Branding</Link></li>
-                  <li><Link className="dropdown-item" href="/portfolio-development">Website Development</Link></li>
                   <li><Link className="dropdown-item" href="/portfolio-videography">Video Production</Link></li>
+                  <li><Link className="dropdown-item" href="/portfolio-brandings">Branding</Link></li>
+                  <li><Link className="dropdown-item" href="/portfolio-development">Website Development</Link></li>                 
                   <li><Link className="dropdown-item" href="/portfolio-photography">Photography</Link></li>
                   <li><Link className="dropdown-item" href="/portfolio-photography">Marketing</Link></li>
                 </ul>

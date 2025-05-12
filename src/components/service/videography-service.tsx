@@ -3,11 +3,9 @@ import Image from "next/image";
 
 // images
 import ser_img_1 from "@/assets/img/services/Asset1.webp";
-import ser_img_2 from "@/assets/img/services/Asset2.webp";
-import ser_img_3 from "@/assets/img/services/vid-s-3.jpg";
-import ser_img_4 from "@/assets/img/services/vid-s-4.jpg";
-import ser_img_5 from "@/assets/img/services/vid-s-5.jpg";
-import ser_img_6 from "@/assets/img/services/Asset4.webp";
+import ser_img_2 from "@/assets/img/services/vid-s-3.jpg";
+import ser_img_3 from "@/assets/img/services/vid-s-4.jpg";
+import ser_img_4 from "@/assets/img/services/vid-s-5.jpg";
 import { RightArrow, ShapeTwo } from "../svg";
 import Link from "next/link";
 
@@ -17,16 +15,17 @@ const service_data = [
     id: 1,
     img: ser_img_1,
     link: "/request-a-quote",
-    subtitle: "Discovery & Planning",
-    title: "Understanding Your Vision",
-    text: "We start by learning about your goals, audience, and message. This step involves a planning meeting where we outline the type of video you need, key messaging points, and visual style. We also talk through timelines, budgets, and location logistics.",
+    subtitle: "Pre-Production",
+    title: "Plan with Intention",
+    text: "Before we hit record, we plan everything. Pre-production is where your goals, audience, and story come into focus. We develop concepts, write scripts, and organize logistics to make sure the shoot runs smoothly and serves its purpose.",
     lists: [
       {
         subtitles: [
-          "Initial consultation",
-          "Goal alignment",
-          "Creative direction and moodboarding",
-          "Location planning and scheduling",
+          "Creative direction and visual planning",
+          "Scriptwriting and messaging",
+          "Scheduling and location scouting",
+          "Shot lists and storyboarding",
+          "Talent or interview coordination",
         ],
       },
     ],
@@ -35,15 +34,17 @@ const service_data = [
     id: 2,
     img: ser_img_2,
     link: "/request-a-quote",
-    subtitle: "Scriptwriting & Storyboarding",
-    title: "Crafting the Narrative",
-    text: "If your video needs a script or structure, we help write and refine it. We also prepare a basic storyboard or shot list so you know what to expect before the cameras start rolling.",
+    subtitle: "Production",
+    title: "Capture with Care",
+    text: "This is where the camera rolls. Our team brings the plan to life with professional lighting, sound, and direction. We create a relaxed and focused environment so we can capture both scripted moments and natural interactions.",
     lists: [
       {
         subtitles: [
-          "Script development",
-          "Visual planning",
-          "Approval before production begins",
+          "On-location or studio filming",
+          "Direction and camera operation",
+          "Audio and lighting setup",
+          "Multiple takes and camera angles",
+          "B-roll and supporting visuals",
         ],
       },
     ],
@@ -52,16 +53,17 @@ const service_data = [
     id: 3,
     img: ser_img_3,
     link: "/request-a-quote",
-    subtitle: "Filming",
-    title: "Capturing the Right Moments",
-    text: "Our team handles all aspects of the shoot, including lighting, sound, and camera work. Whether on location in Minneapolis or in a studio setup, we create a relaxed environment to capture authentic content.",
+    subtitle: "Post-Production",
+    title: "Shape the Final Story",
+    text: "In the editing suite, we bring all the pieces together. This is where the story takes shape through careful selection, pacing, and polish. We add graphics, music, color correction, and subtitles to deliver a clean, compelling final video.",
     lists: [
       {
         subtitles: [
-          "Professional videographers on site",
-          "Multiple takes when needed",
-          "High-quality audio and video capture",
-          "B-roll and behind-the-scenes coverage as needed",
+          "Video editing and transitions",
+          "Color correction and audio mixing",
+          "Branding and motion graphics",
+          "Captioning or multilingual subtitles",
+          "File formats for different platforms",
         ],
       },
     ],
@@ -70,49 +72,16 @@ const service_data = [
     id: 4,
     img: ser_img_4,
     link: "/request-a-quote",
-    subtitle: "Editing & Post-Production",
-    title: "Bringing It All Together",
-    text: "This is where the footage is shaped into your final video. We handle color correction, sound mixing, graphics, subtitles, and more—ensuring the final product looks polished and reflects your message.",
+    subtitle: "Marketing and Delivery",
+    title: "Get It Seen in the Right Places",
+    text: "A great video deserves to be seen. We help you prepare your content for web, social media, and campaigns so it reaches the right audience. From aspect ratios to thumbnail previews, we tailor everything for smooth delivery and strong performance.",
     lists: [
       {
         subtitles: [
-          "Editing and visual cuts",
-          "Motion graphics and titles",
-          "Background music and sound design",
-          "Optional subtitling or voiceovers",
-        ],
-      },
-    ],
-  },
-  {
-    id: 5,
-    img: ser_img_5,
-    link: "/request-a-quote",
-    subtitle: " Review & Revisions",
-    title: "Fine-Tuning Your Story",
-    text: "You’ll receive a draft version to review. We welcome your feedback and offer up to two rounds of revisions to make sure everything is just right.",
-    lists: [
-      {
-        subtitles: [
-          "Client feedback session",
-          "Revisions based on your input",
-          "Final approval process",
-        ],
-      },
-    ],
-  },
-  {
-    id: 6,
-    img: ser_img_6,
-    link: "/request-a-quote",
-    subtitle: "Delivery",
-    title: "Your Video, Ready to Share",
-    text: "We deliver your video in the formats you need—whether for social media, your website, or a large-screen event. We also offer optimization tips if you’re uploading to platforms like YouTube or Instagram.",
-    lists: [
-      {
-        subtitles: [
-          "Final HD or 4K files",
-          "Platform-specific versions (vertical, horizontal, etc.)",
+          "Exported versions for social, web, and mobile",
+          "Custom thumbnails and teaser clips",
+          "Basic rollout strategy guidance",
+          "Support for campaign timing and messaging",
         ],
       },
     ],
