@@ -10,8 +10,7 @@
 
 @font-face {
   font-family: 'Glacial Indifference';
-  src: url('/public/GlacialIndifference-Regular.woff2') format('woff2'),
-       url('/public/GlacialIndifference-Regular.woff2') format('woff');
+  src: url('/glacial-indifference.regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -19,15 +18,10 @@
 
 @font-face {
   font-family: 'Glacial Indifference';
-  src: url('/public/GlacialIndifference-Bold.woff2') format('woff2'),
-       url('/public/GlacialIndifference-Bold.woff2') format('woff');
+  src: url('/glacial-indifference.bold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-}
-
-.font-gallery {
-  font-family: var(--tp-ff-gallery);
 }
 
 :root {
@@ -37,6 +31,11 @@
 body {
   font-family: var(--font-glacial);
 }
+
+.font-gallery {
+  font-family: var(--tp-ff-gallery); 
+}
+
 
 /* Dropdown item hover effect */
 .dropdown-menu .dropdown-item {
