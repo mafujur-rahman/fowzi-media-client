@@ -44,10 +44,6 @@ const TeamSection = () => {
         animateContent();
     };
 
-    const handleNavClick = (index) => {
-        setCurrentIndex(index);
-        animateContent();
-    };
 
     const member = teamData[currentIndex];
 
