@@ -149,8 +149,9 @@ export default function HeaderFour() {
                                 zIndex: 1000,
                               }}
                             >
-                              <li><Link className="dropdown-item" href="/pricing">Web care Plans</Link></li>
                               <li><Link className="dropdown-item" href="/request-a-quote">Request a quote</Link></li>
+                              <li><Link className="dropdown-item" href="/pricing">Web care Plans</Link></li>
+                              
                             </ul>
                           </li>
 
@@ -246,8 +247,9 @@ export default function HeaderFour() {
                   Pricing
                 </a>
                 <ul className="dropdown-menu">
-                  <li><Link className="dropdown-item" href="/pricing">Web Care Plans</Link></li>
                   <li><Link className="dropdown-item" href="/request-a-quote">Request a Quote</Link></li>
+                  <li><Link className="dropdown-item" href="/pricing">Web Care Plans</Link></li>
+                  
                 </ul>
               </li>
 

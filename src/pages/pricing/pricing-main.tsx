@@ -68,10 +68,7 @@ const PricingMain = () => {
               {/* pricing area */}
               <PricingArea/>
               {/* pricing area */}
-
-              {/* faq area */}
-              <FaqAreaTwo/>
-              {/* faq area */}
+              
             </main>
 
             {/* footer area */}

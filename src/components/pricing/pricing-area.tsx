@@ -9,6 +9,7 @@ const pricing_data = [
     bgColor:"black",
     title: "Basic",
     price: 300,
+    link: "https://buy.stripe.com/dR63d7dsO3U0eUU8wD",
     features: [
       "Basic Hosting – Reliable Web hosting for smooth performance.",
       "Basic Maintenance – CMS, plugin, and theme updates 2 times a year.",
@@ -22,6 +23,7 @@ const pricing_data = [
     bgColor:"black",
     title: "Pro",
     price: 600,
+    link: "https://buy.stripe.com/cN2cNHdsOfCI2889AI",
     features: [
       "Pro Hosting - Secure and Reliable Web hosting for smooth and high performance",
       "Enhanced Maintenance – Regular updates for CMS, plugins, themes, & security patches.",
@@ -39,6 +41,7 @@ const pricing_data = [
     bgColor:"black",
     title: "Premium",
     price: 900,
+    link: "https://buy.stripe.com/6oE3d7fAW2PW4ggfZ4",
     features: [
       "HIPAA-Compliant Hosting: Secure, encrypted data storage (at rest & in transit).",
       "Comprehensive Maintenance: CMS, plugins, themes, security patches & performance optimization.",
@@ -133,6 +136,16 @@ export default function PricingArea() {
                   <span>#{item.id}</span>
                   <h5>{item.title}</h5>
                 </div>
+                <Link
+                    className={`tp-btn-black-md  white-bg  w-100 text-center`}
+                    target="_blank"
+                    href={item.link}
+                  >
+                    Choose Plan
+                    <span>
+                      <UpArrow />
+                    </span>
+                  </Link>
                 <div className="tp-price-body">
                   <span className="tp-price-monthly">
                     $<i>{item.price}</i>/ per year
@@ -147,15 +160,7 @@ export default function PricingArea() {
                       ))}
                     </ul>
                   </div>
-                  <Link
-                    className={`tp-btn-black-md  white-bg  w-100 text-center`}
-                    href="/contact"
-                  >
-                    Choose Plan
-                    <span>
-                      <UpArrow />
-                    </span>
-                  </Link>
+                  
                 </div>
               </div>
             </div>
