@@ -121,12 +121,11 @@ export default function HeaderFour() {
                                 zIndex: 1000,
                               }}
                             >
-                              <li><Link className="dropdown-item" href="/portfolio-videography">Video Production</Link></li>
-                              <li><Link className="dropdown-item" href="/portfolio-brandings">Branding</Link></li>
-                              <li><Link className="dropdown-item" href="/portfolio-development">Website Development</Link></li>
-
-                              <li><Link className="dropdown-item" href="/portfolio-photography">Photography</Link></li>
-                              <li><Link className="dropdown-item" href="/portfolio-photography">Marketing</Link></li>
+                              <li><Link className="dropdown-item" href="/videography-portfolio">Video Production</Link></li>
+                              <li><Link className="dropdown-item" href="/branding-portfolio-page">Branding</Link></li>
+                              <li><Link className="dropdown-item" href="/development-portfolio">Website Development</Link></li>
+                              <li><Link className="dropdown-item" href="/photography-portfolio">Photography</Link></li>
+                              <li><Link className="dropdown-item" href="/photography-portfolio">Marketing</Link></li>
                             </ul>
                           </li>
 

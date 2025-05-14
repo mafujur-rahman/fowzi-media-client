@@ -62,7 +62,7 @@ const DevelopmentDetailsMain = () => {
                       <h4 className="tp-service-5-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                       Tailored Web Development Packages for a Seamless Digital Experience{" "}
                       </h4>
-                      <p className="pt-10">Fowzi Media offers trusted website design and development services in Minneapolis with a focus on creativity, usability, and impact.</p>
+                      <p className="pt-10" style={{ fontFamily: 'Glacial Indifference'}}>Fowzi Media offers trusted website design and development services in Minneapolis with a focus on creativity, usability, and impact.</p>
                     </div>
                   </div>
                 </div>

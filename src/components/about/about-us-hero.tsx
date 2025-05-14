@@ -36,13 +36,13 @@ export default function AboutUsHero() {
               data-stagger="0.08"
               style={{ paddingTop: "75px" }}
             >
-              <span className="ab-inner-hero-subtitle" >
+              <span className="ab-inner-hero-subtitle" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                 Visionary <br /> digital studio
               </span>
               <h1 className="ab-inner-hero-title tp-char-animation">
                 Design. Brands. Stories.
               </h1>
-              <p >Digital experiences with maximum emotional impact</p>
+              <p style={{ fontFamily: 'Glacial Indifference' }}>Digital experiences with maximum emotional impact</p>
             </div>
           </div>
         </div>

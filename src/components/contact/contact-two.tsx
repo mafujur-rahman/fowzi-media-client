@@ -12,7 +12,7 @@ export default function ContactTwo() {
         <div className="row">
           <div className="col-xl-5">
             <div className="ab-about-category-title-box mb-40 p-relative">
-              <h4 className="ab-about-category-title">
+              <h4 className="ab-about-category-title" style={{ fontFamily: 'Glacial Indifference' }}>
                 Send a Message <br />
                 <span>Contact Us</span>
               </h4>

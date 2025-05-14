@@ -62,7 +62,7 @@ const BrandingDetailsMain = () => {
                       <h4 className="tp-service-5-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                       Strategically Crafted Branding Solutions from the Ground Up{" "}
                       </h4>
-                      <p className="pt-10">Whether you’re starting fresh or rebranding to grow, we work with you to shape how your audience sees and remembers you. Every detail counts, and we’re here to get it right.</p>
+                      <p className="pt-10" style={{ fontFamily: 'Glacial Indifference' }}>Whether you’re starting fresh or rebranding to grow, we work with you to shape how your audience sees and remembers you. Every detail counts, and we’re here to get it right.</p>
                     </div>
                   </div>
                 </div>

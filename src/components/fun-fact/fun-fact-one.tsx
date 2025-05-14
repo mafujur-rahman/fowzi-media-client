@@ -39,7 +39,7 @@ export default function FunFactOne() {
                 <Leaf />
                 Fun Facts
               </span>
-              <h4 className="ab-inner-funfact-title tp_title_anim" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
+              <h4 className="ab-inner-funfact-title tp_title_anim">
                 By the <br /> Numbers
               </h4>
             </div>

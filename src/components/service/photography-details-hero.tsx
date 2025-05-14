@@ -15,7 +15,7 @@ export default function PhotographyDetailsHero() {
               <h4 className="sv-hero-title tp-char-animation">
              Telling Stories Through Photos
               </h4>
-              <p className="tp_fade_bottom">
+              <p className="tp_fade_bottom" style={{ fontFamily: 'Glacial Indifference' }}>
               At Fowzi Media, photography is more than capturing a moment. Its about creating images that reflect your story, brand, and message with clarity and purpose. Whether youre a business owner, campaign organizer, nonprofit leader, or creative professional, our Minneapolis-based photography team delivers images that feel natural, polished, and on-brand.
               </p>
             </div>

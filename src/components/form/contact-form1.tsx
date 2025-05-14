@@ -30,7 +30,7 @@ export default function ContactForm({btnCls=''}:IProps) {
     reset()
   });
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} style={{ fontFamily: 'Glacial Indifference' }}>
       <div className="cn-contactform-input mb-25">
         <label>Name</label>
         <input id='name' {...register("name")} type="text" placeholder="John Doe" />

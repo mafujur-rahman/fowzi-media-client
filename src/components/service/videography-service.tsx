@@ -135,12 +135,12 @@ export default function VideographyService() {
                   <div className=" p-4 ">
                     <div className="sv-service-title-box mb-3">
                       <span className="sv-service-title" style={{ fontSize: "1rem" }}>
-                        <i style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
+                        <i style={{ fontFamily: 'Glacial Indifference' }}>
                           {item.id < 9 ? "0" + item.id : item.id}
                         </i>
                         &mdash; {item.subtitle}
                       </span>
-                      <h2 className="sv-service-title">{item.title}</h2>
+                      <h2 className="sv-service-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>{item.title}</h2>
                     </div>
                     <div className="sv-service-space-wrap">
                       <div className="sv-service-text mb-4">

@@ -42,7 +42,7 @@ export default function RequestQuoteForm({ btnCls = '' }: IProps) {
   });
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} style={{ fontFamily: 'Glacial Indifference' }}>
       <div className="cn-contactform-input mb-25">
         <label>First Name</label>
         <input {...register("firstName")} type="text" placeholder="John" />

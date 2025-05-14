@@ -50,7 +50,7 @@ export function BrandingDetailsItems() {
                   <h4 className="tp-service-4-title-sm tp-text-black" style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>
                     {item.title}
                   </h4>
-                  <p style={{fontFamily: 'Glacial Indifference', fontWeight: 'bold'}}>{item.desc}</p>
+                  <p style={{fontFamily: 'Glacial Indifference'}}>{item.desc}</p>
                 </div>
               </div>
             </div>

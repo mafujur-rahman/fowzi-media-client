@@ -62,7 +62,7 @@ const VideographyDetailsMain = () => {
                       <h4 className="tp-service-5-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                       How We Bring Your Story to Life{" "}
                       </h4>
-                      <p className="pt-10">At Fowzi Media, our videography process is collaborative, transparent, and tailored to your goals. Whether it’s a campaign film, brand promo, or community event, we make sure the journey from concept to final cut is smooth and stress-free.</p>
+                      <p className="pt-10" style={{ fontFamily: 'Glacial Indifference' }}>At Fowzi Media, our videography process is collaborative, transparent, and tailored to your goals. Whether it’s a campaign film, brand promo, or community event, we make sure the journey from concept to final cut is smooth and stress-free.</p>
                     </div>
                   </div>
                 </div>

@@ -62,7 +62,7 @@ const PhotographyDetailsMain = () => {
                       <h4 className="tp-service-5-title" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>
                       From Planning to Delivery, Every Shot Has a Purpose{" "}
                       </h4>
-                      <p className="pt-10">At Fowzi Media, photography is a collaborative process. We take the time to understand your goals, your audience, and your story.</p>
+                      <p className="pt-10" style={{ fontFamily: 'Glacial Indifference' }}>At Fowzi Media, photography is a collaborative process. We take the time to understand your goals, your audience, and your story.</p>
                     </div>
                   </div>
                 </div>

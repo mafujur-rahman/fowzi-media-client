@@ -46,7 +46,7 @@ const RequestAQuoteMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Fowzi Media</span>
+                        <span className="tm-hero-subtitle" style={{ fontFamily: 'Glacial Indifference' }}>Fowzi Media</span>
                         <h4 className="tm-hero-title-big tp-char-animation">
                         Request <br /> a quote
                         </h4>
@@ -75,7 +75,7 @@ const RequestAQuoteMain = () => {
                       </div>
                       <div className="col-xl-6">
                         <div className="cn-contactform-wrap">
-                          <h4 className="cn-contactform-2-title">
+                          <h4 className="cn-contactform-2-title" style={{ fontFamily: 'Glacial Indifference' }}>
                             Send a Message
                           </h4>
                           <ContactForm btnCls="white-bg" />

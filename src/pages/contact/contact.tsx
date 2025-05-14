@@ -45,7 +45,7 @@ const ContactMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Fowzi Media</span>
+                        <span className="tm-hero-subtitle" style={{ fontFamily: 'Glacial Indifference', fontWeight: 'bold' }}>Fowzi Media</span>
                         <h4 className="tm-hero-title-big tp-char-animation">
                           Get in touch
                         </h4>
