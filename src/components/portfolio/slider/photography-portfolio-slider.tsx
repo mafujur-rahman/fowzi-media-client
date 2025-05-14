@@ -7,25 +7,37 @@ const slider_data = [
     {
         id: 1,
         subtitle: "Photography",
-        title: "Friday Fashion",
+        title: "",
         link: "/"
     },
     {
         id: 2,
         subtitle: "Photography",
-        title: "Better Hand",
+        title: "",
         link: "/"
     },
     {
         id: 3,
         subtitle: "Photography",
-        title: "Optimal Home Healthcare",
+        title: "",
         link: "/"
     },
     {
         id: 4,
         subtitle: "Photography",
-        title: "Radiant Future",
+        title: "",
+        link: "/"
+    },
+    {
+        id: 5,
+        subtitle: "Photography",
+        title: "",
+        link: "/"
+    },
+    {
+        id: 6,
+        subtitle: "Photography",
+        title: "",
         link: "/"
     },
 ];
