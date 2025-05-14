@@ -24,6 +24,8 @@ import Testimonial from "@/components/testimonial/testimonial";
 import AboutCall2Action from "@/components/call-to-action/call-to-action";
 import FullWidthImage from "@/components/full-width-img";
 import TeamSection from "@/components/team-section/team-section";
+import ContactOne from "@/components/contact/contact-one";
+import TeamMain from "../team/team";
 
 const AboutUsMain = () => {
   useScrollSmooth();
@@ -57,7 +59,7 @@ const AboutUsMain = () => {
             {/* about area */}
 
             {/* team area */}
-            <TeamSection />
+            {/* <TeamMain /> */}
             {/* team area */}
 
             {/* fun fact area */}
@@ -68,12 +70,8 @@ const AboutUsMain = () => {
             <BrandFive />
             {/* brand area */}
 
-            {/* award area */}
-            <Testimonial />
-            {/* award area */}
-
             {/* call to action */}
-            <AboutCall2Action />
+            <ContactOne />
             {/* call to action */}
 
           </main>

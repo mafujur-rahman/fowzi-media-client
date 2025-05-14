@@ -22,6 +22,8 @@ import { textInvert } from "@/utils/text-invert";
 import { fadeAnimation, revelAnimationOne } from "@/utils/title-animation";
 import { projectThreeAnimation } from "@/utils/project-anim";
 import { ctaAnimation } from "@/utils/cta-anim";
+import PortfolioSliderHomeTwelve from "@/components/portfolio/slider/portfolio-slider-home-twelve";
+import { cursorAnimation } from "@/plugins";
 
 const HomeFourMain = () => {
   useScrollSmooth();
@@ -42,6 +44,22 @@ const HomeFourMain = () => {
     }, 100);
     return () => clearTimeout(timer);
   });
+
+  useEffect(() => {
+      document.body.classList.add("tp-magic-cursor");
+      return () => {
+        document.body.classList.remove("tp-magic-cursor");
+      };
+    }, []);
+  
+    useEffect(() => {
+      if (
+        typeof window !== "undefined" &&
+        document.querySelector(".tp-magic-cursor")
+      ) {
+        cursorAnimation();
+      }
+    }, []);
 
   return (
     <Wrapper>
@@ -70,9 +88,18 @@ const HomeFourMain = () => {
             <BrandThree />
             {/* brand area end */}
 
-
             {/* project area start */}
-            <ProjectFour />
+                  {/* magic cursor start */}
+                  <div id="magic-cursor">
+                    <div id="ball"></div>
+                  </div>
+                  {/* magic cursor end */}
+
+                    {/* portfolio slider start */}
+                    {/* <PortfolioSliderHomeTwelve /> */}
+                    {/* portfolio slider end */}
+            
+
             {/* project area end */}
 
             {/* video area start */}

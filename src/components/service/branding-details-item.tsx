@@ -41,8 +41,8 @@ export function BrandingDetailsItems() {
     <div className="row">
           <div className=""></div>
           {service_data.map((item) => (
-            <div key={item.id} className="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
-              <div className="tp-service-5-item tp_fade_bottom space-1">
+            <div key={item.id} className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 g-4">
+              <div className="tp-service-5-item tp_fade_bottom  border p-5 " style={{height: "100%"}}>
                 {/* <div className="tp-service-4-icon">
                   <Image style={{height: "30px", width: "auto"}} src={item.icon} alt="icon" />
                 </div> */}
