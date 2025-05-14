@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import { scroller } from 'react-scroll';
-import details_thumb_1 from '@/assets/img/inner-project/showcase/showcase-details-1.jpg';
-import details_thumb_2 from '@/assets/img/inner-project/showcase/showcase-details-2.jpg';
-import details_thumb_3 from '@/assets/img/inner-project/showcase/showcase-details-3.jpg';
+import details_thumb_1 from '@/assets/img/home-12/portfolio/radiant future/branding-2.png';
+import details_thumb_2 from '@/assets/img/home-12/portfolio/radiant future/branding-3.png';
+import details_thumb_3 from '@/assets/img/home-12/portfolio/radiant future/branding-4.png';
 
 export default function RadiantShowcaseArea() {
   const scrollTo = () => {
@@ -17,7 +17,7 @@ export default function RadiantShowcaseArea() {
     <>
      {/* details area */}
       <div className="tp-showcase-details-area">
-         <div className="tp-showcase-details-bg d-flex align-items-center justify-content-center include-bg p-relative" style={{backgroundImage: "url(/assets/img/inner-project/showcase/showcase-1.jpg)"}}>
+         <div className="tp-showcase-details-bg d-flex align-items-center justify-content-center include-bg p-relative" style={{backgroundImage: "url(/assets/img/home-12/portfolio/radiant%20future/branding-1.png)"}}>
           <div className="tp-showcase-details-scroll smooth">
               <a onClick={scrollTo} className="pointer">
                 <i className="fa-sharp fa-light fa-angle-down"></i>
