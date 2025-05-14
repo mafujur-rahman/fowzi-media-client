@@ -96,7 +96,7 @@ const HomeFourMain = () => {
                   {/* magic cursor end */}
 
                     {/* portfolio slider start */}
-                    {/* <PortfolioSliderHomeTwelve /> */}
+                    <PortfolioSliderHomeTwelve />
                     {/* portfolio slider end */}
             
 
