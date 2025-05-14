@@ -10,7 +10,6 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 import Wrapper from "@/layouts/wrapper";
 import AboutUsHero from "@/components/about/about-us-hero";
 import AboutUsArea from "@/components/about/about-us-area";
-import TeamOne from "@/components/team/team-one";
 import FunFactOne from "@/components/fun-fact/fun-fact-one";
 
 // animation
@@ -20,10 +19,6 @@ import { teamMarqueAnim } from "@/utils/scroll-marque";
 import FooterFour from "@/layouts/footers/footer-four";
 import HeaderFour from "@/layouts/headers/header-four";
 import BrandFive from "@/components/brand/brand-five";
-import Testimonial from "@/components/testimonial/testimonial";
-import AboutCall2Action from "@/components/call-to-action/call-to-action";
-import FullWidthImage from "@/components/full-width-img";
-import TeamSection from "@/components/team-section/team-section";
 import ContactOne from "@/components/contact/contact-one";
 import TeamMain from "../team/team";
 
@@ -59,7 +54,7 @@ const AboutUsMain = () => {
             {/* about area */}
 
             {/* team area */}
-            {/* <TeamMain /> */}
+            <TeamMain />
             {/* team area */}
 
             {/* fun fact area */}

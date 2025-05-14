@@ -7,26 +7,11 @@ import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
-import Wrapper from "@/layouts/wrapper";
-import HeaderEleven from "@/layouts/headers/header-eleven";
 import TeamArea from "@/components/team/team-area";
-import StudioPanelFour from "@/components/studio-panels/studio-panel-4";
-import FooterTwo from "@/layouts/footers/footer-two";
-// animation
-import { charAnimation, titleAnimation } from "@/utils/title-animation";
-import { hoverBtn } from "@/utils/hover-btn";
+
 
 const TeamMain = () => {
-  useScrollSmooth();
 
-  useGSAP(() => {
-    const timer = setTimeout(() => {
-      charAnimation();
-      titleAnimation();
-      hoverBtn();
-    }, 100);
-    return () => clearTimeout(timer);
-  });
 
   return (
 
@@ -37,13 +22,13 @@ const TeamMain = () => {
           <div className="row">
             <div className="col-xl-12">
               <div className="tm-hero-content">
-                <span className="tm-hero-subtitle">Liko Studio</span>
+                <span className="tm-hero-subtitle" style={{ fontFamily: 'Glacial Indifference' }}>Fowzi Media Studio</span>
                 <h4 className="tm-hero-title tp-char-animation">
                   Talented team
                 </h4>
               </div>
               <div className="tm-hero-text tp_title_anim">
-                <p>
+                <p style={{ fontFamily: 'Glacial Indifference' }}>
                   We’re a diverse team that works as fancies attention to
                   details, enjoys beers on Friday nights and aspires to
                   design the dent in the universe.
