@@ -20,7 +20,7 @@ const slider_data = [
         id: 3,
         subtitle: "Videography",
         title: "SBD Commercial",
-        link: "/optimal-showcase"
+        link: "/sbd-showcase"
     },
     {
         id: 4,

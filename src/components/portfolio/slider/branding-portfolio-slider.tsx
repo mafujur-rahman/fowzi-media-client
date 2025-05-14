@@ -6,27 +6,27 @@ import { parallaxSlider } from "@/utils/parallax-slider";
 const slider_data = [
     {
         id: 1,
-        subtitle: "Web Development",
-        title: "Daisane",
-        link: "/daisane-showcase"
+        subtitle: "branding",
+        title: "Friday Fashion",
+        link: "/friday-fashion-showcase"
     },
     {
         id: 2,
-        subtitle: "Web Development",
-        title: "Infinity Care",
-        link: "/infinity-care-showcase"
+        subtitle: "branding",
+        title: "Better Hand",
+        link: "/better-hand-showcase"
     },
     {
         id: 3,
-        subtitle: "Web Development",
-        title: "Somali Youth",
-        link: "/somali-youth-showcase"
+        subtitle: "branding",
+        title: "Optimal Home Healthcare",
+        link: "/optimal-showcase"
     },
     {
         id: 4,
-        subtitle: "Web Development",
-        title: "Washington Toe Foundation",
-        link: "/washington-toe-showcase"
+        subtitle: "branding",
+        title: "Radiant Future",
+        link: "/radiant-showcase"
     },
 ];
 

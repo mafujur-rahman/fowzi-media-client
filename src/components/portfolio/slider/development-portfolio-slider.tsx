@@ -3,30 +3,31 @@ import Link from "next/link";
 import { parallaxSlider1 } from "@/utils/parallax-slider";
 
 
+
 const slider_data = [
     {
         id: 1,
-        subtitle: "branding",
-        title: "Friday Fashion",
-        link: "/friday-fashion-showcase"
+        subtitle: "Web Development",
+        title: "Daisane",
+        link: "/daisane-showcase"
     },
     {
         id: 2,
-        subtitle: "branding",
-        title: "Better Hand",
-        link: "/better-hand-showcase"
+        subtitle: "Web Development",
+        title: "Infinity Care",
+        link: "/infinity-care-showcase"
     },
     {
         id: 3,
-        subtitle: "branding",
-        title: "Optimal Home Healthcare",
-        link: "/optimal-showcase"
+        subtitle: "Web Development",
+        title: "Somali Youth",
+        link: "/somali-youth-showcase"
     },
     {
         id: 4,
-        subtitle: "branding",
-        title: "Radiant Future",
-        link: "/radiant-showcase"
+        subtitle: "Web Development",
+        title: "Washington Toe Foundation",
+        link: "/washington-toe-showcase"
     },
 ];
 
