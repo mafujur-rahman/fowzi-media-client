@@ -11,7 +11,7 @@ const slider_data = [
   },
   {
     id: 2,
-    subtitle: "Branding + Website + Videography + Photography",
+    subtitle: "Branding + Website + Photography",
     title: "Hudda for St Cloud",
     link: "/hudda-showcase"
   },

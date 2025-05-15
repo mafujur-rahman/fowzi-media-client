@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import { scroller } from 'react-scroll';
-import details_thumb_1 from '@/assets/img/inner-project/showcase/showcase-details-1.jpg';
-import details_thumb_2 from '@/assets/img/inner-project/showcase/showcase-details-2.jpg';
-import details_thumb_3 from '@/assets/img/inner-project/showcase/showcase-details-3.jpg';
+import details_thumb_1 from '@/assets/img/home-12/portfolio/branding/hudda/branding-2.jpg';
+import details_thumb_2 from '@/assets/img/home-12/portfolio/branding/hudda/branding-3.jpg';
+import details_thumb_3 from '@/assets/img/home-12/portfolio/branding/hudda/branding-4.jpg';
 
 export default function HuddaShowcaseArea() {
   const scrollTo = () => {
@@ -17,7 +17,7 @@ export default function HuddaShowcaseArea() {
     <>
      {/* details area */}
       <div className="tp-showcase-details-area">
-         <div className="tp-showcase-details-bg d-flex align-items-center justify-content-center include-bg p-relative" style={{backgroundImage: "url(/assets/img/inner-project/showcase/showcase-1.jpg)"}}>
+         <div className="tp-showcase-details-bg d-flex align-items-center justify-content-center include-bg p-relative" style={{backgroundImage: "url(/assets/img/home-12/portfolio/branding/hudda/branding-1.jpg)"}}>
           <div className="tp-showcase-details-scroll smooth">
               <a onClick={scrollTo} className="pointer" style={{ fontFamily: 'Glacial Indifference' }}>
                 <i className="fa-sharp fa-light fa-angle-down"></i>
@@ -32,12 +32,17 @@ export default function HuddaShowcaseArea() {
           <div className="container">
               <div className="row">
                 <div className="col-12">
-                    <div className="tp-showcase-details-content text-center">
-                      <span className="port-showcase-slider-subtitle tp_title_anim" style={{ fontFamily: 'Glacial Indifference' }}>
-                        [ Web Development ]
-                      </span>
-                      <h4 className="port-showcase-slider-title tp-char-animation">Hudda for St Cloud</h4>
-                    </div>
+                    <div className="tp-showcase-details-content text-center bg-dark bg-opacity-50 p-3 ">
+                  <span
+                    className="port-showcase-slider-subtitle tp_title_anim text-white"
+                    style={{ fontFamily: 'Glacial Indifference' }}
+                  >
+                    [ Branding + Website + Photography ]
+                  </span>
+                  <h4 className="port-showcase-slider-title tp-char-animation text-white">
+                    Hudda for St Cloud
+                  </h4>
+                </div>
                 </div>
               </div>
           </div>
@@ -157,7 +162,7 @@ export default function HuddaShowcaseArea() {
                 </div>
                 <div className="col-xl-8">
                   <div className="showcase-details-overview-right tp_title_anim" style={{ fontFamily: 'Glacial Indifference' }}>
-                      <p>Blue Marine Foundation challenged us to create a digital experience that successfully educates people on the importance of our oceans and the solutions we can implement to mitigate climate change. The health of the ocean affects us all and for that reason, the site needed to connect with as many people as possible, from students to policymakers. The journey begins with an introduction to ocean preservation, in the form of a meditative breathing exercise. This aims to reduce tension and in-turn improve concentration and memory.</p>
+                      <p style={{ fontFamily: 'Glacial Indifference' }}>Blue Marine Foundation challenged us to create a digital experience that successfully educates people on the importance of our oceans and the solutions we can implement to mitigate climate change. The health of the ocean affects us all and for that reason, the site needed to connect with as many people as possible, from students to policymakers. The journey begins with an introduction to ocean preservation, in the form of a meditative breathing exercise. This aims to reduce tension and in-turn improve concentration and memory.</p>
                   </div>
                 </div>
             </div>
