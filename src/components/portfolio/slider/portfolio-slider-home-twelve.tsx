@@ -13,13 +13,13 @@ const slider_data = [
     id: 2,
     subtitle: "Branding + Website + Videography + Photography",
     title: "Hudda for St Cloud",
-    link: "/jannah-fitwear-showcase"
+    link: "/hudda-showcase"
   },
   {
     id: 3,
     subtitle: "Branding + Website + Videography + Photography",
     title: "Jannah Fitwear",
-    link: "/hudda-showcase"
+    link: "/jannah-fitwear-showcase"
   },
 ];
 
@@ -40,7 +40,7 @@ export default function PortfolioSliderHomeTwelve() {
               data-cursor="View<br>Demo"
               key={item.id}
             >
-              <Link className="cursor-hide" href="/portfolio-showcase-details">
+              <Link className="cursor-hide" href={item.link}>
                 <div className="parallax-content">
                   <span style={{ fontFamily: 'Glacial Indifference' }}>{item.subtitle}</span>
                   <h4>{item.title}</h4>

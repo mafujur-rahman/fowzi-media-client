@@ -51,7 +51,7 @@ export default function DevelopmentPortfolioSlider() {
                             {item.link ? (
                                 <Link className="cursor-hide" href={item.link}>
                                     <div className="parallax-content">
-                                        <span>{item.subtitle}</span>
+                                        <span style={{ fontFamily: 'Glacial Indifference' }}>{item.subtitle}</span>
                                         <h4>{item.title}</h4>
                                     </div>
                                     <div className="parallax-img"></div>

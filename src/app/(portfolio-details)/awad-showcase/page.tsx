@@ -1,12 +1,13 @@
+import AwadShowcaseMain from '@/pages/portfolio/details/awad-showcase-details';
 import InfinityCareShowcaseMain from '@/pages/portfolio/details/infinity-care-showcase-details';
 import React from 'react';
 
-const InfinityCareShowcase = () => {
+const AwadShowcase = () => {
     return (
         <div>
-            <InfinityCareShowcaseMain />
+            <AwadShowcaseMain />
         </div>
     );
 };
 
-export default InfinityCareShowcase;
+export default AwadShowcase;

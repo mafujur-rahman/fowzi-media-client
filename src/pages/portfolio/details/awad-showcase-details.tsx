@@ -13,9 +13,10 @@ import { charAnimation, fadeAnimation, titleAnimation } from "@/utils/title-anim
 import HeaderFour from "@/layouts/headers/header-four";
 import FooterFour from "@/layouts/footers/footer-four";
 import InfinityCareShowcaseArea from "@/components/portfolio/details/infinity-care-showcase-area";
+import AwadShowcaseArea from "@/components/portfolio/details/awad-showcaase-area";
 
 
-const InfinityCareShowcaseMain = () => {
+const AwadShowcaseMain = () => {
 
   useScrollSmooth();
 
@@ -38,7 +39,7 @@ const InfinityCareShowcaseMain = () => {
         <div id="smooth-content">
           <main>
             {/* portfolio details area */}
-            <InfinityCareShowcaseArea/>
+            <AwadShowcaseArea/>
             {/* portfolio details area */}
           </main>
 
@@ -51,4 +52,4 @@ const InfinityCareShowcaseMain = () => {
   );
 };
 
-export default InfinityCareShowcaseMain;
+export default AwadShowcaseMain;

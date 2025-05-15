@@ -58,7 +58,7 @@ export default function BrandingPortfolioSlider() {
                             ) : (
                                 <div className="cursor-hide">
                                     <div className="parallax-content">
-                                        <span>{item.subtitle}</span>
+                                        <span style={{ fontFamily: 'Glacial Indifference' }}>{item.subtitle}</span>
                                         <h4>{item.title}</h4>
                                     </div>
                                     <div className="parallax-img"></div>
