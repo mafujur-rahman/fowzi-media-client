@@ -5,7 +5,7 @@ import details_thumb_1 from '@/assets/img/inner-project/showcase/showcase-detail
 import details_thumb_2 from '@/assets/img/inner-project/showcase/showcase-details-2.jpg';
 import details_thumb_3 from '@/assets/img/inner-project/showcase/showcase-details-3.jpg';
 
-export default function JannahShowcaseArea() {
+export default function PSAShowcaseArea() {
     const scrollTo = () => {
         scroller.scrollTo('xyz', {
             duration: 800,
@@ -34,7 +34,7 @@ export default function JannahShowcaseArea() {
                             overflow: 'hidden'
                         }}>
                             <iframe
-                                src="https://player.vimeo.com/video/839538345?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+                                src="https://player.vimeo.com/video/1058793031?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
                                 frameBorder="0"
                                 allow="autoplay; fullscreen"
                                 allowFullScreen
@@ -71,7 +71,7 @@ export default function JannahShowcaseArea() {
                                     <span className="port-showcase-slider-subtitle tp_title_anim" style={{ fontFamily: 'Glacial Indifference' }}>
                                         [ Videography ]
                                     </span>
-                                    <h4 className="port-showcase-slider-title tp-char-animation">Jannah Fitwear</h4>
+                                    <h4 className="port-showcase-slider-title tp-char-animation">PSA Film</h4>
                                 </div>
                             </div>
                         </div>
@@ -192,8 +192,8 @@ export default function JannahShowcaseArea() {
                             </div>
                         </div>
                         <div className="col-xl-8">
-                            <div className="showcase-details-overview-right tp_title_anim">
-                                <p style={{ fontFamily: 'Glacial Indifference' }}>Blue Marine Foundation challenged us to create a digital experience that successfully educates people on the importance of our oceans and the solutions we can implement to mitigate climate change. The health of the ocean affects us all and for that reason, the site needed to connect with as many people as possible, from students to policymakers. The journey begins with an introduction to ocean preservation, in the form of a meditative breathing exercise. This aims to reduce tension and in-turn improve concentration and memory.</p>
+                            <div className="showcase-details-overview-right tp_title_anim" style={{ fontFamily: 'Glacial Indifference' }}>
+                                <p>Blue Marine Foundation challenged us to create a digital experience that successfully educates people on the importance of our oceans and the solutions we can implement to mitigate climate change. The health of the ocean affects us all and for that reason, the site needed to connect with as many people as possible, from students to policymakers. The journey begins with an introduction to ocean preservation, in the form of a meditative breathing exercise. This aims to reduce tension and in-turn improve concentration and memory.</p>
                             </div>
                         </div>
                     </div>

@@ -19,12 +19,12 @@ export default function SomaliYouthShowcaseArea() {
       <div className="tp-showcase-details-area">
          <div className="tp-showcase-details-bg d-flex align-items-center justify-content-center include-bg p-relative" style={{backgroundImage: "url(/assets/img/inner-project/showcase/showcase-1.jpg)"}}>
           <div className="tp-showcase-details-scroll smooth">
-              <a onClick={scrollTo} className="pointer">
+              <a onClick={scrollTo} className="pointer" style={{ fontFamily: 'Glacial Indifference' }}>
                 <i className="fa-sharp fa-light fa-angle-down"></i>
                 Scroll or drag to navigate
               </a>
           </div>
-          <div className="port-showcase-slider-social tp-hover-btn-wrapper">
+          <div className="port-showcase-slider-social tp-hover-btn-wrapper" style={{ fontFamily: 'Glacial Indifference' }}>
               <a className="tp-hover-btn-item tp-hover-btn" href="#">Fb</a>
               <a className="tp-hover-btn-item tp-hover-btn" href="#">In</a>
               <a className="tp-hover-btn-item tp-hover-btn" href="#">Be</a>
@@ -33,7 +33,7 @@ export default function SomaliYouthShowcaseArea() {
               <div className="row">
                 <div className="col-12">
                     <div className="tp-showcase-details-content text-center">
-                      <span className="port-showcase-slider-subtitle tp_title_anim">
+                      <span className="port-showcase-slider-subtitle tp_title_anim" style={{ fontFamily: 'Glacial Indifference' }}>
                         [ Web Development ]
                       </span>
                       <h4 className="port-showcase-slider-title tp-char-animation">Somali Youth</h4>
@@ -51,23 +51,23 @@ export default function SomaliYouthShowcaseArea() {
             <div className="row">
                 <div className="col-xl-4">
                   <div className="showcase-details-overview-left">
-                      <span className="showcase-details-subtitle">Overview</span>
+                      <span className="showcase-details-subtitle" style={{ fontFamily: 'Glacial Indifference' }}>Overview</span>
                   </div>
                 </div>
                 <div className="col-xl-8">
                   <div className="showcase-details-overview-right">
-                      <p className="tp_title_anim">Eagle Films is an active player on the entertainment scene as a major Hollywood movies distributor and co-producer. They reach out to me to not only redesign their website but also to change the look and feel of their brand.</p>
+                      <p className="tp_title_anim" style={{ fontFamily: 'Glacial Indifference' }}>Eagle Films is an active player on the entertainment scene as a major Hollywood movies distributor and co-producer. They reach out to me to not only redesign their website but also to change the look and feel of their brand.</p>
                       <div className="showcase-details-overview-info">
                         <div className="showcase-details-overview-info-item tp_fade_bottom">
                             <div className="row align-items-center">
                               <div className="col-6">
                                   <div className="showcase-details-overview-info-left">
-                                    <span>Client</span>
+                                    <span style={{ fontFamily: 'Glacial Indifference' }}>Client</span>
                                   </div>
                               </div>
                               <div className="col-6">
                                   <div className="showcase-details-overview-info-right">
-                                    <span>Fowzi Media</span>
+                                    <span style={{ fontFamily: 'Glacial Indifference' }}>Fowzi Media</span>
                                   </div>
                               </div>
                             </div>
@@ -76,12 +76,12 @@ export default function SomaliYouthShowcaseArea() {
                             <div className="row align-items-center">
                               <div className="col-6">
                                   <div className="showcase-details-overview-info-left">
-                                    <span>Services</span>
+                                    <span style={{ fontFamily: 'Glacial Indifference' }}>Services</span>
                                   </div>
                               </div>
                               <div className="col-6">
                                   <div className="showcase-details-overview-info-right">
-                                    <span>Brandings</span>
+                                    <span style={{ fontFamily: 'Glacial Indifference' }}>Brandings</span>
                                   </div>
                               </div>
                             </div>
@@ -90,12 +90,12 @@ export default function SomaliYouthShowcaseArea() {
                             <div className="row align-items-center">
                               <div className="col-6">
                                   <div className="showcase-details-overview-info-left">
-                                    <span>Location</span>
+                                    <span style={{ fontFamily: 'Glacial Indifference' }}>Location</span>
                                   </div>
                               </div>
                               <div className="col-6">
                                   <div className="showcase-details-overview-info-right">
-                                    <span>USA</span>
+                                    <span style={{ fontFamily: 'Glacial Indifference' }}>USA</span>
                                   </div>
                               </div>
                             </div>
@@ -104,12 +104,12 @@ export default function SomaliYouthShowcaseArea() {
                             <div className="row align-items-center">
                               <div className="col-6">
                                   <div className="showcase-details-overview-info-left">
-                                    <span>Release Date</span>
+                                    <span style={{ fontFamily: 'Glacial Indifference' }}>Release Date</span>
                                   </div>
                               </div>
                               <div className="col-6">
                                   <div className="showcase-details-overview-info-right">
-                                    <span>October {"'2024"}</span>
+                                    <span style={{ fontFamily: 'Glacial Indifference' }}>October {"'2024"}</span>
                                   </div>
                               </div>
                             </div>
@@ -152,12 +152,12 @@ export default function SomaliYouthShowcaseArea() {
             <div className="row">
                 <div className="col-xl-4">
                   <div className="showcase-details-overview-left">
-                      <span className="showcase-details-subtitle fs-40 tp-char-animation">The challenge</span>
+                      <span className="showcase-details-subtitle fs-40 tp-char-animation" style={{ fontFamily: 'Glacial Indifference' }}>The challenge</span>
                   </div>
                 </div>
                 <div className="col-xl-8">
                   <div className="showcase-details-overview-right tp_title_anim">
-                      <p>Blue Marine Foundation challenged us to create a digital experience that successfully educates people on the importance of our oceans and the solutions we can implement to mitigate climate change. The health of the ocean affects us all and for that reason, the site needed to connect with as many people as possible, from students to policymakers. The journey begins with an introduction to ocean preservation, in the form of a meditative breathing exercise. This aims to reduce tension and in-turn improve concentration and memory.</p>
+                      <p style={{ fontFamily: 'Glacial Indifference' }}>Blue Marine Foundation challenged us to create a digital experience that successfully educates people on the importance of our oceans and the solutions we can implement to mitigate climate change. The health of the ocean affects us all and for that reason, the site needed to connect with as many people as possible, from students to policymakers. The journey begins with an introduction to ocean preservation, in the form of a meditative breathing exercise. This aims to reduce tension and in-turn improve concentration and memory.</p>
                   </div>
                 </div>
             </div>

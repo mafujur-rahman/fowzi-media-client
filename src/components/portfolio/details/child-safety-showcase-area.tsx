@@ -5,7 +5,7 @@ import details_thumb_1 from '@/assets/img/inner-project/showcase/showcase-detail
 import details_thumb_2 from '@/assets/img/inner-project/showcase/showcase-details-2.jpg';
 import details_thumb_3 from '@/assets/img/inner-project/showcase/showcase-details-3.jpg';
 
-export default function JannahShowcaseArea() {
+export default function ChildSafetyShowcaseArea() {
     const scrollTo = () => {
         scroller.scrollTo('xyz', {
             duration: 800,
@@ -34,7 +34,7 @@ export default function JannahShowcaseArea() {
                             overflow: 'hidden'
                         }}>
                             <iframe
-                                src="https://player.vimeo.com/video/839538345?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+                                src="https://player.vimeo.com/video/1059190345?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
                                 frameBorder="0"
                                 allow="autoplay; fullscreen"
                                 allowFullScreen
@@ -71,7 +71,7 @@ export default function JannahShowcaseArea() {
                                     <span className="port-showcase-slider-subtitle tp_title_anim" style={{ fontFamily: 'Glacial Indifference' }}>
                                         [ Videography ]
                                     </span>
-                                    <h4 className="port-showcase-slider-title tp-char-animation">Jannah Fitwear</h4>
+                                    <h4 className="port-showcase-slider-title tp-char-animation">Child Safety Film</h4>
                                 </div>
                             </div>
                         </div>

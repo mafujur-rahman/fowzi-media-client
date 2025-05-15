@@ -7,14 +7,14 @@ const slider_data = [
     {
         id: 1,
         subtitle: "Videography",
-        title: "Shamil Mirza",
-        link: "/shamil-mirza-showcase"
+        title: "Child Safety Film",
+        link: "/child-safety-showcase"
     },
     {
         id: 2,
         subtitle: "Videography",
-        title: "Jannah Fitwear",
-        link: "/jannah-fitwear-showcase"
+        title: "PSA Film",
+        link: "/psa-showcase"
     },
     {
         id: 3,
@@ -25,9 +25,10 @@ const slider_data = [
     {
         id: 4,
         subtitle: "Videography",
-        title: "Islam Collective Introduction",
-        link: "/islam-showcase"
+        title: "Shamil Mirza",
+        link: "/shamil-mirza-showcase"
     },
+    
 ];
 
 export default function VideographyPortfolioSlider() {
