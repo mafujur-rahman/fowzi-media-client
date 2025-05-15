@@ -1,74 +1,37 @@
 import $ from 'jquery';
 import { gsap } from 'gsap';
-import { SplitText,chroma } from '@/plugins';
+import { SplitText, chroma } from '@/plugins';
 
 function ctaAnimation() {
   if ($('.cta-text').length > 0) {
+    // Set initial opacity to 0
+    gsap.set('.cta-text', {
+      opacity: 0
+    });
+    
+    // Fade in animation
+    gsap.to('.cta-text', {
+      opacity: 1,
+      duration: 1,
+      ease: 'power1.out',
+      scrollTrigger: {
+        trigger: '.cta-text',
+        start: 'bottom 100%-=50px',
+        once: true
+      }
+    });
 
-		let cta = gsap.timeline({
-			repeat: -1,
-			delay: 0.5,
-			scrollTrigger: {
-				trigger: '.cta-text',
-				start: 'bottom 100%-=50px'
-			}
-		});
-		gsap.set('.cta-text', {
-			opacity: 0
-		});
-		gsap.to('.cta-text', {
-			opacity: 1,
-			duration: 1,
-			ease: 'power1.out',
-			scrollTrigger: {
-				trigger: '.cta-text',
-				start: 'bottom 100%-=50px',
-				once: true
-			}
-		});
-	
-		let mySplitText = new SplitText(".cta-text", { type: "words,chars" });
-		let chars = mySplitText.chars;
-		let endGradient: any = (chroma as any).scale(['#111111', '#FF0101']);
-		cta.to(chars, {
-			duration: 0.5,
-			scaleY: 0.6,
-			ease: "power1.out",
-			stagger: 0.04,
-			transformOrigin: 'center bottom'
-		});
-		cta.to(chars, {
-			yPercent: -20,
-			ease: "elastic",
-			stagger: 0.03,
-			duration: 0.8
-		}, 0.5);
-		cta.to(chars, {
-			scaleY: 1,
-			ease: "elastic.out",
-			stagger: 0.03,
-			duration: 1.5
-		}, 0.5);
-		cta.to(chars, {
-			color: (i, el, arr) => {
-				return endGradient(i / arr.length).hex();
-			},
-			ease: "power1.out",
-			stagger: 0.03,
-			duration: 0.3
-		}, 0.5);
-		cta.to(chars, {
-			yPercent: 0,
-			ease: "back",
-			stagger: 0.03,
-			duration: 0.8
-		}, 0.7);
-		cta.to(chars, {
-			color: '#fff',
-			duration: 1.4,
-			stagger: 0.05
-		});
-	}
+    // Apply gradient color to each character
+    let mySplitText = new SplitText(".cta-text", { type: "words,chars" });
+    let chars = mySplitText.chars;
+    let endGradient: any = (chroma as any).scale(['#111111', '#FF0101']);
+    
+    gsap.set(chars, {
+      color: (i, el, arr) => {
+        return endGradient(i / arr.length).hex();
+      }
+    });
+  }
 };
 
 export {

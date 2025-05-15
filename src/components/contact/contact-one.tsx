@@ -24,7 +24,7 @@ export default function ContactOne() {
             <div className="tp-cta-btn-box">
               <Link className="tp-btn-zikzak p-relative" target="_blank" href="https://calendly.com/fowzimedia/free-consultation">
                 <span className="zikzak-content" style={{ fontFamily: 'Glacial Indifference' }}>
-                  Get <br /> In Touch
+                  Book a <br /> consultation
                   <RightArrow clr="#19191A" />
                 </span>
                 <ProjectShape />

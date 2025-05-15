@@ -20,7 +20,7 @@ import FooterFour from "@/layouts/footers/footer-four";
 import HeaderFour from "@/layouts/headers/header-four";
 import BrandFive from "@/components/brand/brand-five";
 import ContactOne from "@/components/contact/contact-one";
-import TeamMain from "../team/team";
+import { ctaAnimation } from "@/utils/cta-anim";
 import TeamOne from "@/components/team/team-one";
 
 const AboutUsMain = () => {
@@ -33,6 +33,7 @@ const AboutUsMain = () => {
       teamMarqueAnim();
       fadeAnimation();
       hoverBtn();
+      ctaAnimation();
     }, 100);
     return () => clearTimeout(timer);
   });
