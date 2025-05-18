@@ -21,6 +21,12 @@ const slider_data = [
     title: "Jannah Fitwear",
     link: "/jannah-fitwear-showcase"
   },
+  {
+    id: 4,
+    subtitle: "Branding + Website + Videography + Photography",
+    title: "Awad for Puntland",
+    link: "/awad-showcase"
+  },
 ];
 
 export default function PortfolioSliderHomeTwelve() {

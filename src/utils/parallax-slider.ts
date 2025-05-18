@@ -206,22 +206,42 @@ export function parallaxSlider3() {
 export function parallaxSlider4() {
   const images: HTMLElement[] = Array.from(document.querySelectorAll<HTMLElement>('.parallax-img'));
   const slider = document.querySelector('.parallax-slider') as HTMLElement;
-  const sliderContainer = document.querySelector('.parallax-slider-container') as HTMLElement; // Add a container element in your HTML
   let sliderWidth: number;
   let imageWidth: number;
+  let maxTranslateX: number;
   let current = 0;
   let target = 0;
-  const ease = 0.05;
-  let animationId: number | null = null;
-  let isAnimating = false;
-  let isActive = false;
-  let startOffset = 0;
+  const ease = 0.1;
+  let lastScrollY = window.scrollY;
+  let shouldAnimate = false;
+  let initialized = false; // new flag
 
   window.addEventListener('resize', init);
+  window.addEventListener('scroll', onScroll);
 
   images.forEach((img, idx) => {
     img.style.backgroundImage = `url(/assets/img/home-12/portfolio/p-${idx + 1}.jpg)`;
   });
+
+  function init() {
+    sliderWidth = slider.getBoundingClientRect().width;
+    imageWidth = sliderWidth / images.length;
+    maxTranslateX = sliderWidth - window.innerWidth;
+    document.body.style.height = `${sliderWidth - (window.innerWidth - window.innerHeight)}px`;
+    // Initialize target and current the same at start
+    current = 0;
+    target = 0;
+    lastScrollY = window.scrollY;
+    initialized = false;
+  }
+
+  function onScroll() {
+    const rect = slider.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    const triggerPoint = rect.height * 0.9;
+
+    shouldAnimate = windowHeight - rect.top >= triggerPoint && rect.bottom > 0;
+  }
 
   function lerp(start: number, end: number, t: number): number {
     return start * (1 - t) + end * t;
@@ -231,105 +251,40 @@ export function parallaxSlider4() {
     el.style.transform = transform;
   }
 
-  function init() {
-    sliderWidth = slider.getBoundingClientRect().width;
-    imageWidth = sliderWidth / images.length;
-    document.body.style.height = `${sliderWidth - (window.innerWidth - window.innerHeight)}px`;
-    
-    // Reset positions when resizing
-    if (isActive) {
-      startOffset = sliderContainer.getBoundingClientRect().top + window.scrollY;
-    }
-  }
-
   function animate() {
-    if (!isAnimating) return;
-    
-    current = parseFloat(lerp(current, target, ease).toFixed(2));
-    setTransform(slider, `translateX(-${current}px)`);
-    animateImages();
-    animationId = requestAnimationFrame(animate);
+    if (shouldAnimate) {
+      const scrollDelta = window.scrollY - lastScrollY;
+
+      if (initialized) {
+        // Add scroll delta to target gradually only after first frame
+        target += scrollDelta * 1.5;
+        target = Math.min(Math.max(0, target), maxTranslateX);
+      } else {
+        // On first animate frame after scrolling starts, sync target and current to avoid jump
+        target = current;
+        initialized = true;
+      }
+
+      lastScrollY = window.scrollY;
+      current = lerp(current, target, ease);
+
+      setTransform(slider, `translateX(-${current.toFixed(2)}px)`);
+      animateImages();
+    }
+    requestAnimationFrame(animate);
   }
 
   function animateImages() {
-    let ratio = current / imageWidth;
-    let intersectionRatioValue: number;
-
+    const ratio = current / imageWidth;
     images.forEach((image, idx) => {
-      intersectionRatioValue = ratio - (idx * 0.7);
-      setTransform(image, `translateX(${intersectionRatioValue * 70}px)`); // Reduced movement for parallax
+      const offset = ratio - idx * 0.7;
+      setTransform(image, `translateX(${offset * 100}px)`);
     });
   }
 
-  function startAnimation() {
-    if (!isAnimating) {
-      isAnimating = true;
-      isActive = true;
-      startOffset = sliderContainer.getBoundingClientRect().top + window.scrollY;
-      
-      // Set slider to fixed positioning when active
-      slider.style.position = 'fixed';
-      slider.style.top = '0';
-      slider.style.left = '0';
-      slider.style.width = '100%';
-      
-      animate();
-    }
-  }
-
-  function stopAnimation() {
-    isAnimating = false;
-    isActive = false;
-    
-    // Reset slider positioning
-    slider.style.position = '';
-    slider.style.top = '';
-    slider.style.left = '';
-    slider.style.width = '';
-    
-    if (animationId) {
-      cancelAnimationFrame(animationId);
-      animationId = null;
-    }
-  }
-
-  function handleScroll() {
-    if (!isActive) return;
-    
-    const scrollPosition = window.scrollY - startOffset;
-    const maxScroll = sliderWidth - window.innerWidth;
-    
-    // Only animate when within the slider's scroll range
-    if (scrollPosition >= 0 && scrollPosition <= maxScroll) {
-      target = scrollPosition;
-    } else if (scrollPosition < 0) {
-      target = 0;
-    } else {
-      target = maxScroll;
-    }
-  }
-
-  // Set up Intersection Observer
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-          startAnimation();
-          window.addEventListener('scroll', handleScroll);
-        } else {
-          stopAnimation();
-          window.removeEventListener('scroll', handleScroll);
-        }
-      });
-    },
-    {
-      threshold: 0.5 // Trigger when 50% visible (you can adjust this)
-    }
-  );
-
-  // Start observing the container element
-  observer.observe(sliderContainer);
-
-  // Initialize but don't start animation yet
   init();
+  animate();
 }
+
+
+
