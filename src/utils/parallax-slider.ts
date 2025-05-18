@@ -211,7 +211,7 @@ export function parallaxSlider4() {
   let maxTranslateX: number;
   let current = 0;
   let target = 0;
-  const ease = 0.1;
+  const ease = 0.05;
   let lastScrollY = window.scrollY;
   let shouldAnimate = false;
   let initialized = false; // new flag
