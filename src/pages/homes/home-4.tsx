@@ -33,35 +33,35 @@ const HomeFourMain = () => {
     };
   }, []);
 
-useGSAP(() => {
-  const timer = setTimeout(() => {
-    fadeAnimation();
-    revelAnimationOne();
-    projectThreeAnimation();
-    ctaAnimation();
-    textInvert();
-    
-    // Add this line
-    ScrollTrigger.refresh();
-  }, 100);
-  return () => clearTimeout(timer);
-});
+  useGSAP(() => {
+    const timer = setTimeout(() => {
+      fadeAnimation();
+      revelAnimationOne();
+      projectThreeAnimation();
+      ctaAnimation();
+      textInvert();
+
+      // Add this line
+      ScrollTrigger.refresh();
+    }, 300);
+    return () => clearTimeout(timer);
+  });
 
   useEffect(() => {
-      document.body.classList.add("tp-magic-cursor");
-      return () => {
-        document.body.classList.remove("tp-magic-cursor");
-      };
-    }, []);
-  
-    useEffect(() => {
-      if (
-        typeof window !== "undefined" &&
-        document.querySelector(".tp-magic-cursor")
-      ) {
-        cursorAnimation();
-      }
-    }, []);
+    document.body.classList.add("tp-magic-cursor");
+    return () => {
+      document.body.classList.remove("tp-magic-cursor");
+    };
+  }, []);
+
+  useEffect(() => {
+    if (
+      typeof window !== "undefined" &&
+      document.querySelector(".tp-magic-cursor")
+    ) {
+      cursorAnimation();
+    }
+  }, []);
 
   return (
     <Wrapper>
@@ -93,14 +93,14 @@ useGSAP(() => {
             {/* project area start */}
             {/* magic cursor start */}
             <div id="magic-cursor">
-            <div id="ball"></div>
+              <div id="ball"></div>
             </div>
             {/* magic cursor end */}
 
             {/* portfolio slider start */}
             <PortfolioSliderHomeTwelve />
             {/* portfolio slider end */}
-            
+
 
             {/* project area end */}
 
