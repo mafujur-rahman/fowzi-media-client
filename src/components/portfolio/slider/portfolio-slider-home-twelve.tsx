@@ -27,6 +27,18 @@ const slider_data = [
     title: "Awad for Puntland",
     link: "/awad-showcase"
   },
+  {
+    id: 5,
+    subtitle: "Branding + Website + Photography",
+    title: "Hudda for St Cloud",
+    link: "/hudda-showcase"
+  },
+  {
+    id: 6,
+    subtitle: "Branding + Website + Videography + Photography",
+    title: "Jannah Fitwear",
+    link: "/jannah-fitwear-showcase"
+  },
 ];
 
 export default function PortfolioSliderHomeTwelve() {

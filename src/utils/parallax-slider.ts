@@ -214,7 +214,7 @@ export function parallaxSlider4() {
   const ease = 0.05;
   let lastScrollY = window.scrollY;
   let shouldAnimate = false;
-  let initialized = false; // new flag
+  let initialized = false; 
 
   window.addEventListener('resize', init);
   window.addEventListener('scroll', onScroll);
