@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import { parallaxSlider4 } from "@/utils/parallax-slider";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 const slider_data = [
   {
@@ -49,7 +50,8 @@ export default function PortfolioSliderHomeTwelve() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="parallax-slider-wrapper-p">
+    <div style={{position: "relative"}}>
+      <div className="parallax-slider-wrapper-p">
       <div className="parallax-slider">
         <div className="parallax-slider-inner">
           {slider_data.map((item) => (
@@ -69,6 +71,7 @@ export default function PortfolioSliderHomeTwelve() {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 }
