@@ -212,7 +212,7 @@ export function parallaxSlider4() {
   let maxTranslateX: number;
   let current = 0;
   let target = 0;
-  const ease = 0.05;
+  const ease = 0.075;
   let lastScrollY = window.scrollY;
   let shouldAnimate = false;
   let initialized = false;
@@ -281,7 +281,7 @@ export function parallaxSlider4() {
   function animateImages() {
     const ratio = current / imageWidth;
     images.forEach((image, idx) => {
-      const offset = ratio - idx * 0.7;
+      const offset = ratio - idx * 0.6;
       setTransform(image, `translateX(${offset * 100}px)`);
     });
   }

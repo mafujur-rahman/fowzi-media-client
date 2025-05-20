@@ -33,6 +33,7 @@ export default function BrandSlider() {
                           height: "80px",
                           width: "auto",
                           filter: "grayscale(100%) invert(80%)",
+                          willChange: "transform",
                         }}
                       />
                     </div>

@@ -42,7 +42,7 @@ const HomeFourMain = () => {
       textInvert();
 
       ScrollTrigger.refresh();
-    }, 300);
+    }, 100);
     return () => clearTimeout(timer);
   });
 
@@ -99,7 +99,6 @@ const HomeFourMain = () => {
             {/* portfolio slider start */}
             <PortfolioSliderHomeTwelve />
             {/* portfolio slider end */}
-
 
             {/* project area end */}
 
