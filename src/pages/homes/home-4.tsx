@@ -41,7 +41,6 @@ const HomeFourMain = () => {
       ctaAnimation();
       textInvert();
 
-      // Add this line
       ScrollTrigger.refresh();
     }, 300);
     return () => clearTimeout(timer);
