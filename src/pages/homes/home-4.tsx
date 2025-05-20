@@ -89,16 +89,18 @@ const HomeFourMain = () => {
             <BrandThree />
             {/* brand area end */}
 
-            {/* project area start */}
-            {/* magic cursor start */}
-            <div id="magic-cursor">
-              <div id="ball"></div>
-            </div>
-            {/* magic cursor end */}
+            <div>
+              {/* project area start */}
+              {/* magic cursor start */}
+              <div id="magic-cursor">
+                <div id="ball"></div>
+              </div>
+              {/* magic cursor end */}
 
-            {/* portfolio slider start */}
-            <PortfolioSliderHomeTwelve />
-            {/* portfolio slider end */}
+              {/* portfolio slider start */}
+              <PortfolioSliderHomeTwelve />
+              {/* portfolio slider end */}
+            </div>
 
             {/* project area end */}
 

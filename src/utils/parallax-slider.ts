@@ -241,7 +241,7 @@ export function parallaxSlider4() {
   function onScroll() {
     const rect = slider.getBoundingClientRect();
     const windowHeight = window.innerHeight;
-    const triggerPoint = rect.height * 0.9;
+    const triggerPoint = rect.height * 0.7;
     
 
     shouldAnimate = windowHeight - rect.top >= triggerPoint && rect.bottom > 0;
@@ -261,7 +261,7 @@ export function parallaxSlider4() {
 
       if (initialized) {
         // Add scroll delta to target gradually only after first frame
-        target += scrollDelta * 1.5;
+        target += scrollDelta * 1.3;
         target = Math.min(Math.max(0, target), maxTranslateX);
       } else {
         // On first animate frame after scrolling starts, sync target and current to avoid jump
@@ -272,7 +272,7 @@ export function parallaxSlider4() {
       lastScrollY = window.scrollY;
       current = lerp(current, target, ease);
 
-      setTransform(slider, `translateX(-${current.toFixed(2)}px)`);
+      setTransform(slider, `translateX(-${current.toFixed(1)}px)`);
       animateImages();
     }
     requestAnimationFrame(animate);
