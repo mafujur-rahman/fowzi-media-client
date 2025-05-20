@@ -159,6 +159,7 @@ export function parallaxSlider3() {
   let current = 0;
   let target = 0;
   const ease = 0.05;
+  
 
   window.addEventListener('resize', init);
 
@@ -214,7 +215,9 @@ export function parallaxSlider4() {
   const ease = 0.05;
   let lastScrollY = window.scrollY;
   let shouldAnimate = false;
-  let initialized = false; 
+  let initialized = false;
+  
+   
 
   window.addEventListener('resize', init);
   window.addEventListener('scroll', onScroll);
@@ -239,6 +242,7 @@ export function parallaxSlider4() {
     const rect = slider.getBoundingClientRect();
     const windowHeight = window.innerHeight;
     const triggerPoint = rect.height * 0.9;
+    
 
     shouldAnimate = windowHeight - rect.top >= triggerPoint && rect.bottom > 0;
   }

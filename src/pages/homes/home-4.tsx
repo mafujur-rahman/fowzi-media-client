@@ -33,16 +33,19 @@ const HomeFourMain = () => {
     };
   }, []);
 
-  useGSAP(() => {
-    const timer = setTimeout(() => {
-      fadeAnimation();
-      revelAnimationOne();
-      projectThreeAnimation();
-      ctaAnimation();
-      textInvert();
-    }, 100);
-    return () => clearTimeout(timer);
-  });
+useGSAP(() => {
+  const timer = setTimeout(() => {
+    fadeAnimation();
+    revelAnimationOne();
+    projectThreeAnimation();
+    ctaAnimation();
+    textInvert();
+    
+    // Add this line
+    ScrollTrigger.refresh();
+  }, 100);
+  return () => clearTimeout(timer);
+});
 
   useEffect(() => {
       document.body.classList.add("tp-magic-cursor");
@@ -88,15 +91,15 @@ const HomeFourMain = () => {
             {/* brand area end */}
 
             {/* project area start */}
-                  {/* magic cursor start */}
-                  <div id="magic-cursor">
-                    <div id="ball"></div>
-                  </div>
-                  {/* magic cursor end */}
+            {/* magic cursor start */}
+            <div id="magic-cursor">
+            <div id="ball"></div>
+            </div>
+            {/* magic cursor end */}
 
-                    {/* portfolio slider start */}
-                    <PortfolioSliderHomeTwelve />
-                    {/* portfolio slider end */}
+            {/* portfolio slider start */}
+            <PortfolioSliderHomeTwelve />
+            {/* portfolio slider end */}
             
 
             {/* project area end */}
