@@ -222,80 +222,13 @@ export function parallaxSlider4() {
   window.addEventListener('resize', init);
   window.addEventListener('scroll', onScroll);
 
-const loadImagesOptimized = () => {
-  // Check if IntersectionObserver is supported (fallback if not)
-  if (!('IntersectionObserver' in window)) {
-    images.forEach((img, idx) => {
-      img.style.backgroundImage = `url(/assets/img/home-12/portfolio/p-${idx + 1}.jpg)`;
-    });
-    return;
-  }
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          const idx = Array.from(images).indexOf(img);
-          const imageUrl = `/assets/img/home-12/portfolio/p-${idx + 1}.jpg`;
-
-          // Add loading class
-          img.classList.add('image-loading');
-
-          // Preload the image
-          const preloadImg = new Image();
-          preloadImg.src = imageUrl;
-
-          const applyImage = () => {
-            // Remove loading class and add loaded class for transition
-            img.classList.remove('image-loading');
-            img.classList.add('image-loaded');
-            img.style.backgroundImage = `url(${imageUrl})`;
-            
-            // Unobserve the image after loading
-            observer.unobserve(img);
-          };
-
-          // Use `decode()` for async image decoding (reduces main thread blocking)
-          if (preloadImg.decode) {
-            preloadImg.decode()
-              .then(() => {
-                if ('requestIdleCallback' in window) {
-                  requestIdleCallback(applyImage);
-                } else {
-                  setTimeout(applyImage, 0);
-                }
-              })
-              .catch(applyImage); // Fallback if decode fails
-          } else {
-            // Fallback if decode() isn't supported
-            preloadImg.onload = () => {
-              if ('requestIdleCallback' in window) {
-                requestIdleCallback(applyImage);
-              } else {
-                setTimeout(applyImage, 0);
-              }
-            };
-            preloadImg.onerror = applyImage; // Still try to apply even if error
-          }
-        }
-      });
-    },
-    {
-      rootMargin: '900px 0px',
-      threshold: 0.0001,
-    }
-  );
-
-  // Initialize images
-  images.forEach((img) => {
-    img.classList.add('optimized-image');
-    observer.observe(img);
+  images.forEach((container, idx) => {
+    const img = document.createElement('img');
+    img.src = `/assets/img/home-12/portfolio/p-${idx + 1}.jpg`;
+    img.loading = 'lazy';
+    img.alt = '';
+    container.appendChild(img);
   });
-};
-
-// Call the function to load images
-loadImagesOptimized();
 
 
 

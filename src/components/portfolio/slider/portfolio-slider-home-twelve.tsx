@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import { parallaxSlider4 } from "@/utils/parallax-slider";
+import useScrollSmooth from "@/hooks/use-scroll-smooth";
 
 const slider_data = [
   {
@@ -60,32 +61,44 @@ const slider_data = [
 ];
 
 export default function PortfolioSliderHomeTwelve() {
+  useScrollSmooth();
+    useEffect(() => {
+      document.body.classList.add("tp-smooth-scroll");
+      return () => {
+        document.body.classList.remove("tp-smooth-scroll");
+      };
+    }, []);
+
   useEffect(() => {
-  requestAnimationFrame(() => {
-    parallaxSlider4();
-  });
-}, []);
+    requestAnimationFrame(() => {
+      parallaxSlider4();
+    });
+  }, []);
 
 
   return (
-    <div className="parallax-slider-wrapper-p ">
-      <div className="parallax-slider">
-        <div className="parallax-slider-inner">
-          {slider_data.map((item) => (
-            <div
-              className="parallax-item not-hide-cursor"
-              data-cursor="View<br>Demo"
-              key={item.id}
-            >
-              <Link className="cursor-hide" href={item.link}>
-                <div className="parallax-content">
-                  <span style={{ fontFamily: 'Glacial Indifference' }}>{item.subtitle}</span>
-                  <h4>{item.title}</h4>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <div className="parallax-slider-wrapper-p ">
+          <div className="parallax-slider">
+            <div className="parallax-slider-inner">
+              {slider_data.map((item) => (
+                <div
+                  className="parallax-item not-hide-cursor"
+                  data-cursor="View<br>Demo"
+                  key={item.id}
+                >
+                  <Link className="cursor-hide" href={item.link}>
+                    <div className="parallax-content">
+                      <span style={{ fontFamily: 'Glacial Indifference' }}>{item.subtitle}</span>
+                      <h4>{item.title}</h4>
+                    </div>
+                    <div className="parallax-img"></div>
+                  </Link>
                 </div>
-                <div className="parallax-img"></div>
-              </Link>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </div>
