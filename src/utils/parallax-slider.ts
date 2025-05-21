@@ -212,7 +212,7 @@ export function parallaxSlider4() {
   let maxTranslateX: number;
   let current = 0;
   let target = 0;
-  const ease = 0.075;
+  const ease = 0.05;
   let lastScrollY = window.scrollY;
   let shouldAnimate = false;
   let initialized = false;
@@ -222,9 +222,71 @@ export function parallaxSlider4() {
   window.addEventListener('resize', init);
   window.addEventListener('scroll', onScroll);
 
-  images.forEach((img, idx) => {
-    img.style.backgroundImage = `url(/assets/img/home-12/portfolio/p-${idx + 1}.jpg)`;
+const loadImagesOptimized = () => {
+  // Check if IntersectionObserver is supported (fallback if not)
+  if (!('IntersectionObserver' in window)) {
+    images.forEach((img, idx) => {
+      img.style.backgroundImage = `url(/assets/img/home-12/portfolio/p-${idx + 1}.jpg)`;
+    });
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          const idx = Array.from(images).indexOf(img);
+          const imageUrl = `/assets/img/home-12/portfolio/p-${idx + 1}.jpg`;
+
+          // Preload the image
+          const preloadImg = new Image();
+          preloadImg.src = imageUrl;
+
+          // Use `decode()` for async image decoding (reduces main thread blocking)
+          if (preloadImg.decode) {
+            preloadImg
+              .decode()
+              .then(() => {
+                requestAnimationFrame(() => {
+                  img.style.backgroundImage = `url(${imageUrl})`;
+                });
+              })
+              .catch(() => {
+                // Fallback if decoding fails
+                img.style.backgroundImage = `url(${imageUrl})`;
+              });
+          } else {
+            // Fallback for browsers without `decode()`
+            preloadImg.onload = () => {
+              requestAnimationFrame(() => {
+                img.style.backgroundImage = `url(${imageUrl})`;
+              });
+            };
+          }
+
+          // Unobserve the image after loading
+          observer.unobserve(img);
+        }
+      });
+    },
+    {
+      rootMargin: '900px 0px', 
+      threshold: 0.0001,
+    }
+  );
+
+  images.forEach((img) => {
+    img.classList.add('optimized-image');
+    observer.observe(img);
   });
+};
+
+// Call the function to load images
+loadImagesOptimized();
+
+
+
 
   function init() {
     sliderWidth = slider.getBoundingClientRect().width;
@@ -281,7 +343,7 @@ export function parallaxSlider4() {
   function animateImages() {
     const ratio = current / imageWidth;
     images.forEach((image, idx) => {
-      const offset = ratio - idx * 0.6;
+      const offset = ratio - idx * 0.3;
       setTransform(image, `translateX(${offset * 100}px)`);
     });
   }

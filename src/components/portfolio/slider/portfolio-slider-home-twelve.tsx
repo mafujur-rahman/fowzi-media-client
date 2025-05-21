@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import { parallaxSlider4 } from "@/utils/parallax-slider";
-import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 const slider_data = [
   {
@@ -40,18 +39,38 @@ const slider_data = [
     title: "Jannah Fitwear",
     link: "/jannah-fitwear-showcase"
   },
+  {
+    id: 7,
+    subtitle: "Branding + Website + Videography + Photography",
+    title: "Awad for Puntland",
+    link: "/awad-showcase"
+  },
+  {
+    id: 8,
+    subtitle: "Branding + Website + Photography",
+    title: "Hudda for St Cloud",
+    link: "/hudda-showcase"
+  },
+  {
+    id: 9,
+    subtitle: "Branding + Website + Videography + Photography",
+    title: "Jannah Fitwear",
+    link: "/jannah-fitwear-showcase"
+  },
 ];
 
 export default function PortfolioSliderHomeTwelve() {
   useEffect(() => {
-    const timer = setTimeout(() => {
+  const timer = setTimeout(() => {
+    requestAnimationFrame(() => {
       parallaxSlider4();
-    }, 100);
-    return () => clearTimeout(timer);
-  }, []);
+    });
+  }, 1);
+  return () => clearTimeout(timer);
+}, []);
+
   return (
-    <div style={{position: "relative"}}>
-      <div className="parallax-slider-wrapper-p">
+    <div className="parallax-slider-wrapper-p ">
       <div className="parallax-slider">
         <div className="parallax-slider-inner">
           {slider_data.map((item) => (
@@ -71,7 +90,6 @@ export default function PortfolioSliderHomeTwelve() {
           ))}
         </div>
       </div>
-    </div>
     </div>
   );
 }

@@ -33,18 +33,18 @@ const HomeFourMain = () => {
     };
   }, []);
 
-  useGSAP(() => {
-    const timer = setTimeout(() => {
-      fadeAnimation();
-      revelAnimationOne();
-      projectThreeAnimation();
-      ctaAnimation();
-      textInvert();
+ useGSAP(() => {
+  const timer = setTimeout(() => {
+    fadeAnimation();
+    revelAnimationOne();
+    projectThreeAnimation();
+    ctaAnimation();
+    textInvert();
+    ScrollTrigger.refresh(true); // force refresh
+  }, 300);
+  return () => clearTimeout(timer);
+});
 
-      ScrollTrigger.refresh();
-    }, 100);
-    return () => clearTimeout(timer);
-  });
 
   useEffect(() => {
     document.body.classList.add("tp-magic-cursor");
