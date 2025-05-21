@@ -159,7 +159,7 @@ export function parallaxSlider3() {
   let current = 0;
   let target = 0;
   const ease = 0.05;
-  
+
 
   window.addEventListener('resize', init);
 
@@ -216,8 +216,8 @@ export function parallaxSlider4() {
   let lastScrollY = window.scrollY;
   let shouldAnimate = false;
   let initialized = false;
-  
-   
+
+
 
   window.addEventListener('resize', init);
   window.addEventListener('scroll', onScroll);
@@ -239,43 +239,55 @@ const loadImagesOptimized = () => {
           const idx = Array.from(images).indexOf(img);
           const imageUrl = `/assets/img/home-12/portfolio/p-${idx + 1}.jpg`;
 
+          // Add loading class
+          img.classList.add('image-loading');
+
           // Preload the image
           const preloadImg = new Image();
           preloadImg.src = imageUrl;
 
+          const applyImage = () => {
+            // Remove loading class and add loaded class for transition
+            img.classList.remove('image-loading');
+            img.classList.add('image-loaded');
+            img.style.backgroundImage = `url(${imageUrl})`;
+            
+            // Unobserve the image after loading
+            observer.unobserve(img);
+          };
+
           // Use `decode()` for async image decoding (reduces main thread blocking)
           if (preloadImg.decode) {
-            preloadImg
-              .decode()
+            preloadImg.decode()
               .then(() => {
-                requestAnimationFrame(() => {
-                  img.style.backgroundImage = `url(${imageUrl})`;
-                });
+                if ('requestIdleCallback' in window) {
+                  requestIdleCallback(applyImage);
+                } else {
+                  setTimeout(applyImage, 0);
+                }
               })
-              .catch(() => {
-                // Fallback if decoding fails
-                img.style.backgroundImage = `url(${imageUrl})`;
-              });
+              .catch(applyImage); // Fallback if decode fails
           } else {
-            // Fallback for browsers without `decode()`
+            // Fallback if decode() isn't supported
             preloadImg.onload = () => {
-              requestAnimationFrame(() => {
-                img.style.backgroundImage = `url(${imageUrl})`;
-              });
+              if ('requestIdleCallback' in window) {
+                requestIdleCallback(applyImage);
+              } else {
+                setTimeout(applyImage, 0);
+              }
             };
+            preloadImg.onerror = applyImage; // Still try to apply even if error
           }
-
-          // Unobserve the image after loading
-          observer.unobserve(img);
         }
       });
     },
     {
-      rootMargin: '900px 0px', 
+      rootMargin: '900px 0px',
       threshold: 0.0001,
     }
   );
 
+  // Initialize images
   images.forEach((img) => {
     img.classList.add('optimized-image');
     observer.observe(img);
@@ -304,7 +316,7 @@ loadImagesOptimized();
     const rect = slider.getBoundingClientRect();
     const windowHeight = window.innerHeight;
     const triggerPoint = rect.height * 0.7;
-    
+
 
     shouldAnimate = windowHeight - rect.top >= triggerPoint && rect.bottom > 0;
   }

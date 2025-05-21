@@ -61,13 +61,11 @@ const slider_data = [
 
 export default function PortfolioSliderHomeTwelve() {
   useEffect(() => {
-  const timer = setTimeout(() => {
-    requestAnimationFrame(() => {
-      parallaxSlider4();
-    });
-  }, 1);
-  return () => clearTimeout(timer);
+  requestAnimationFrame(() => {
+    parallaxSlider4();
+  });
 }, []);
+
 
   return (
     <div className="parallax-slider-wrapper-p ">
