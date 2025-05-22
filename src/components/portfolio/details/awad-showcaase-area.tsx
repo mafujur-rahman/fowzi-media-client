@@ -16,8 +16,8 @@ export default function AwadShowcaseArea() {
   return (
     <>
       {/* details area */}
-      <div className="tp-showcase-details-area">
-        <div className="tp-showcase-details-bg d-flex align-items-center justify-content-center include-bg p-relative" style={{ backgroundImage: "url(/assets/img/home-12/portfolio/branding/awad/branding-1.jpg)" }}>
+      <div className="tp-showcase-details-area bg-dark opacity-1200">
+        <div className="tp-showcase-details-bg d-flex align-items-center justify-content-center  include-bg p-relative" style={{ backgroundImage: "url(/assets/img/home-12/portfolio/branding/awad/branding-1.jpg)" }}>
           <div className="tp-showcase-details-scroll smooth">
             <a onClick={scrollTo} className="pointer" style={{ fontFamily: 'Glacial Indifference' }}>
               <i className="fa-sharp fa-light fa-angle-down"></i>
@@ -32,7 +32,7 @@ export default function AwadShowcaseArea() {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <div className="tp-showcase-details-content text-center bg-dark bg-opacity-50 p-3 ">
+                <div className="tp-showcase-details-content text-center   ">
                   <span
                     className="port-showcase-slider-subtitle tp_title_anim text-white"
                     style={{ fontFamily: 'Glacial Indifference' }}
