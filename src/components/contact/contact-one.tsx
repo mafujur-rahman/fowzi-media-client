@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function ContactOne() {
   return (
-    <div className="tp-cta-area black-bg pt-120 pb-120 z-index fix">
+    <div className="tp-cta-area black-bg pt-120 pb-120  fix ">
       <div className="container">
         <div className="col-xl-12">
           <div className="tp-cta-title-box p-relative">

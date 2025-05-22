@@ -33,17 +33,17 @@ const HomeFourMain = () => {
     };
   }, []);
 
- useGSAP(() => {
-  const timer = setTimeout(() => {
-    fadeAnimation();
-    revelAnimationOne();
-    projectThreeAnimation();
-    ctaAnimation();
-    textInvert();
-    ScrollTrigger.refresh(true); // force refresh
-  }, 300);
-  return () => clearTimeout(timer);
-});
+  useGSAP(() => {
+    const timer = setTimeout(() => {
+      fadeAnimation();
+      revelAnimationOne();
+      projectThreeAnimation();
+      ctaAnimation();
+      textInvert();
+      ScrollTrigger.refresh(true); // force refresh
+    }, 300);
+    return () => clearTimeout(timer);
+  });
 
 
   useEffect(() => {
@@ -113,13 +113,18 @@ const HomeFourMain = () => {
             {/* service area end */}
 
             {/* contact area start */}
-            <ContactOne />
+
             {/* contact area end */}
 
           </main>
-
+          <div style={{ backgroundColor: "black", overflow: "hidden" }}>
+            <ContactOne />
+            <div style={{marginTop: "-2px",}}>
+              <FooterFour />
+            </div>
+          </div>
           {/* footer area */}
-          <FooterFour />
+
           {/* footer area */}
         </div>
       </div>
