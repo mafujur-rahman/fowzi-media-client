@@ -17,26 +17,45 @@ export default function BetterHandShowcaseArea() {
     <>
       {/* details area */}
       <div className="tp-showcase-details-area">
-        <div className="tp-showcase-details-bg d-flex align-items-center justify-content-center include-bg p-relative" style={{ backgroundImage: "url(/assets/img/home-12/portfolio/better%20hand/branding-1.png)" }}>
-          <div className="tp-showcase-details-scroll smooth">
-            <a onClick={scrollTo} className="pointer" style={{ fontFamily: 'Glacial Indifference' }}>
+        <div
+          className="tp-showcase-details-bg d-flex align-items-center justify-content-center include-bg p-relative"
+          style={{
+            backgroundImage: "url(/assets/img/home-12/portfolio/better%20hand/branding-1.png)",
+            position: "relative",
+          }}
+        >
+          {/* Black overlay */}
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: "rgba(0, 0, 0, 0.5)", 
+              zIndex: 1,
+            }}
+          ></div>
+
+          {/* Content */}
+          <div className="tp-showcase-details-scroll smooth" style={{ zIndex: 2 }}>
+            <a onClick={scrollTo} className="pointer" style={{ fontFamily: "Glacial Indifference" }}>
               <i className="fa-sharp fa-light fa-angle-down"></i>
               Scroll or drag to navigate
             </a>
           </div>
-          <div className="port-showcase-slider-social tp-hover-btn-wrapper" style={{ fontFamily: 'Glacial Indifference' }}>
+
+          <div className="port-showcase-slider-social tp-hover-btn-wrapper" style={{ fontFamily: "Glacial Indifference", zIndex: 2 }}>
             <a className="tp-hover-btn-item tp-hover-btn" href="#">Fb</a>
             <a className="tp-hover-btn-item tp-hover-btn" href="#">In</a>
             <a className="tp-hover-btn-item tp-hover-btn" href="#">Be</a>
           </div>
-          <div className="container">
+
+          <div className="container" style={{ zIndex: 2 }}>
             <div className="row">
               <div className="col-12">
-                <div className="tp-showcase-details-content text-center bg-dark bg-opacity-50 p-3 ">
-                  <span
-                    className="port-showcase-slider-subtitle tp_title_anim text-white"
-                    style={{ fontFamily: 'Glacial Indifference' }}
-                  >
+                <div className="tp-showcase-details-content text-center">
+                  <span className="port-showcase-slider-subtitle tp_title_anim text-white" style={{ fontFamily: "Glacial Indifference" }}>
                     [ Branding ]
                   </span>
                   <h4 className="port-showcase-slider-title tp-char-animation text-white">
